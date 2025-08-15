@@ -1,0 +1,103 @@
+.HomePage {
+    width: 100%;
+    height: 100%;
+    /* overflow-x: auto; */
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 200px auto;
+    /*  */
+}
+
+.Explorer{
+    width: 100%;
+    height: 100%;
+    /* display: grid; */
+    /* grid-template-rows: 250px auto; */
+}
+
+.workspace-nav{
+    width: 100%;
+    height: 40px;
+    
+}
+
+.Page-Navigator{
+    width: 100%;
+    height: 40px;
+    background-color: #2F4050;
+}
+
+/* .Page-Navigator .ant-tree .ant-tree-list .ant-tree-list-holder-inner .ant-tree-treenode .ant-tree-switcher{
+    width: 0;
+} */
+
+/* .workspace-tree .ant-tree-list .ant-tree-list-holder-inner .ant-tree-treenode .ant-tree-switcher {
+    background: #413e3c;
+} */
+
+.component-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* display: grid; */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.bottom-group{
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+}
+
+.main-part{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 4vh 4vh auto;
+}
+
+/* 覆盖了ant design本来的蓝色 */
+/* .ant-tree .ant-tree-node-content-wrapper  */
+.ant-tree-node-selected{
+    background-color: #3B7BB1 !important;
+    color: black!important;
+}
+.ant-tree-treenode:hover{
+    /*background-color: #3B7BB1 !important;*/
+    color: black!important;
+}
+
+
+/* 覆盖ant table 样式  */
+
+.ant-table{
+    background:#2F4050 !important;
+    color: black !important;
+    border:none !important;
+}
+
+
+.ant-table-content{
+    border:none !important;
+}
+.ant-table-tbody > tr.ant-table-row:hover > td {
+    *background:#e0dfe8  !important;
+}
+.ant-table-thead>tr>th{
+    color: black !important;
+    background: #e0dfe8  !important;
+    /*border: 2px solid #303030 !important; */
+}
+
+.ant-table-tbody>tr>td {
+    color: black !important;
+    background: #e0dfe8  !important;
+    /* border-bottom: 1px solid #303030 !important; */
+}
+
+.ant-table-row:hover{
+    background: #e0dfe8 !important;
+}
+
