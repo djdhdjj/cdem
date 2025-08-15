@@ -1,0 +1,1443 @@
+{
+    "config": {
+        "id": "2021/6/15 上午11:10:401059",
+        "maxStep": "100",
+        "maxTime": null,
+        "name": "学校教学"
+    },
+    "instance_base": {
+        "config": {},
+        "groups": [
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/6/15 下午2:03:401091",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "智慧教学/学生"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/6/15 下午2:20:182268",
+                        "name": "2021/6/15 下午2:20:182268",
+                        "object_properties": [],
+                        "type": [
+                            "基础领域术语库/Participant"
+                        ]
+                    },
+                    {
+                        "bindTo": [
+                            "智慧教学/学生"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/6/15 下午2:20:492318",
+                        "name": "2021/6/15 下午2:20:492318",
+                        "object_properties": [],
+                        "type": [
+                            "基础领域术语库/Participant"
+                        ]
+                    }
+                ],
+                "name": "学生",
+                "num": 10,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/6/15 下午2:02:311087",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "智慧教学/教师"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/6/15 下午2:03:051090",
+                        "name": "2021/6/15 下午2:03:051090",
+                        "object_properties": [],
+                        "type": [
+                            "基础领域术语库/Participant"
+                        ]
+                    }
+                ],
+                "name": "教师",
+                "num": 10,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/6/15 下午2:02:131086",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "智慧教学/学校"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/6/15 下午2:08:151178",
+                        "name": "2021/6/15 下午2:08:151178",
+                        "object_properties": [],
+                        "type": [
+                            "基础领域术语库/Participant"
+                        ]
+                    }
+                ],
+                "name": "学校",
+                "num": 1,
+                "type": []
+            }
+        ],
+        "instances": [
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2021/6/15 下午2:05:571100",
+                "name": "Process平均运行时间",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            }
+        ],
+        "relations": []
+    },
+    "name": "学校教学",
+    "node2binding_relations": {
+        "2021/6/15 下午2:03:051090": [
+            "智慧教学/教师"
+        ],
+        "2021/6/15 下午2:03:541092": [
+            "智慧教学/学生"
+        ],
+        "2021/6/15 下午2:05:181099": [
+            "智慧教学/学校"
+        ],
+        "2021/6/15 下午2:08:151178": [
+            "智慧教学/学校"
+        ],
+        "2021/6/15 下午2:20:182268": [
+            "智慧教学/学生"
+        ],
+        "2021/6/15 下午2:20:492318": [
+            "智慧教学/学生"
+        ]
+    },
+    "pattern_instance_base": {
+        "config": {
+            "id": "2021/6/15 上午10:50:531138",
+            "name": "学校教学"
+        },
+        "groups": [],
+        "instances": [
+            {
+                "__gohashid": 18629,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "1",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "group": "学校教学/2021/6/15 上午10:53:057",
+                "id": "报名",
+                "key": "学校教学/2021/6/15 上午10:53:251146",
+                "loc": "207.66665649414062 768.5625",
+                "name": "报名",
+                "object_properties": [],
+                "type": [
+                    "智慧教学/报名"
+                ]
+            },
+            {
+                "__gohashid": 21621,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "4",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "group": "学校教学/2021/6/15 上午10:53:055",
+                "id": "复习",
+                "key": "学校教学/2021/6/15 上午10:53:431148",
+                "loc": "656.6666564941406 232.5625",
+                "name": "复习",
+                "object_properties": [],
+                "type": [
+                    "智慧教学/复习"
+                ]
+            },
+            {
+                "__gohashid": 17950,
+                "bindTo": [],
+                "category": "start",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('开始')\ntoken.data['start_step'] = model.step_count\ntoken.data['cost'] = 1",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "学校教学/2021/6/15 上午10:53:055",
+                "id": "BPMN概念/StartEvent-1",
+                "key": "学校教学/2021/6/15 上午10:53:141144",
+                "loc": "158.66665649414062 44.5625",
+                "name": "BPMN概念/StartEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/StartEvent"
+                ]
+            },
+            {
+                "__gohashid": 18262,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(13, 14))\nup = round(random.uniform(14, 16))\nreturn round(random.uniform(low, up))\n",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('完成上课')",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "group": "学校教学/2021/6/15 上午10:53:056",
+                "id": "上课",
+                "key": "学校教学/2021/6/15 上午10:53:201145",
+                "loc": "568.6666564941406 450.5625",
+                "name": "上课",
+                "object_properties": [],
+                "type": [
+                    "智慧教学/上课"
+                ]
+            },
+            {
+                "__gohashid": 17478,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "学校教学/2021/6/15 上午10:53:054",
+                "id": "智慧教学/学校",
+                "isGroup": true,
+                "key": "学校教学/2021/6/15 上午10:53:057",
+                "loc": "58.62284749830795 595.5",
+                "name": "智慧教学/学校",
+                "object_properties": [],
+                "participant": "智慧教学/学校",
+                "props": [],
+                "size": "801.0438089958327 283.37037048339846",
+                "superProps": {},
+                "text": "智慧教学/学校",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 21235,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "4",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "group": "学校教学/2021/6/15 上午10:53:055",
+                "id": "预习",
+                "key": "学校教学/2021/6/15 上午10:53:401147",
+                "loc": "394.6666564941406 212.5625",
+                "name": "预习",
+                "object_properties": [],
+                "type": [
+                    "智慧教学/预习"
+                ]
+            },
+            {
+                "__gohashid": 17477,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "学校教学/2021/6/15 上午10:53:054",
+                "id": "智慧教学/教师",
+                "isGroup": true,
+                "key": "学校教学/2021/6/15 上午10:53:056",
+                "loc": "58.62284749830795 310.5",
+                "name": "智慧教学/教师",
+                "object_properties": [],
+                "participant": "智慧教学/教师",
+                "props": [],
+                "size": "801.0438089958327 283.37037048339846",
+                "superProps": {},
+                "text": "智慧教学/教师",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 22006,
+                "bindTo": [],
+                "category": "end",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"end\")\n\nend_step=model.step_count\nstart_step=token.data['start_step']\n\ntime = end_step-start_step\n\navg_process = model.instance_base.findByName(\"Process平均运行时间\")\ntotal = avg_process.amount*avg_process.quota_dscp\n\navg_process.amount = avg_process.amount+1\navg_process.quota_dscp = (total+time)/avg_process.amount",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "学校教学/2021/6/15 上午10:53:055",
+                "id": "BPMN概念/EndEvent-1",
+                "key": "学校教学/2021/6/15 上午10:53:461149",
+                "loc": "703.6666564941406 68.5625",
+                "name": "BPMN概念/EndEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/EndEvent"
+                ]
+            },
+            {
+                "__gohashid": 17476,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "学校教学/2021/6/15 上午10:53:054",
+                "id": "智慧教学/学生",
+                "isGroup": true,
+                "key": "学校教学/2021/6/15 上午10:53:055",
+                "loc": "58.62284749830795 0.5",
+                "name": "智慧教学/学生",
+                "object_properties": [],
+                "participant": "智慧教学/学生",
+                "props": [],
+                "size": "801.0438089958327 308.3625",
+                "superProps": {},
+                "text": "智慧教学/学生",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 22249,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('通过考试')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "学校教学/2021/6/15 上午10:53:057",
+                "id": "考试",
+                "key": "学校教学/2021/6/15 上午10:53:541150",
+                "loc": "716.6666564941406 733.5625",
+                "name": "考试",
+                "object_properties": [],
+                "type": [
+                    "智慧教学/考试"
+                ]
+            }
+        ],
+        "relations": [
+            {
+                "__gohashid": 24925,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "学校教学/2021/6/15 上午10:53:251146",
+                "key": "学校教学/2021/6/15 上午10:54:501156",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1287,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 207.66665649414062,
+                            "y": 728.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 207.66665649414062,
+                            "y": 718.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 207.66665649414062,
+                            "y": 716
+                        },
+                        {
+                            "s": true,
+                            "x": 394.6666564941406,
+                            "y": 716
+                        },
+                        {
+                            "s": true,
+                            "x": 394.6666564941406,
+                            "y": 272.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 394.6666564941406,
+                            "y": 252.5625
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "学校教学/2021/6/15 上午10:53:401147"
+            },
+            {
+                "__gohashid": 29514,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "学校教学/2021/6/15 上午10:53:431148",
+                "key": "学校教学/2021/6/15 上午10:55:261159",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1311,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 656.6666564941406,
+                            "y": 272.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 656.6666564941406,
+                            "y": 282.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 656.6666564941406,
+                            "y": 284
+                        },
+                        {
+                            "s": true,
+                            "x": 656.6666564941406,
+                            "y": 284
+                        },
+                        {
+                            "s": true,
+                            "x": 656.6666564941406,
+                            "y": 308
+                        },
+                        {
+                            "s": true,
+                            "x": 716.6666564941406,
+                            "y": 308
+                        },
+                        {
+                            "s": true,
+                            "x": 716.6666564941406,
+                            "y": 673.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 716.6666564941406,
+                            "y": 693.5625
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "学校教学/2021/6/15 上午10:53:541150"
+            },
+            {
+                "__gohashid": 25156,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "学校教学/2021/6/15 上午10:53:401147",
+                "key": "学校教学/2021/6/15 上午10:54:591157",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1295,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 394.6666564941406,
+                            "y": 252.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 394.6666564941406,
+                            "y": 262.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 394.6666564941406,
+                            "y": 262.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 568.6666564941406,
+                            "y": 262.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 568.6666564941406,
+                            "y": 390.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 568.6666564941406,
+                            "y": 410.5625
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "学校教学/2021/6/15 上午10:53:201145"
+            },
+            {
+                "__gohashid": 29780,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "学校教学/2021/6/15 上午10:53:541150",
+                "key": "学校教学/2021/6/15 上午10:55:401160",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1319,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 716.6666564941406,
+                            "y": 693.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 716.6666564941406,
+                            "y": 683.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 716.6666564941406,
+                            "y": 683.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 775.6666564941406,
+                            "y": 683.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 775.6666564941406,
+                            "y": 134.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 775.6666564941406,
+                            "y": 114.5625
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "学校教学/2021/6/15 上午10:53:461149"
+            },
+            {
+                "__gohashid": 22578,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "学校教学/2021/6/15 上午10:53:141144",
+                "key": "学校教学/2021/6/15 上午10:53:561151",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1278,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 233.16665649414062,
+                            "y": 87.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 233.16665649414062,
+                            "y": 97.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 233.16665649414062,
+                            "y": 100
+                        },
+                        {
+                            "s": true,
+                            "x": 233.16665649414062,
+                            "y": 100
+                        },
+                        {
+                            "s": true,
+                            "x": 233.16665649414062,
+                            "y": 140
+                        },
+                        {
+                            "s": true,
+                            "x": 207.66665649414062,
+                            "y": 140
+                        },
+                        {
+                            "s": true,
+                            "x": 207.66665649414062,
+                            "y": 708.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 207.66665649414062,
+                            "y": 728.5625
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "学校教学/2021/6/15 上午10:53:251146"
+            },
+            {
+                "__gohashid": 28505,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "学校教学/2021/6/15 上午10:53:201145",
+                "key": "学校教学/2021/6/15 上午10:55:141158",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1303,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 568.6666564941406,
+                            "y": 410.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 568.6666564941406,
+                            "y": 400.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 568.6666564941406,
+                            "y": 400.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 656.6666564941406,
+                            "y": 400.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 656.6666564941406,
+                            "y": 292.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 656.6666564941406,
+                            "y": 272.5625
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "学校教学/2021/6/15 上午10:53:431148"
+            }
+        ]
+    },
+    "service pattern": {
+        "config": {
+            "id": "2021/6/15 上午10:50:531138",
+            "name": "学校教学"
+        },
+        "elements": {
+            "Carrier": [
+                "智慧教学/学校"
+            ],
+            "Goal": [
+                "智慧教学/通过考试"
+            ],
+            "Participant": [
+                "智慧教学/学生",
+                "智慧教学/教师",
+                "智慧教学/学校"
+            ],
+            "Quota": [
+                "智慧教学/学习时间"
+            ],
+            "Task": [
+                "智慧教学/上课",
+                "智慧教学/复习",
+                "智慧教学/预习",
+                "智慧教学/考试",
+                "智慧教学/报名"
+            ],
+            "currencyObject": [
+                "智慧教学/学费"
+            ],
+            "dataObject": [
+                "智慧教学/学习时间"
+            ],
+            "resourceObject": [
+                "智慧教学/教师",
+                "智慧教学/知识点"
+            ]
+        },
+        "evaluate_config": {
+            "学校教学/2021/6/15 上午10:53:054": {
+                "name": "BPMN概念/LaneSet-1"
+            },
+            "学校教学/2021/6/15 上午10:53:055": {
+                "name": "智慧教学/学生"
+            },
+            "学校教学/2021/6/15 上午10:53:056": {
+                "name": "智慧教学/教师"
+            },
+            "学校教学/2021/6/15 上午10:53:057": {
+                "name": "智慧教学/学校"
+            },
+            "学校教学/2021/6/15 上午10:53:141144": {
+                "cost": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "name": "BPMN概念/StartEvent-1",
+                "reliability": {
+                    "n": "0.999",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "1000",
+                    "type": "constant"
+                }
+            },
+            "学校教学/2021/6/15 上午10:53:201145": {
+                "cost": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "name": "undefined-1",
+                "reliability": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": 0,
+                    "type": "constant"
+                }
+            },
+            "学校教学/2021/6/15 上午10:53:251146": {
+                "cost": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "name": "undefined-2",
+                "reliability": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": 0,
+                    "type": "constant"
+                }
+            },
+            "学校教学/2021/6/15 上午10:53:401147": {
+                "cost": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "name": "undefined-3",
+                "reliability": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": 0,
+                    "type": "constant"
+                }
+            },
+            "学校教学/2021/6/15 上午10:53:431148": {
+                "cost": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "name": "undefined-4",
+                "reliability": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": 0,
+                    "type": "constant"
+                }
+            },
+            "学校教学/2021/6/15 上午10:53:461149": {
+                "cost": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "name": "BPMN概念/EndEvent-1",
+                "reliability": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": 0,
+                    "type": "constant"
+                }
+            },
+            "学校教学/2021/6/15 上午10:53:541150": {
+                "cost": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "name": "undefined-5",
+                "reliability": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": 0,
+                    "type": "constant"
+                }
+            }
+        },
+        "links": [
+            {
+                "__gohashid": 22578,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "学校教学/2021/6/15 上午10:53:141144",
+                "key": "学校教学/2021/6/15 上午10:53:561151",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1278,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 233.16665649414062,
+                            "y": 87.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 233.16665649414062,
+                            "y": 97.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 233.16665649414062,
+                            "y": 100
+                        },
+                        {
+                            "s": true,
+                            "x": 233.16665649414062,
+                            "y": 100
+                        },
+                        {
+                            "s": true,
+                            "x": 233.16665649414062,
+                            "y": 140
+                        },
+                        {
+                            "s": true,
+                            "x": 207.66665649414062,
+                            "y": 140
+                        },
+                        {
+                            "s": true,
+                            "x": 207.66665649414062,
+                            "y": 708.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 207.66665649414062,
+                            "y": 728.5625
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "学校教学/2021/6/15 上午10:53:251146"
+            },
+            {
+                "__gohashid": 24925,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "学校教学/2021/6/15 上午10:53:251146",
+                "key": "学校教学/2021/6/15 上午10:54:501156",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1287,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 207.66665649414062,
+                            "y": 728.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 207.66665649414062,
+                            "y": 718.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 207.66665649414062,
+                            "y": 716
+                        },
+                        {
+                            "s": true,
+                            "x": 394.6666564941406,
+                            "y": 716
+                        },
+                        {
+                            "s": true,
+                            "x": 394.6666564941406,
+                            "y": 272.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 394.6666564941406,
+                            "y": 252.5625
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "学校教学/2021/6/15 上午10:53:401147"
+            },
+            {
+                "__gohashid": 25156,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "学校教学/2021/6/15 上午10:53:401147",
+                "key": "学校教学/2021/6/15 上午10:54:591157",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1295,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 394.6666564941406,
+                            "y": 252.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 394.6666564941406,
+                            "y": 262.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 394.6666564941406,
+                            "y": 262.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 568.6666564941406,
+                            "y": 262.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 568.6666564941406,
+                            "y": 390.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 568.6666564941406,
+                            "y": 410.5625
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "学校教学/2021/6/15 上午10:53:201145"
+            },
+            {
+                "__gohashid": 28505,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "学校教学/2021/6/15 上午10:53:201145",
+                "key": "学校教学/2021/6/15 上午10:55:141158",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1303,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 568.6666564941406,
+                            "y": 410.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 568.6666564941406,
+                            "y": 400.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 568.6666564941406,
+                            "y": 400.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 656.6666564941406,
+                            "y": 400.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 656.6666564941406,
+                            "y": 292.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 656.6666564941406,
+                            "y": 272.5625
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "学校教学/2021/6/15 上午10:53:431148"
+            },
+            {
+                "__gohashid": 29514,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "学校教学/2021/6/15 上午10:53:431148",
+                "key": "学校教学/2021/6/15 上午10:55:261159",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1311,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 656.6666564941406,
+                            "y": 272.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 656.6666564941406,
+                            "y": 282.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 656.6666564941406,
+                            "y": 284
+                        },
+                        {
+                            "s": true,
+                            "x": 656.6666564941406,
+                            "y": 284
+                        },
+                        {
+                            "s": true,
+                            "x": 656.6666564941406,
+                            "y": 308
+                        },
+                        {
+                            "s": true,
+                            "x": 716.6666564941406,
+                            "y": 308
+                        },
+                        {
+                            "s": true,
+                            "x": 716.6666564941406,
+                            "y": 673.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 716.6666564941406,
+                            "y": 693.5625
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "学校教学/2021/6/15 上午10:53:541150"
+            },
+            {
+                "__gohashid": 29780,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "学校教学/2021/6/15 上午10:53:541150",
+                "key": "学校教学/2021/6/15 上午10:55:401160",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1319,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 716.6666564941406,
+                            "y": 693.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 716.6666564941406,
+                            "y": 683.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 716.6666564941406,
+                            "y": 683.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 775.6666564941406,
+                            "y": 683.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 775.6666564941406,
+                            "y": 134.5625
+                        },
+                        {
+                            "s": true,
+                            "x": 775.6666564941406,
+                            "y": 114.5625
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "学校教学/2021/6/15 上午10:53:461149"
+            }
+        ],
+        "nodes": [
+            {
+                "__gohashid": 17476,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "学校教学/2021/6/15 上午10:53:054",
+                "id": "智慧教学/学生",
+                "isGroup": true,
+                "key": "学校教学/2021/6/15 上午10:53:055",
+                "loc": "58.62284749830795 0.5",
+                "name": "智慧教学/学生",
+                "object_properties": [],
+                "participant": "智慧教学/学生",
+                "props": [],
+                "size": "801.0438089958327 308.3625",
+                "superProps": {},
+                "text": "智慧教学/学生",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 17477,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "学校教学/2021/6/15 上午10:53:054",
+                "id": "智慧教学/教师",
+                "isGroup": true,
+                "key": "学校教学/2021/6/15 上午10:53:056",
+                "loc": "58.62284749830795 310.5",
+                "name": "智慧教学/教师",
+                "object_properties": [],
+                "participant": "智慧教学/教师",
+                "props": [],
+                "size": "801.0438089958327 283.37037048339846",
+                "superProps": {},
+                "text": "智慧教学/教师",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 17478,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "学校教学/2021/6/15 上午10:53:054",
+                "id": "智慧教学/学校",
+                "isGroup": true,
+                "key": "学校教学/2021/6/15 上午10:53:057",
+                "loc": "58.62284749830795 595.5",
+                "name": "智慧教学/学校",
+                "object_properties": [],
+                "participant": "智慧教学/学校",
+                "props": [],
+                "size": "801.0438089958327 283.37037048339846",
+                "superProps": {},
+                "text": "智慧教学/学校",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 17950,
+                "bindTo": [],
+                "category": "start",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('开始')\ntoken.data['start_step'] = model.step_count\ntoken.data['cost'] = 1",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "学校教学/2021/6/15 上午10:53:055",
+                "id": "BPMN概念/StartEvent-1",
+                "key": "学校教学/2021/6/15 上午10:53:141144",
+                "loc": "158.66665649414062 44.5625",
+                "name": "BPMN概念/StartEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/StartEvent"
+                ]
+            },
+            {
+                "__gohashid": 18262,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(13, 14))\nup = round(random.uniform(14, 16))\nreturn round(random.uniform(low, up))\n",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('完成上课')",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "group": "学校教学/2021/6/15 上午10:53:056",
+                "id": "上课",
+                "key": "学校教学/2021/6/15 上午10:53:201145",
+                "loc": "568.6666564941406 450.5625",
+                "name": "上课",
+                "object_properties": [],
+                "type": [
+                    "智慧教学/上课"
+                ]
+            },
+            {
+                "__gohashid": 18629,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "1",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "group": "学校教学/2021/6/15 上午10:53:057",
+                "id": "报名",
+                "key": "学校教学/2021/6/15 上午10:53:251146",
+                "loc": "207.66665649414062 768.5625",
+                "name": "报名",
+                "object_properties": [],
+                "type": [
+                    "智慧教学/报名"
+                ]
+            },
+            {
+                "__gohashid": 21235,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "4",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "group": "学校教学/2021/6/15 上午10:53:055",
+                "id": "预习",
+                "key": "学校教学/2021/6/15 上午10:53:401147",
+                "loc": "394.6666564941406 212.5625",
+                "name": "预习",
+                "object_properties": [],
+                "type": [
+                    "智慧教学/预习"
+                ]
+            },
+            {
+                "__gohashid": 21621,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "4",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "group": "学校教学/2021/6/15 上午10:53:055",
+                "id": "复习",
+                "key": "学校教学/2021/6/15 上午10:53:431148",
+                "loc": "656.6666564941406 232.5625",
+                "name": "复习",
+                "object_properties": [],
+                "type": [
+                    "智慧教学/复习"
+                ]
+            },
+            {
+                "__gohashid": 22006,
+                "bindTo": [],
+                "category": "end",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"end\")\n\nend_step=model.step_count\nstart_step=token.data['start_step']\n\ntime = end_step-start_step\n\navg_process = model.instance_base.findByName(\"Process平均运行时间\")\ntotal = avg_process.amount*avg_process.quota_dscp\n\navg_process.amount = avg_process.amount+1\navg_process.quota_dscp = (total+time)/avg_process.amount",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "学校教学/2021/6/15 上午10:53:055",
+                "id": "BPMN概念/EndEvent-1",
+                "key": "学校教学/2021/6/15 上午10:53:461149",
+                "loc": "703.6666564941406 68.5625",
+                "name": "BPMN概念/EndEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/EndEvent"
+                ]
+            },
+            {
+                "__gohashid": 22249,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('通过考试')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "学校教学/2021/6/15 上午10:53:057",
+                "id": "考试",
+                "key": "学校教学/2021/6/15 上午10:53:541150",
+                "loc": "716.6666564941406 733.5625",
+                "name": "考试",
+                "object_properties": [],
+                "type": [
+                    "智慧教学/考试"
+                ]
+            },
+            {
+                "__gohashid": 17475,
+                "category": "Pool",
+                "isGroup": true,
+                "key": "学校教学/2021/6/15 上午10:53:054",
+                "loc": "32.1 0.5",
+                "name": "BPMN概念/LaneSet-1",
+                "type": "BPMN概念/LaneSet"
+            }
+        ],
+        "resource_config": {}
+    }
+}
