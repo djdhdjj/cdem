@@ -1,0 +1,4008 @@
+{
+    "config": {
+        "id": "2021/4/18 下午9:49:12926",
+        "maxStep": "1000",
+        "maxTime": null,
+        "name": "出生缺陷综合防治服务"
+    },
+    "instance_base": {
+        "config": {},
+        "groups": [
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/4/18 下午11:18:07957",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "医疗/患者"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/4/18 下午11:18:17958",
+                        "name": "2021/4/18 下午11:18:17958",
+                        "object_properties": [],
+                        "type": [
+                            "BPMN概念/Lane"
+                        ]
+                    }
+                ],
+                "name": "患者",
+                "num": 100,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/4/18 下午11:17:26955",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "医疗/医生"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/4/18 下午11:17:49956",
+                        "name": "2021/4/18 下午11:17:49956",
+                        "object_properties": [],
+                        "type": [
+                            "BPMN概念/Lane"
+                        ]
+                    }
+                ],
+                "name": "医生",
+                "num": 15,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/4/18 下午11:18:30959",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "医疗/医院"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/4/18 下午11:18:46960",
+                        "name": "2021/4/18 下午11:18:46960",
+                        "object_properties": [],
+                        "type": [
+                            "BPMN概念/Lane"
+                        ]
+                    }
+                ],
+                "name": "医院",
+                "num": 1,
+                "type": []
+            }
+        ],
+        "instances": [
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2021/4/18 下午11:16:03953",
+                "name": "平均运行时间",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2021/4/18 下午11:16:52954",
+                "name": "平均运行成本",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            },
+            {
+                "bindTo": [
+                    "在线健康教育/在线健康教育服务提供商"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2021/4/18 下午11:18:57961",
+                "name": "在线医疗服务提高商",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            }
+        ],
+        "relations": []
+    },
+    "name": "出生缺陷综合防治服务",
+    "node2binding_relations": {
+        "2021/4/18 下午11:17:49956": [
+            "医疗/医生"
+        ],
+        "2021/4/18 下午11:18:17958": [
+            "医疗/患者"
+        ],
+        "2021/4/18 下午11:18:46960": [
+            "医疗/医院"
+        ],
+        "在线医疗服务提高商": [
+            "在线健康教育/在线健康教育服务提供商"
+        ]
+    },
+    "pattern_instance_base": {
+        "config": {
+            "id": "1609757726.185601_93789",
+            "name": "出生缺陷综合治疗服务_选定"
+        },
+        "groups": [],
+        "instances": [
+            {
+                "__gohashid": 125504,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn random.randint(5,10)",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"诊断完成\")\ntoken.data['cost'] = token.data['cost'] + random.ranint(5,20)",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "互联网医疗服务模式/2021/1/4 下午4:05:396",
+                "id": "2021/4/19 下午7:55:51890",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:43:45938",
+                "loc": "433.38719814453157 594.8436625000002",
+                "name": "诊断",
+                "object_properties": [],
+                "type": "医疗/诊断"
+            },
+            {
+                "__gohashid": 71621,
+                "bindTo": [],
+                "category": "exclusive",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/condition": {
+                        "isPattern": true,
+                        "text": "return True",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "在线健康教育模式/2021/1/4 下午3:07:592",
+                "id": "BPMN概念/ExclusiveGateWay-1",
+                "key": "在线健康教育模式/2021/1/4 下午3:10:39799",
+                "loc": "337.5689875 1171",
+                "name": "BPMN概念/ExclusiveGateWay-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/ExclusiveGateWay"
+                ]
+            },
+            {
+                "__gohashid": 92997,
+                "bindTo": [],
+                "category": "end",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "end_step=model.step_count\nstart_step=token.data['start_step']\ntime = end_step-start_step\n\n\navg_process = model.instance_base.findByName(\"平均运行时间\")\ntotal = avg_process.amount*avg_process.quota_dscp\n\n\navg_process.amount = avg_process.amount+1\navg_process.quota_dscp = (total+time)/avg_process.amount\n\n\navg_cost=model.instance_base.findByName(\"平均运行成本\")\nprocess_cost= token.data['cost']\ntotal_cost=avg_cost.amount*avg_cost.quota_dscp\navg_cost.amount=avg_cost.amount+1\navg_cost.quota_dscp = (total_cost+process_cost)/avg_cost.amount\n\n\n# avg_SR = model.instance_base.findByName(\"用户满意度\")\n# process_SR = token.data['SR']\n# total_SR = avg_SR.amount*avg_SR.quota_dscp\n# avg_SR.amount = avg_SR.amount+1\n# avg_SR.quota_dscp = (total_SR+process_SR)/avg_SR.amount",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "在线健康教育模式/2021/1/4 下午3:07:592",
+                "id": "BPMN概念/EndEvent-1",
+                "key": "在线健康教育模式/2021/1/4 下午3:11:49804",
+                "loc": "546.5689875 1051",
+                "name": "BPMN概念/EndEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/EndEvent"
+                ]
+            },
+            {
+                "__gohashid": 103160,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Mon Jan  4 10:55:26 20218701",
+                "id": "医疗/医院",
+                "isGroup": "true",
+                "key": "互联网医疗服务模式/2021/1/4 下午4:05:396",
+                "loc": "-25.43101250000001 397",
+                "name": "医疗/医院",
+                "object_properties": [],
+                "participant": "医疗/医院",
+                "props": [],
+                "size": "2450 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 143374,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "互联网医疗服务模式/2021/1/4 下午4:05:396",
+                "id": "患者个人数据",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:53:13949",
+                "loc": "41.74067939453124 449",
+                "name": "患者个人数据",
+                "object_properties": [],
+                "type": [
+                    "医疗/患者个人信息"
+                ]
+            },
+            {
+                "__gohashid": 109521,
+                "bindTo": [],
+                "category": "exclusive",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/condition": {
+                        "isPattern": true,
+                        "text": "return True",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "互联网医疗服务模式/2021/1/4 下午4:05:395",
+                "id": "BPMN概念/ExclusiveGateWay-1",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:41:38930",
+                "loc": "299 750",
+                "name": "BPMN概念/ExclusiveGateWay-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/ExclusiveGateWay"
+                ]
+            },
+            {
+                "__gohashid": 65669,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Mon Jan  4 10:55:26 20218701",
+                "id": "在线健康教育/在线健康教育服务提供商",
+                "isGroup": "true",
+                "key": "在线健康教育模式/2021/1/4 下午3:07:592",
+                "loc": "-25.431012499999994 999",
+                "name": "在线健康教育/在线健康教育服务提供商",
+                "object_properties": [],
+                "participant": "在线健康教育/在线健康教育服务提供商",
+                "props": [],
+                "size": "2450 338.32375081862045",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 103159,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Mon Jan  4 10:55:26 20218701",
+                "id": "医疗/医生",
+                "isGroup": "true",
+                "key": "互联网医疗服务模式/2021/1/4 下午4:05:395",
+                "loc": "-25.43101250000001 698",
+                "name": "医疗/医生",
+                "object_properties": [],
+                "participant": "医疗/医生",
+                "props": [],
+                "size": "2450 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 70542,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "1",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"打赏完成\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "互联网医疗服务模式/2021/1/4 下午4:05:398",
+                "id": "打赏等付费行为",
+                "key": "在线健康教育模式/2021/1/4 下午3:09:30797",
+                "loc": "862.3134601060209 228.56858909771984",
+                "name": "打赏等付费行为",
+                "object_properties": [],
+                "type": [
+                    "在线健康教育/知识付费"
+                ]
+            },
+            {
+                "__gohashid": 66309,
+                "bindTo": [],
+                "category": "start",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('开始')\ntoken.data['start_step'] = model.step_count\ntoken.data['cost'] = 1",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "互联网医疗服务模式/2021/1/4 下午4:05:398",
+                "id": "BPMN概念/StartEvent-1",
+                "key": "在线健康教育模式/2021/1/4 下午3:09:03792",
+                "loc": "-6.4310125000000085 292",
+                "name": "BPMN概念/StartEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/StartEvent"
+                ]
+            },
+            {
+                "__gohashid": 66600,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "1",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"登录成功\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "互联网医疗服务模式/2021/1/4 下午4:05:398",
+                "id": "登录",
+                "key": "在线健康教育模式/2021/1/4 下午3:09:07793",
+                "loc": "532.45551328125 169.6031625",
+                "name": "登录",
+                "object_properties": [],
+                "type": [
+                    "在线健康教育/用户登录"
+                ]
+            },
+            {
+                "__gohashid": 103162,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Mon Jan  4 10:55:26 20218701",
+                "id": "医疗/患者",
+                "isGroup": "true",
+                "key": "互联网医疗服务模式/2021/1/4 下午4:05:398",
+                "loc": "-25.43101250000001 86",
+                "name": "医疗/患者",
+                "object_properties": [],
+                "participant": "医疗/患者",
+                "props": [],
+                "size": "2450 309.7409392333984",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 94302,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "互联网医疗服务模式/2021/1/4 下午4:05:398",
+                "id": "用户信息",
+                "key": "在线健康教育模式/2021/1/4 下午3:12:09808",
+                "loc": "147.07066596679687 145.93518524169923",
+                "name": "用户信息",
+                "object_properties": [],
+                "type": [
+                    "在线健康教育/用户信息"
+                ]
+            },
+            {
+                "__gohashid": 104291,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "3",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"挂号完毕\")\ntoken.data['cost'] = token.data['cost'] + random.random()*10",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "在线健康教育模式/2021/1/4 下午3:07:592",
+                "id": "线上挂号",
+                "key": "互联网医疗服务模式/2021/1/4 下午5:32:18924",
+                "loc": "801.64651875 1123.3876562500002",
+                "name": "线上挂号",
+                "object_properties": [],
+                "type": [
+                    "医疗/线上挂号"
+                ]
+            },
+            {
+                "__gohashid": 111466,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn random.randint(5,10)",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\ntoken.data['cost'] = token.data['cost'] + random.random()*100\nprint(\"检测\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "互联网医疗服务模式/2021/1/4 下午4:05:396",
+                "id": "做检查",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:41:53932",
+                "loc": "291.74067939453124 449",
+                "name": "做检查",
+                "object_properties": [],
+                "type": [
+                    "医疗/做检查"
+                ]
+            },
+            {
+                "__gohashid": 114266,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "1",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"报告查询中\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "在线健康教育模式/2021/1/4 下午3:07:592",
+                "id": "线上报告查询",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:42:26934",
+                "loc": "1046.5689875 1051",
+                "name": "线上报告查询",
+                "object_properties": [],
+                "type": [
+                    "医疗/线上报告查询"
+                ]
+            },
+            {
+                "__gohashid": 69990,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "3",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"母婴知识推送\")\ntoken.data['cost'] = token.data['cost'] + 10",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "在线健康教育模式/2021/1/4 下午3:07:592",
+                "id": "健康知识推送",
+                "key": "在线健康教育模式/2021/1/4 下午3:09:21795",
+                "loc": "46.568987500000006 1051",
+                "name": "健康知识推送",
+                "object_properties": [],
+                "type": [
+                    "在线健康教育/知识推送"
+                ]
+            },
+            {
+                "__gohashid": 136482,
+                "bindTo": [],
+                "category": "end",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "互联网医疗服务模式/2021/1/4 下午4:05:395",
+                "id": "BPMN概念/EndEvent-2",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:44:56945",
+                "loc": "1022.6531500000001 736.62943125",
+                "name": "BPMN概念/EndEvent-2",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/EndEvent"
+                ]
+            },
+            {
+                "__gohashid": 147030,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "在线健康教育模式/2021/1/4 下午3:07:592",
+                "id": "报告信息",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:53:44952",
+                "loc": "1546.5689875 1051",
+                "name": "报告信息",
+                "object_properties": [],
+                "type": [
+                    "医疗/检查报告信息"
+                ]
+            },
+            {
+                "__gohashid": "9cf6491e5bbc49b6b13fd141b5766a14",
+                "bindTo": [],
+                "category": "parallel",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "互联网医疗服务模式/2021/1/4 下午4:05:398",
+                "id": "parallel",
+                "key": "Mon Jan  4 10:55:26 20215902",
+                "loc": "429.25886250000013 298.7844937499999",
+                "name": "parallel",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/ParallelGateWay"
+                ]
+            },
+            {
+                "__gohashid": 136186,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"支付完成\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "互联网医疗服务模式/2021/1/4 下午4:05:395",
+                "id": "2021/4/19 下午7:55:51881",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:44:53944",
+                "loc": "446.90538125 883.6281562500001",
+                "name": "付费",
+                "object_properties": [],
+                "type": "医疗/付费"
+            }
+        ],
+        "relations": [
+            {
+                "__gohashid": 143551,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午5:32:18924",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:53:14950",
+                "points": {
+                    "Aa": 11,
+                    "Fa": null,
+                    "__gohashid": 13683,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 801.64651875,
+                            "y": 1083.3876562500002
+                        },
+                        {
+                            "s": true,
+                            "x": 801.64651875,
+                            "y": 1073.3876562500002
+                        },
+                        {
+                            "s": true,
+                            "x": 801.64651875,
+                            "y": 1076
+                        },
+                        {
+                            "s": true,
+                            "x": 801.64651875,
+                            "y": 1076
+                        },
+                        {
+                            "s": true,
+                            "x": 801.64651875,
+                            "y": 708
+                        },
+                        {
+                            "s": true,
+                            "x": 220,
+                            "y": 708
+                        },
+                        {
+                            "s": true,
+                            "x": 220,
+                            "y": 449
+                        },
+                        {
+                            "s": true,
+                            "x": 69.04067939453125,
+                            "y": 449
+                        },
+                        {
+                            "s": true,
+                            "x": 59.040679394531246,
+                            "y": 449
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午6:53:13949"
+            },
+            {
+                "__gohashid": 109670,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午5:32:36926",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:41:39931",
+                "points": {
+                    "Aa": 0,
+                    "Fa": null,
+                    "__gohashid": 15273,
+                    "bh": null,
+                    "j": [],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午6:41:38930"
+            },
+            {
+                "__gohashid": 135877,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午6:43:45938",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:44:49943",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 64109,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 605.3871981445316,
+                            "y": 641.8436625000002
+                        },
+                        {
+                            "s": true,
+                            "x": 615.3871981445316,
+                            "y": 641.8436625000002
+                        },
+                        {
+                            "s": true,
+                            "x": 715.8307075195314,
+                            "y": 641.8436625000002
+                        },
+                        {
+                            "s": true,
+                            "x": 715.8307075195314,
+                            "y": 520.2930375000001
+                        },
+                        {
+                            "s": true,
+                            "x": 816.2742168945314,
+                            "y": 520.2930375000001
+                        },
+                        {
+                            "s": true,
+                            "x": 836.2742168945314,
+                            "y": 520.2930375000001
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午6:44:46942"
+            },
+            {
+                "__gohashid": 52550,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午6:42:26934",
+                "key": "出生缺陷综合治疗服务_选定/2021/4/18 下午9:47:20923",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13703,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 986.5689875,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 976.5689875,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 744.9780928222658,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 744.9780928222658,
+                            "y": 594.8436625000002
+                        },
+                        {
+                            "s": true,
+                            "x": 513.3871981445316,
+                            "y": 594.8436625000002
+                        },
+                        {
+                            "s": true,
+                            "x": 493.38719814453157,
+                            "y": 594.8436625000002
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午6:43:45938"
+            },
+            {
+                "__gohashid": 75477,
+                "category": "",
+                "data_properties": {},
+                "from": "Mon Jan  4 10:55:26 20215902",
+                "key": -27,
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13714,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 397.75886250000013,
+                            "y": 298.7844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 387.75886250000013,
+                            "y": 298.7844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 286.0647642333985,
+                            "y": 298.7844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 286.0647642333985,
+                            "y": 145.93518524169923
+                        },
+                        {
+                            "s": true,
+                            "x": 184.37066596679685,
+                            "y": 145.93518524169923
+                        },
+                        {
+                            "s": true,
+                            "x": 164.37066596679685,
+                            "y": 145.93518524169923
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "在线健康教育模式/2021/1/4 下午3:12:09808"
+            },
+            {
+                "__gohashid": 138584,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午6:44:46942",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:52:37948",
+                "points": {
+                    "Aa": 0,
+                    "Fa": null,
+                    "__gohashid": 15274,
+                    "bh": null,
+                    "j": [],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午6:44:56945"
+            },
+            {
+                "__gohashid": 147895,
+                "category": "",
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午6:53:44952",
+                "key": -16,
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 13571,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1529.2689875,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 1519.2689875,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 1516,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 1516,
+                            "y": 1060
+                        },
+                        {
+                            "s": true,
+                            "x": 1484,
+                            "y": 1060
+                        },
+                        {
+                            "s": true,
+                            "x": 1484,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 1126.5689875,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 1106.5689875,
+                            "y": 1051
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午6:42:26934"
+            },
+            {
+                "__gohashid": 114485,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午6:41:53932",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:42:27935",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 13684,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 351.74067939453124,
+                            "y": 449
+                        },
+                        {
+                            "s": true,
+                            "x": 361.74067939453124,
+                            "y": 449
+                        },
+                        {
+                            "s": true,
+                            "x": 364,
+                            "y": 449
+                        },
+                        {
+                            "s": true,
+                            "x": 364,
+                            "y": 449
+                        },
+                        {
+                            "s": true,
+                            "x": 708,
+                            "y": 449
+                        },
+                        {
+                            "s": true,
+                            "x": 708,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 966.5689875,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 986.5689875,
+                            "y": 1051
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午6:42:26934"
+            },
+            {
+                "__gohashid": 33261,
+                "category": "controlFlow",
+                "controlFlowNo": true,
+                "controlFlowYes": false,
+                "data_properties": {},
+                "from": "在线健康教育模式/2021/1/4 下午3:10:39799",
+                "key": "出生缺陷综合治疗服务_选定/2021/4/18 下午9:45:09919",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 13694,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 337.5689875,
+                            "y": 1139.5
+                        },
+                        {
+                            "s": true,
+                            "x": 337.5689875,
+                            "y": 1129.5
+                        },
+                        {
+                            "s": true,
+                            "x": 337.5689875,
+                            "y": 1132
+                        },
+                        {
+                            "s": true,
+                            "x": 337.5689875,
+                            "y": 1132
+                        },
+                        {
+                            "s": true,
+                            "x": 337.5689875,
+                            "y": 1044
+                        },
+                        {
+                            "s": true,
+                            "x": 862.3134601060209,
+                            "y": 1044
+                        },
+                        {
+                            "s": true,
+                            "x": 862.3134601060209,
+                            "y": 288.56858909771984
+                        },
+                        {
+                            "s": true,
+                            "x": 862.3134601060209,
+                            "y": 268.56858909771984
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "在线健康教育模式/2021/1/4 下午3:09:30797",
+                "yesOrNo": true
+            },
+            {
+                "__gohashid": 33720,
+                "category": "controlFlow",
+                "controlFlowNo": false,
+                "controlFlowYes": true,
+                "data_properties": {},
+                "from": "在线健康教育模式/2021/1/4 下午3:10:39799",
+                "key": "出生缺陷综合治疗服务_选定/2021/4/18 下午9:45:24920",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13572,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 369.0689875,
+                            "y": 1171
+                        },
+                        {
+                            "s": true,
+                            "x": 379.0689875,
+                            "y": 1171
+                        },
+                        {
+                            "s": true,
+                            "x": 380,
+                            "y": 1171
+                        },
+                        {
+                            "s": true,
+                            "x": 380,
+                            "y": 1074
+                        },
+                        {
+                            "s": true,
+                            "x": 577.8354212158204,
+                            "y": 1074
+                        },
+                        {
+                            "s": true,
+                            "x": 597.8354212158204,
+                            "y": 1074
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "在线健康教育模式/2021/1/4 下午3:11:49804",
+                "yesOrNo": true
+            },
+            {
+                "__gohashid": 71878,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "在线健康教育模式/2021/1/4 下午3:09:21795",
+                "key": "在线健康教育模式/2021/1/4 下午3:10:45800",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13568,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 106.5689875,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 116.5689875,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 116.5689875,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 116.5689875,
+                            "y": 1171
+                        },
+                        {
+                            "s": true,
+                            "x": 286.0689875,
+                            "y": 1171
+                        },
+                        {
+                            "s": true,
+                            "x": 306.0689875,
+                            "y": 1171
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "在线健康教育模式/2021/1/4 下午3:10:39799"
+            },
+            {
+                "__gohashid": 42314,
+                "category": "controlFlow",
+                "controlFlowNo": true,
+                "controlFlowYes": false,
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午6:41:38930",
+                "key": "出生缺陷综合治疗服务_选定/2021/4/18 下午9:45:59922",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13702,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 299,
+                            "y": 718.5
+                        },
+                        {
+                            "s": true,
+                            "x": 299,
+                            "y": 708.5
+                        },
+                        {
+                            "s": true,
+                            "x": 299,
+                            "y": 708
+                        },
+                        {
+                            "s": true,
+                            "x": 291.74067939453124,
+                            "y": 708
+                        },
+                        {
+                            "s": true,
+                            "x": 291.74067939453124,
+                            "y": 509
+                        },
+                        {
+                            "s": true,
+                            "x": 291.74067939453124,
+                            "y": 489
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午6:41:53932",
+                "yesOrNo": true
+            },
+            {
+                "__gohashid": 146435,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午6:53:13949",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:53:18951",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 48593,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 41.74067939453124,
+                            "y": 534.5
+                        },
+                        {
+                            "s": true,
+                            "x": 41.74067939453124,
+                            "y": 544.5
+                        },
+                        {
+                            "s": true,
+                            "x": 46.56898749999999,
+                            "y": 544.5
+                        },
+                        {
+                            "s": true,
+                            "x": 46.56898749999999,
+                            "y": 544.5
+                        },
+                        {
+                            "s": true,
+                            "x": 46.56898749999999,
+                            "y": 785.8791124999999
+                        },
+                        {
+                            "s": true,
+                            "x": 46.56898749999999,
+                            "y": 795.8791124999999
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午5:32:36926"
+            },
+            {
+                "__gohashid": 147636,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午6:53:44952",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:53:47954",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13685,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1529.2689875,
+                            "y": 1043.8333333333333
+                        },
+                        {
+                            "s": true,
+                            "x": 1519.2689875,
+                            "y": 1043.8333333333333
+                        },
+                        {
+                            "s": true,
+                            "x": 1516,
+                            "y": 1043.8333333333333
+                        },
+                        {
+                            "s": true,
+                            "x": 1516,
+                            "y": 594.8436625000002
+                        },
+                        {
+                            "s": true,
+                            "x": 503.38719814453157,
+                            "y": 594.8436625000002
+                        },
+                        {
+                            "s": true,
+                            "x": 493.38719814453157,
+                            "y": 594.8436625000002
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午6:43:45938"
+            },
+            {
+                "__gohashid": "9485bdfff44b4103aebe7e3860ca015c",
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "在线健康教育模式/2021/1/4 下午3:09:03792",
+                "key": "Mon Jan  4 10:55:26 2021360",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 13712,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 91.55165351562499,
+                            "y": 313.5
+                        },
+                        {
+                            "s": true,
+                            "x": 101.55165351562499,
+                            "y": 313.5
+                        },
+                        {
+                            "s": true,
+                            "x": 100,
+                            "y": 313.5
+                        },
+                        {
+                            "s": true,
+                            "x": 100,
+                            "y": 313.5
+                        },
+                        {
+                            "s": true,
+                            "x": 156,
+                            "y": 313.5
+                        },
+                        {
+                            "s": true,
+                            "x": 156,
+                            "y": 298.7844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 377.75886250000013,
+                            "y": 298.7844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 397.75886250000013,
+                            "y": 298.7844937499999
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "Mon Jan  4 10:55:26 20215902"
+            },
+            {
+                "__gohashid": 147414,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午6:42:26934",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:53:46953",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13570,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1106.5689875,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 1116.5689875,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 1116.5689875,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 1116.5689875,
+                            "y": 1058.1666666666667
+                        },
+                        {
+                            "s": true,
+                            "x": 1511.2689875,
+                            "y": 1058.1666666666667
+                        },
+                        {
+                            "s": true,
+                            "x": 1529.2689875,
+                            "y": 1058.1666666666667
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午6:53:44952"
+            },
+            {
+                "__gohashid": 39688,
+                "category": "controlFlow",
+                "controlFlowNo": false,
+                "controlFlowYes": true,
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午6:41:38930",
+                "key": "出生缺陷综合治疗服务_选定/2021/4/18 下午9:45:47921",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13600,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 330.5,
+                            "y": 750
+                        },
+                        {
+                            "s": true,
+                            "x": 340.5,
+                            "y": 750
+                        },
+                        {
+                            "s": true,
+                            "x": 340.5,
+                            "y": 750
+                        },
+                        {
+                            "s": true,
+                            "x": 340.5,
+                            "y": 883.6281562500001
+                        },
+                        {
+                            "s": true,
+                            "x": 366.90538125,
+                            "y": 883.6281562500001
+                        },
+                        {
+                            "s": true,
+                            "x": 386.90538125,
+                            "y": 883.6281562500001
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午6:44:53944",
+                "yesOrNo": true
+            },
+            {
+                "__gohashid": "b5cd928ed5a64db292edbf5844adcec2",
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "Mon Jan  4 10:55:26 20215902",
+                "key": "Mon Jan  4 10:55:26 20219442",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13713,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 429.25886250000013,
+                            "y": 267.2844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 429.25886250000013,
+                            "y": 257.2844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 429.25886250000013,
+                            "y": 257.2844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 532.45551328125,
+                            "y": 257.2844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 532.45551328125,
+                            "y": 229.6031625
+                        },
+                        {
+                            "s": true,
+                            "x": 532.45551328125,
+                            "y": 209.6031625
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "在线健康教育模式/2021/1/4 下午3:09:07793"
+            },
+            {
+                "__gohashid": 96277,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "在线健康教育模式/2021/1/4 下午3:12:09808",
+                "key": "在线健康教育模式/2021/1/4 下午3:12:22810",
+                "points": {
+                    "Aa": 12,
+                    "Fa": null,
+                    "__gohashid": 13671,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 147.07066596679687,
+                            "y": 167.43518524169923
+                        },
+                        {
+                            "s": true,
+                            "x": 147.07066596679687,
+                            "y": 177.43518524169923
+                        },
+                        {
+                            "s": true,
+                            "x": 147.07066596679687,
+                            "y": 180
+                        },
+                        {
+                            "s": true,
+                            "x": 147.07066596679687,
+                            "y": 180
+                        },
+                        {
+                            "s": true,
+                            "x": 147.07066596679687,
+                            "y": 220
+                        },
+                        {
+                            "s": true,
+                            "x": 156,
+                            "y": 220
+                        },
+                        {
+                            "s": true,
+                            "x": 156,
+                            "y": 516
+                        },
+                        {
+                            "s": true,
+                            "x": 46.568987500000006,
+                            "y": 516
+                        },
+                        {
+                            "s": true,
+                            "x": 46.568987500000006,
+                            "y": 1001
+                        },
+                        {
+                            "s": true,
+                            "x": 46.568987500000006,
+                            "y": 1011
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "在线健康教育模式/2021/1/4 下午3:09:21795"
+            },
+            {
+                "__gohashid": "9d94a0cd86cf465cac99d4adf47751a1",
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "Mon Jan  4 10:55:26 20215902",
+                "key": "Mon Jan  4 10:55:26 20219838",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13686,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 429.25886250000013,
+                            "y": 330.2844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 429.25886250000013,
+                            "y": 340.2844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 429.25886250000013,
+                            "y": 340.2844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 801.64651875,
+                            "y": 340.2844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 801.64651875,
+                            "y": 1063.3876562500002
+                        },
+                        {
+                            "s": true,
+                            "x": 801.64651875,
+                            "y": 1083.3876562500002
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午5:32:18924"
+            },
+            {
+                "__gohashid": 93898,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "在线健康教育模式/2021/1/4 下午3:09:30797",
+                "key": "在线健康教育模式/2021/1/4 下午3:12:00807",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13663,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 862.3134601060209,
+                            "y": 268.56858909771984
+                        },
+                        {
+                            "s": true,
+                            "x": 862.3134601060209,
+                            "y": 278.56858909771984
+                        },
+                        {
+                            "s": true,
+                            "x": 862.3134601060209,
+                            "y": 278.56858909771984
+                        },
+                        {
+                            "s": true,
+                            "x": 620.8354212158204,
+                            "y": 278.56858909771984
+                        },
+                        {
+                            "s": true,
+                            "x": 620.8354212158204,
+                            "y": 1031
+                        },
+                        {
+                            "s": true,
+                            "x": 620.8354212158204,
+                            "y": 1051
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "在线健康教育模式/2021/1/4 下午3:11:49804"
+            },
+            {
+                "__gohashid": 96122,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "在线健康教育模式/2021/1/4 下午3:09:07793",
+                "key": "在线健康教育模式/2021/1/4 下午3:12:20809",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13711,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 472.45551328125,
+                            "y": 169.6031625
+                        },
+                        {
+                            "s": true,
+                            "x": 462.45551328125,
+                            "y": 169.6031625
+                        },
+                        {
+                            "s": true,
+                            "x": 460,
+                            "y": 169.6031625
+                        },
+                        {
+                            "s": true,
+                            "x": 460,
+                            "y": 145.93518524169923
+                        },
+                        {
+                            "s": true,
+                            "x": 174.37066596679685,
+                            "y": 145.93518524169923
+                        },
+                        {
+                            "s": true,
+                            "x": 164.37066596679685,
+                            "y": 145.93518524169923
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "在线健康教育模式/2021/1/4 下午3:12:09808"
+            },
+            {
+                "__gohashid": 137491,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午6:44:53944",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:45:14947",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13599,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 506.90538125,
+                            "y": 883.6281562500001
+                        },
+                        {
+                            "s": true,
+                            "x": 516.90538125,
+                            "y": 883.6281562500001
+                        },
+                        {
+                            "s": true,
+                            "x": 516.90538125,
+                            "y": 883.6281562500001
+                        },
+                        {
+                            "s": true,
+                            "x": 516.90538125,
+                            "y": 759.62943125
+                        },
+                        {
+                            "s": true,
+                            "x": 1053.9195837158204,
+                            "y": 759.62943125
+                        },
+                        {
+                            "s": true,
+                            "x": 1073.9195837158204,
+                            "y": 759.62943125
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午6:44:56945"
+            },
+            {
+                "__gohashid": 105343,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午5:32:18924",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:40:57927",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 61538,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 741.64651875,
+                            "y": 1187.3876562500002
+                        },
+                        {
+                            "s": true,
+                            "x": 731.64651875,
+                            "y": 1187.3876562500002
+                        },
+                        {
+                            "s": true,
+                            "x": 731.64651875,
+                            "y": 1187.3876562500002
+                        },
+                        {
+                            "s": true,
+                            "x": 731.64651875,
+                            "y": 1108
+                        },
+                        {
+                            "s": true,
+                            "x": 188,
+                            "y": 1108
+                        },
+                        {
+                            "s": true,
+                            "x": 188,
+                            "y": 835.8791124999999
+                        },
+                        {
+                            "s": true,
+                            "x": 126.56898749999999,
+                            "y": 835.8791124999999
+                        },
+                        {
+                            "s": true,
+                            "x": 106.56898749999999,
+                            "y": 835.8791124999999
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午5:32:36926"
+            },
+            {
+                "__gohashid": 70252,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "在线健康教育模式/2021/1/4 下午3:09:07793",
+                "key": "在线健康教育模式/2021/1/4 下午3:09:25796",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 13651,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 532.45551328125,
+                            "y": 209.6031625
+                        },
+                        {
+                            "s": true,
+                            "x": 532.45551328125,
+                            "y": 219.6031625
+                        },
+                        {
+                            "s": true,
+                            "x": 532.45551328125,
+                            "y": 220
+                        },
+                        {
+                            "s": true,
+                            "x": 220,
+                            "y": 220
+                        },
+                        {
+                            "s": true,
+                            "x": 220,
+                            "y": 516
+                        },
+                        {
+                            "s": true,
+                            "x": 46.568987500000006,
+                            "y": 516
+                        },
+                        {
+                            "s": true,
+                            "x": 46.568987500000006,
+                            "y": 991
+                        },
+                        {
+                            "s": true,
+                            "x": 46.568987500000006,
+                            "y": 1011
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "在线健康教育模式/2021/1/4 下午3:09:21795"
+            }
+        ]
+    },
+    "service pattern": {
+        "config": {
+            "id": "1609757726.185601_93789",
+            "name": "出生缺陷综合治疗服务_选定"
+        },
+        "elements": {},
+        "evaluate_config": {
+            "Mon Jan  4 10:55:26 20215902": {
+                "cost": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "name": "parallel",
+                "reliability": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "1",
+                    "type": "constant"
+                }
+            },
+            "Mon Jan  4 10:55:26 20218701": {
+                "name": "出生缺陷综合治疗服务"
+            },
+            "互联网医疗服务模式/2021/1/4 下午4:05:395": {
+                "name": "医疗/医生"
+            },
+            "互联网医疗服务模式/2021/1/4 下午4:05:396": {
+                "name": "医疗/医院"
+            },
+            "互联网医疗服务模式/2021/1/4 下午4:05:398": {
+                "name": "医疗/患者"
+            },
+            "互联网医疗服务模式/2021/1/4 下午5:32:18924": {
+                "cost": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "name": "线上挂号",
+                "reliability": {
+                    "n": "0.99",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "10000",
+                    "type": "constant"
+                }
+            },
+            "互联网医疗服务模式/2021/1/4 下午5:32:36926": {
+                "cost": {
+                    "n": "4",
+                    "type": "constant"
+                },
+                "duration": {
+                    "mu": "3",
+                    "n": 0,
+                    "sigma": "5",
+                    "type": "gaussian"
+                },
+                "name": "诊断",
+                "reliability": {
+                    "n": "0.95",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "10000",
+                    "type": "constant"
+                }
+            },
+            "互联网医疗服务模式/2021/1/4 下午6:41:38930": {
+                "cost": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "name": "BPMN概念/ExclusiveGateWay-1",
+                "reliability": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "10000",
+                    "type": "constant"
+                }
+            },
+            "互联网医疗服务模式/2021/1/4 下午6:41:53932": {
+                "cost": {
+                    "mu": "5",
+                    "n": 0,
+                    "sigma": "10",
+                    "type": "gaussian"
+                },
+                "duration": {
+                    "mu": "3",
+                    "n": 0,
+                    "sigma": "7",
+                    "type": "gaussian"
+                },
+                "name": "做检查",
+                "reliability": {
+                    "n": "0.99",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "mu": "3",
+                    "n": "100",
+                    "sigma": "2",
+                    "type": "gaussian"
+                }
+            },
+            "互联网医疗服务模式/2021/1/4 下午6:42:26934": {
+                "cost": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "name": "线上报告查询",
+                "reliability": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "10000",
+                    "type": "constant"
+                }
+            },
+            "互联网医疗服务模式/2021/1/4 下午6:43:17936": {
+                "cost": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "name": "BPMN概念/ExclusiveGateWay-2",
+                "reliability": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "10000",
+                    "type": "constant"
+                }
+            },
+            "互联网医疗服务模式/2021/1/4 下午6:43:45938": {
+                "cost": {
+                    "n": "4",
+                    "type": "constant"
+                },
+                "duration": {
+                    "mu": "3",
+                    "n": 0,
+                    "sigma": "5",
+                    "type": "gaussian"
+                },
+                "name": "诊断",
+                "reliability": {
+                    "n": "0.95",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "10000",
+                    "type": "constant"
+                }
+            },
+            "互联网医疗服务模式/2021/1/4 下午6:44:46942": {
+                "cost": {
+                    "mu": "1",
+                    "n": "1",
+                    "sigma": "12",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "name": "付费",
+                "reliability": {
+                    "n": "0.99",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "10000",
+                    "type": "constant"
+                }
+            },
+            "互联网医疗服务模式/2021/1/4 下午6:44:53944": {
+                "cost": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "name": "付费",
+                "reliability": {
+                    "n": "0.99",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "10000",
+                    "type": "constant"
+                }
+            },
+            "互联网医疗服务模式/2021/1/4 下午6:44:56945": {
+                "cost": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "name": "BPMN概念/EndEvent-2",
+                "reliability": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "10000",
+                    "type": "constant"
+                }
+            },
+            "互联网医疗服务模式/2021/1/4 下午6:53:13949": {
+                "amount": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "name": "患者个人数据",
+                "type": "constant",
+                "unit": "元"
+            },
+            "互联网医疗服务模式/2021/1/4 下午6:53:44952": {
+                "amount": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "name": "报告信息",
+                "type": "constant",
+                "unit": "元"
+            },
+            "在线健康教育模式/2021/1/4 下午3:07:592": {
+                "name": "在线健康教育/在线健康教育服务提供商"
+            },
+            "在线健康教育模式/2021/1/4 下午3:09:03792": {
+                "cost": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "name": "BPMN概念/StartEvent-1",
+                "reliability": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "0.1",
+                    "type": "constant"
+                }
+            },
+            "在线健康教育模式/2021/1/4 下午3:09:07793": {
+                "cost": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "name": "登录",
+                "reliability": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "10000",
+                    "type": "constant"
+                }
+            },
+            "在线健康教育模式/2021/1/4 下午3:09:21795": {
+                "cost": {
+                    "mu": "2",
+                    "n": 0,
+                    "sigma": "3",
+                    "type": "gaussian"
+                },
+                "duration": {
+                    "mu": "2",
+                    "n": 0,
+                    "sigma": "3",
+                    "type": "gaussian"
+                },
+                "name": "健康知识推送",
+                "reliability": {
+                    "n": "0.9",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "10000",
+                    "type": "constant"
+                }
+            },
+            "在线健康教育模式/2021/1/4 下午3:09:30797": {
+                "cost": {
+                    "mu": "5",
+                    "n": 0,
+                    "sigma": "7",
+                    "type": "gaussian"
+                },
+                "duration": {
+                    "mu": "3",
+                    "n": 0,
+                    "sigma": "4",
+                    "type": "gaussian"
+                },
+                "name": "打赏等付费行为",
+                "reliability": {
+                    "n": "0.9",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "10000",
+                    "type": "constant"
+                }
+            },
+            "在线健康教育模式/2021/1/4 下午3:10:39799": {
+                "cost": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "name": "BPMN概念/ExclusiveGateWay-1",
+                "reliability": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "10000",
+                    "type": "constant"
+                }
+            },
+            "在线健康教育模式/2021/1/4 下午3:11:49804": {
+                "cost": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "name": "BPMN概念/EndEvent-1",
+                "reliability": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "10000",
+                    "type": "constant"
+                }
+            },
+            "在线健康教育模式/2021/1/4 下午3:12:09808": {
+                "amount": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "name": "用户信息",
+                "type": "constant",
+                "unit": "元"
+            }
+        },
+        "links": [
+            {
+                "__gohashid": "9485bdfff44b4103aebe7e3860ca015c",
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "在线健康教育模式/2021/1/4 下午3:09:03792",
+                "key": "Mon Jan  4 10:55:26 2021360",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 13712,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 91.55165351562499,
+                            "y": 313.5
+                        },
+                        {
+                            "s": true,
+                            "x": 101.55165351562499,
+                            "y": 313.5
+                        },
+                        {
+                            "s": true,
+                            "x": 100,
+                            "y": 313.5
+                        },
+                        {
+                            "s": true,
+                            "x": 100,
+                            "y": 313.5
+                        },
+                        {
+                            "s": true,
+                            "x": 156,
+                            "y": 313.5
+                        },
+                        {
+                            "s": true,
+                            "x": 156,
+                            "y": 298.7844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 377.75886250000013,
+                            "y": 298.7844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 397.75886250000013,
+                            "y": 298.7844937499999
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "Mon Jan  4 10:55:26 20215902"
+            },
+            {
+                "__gohashid": 70252,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "在线健康教育模式/2021/1/4 下午3:09:07793",
+                "key": "在线健康教育模式/2021/1/4 下午3:09:25796",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 13651,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 532.45551328125,
+                            "y": 209.6031625
+                        },
+                        {
+                            "s": true,
+                            "x": 532.45551328125,
+                            "y": 219.6031625
+                        },
+                        {
+                            "s": true,
+                            "x": 532.45551328125,
+                            "y": 220
+                        },
+                        {
+                            "s": true,
+                            "x": 220,
+                            "y": 220
+                        },
+                        {
+                            "s": true,
+                            "x": 220,
+                            "y": 516
+                        },
+                        {
+                            "s": true,
+                            "x": 46.568987500000006,
+                            "y": 516
+                        },
+                        {
+                            "s": true,
+                            "x": 46.568987500000006,
+                            "y": 991
+                        },
+                        {
+                            "s": true,
+                            "x": 46.568987500000006,
+                            "y": 1011
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "在线健康教育模式/2021/1/4 下午3:09:21795"
+            },
+            {
+                "__gohashid": 96122,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "在线健康教育模式/2021/1/4 下午3:09:07793",
+                "key": "在线健康教育模式/2021/1/4 下午3:12:20809",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13711,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 472.45551328125,
+                            "y": 169.6031625
+                        },
+                        {
+                            "s": true,
+                            "x": 462.45551328125,
+                            "y": 169.6031625
+                        },
+                        {
+                            "s": true,
+                            "x": 460,
+                            "y": 169.6031625
+                        },
+                        {
+                            "s": true,
+                            "x": 460,
+                            "y": 145.93518524169923
+                        },
+                        {
+                            "s": true,
+                            "x": 174.37066596679685,
+                            "y": 145.93518524169923
+                        },
+                        {
+                            "s": true,
+                            "x": 164.37066596679685,
+                            "y": 145.93518524169923
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "在线健康教育模式/2021/1/4 下午3:12:09808"
+            },
+            {
+                "__gohashid": 71878,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "在线健康教育模式/2021/1/4 下午3:09:21795",
+                "key": "在线健康教育模式/2021/1/4 下午3:10:45800",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13568,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 106.5689875,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 116.5689875,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 116.5689875,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 116.5689875,
+                            "y": 1171
+                        },
+                        {
+                            "s": true,
+                            "x": 286.0689875,
+                            "y": 1171
+                        },
+                        {
+                            "s": true,
+                            "x": 306.0689875,
+                            "y": 1171
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "在线健康教育模式/2021/1/4 下午3:10:39799"
+            },
+            {
+                "__gohashid": 93898,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "在线健康教育模式/2021/1/4 下午3:09:30797",
+                "key": "在线健康教育模式/2021/1/4 下午3:12:00807",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13663,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 862.3134601060209,
+                            "y": 268.56858909771984
+                        },
+                        {
+                            "s": true,
+                            "x": 862.3134601060209,
+                            "y": 278.56858909771984
+                        },
+                        {
+                            "s": true,
+                            "x": 862.3134601060209,
+                            "y": 278.56858909771984
+                        },
+                        {
+                            "s": true,
+                            "x": 620.8354212158204,
+                            "y": 278.56858909771984
+                        },
+                        {
+                            "s": true,
+                            "x": 620.8354212158204,
+                            "y": 1031
+                        },
+                        {
+                            "s": true,
+                            "x": 620.8354212158204,
+                            "y": 1051
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "在线健康教育模式/2021/1/4 下午3:11:49804"
+            },
+            {
+                "__gohashid": 96277,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "在线健康教育模式/2021/1/4 下午3:12:09808",
+                "key": "在线健康教育模式/2021/1/4 下午3:12:22810",
+                "points": {
+                    "Aa": 12,
+                    "Fa": null,
+                    "__gohashid": 13671,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 147.07066596679687,
+                            "y": 167.43518524169923
+                        },
+                        {
+                            "s": true,
+                            "x": 147.07066596679687,
+                            "y": 177.43518524169923
+                        },
+                        {
+                            "s": true,
+                            "x": 147.07066596679687,
+                            "y": 180
+                        },
+                        {
+                            "s": true,
+                            "x": 147.07066596679687,
+                            "y": 180
+                        },
+                        {
+                            "s": true,
+                            "x": 147.07066596679687,
+                            "y": 220
+                        },
+                        {
+                            "s": true,
+                            "x": 156,
+                            "y": 220
+                        },
+                        {
+                            "s": true,
+                            "x": 156,
+                            "y": 516
+                        },
+                        {
+                            "s": true,
+                            "x": 46.568987500000006,
+                            "y": 516
+                        },
+                        {
+                            "s": true,
+                            "x": 46.568987500000006,
+                            "y": 1001
+                        },
+                        {
+                            "s": true,
+                            "x": 46.568987500000006,
+                            "y": 1011
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "在线健康教育模式/2021/1/4 下午3:09:21795"
+            },
+            {
+                "__gohashid": 105343,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午5:32:18924",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:40:57927",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 61538,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 741.64651875,
+                            "y": 1187.3876562500002
+                        },
+                        {
+                            "s": true,
+                            "x": 731.64651875,
+                            "y": 1187.3876562500002
+                        },
+                        {
+                            "s": true,
+                            "x": 731.64651875,
+                            "y": 1187.3876562500002
+                        },
+                        {
+                            "s": true,
+                            "x": 731.64651875,
+                            "y": 1108
+                        },
+                        {
+                            "s": true,
+                            "x": 188,
+                            "y": 1108
+                        },
+                        {
+                            "s": true,
+                            "x": 188,
+                            "y": 835.8791124999999
+                        },
+                        {
+                            "s": true,
+                            "x": 126.56898749999999,
+                            "y": 835.8791124999999
+                        },
+                        {
+                            "s": true,
+                            "x": 106.56898749999999,
+                            "y": 835.8791124999999
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午5:32:36926"
+            },
+            {
+                "__gohashid": 143551,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午5:32:18924",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:53:14950",
+                "points": {
+                    "Aa": 11,
+                    "Fa": null,
+                    "__gohashid": 13683,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 801.64651875,
+                            "y": 1083.3876562500002
+                        },
+                        {
+                            "s": true,
+                            "x": 801.64651875,
+                            "y": 1073.3876562500002
+                        },
+                        {
+                            "s": true,
+                            "x": 801.64651875,
+                            "y": 1076
+                        },
+                        {
+                            "s": true,
+                            "x": 801.64651875,
+                            "y": 1076
+                        },
+                        {
+                            "s": true,
+                            "x": 801.64651875,
+                            "y": 708
+                        },
+                        {
+                            "s": true,
+                            "x": 220,
+                            "y": 708
+                        },
+                        {
+                            "s": true,
+                            "x": 220,
+                            "y": 449
+                        },
+                        {
+                            "s": true,
+                            "x": 69.04067939453125,
+                            "y": 449
+                        },
+                        {
+                            "s": true,
+                            "x": 59.040679394531246,
+                            "y": 449
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午6:53:13949"
+            },
+            {
+                "__gohashid": 109670,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午5:32:36926",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:41:39931",
+                "points": {
+                    "Aa": 0,
+                    "Fa": null,
+                    "__gohashid": 15273,
+                    "bh": null,
+                    "j": [],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午6:41:38930"
+            },
+            {
+                "__gohashid": 114485,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午6:41:53932",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:42:27935",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 13684,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 351.74067939453124,
+                            "y": 449
+                        },
+                        {
+                            "s": true,
+                            "x": 361.74067939453124,
+                            "y": 449
+                        },
+                        {
+                            "s": true,
+                            "x": 364,
+                            "y": 449
+                        },
+                        {
+                            "s": true,
+                            "x": 364,
+                            "y": 449
+                        },
+                        {
+                            "s": true,
+                            "x": 708,
+                            "y": 449
+                        },
+                        {
+                            "s": true,
+                            "x": 708,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 966.5689875,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 986.5689875,
+                            "y": 1051
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午6:42:26934"
+            },
+            {
+                "__gohashid": 147414,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午6:42:26934",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:53:46953",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13570,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1106.5689875,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 1116.5689875,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 1116.5689875,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 1116.5689875,
+                            "y": 1058.1666666666667
+                        },
+                        {
+                            "s": true,
+                            "x": 1511.2689875,
+                            "y": 1058.1666666666667
+                        },
+                        {
+                            "s": true,
+                            "x": 1529.2689875,
+                            "y": 1058.1666666666667
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午6:53:44952"
+            },
+            {
+                "__gohashid": 135877,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午6:43:45938",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:44:49943",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 64109,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 605.3871981445316,
+                            "y": 641.8436625000002
+                        },
+                        {
+                            "s": true,
+                            "x": 615.3871981445316,
+                            "y": 641.8436625000002
+                        },
+                        {
+                            "s": true,
+                            "x": 715.8307075195314,
+                            "y": 641.8436625000002
+                        },
+                        {
+                            "s": true,
+                            "x": 715.8307075195314,
+                            "y": 520.2930375000001
+                        },
+                        {
+                            "s": true,
+                            "x": 816.2742168945314,
+                            "y": 520.2930375000001
+                        },
+                        {
+                            "s": true,
+                            "x": 836.2742168945314,
+                            "y": 520.2930375000001
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午6:44:46942"
+            },
+            {
+                "__gohashid": 138584,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午6:44:46942",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:52:37948",
+                "points": {
+                    "Aa": 0,
+                    "Fa": null,
+                    "__gohashid": 15274,
+                    "bh": null,
+                    "j": [],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午6:44:56945"
+            },
+            {
+                "__gohashid": 137491,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午6:44:53944",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:45:14947",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13599,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 506.90538125,
+                            "y": 883.6281562500001
+                        },
+                        {
+                            "s": true,
+                            "x": 516.90538125,
+                            "y": 883.6281562500001
+                        },
+                        {
+                            "s": true,
+                            "x": 516.90538125,
+                            "y": 883.6281562500001
+                        },
+                        {
+                            "s": true,
+                            "x": 516.90538125,
+                            "y": 759.62943125
+                        },
+                        {
+                            "s": true,
+                            "x": 1053.9195837158204,
+                            "y": 759.62943125
+                        },
+                        {
+                            "s": true,
+                            "x": 1073.9195837158204,
+                            "y": 759.62943125
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午6:44:56945"
+            },
+            {
+                "__gohashid": 146435,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午6:53:13949",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:53:18951",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 48593,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 41.74067939453124,
+                            "y": 534.5
+                        },
+                        {
+                            "s": true,
+                            "x": 41.74067939453124,
+                            "y": 544.5
+                        },
+                        {
+                            "s": true,
+                            "x": 46.56898749999999,
+                            "y": 544.5
+                        },
+                        {
+                            "s": true,
+                            "x": 46.56898749999999,
+                            "y": 544.5
+                        },
+                        {
+                            "s": true,
+                            "x": 46.56898749999999,
+                            "y": 785.8791124999999
+                        },
+                        {
+                            "s": true,
+                            "x": 46.56898749999999,
+                            "y": 795.8791124999999
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午5:32:36926"
+            },
+            {
+                "__gohashid": 147636,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午6:53:44952",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:53:47954",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13685,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1529.2689875,
+                            "y": 1043.8333333333333
+                        },
+                        {
+                            "s": true,
+                            "x": 1519.2689875,
+                            "y": 1043.8333333333333
+                        },
+                        {
+                            "s": true,
+                            "x": 1516,
+                            "y": 1043.8333333333333
+                        },
+                        {
+                            "s": true,
+                            "x": 1516,
+                            "y": 594.8436625000002
+                        },
+                        {
+                            "s": true,
+                            "x": 503.38719814453157,
+                            "y": 594.8436625000002
+                        },
+                        {
+                            "s": true,
+                            "x": 493.38719814453157,
+                            "y": 594.8436625000002
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午6:43:45938"
+            },
+            {
+                "__gohashid": 147895,
+                "category": "",
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午6:53:44952",
+                "key": -16,
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 13571,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1529.2689875,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 1519.2689875,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 1516,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 1516,
+                            "y": 1060
+                        },
+                        {
+                            "s": true,
+                            "x": 1484,
+                            "y": 1060
+                        },
+                        {
+                            "s": true,
+                            "x": 1484,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 1126.5689875,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 1106.5689875,
+                            "y": 1051
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午6:42:26934"
+            },
+            {
+                "__gohashid": "9d94a0cd86cf465cac99d4adf47751a1",
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "Mon Jan  4 10:55:26 20215902",
+                "key": "Mon Jan  4 10:55:26 20219838",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13686,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 429.25886250000013,
+                            "y": 330.2844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 429.25886250000013,
+                            "y": 340.2844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 429.25886250000013,
+                            "y": 340.2844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 801.64651875,
+                            "y": 340.2844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 801.64651875,
+                            "y": 1063.3876562500002
+                        },
+                        {
+                            "s": true,
+                            "x": 801.64651875,
+                            "y": 1083.3876562500002
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午5:32:18924"
+            },
+            {
+                "__gohashid": "b5cd928ed5a64db292edbf5844adcec2",
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "Mon Jan  4 10:55:26 20215902",
+                "key": "Mon Jan  4 10:55:26 20219442",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13713,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 429.25886250000013,
+                            "y": 267.2844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 429.25886250000013,
+                            "y": 257.2844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 429.25886250000013,
+                            "y": 257.2844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 532.45551328125,
+                            "y": 257.2844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 532.45551328125,
+                            "y": 229.6031625
+                        },
+                        {
+                            "s": true,
+                            "x": 532.45551328125,
+                            "y": 209.6031625
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "在线健康教育模式/2021/1/4 下午3:09:07793"
+            },
+            {
+                "__gohashid": 75477,
+                "category": "",
+                "data_properties": {},
+                "from": "Mon Jan  4 10:55:26 20215902",
+                "key": -27,
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13714,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 397.75886250000013,
+                            "y": 298.7844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 387.75886250000013,
+                            "y": 298.7844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 286.0647642333985,
+                            "y": 298.7844937499999
+                        },
+                        {
+                            "s": true,
+                            "x": 286.0647642333985,
+                            "y": 145.93518524169923
+                        },
+                        {
+                            "s": true,
+                            "x": 184.37066596679685,
+                            "y": 145.93518524169923
+                        },
+                        {
+                            "s": true,
+                            "x": 164.37066596679685,
+                            "y": 145.93518524169923
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "在线健康教育模式/2021/1/4 下午3:12:09808"
+            },
+            {
+                "__gohashid": 33261,
+                "category": "controlFlow",
+                "controlFlowNo": true,
+                "controlFlowYes": false,
+                "data_properties": {},
+                "from": "在线健康教育模式/2021/1/4 下午3:10:39799",
+                "key": "出生缺陷综合治疗服务_选定/2021/4/18 下午9:45:09919",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 13694,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 337.5689875,
+                            "y": 1139.5
+                        },
+                        {
+                            "s": true,
+                            "x": 337.5689875,
+                            "y": 1129.5
+                        },
+                        {
+                            "s": true,
+                            "x": 337.5689875,
+                            "y": 1132
+                        },
+                        {
+                            "s": true,
+                            "x": 337.5689875,
+                            "y": 1132
+                        },
+                        {
+                            "s": true,
+                            "x": 337.5689875,
+                            "y": 1044
+                        },
+                        {
+                            "s": true,
+                            "x": 862.3134601060209,
+                            "y": 1044
+                        },
+                        {
+                            "s": true,
+                            "x": 862.3134601060209,
+                            "y": 288.56858909771984
+                        },
+                        {
+                            "s": true,
+                            "x": 862.3134601060209,
+                            "y": 268.56858909771984
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "在线健康教育模式/2021/1/4 下午3:09:30797",
+                "yesOrNo": true
+            },
+            {
+                "__gohashid": 33720,
+                "category": "controlFlow",
+                "controlFlowNo": false,
+                "controlFlowYes": true,
+                "data_properties": {},
+                "from": "在线健康教育模式/2021/1/4 下午3:10:39799",
+                "key": "出生缺陷综合治疗服务_选定/2021/4/18 下午9:45:24920",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13572,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 369.0689875,
+                            "y": 1171
+                        },
+                        {
+                            "s": true,
+                            "x": 379.0689875,
+                            "y": 1171
+                        },
+                        {
+                            "s": true,
+                            "x": 380,
+                            "y": 1171
+                        },
+                        {
+                            "s": true,
+                            "x": 380,
+                            "y": 1074
+                        },
+                        {
+                            "s": true,
+                            "x": 577.8354212158204,
+                            "y": 1074
+                        },
+                        {
+                            "s": true,
+                            "x": 597.8354212158204,
+                            "y": 1074
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "在线健康教育模式/2021/1/4 下午3:11:49804",
+                "yesOrNo": true
+            },
+            {
+                "__gohashid": 39688,
+                "category": "controlFlow",
+                "controlFlowNo": false,
+                "controlFlowYes": true,
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午6:41:38930",
+                "key": "出生缺陷综合治疗服务_选定/2021/4/18 下午9:45:47921",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13600,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 330.5,
+                            "y": 750
+                        },
+                        {
+                            "s": true,
+                            "x": 340.5,
+                            "y": 750
+                        },
+                        {
+                            "s": true,
+                            "x": 340.5,
+                            "y": 750
+                        },
+                        {
+                            "s": true,
+                            "x": 340.5,
+                            "y": 883.6281562500001
+                        },
+                        {
+                            "s": true,
+                            "x": 366.90538125,
+                            "y": 883.6281562500001
+                        },
+                        {
+                            "s": true,
+                            "x": 386.90538125,
+                            "y": 883.6281562500001
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午6:44:53944",
+                "yesOrNo": true
+            },
+            {
+                "__gohashid": 42314,
+                "category": "controlFlow",
+                "controlFlowNo": true,
+                "controlFlowYes": false,
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午6:41:38930",
+                "key": "出生缺陷综合治疗服务_选定/2021/4/18 下午9:45:59922",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13702,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 299,
+                            "y": 718.5
+                        },
+                        {
+                            "s": true,
+                            "x": 299,
+                            "y": 708.5
+                        },
+                        {
+                            "s": true,
+                            "x": 299,
+                            "y": 708
+                        },
+                        {
+                            "s": true,
+                            "x": 291.74067939453124,
+                            "y": 708
+                        },
+                        {
+                            "s": true,
+                            "x": 291.74067939453124,
+                            "y": 509
+                        },
+                        {
+                            "s": true,
+                            "x": 291.74067939453124,
+                            "y": 489
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午6:41:53932",
+                "yesOrNo": true
+            },
+            {
+                "__gohashid": 52550,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "互联网医疗服务模式/2021/1/4 下午6:42:26934",
+                "key": "出生缺陷综合治疗服务_选定/2021/4/18 下午9:47:20923",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 13703,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 986.5689875,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 976.5689875,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 744.9780928222658,
+                            "y": 1051
+                        },
+                        {
+                            "s": true,
+                            "x": 744.9780928222658,
+                            "y": 594.8436625000002
+                        },
+                        {
+                            "s": true,
+                            "x": 513.3871981445316,
+                            "y": 594.8436625000002
+                        },
+                        {
+                            "s": true,
+                            "x": 493.38719814453157,
+                            "y": 594.8436625000002
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "互联网医疗服务模式/2021/1/4 下午6:43:45938"
+            }
+        ],
+        "nodes": [
+            {
+                "__gohashid": 66309,
+                "bindTo": [],
+                "category": "start",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('开始')\ntoken.data['start_step'] = model.step_count\ntoken.data['cost'] = 1",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "互联网医疗服务模式/2021/1/4 下午4:05:398",
+                "id": "BPMN概念/StartEvent-1",
+                "key": "在线健康教育模式/2021/1/4 下午3:09:03792",
+                "loc": "-6.4310125000000085 292",
+                "name": "BPMN概念/StartEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/StartEvent"
+                ]
+            },
+            {
+                "__gohashid": 66600,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "1",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"登录成功\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "互联网医疗服务模式/2021/1/4 下午4:05:398",
+                "id": "登录",
+                "key": "在线健康教育模式/2021/1/4 下午3:09:07793",
+                "loc": "532.45551328125 169.6031625",
+                "name": "登录",
+                "object_properties": [],
+                "type": [
+                    "在线健康教育/用户登录"
+                ]
+            },
+            {
+                "__gohashid": 69990,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "3",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"母婴知识推送\")\ntoken.data['cost'] = token.data['cost'] + 10",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "在线健康教育模式/2021/1/4 下午3:07:592",
+                "id": "健康知识推送",
+                "key": "在线健康教育模式/2021/1/4 下午3:09:21795",
+                "loc": "46.568987500000006 1051",
+                "name": "健康知识推送",
+                "object_properties": [],
+                "type": [
+                    "在线健康教育/知识推送"
+                ]
+            },
+            {
+                "__gohashid": 70542,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "1",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"打赏完成\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "互联网医疗服务模式/2021/1/4 下午4:05:398",
+                "id": "打赏等付费行为",
+                "key": "在线健康教育模式/2021/1/4 下午3:09:30797",
+                "loc": "862.3134601060209 228.56858909771984",
+                "name": "打赏等付费行为",
+                "object_properties": [],
+                "type": [
+                    "在线健康教育/知识付费"
+                ]
+            },
+            {
+                "__gohashid": 71621,
+                "bindTo": [],
+                "category": "exclusive",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/condition": {
+                        "isPattern": true,
+                        "text": "return True",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "在线健康教育模式/2021/1/4 下午3:07:592",
+                "id": "BPMN概念/ExclusiveGateWay-1",
+                "key": "在线健康教育模式/2021/1/4 下午3:10:39799",
+                "loc": "337.5689875 1171",
+                "name": "BPMN概念/ExclusiveGateWay-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/ExclusiveGateWay"
+                ]
+            },
+            {
+                "__gohashid": 65669,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Mon Jan  4 10:55:26 20218701",
+                "id": "在线健康教育/在线健康教育服务提供商",
+                "isGroup": "true",
+                "key": "在线健康教育模式/2021/1/4 下午3:07:592",
+                "loc": "-25.431012499999994 999",
+                "name": "在线健康教育/在线健康教育服务提供商",
+                "object_properties": [],
+                "participant": "在线健康教育/在线健康教育服务提供商",
+                "props": [],
+                "size": "2450 338.32375081862045",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 92997,
+                "bindTo": [],
+                "category": "end",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "end_step=model.step_count\nstart_step=token.data['start_step']\ntime = end_step-start_step\n\n\navg_process = model.instance_base.findByName(\"平均运行时间\")\ntotal = avg_process.amount*avg_process.quota_dscp\n\n\navg_process.amount = avg_process.amount+1\navg_process.quota_dscp = (total+time)/avg_process.amount\n\n\navg_cost=model.instance_base.findByName(\"平均运行成本\")\nprocess_cost= token.data['cost']\ntotal_cost=avg_cost.amount*avg_cost.quota_dscp\navg_cost.amount=avg_cost.amount+1\navg_cost.quota_dscp = (total_cost+process_cost)/avg_cost.amount\n\n\n# avg_SR = model.instance_base.findByName(\"用户满意度\")\n# process_SR = token.data['SR']\n# total_SR = avg_SR.amount*avg_SR.quota_dscp\n# avg_SR.amount = avg_SR.amount+1\n# avg_SR.quota_dscp = (total_SR+process_SR)/avg_SR.amount",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "在线健康教育模式/2021/1/4 下午3:07:592",
+                "id": "BPMN概念/EndEvent-1",
+                "key": "在线健康教育模式/2021/1/4 下午3:11:49804",
+                "loc": "546.5689875 1051",
+                "name": "BPMN概念/EndEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/EndEvent"
+                ]
+            },
+            {
+                "__gohashid": 94302,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "互联网医疗服务模式/2021/1/4 下午4:05:398",
+                "id": "用户信息",
+                "key": "在线健康教育模式/2021/1/4 下午3:12:09808",
+                "loc": "147.07066596679687 145.93518524169923",
+                "name": "用户信息",
+                "object_properties": [],
+                "type": [
+                    "在线健康教育/用户信息"
+                ]
+            },
+            {
+                "__gohashid": 103159,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Mon Jan  4 10:55:26 20218701",
+                "id": "医疗/医生",
+                "isGroup": "true",
+                "key": "互联网医疗服务模式/2021/1/4 下午4:05:395",
+                "loc": "-25.43101250000001 698",
+                "name": "医疗/医生",
+                "object_properties": [],
+                "participant": "医疗/医生",
+                "props": [],
+                "size": "2450 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 103160,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Mon Jan  4 10:55:26 20218701",
+                "id": "医疗/医院",
+                "isGroup": "true",
+                "key": "互联网医疗服务模式/2021/1/4 下午4:05:396",
+                "loc": "-25.43101250000001 397",
+                "name": "医疗/医院",
+                "object_properties": [],
+                "participant": "医疗/医院",
+                "props": [],
+                "size": "2450 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 103162,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Mon Jan  4 10:55:26 20218701",
+                "id": "医疗/患者",
+                "isGroup": "true",
+                "key": "互联网医疗服务模式/2021/1/4 下午4:05:398",
+                "loc": "-25.43101250000001 86",
+                "name": "医疗/患者",
+                "object_properties": [],
+                "participant": "医疗/患者",
+                "props": [],
+                "size": "2450 309.7409392333984",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 104291,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "3",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"挂号完毕\")\ntoken.data['cost'] = token.data['cost'] + random.random()*10",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "在线健康教育模式/2021/1/4 下午3:07:592",
+                "id": "线上挂号",
+                "key": "互联网医疗服务模式/2021/1/4 下午5:32:18924",
+                "loc": "801.64651875 1123.3876562500002",
+                "name": "线上挂号",
+                "object_properties": [],
+                "type": [
+                    "医疗/线上挂号"
+                ]
+            },
+            {
+                "__gohashid": 125504,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn random.randint(5,10)",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"诊断完成\")\ntoken.data['cost'] = token.data['cost'] + random.ranint(5,20)",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "互联网医疗服务模式/2021/1/4 下午4:05:396",
+                "id": "2021/4/19 下午7:55:51890",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:43:45938",
+                "loc": "433.38719814453157 594.8436625000002",
+                "name": "诊断",
+                "object_properties": [],
+                "type": "医疗/诊断"
+            },
+            {
+                "__gohashid": 109521,
+                "bindTo": [],
+                "category": "exclusive",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/condition": {
+                        "isPattern": true,
+                        "text": "return True",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "互联网医疗服务模式/2021/1/4 下午4:05:395",
+                "id": "BPMN概念/ExclusiveGateWay-1",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:41:38930",
+                "loc": "299 750",
+                "name": "BPMN概念/ExclusiveGateWay-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/ExclusiveGateWay"
+                ]
+            },
+            {
+                "__gohashid": 111466,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn random.randint(5,10)",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\ntoken.data['cost'] = token.data['cost'] + random.random()*100\nprint(\"检测\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "互联网医疗服务模式/2021/1/4 下午4:05:396",
+                "id": "做检查",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:41:53932",
+                "loc": "291.74067939453124 449",
+                "name": "做检查",
+                "object_properties": [],
+                "type": [
+                    "医疗/做检查"
+                ]
+            },
+            {
+                "__gohashid": 114266,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "1",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"报告查询中\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "在线健康教育模式/2021/1/4 下午3:07:592",
+                "id": "线上报告查询",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:42:26934",
+                "loc": "1046.5689875 1051",
+                "name": "线上报告查询",
+                "object_properties": [],
+                "type": [
+                    "医疗/线上报告查询"
+                ]
+            },
+            {
+                "__gohashid": 136186,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"支付完成\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "互联网医疗服务模式/2021/1/4 下午4:05:395",
+                "id": "2021/4/19 下午7:55:51881",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:44:53944",
+                "loc": "446.90538125 883.6281562500001",
+                "name": "付费",
+                "object_properties": [],
+                "type": "医疗/付费"
+            },
+            {
+                "__gohashid": 136482,
+                "bindTo": [],
+                "category": "end",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "互联网医疗服务模式/2021/1/4 下午4:05:395",
+                "id": "BPMN概念/EndEvent-2",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:44:56945",
+                "loc": "1022.6531500000001 736.62943125",
+                "name": "BPMN概念/EndEvent-2",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/EndEvent"
+                ]
+            },
+            {
+                "__gohashid": 143374,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "互联网医疗服务模式/2021/1/4 下午4:05:396",
+                "id": "患者个人数据",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:53:13949",
+                "loc": "41.74067939453124 449",
+                "name": "患者个人数据",
+                "object_properties": [],
+                "type": [
+                    "医疗/患者个人信息"
+                ]
+            },
+            {
+                "__gohashid": 147030,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "在线健康教育模式/2021/1/4 下午3:07:592",
+                "id": "报告信息",
+                "key": "互联网医疗服务模式/2021/1/4 下午6:53:44952",
+                "loc": "1546.5689875 1051",
+                "name": "报告信息",
+                "object_properties": [],
+                "type": [
+                    "医疗/检查报告信息"
+                ]
+            },
+            {
+                "__gohashid": "9cf6491e5bbc49b6b13fd141b5766a14",
+                "bindTo": [],
+                "category": "parallel",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "互联网医疗服务模式/2021/1/4 下午4:05:398",
+                "id": "parallel",
+                "key": "Mon Jan  4 10:55:26 20215902",
+                "loc": "429.25886250000013 298.7844937499999",
+                "name": "parallel",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/ParallelGateWay"
+                ]
+            },
+            {
+                "__gohashid": "c5d65b3720b54db5a1e77bcc4a02eaa5",
+                "category": "Pool",
+                "isGroup": "true",
+                "key": "Mon Jan  4 10:55:26 20218701",
+                "loc": "-51.95385999830795 86",
+                "name": "出生缺陷综合治疗服务",
+                "type": "BPMN概念/LaneSet"
+            }
+        ],
+        "resource_config": {}
+    }
+}
