@@ -1,0 +1,186 @@
+{
+    "config": {},
+    "instance_base": {
+        "config": {},
+        "groups": [],
+        "instances": [
+            {
+                "bindTo": [
+                    "春风动力特种车定制平台/运输部门"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2021/1/13 下午3:01:09790",
+                "name": "物流运输@0",
+                "object_properties": [],
+                "type": [
+                    "春风动力特种车定制平台/Participant"
+                ]
+            },
+            {
+                "bindTo": [
+                    "春风动力特种车定制平台/定制部门"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2021/1/13 下午2:59:47785",
+                "name": "个性化定制平台@0",
+                "object_properties": [],
+                "type": [
+                    "春风动力特种车定制平台/Participant"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2021/1/13 下午2:54:11760",
+                "name": "Process平均运行时间",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            },
+            {
+                "bindTo": [
+                    "春风动力特种车定制平台/生产部门"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2021/1/13 下午3:00:33788",
+                "name": "个性化生产@0",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Participant"
+                ]
+            }
+        ],
+        "relations": []
+    },
+    "process": [
+        {
+            "role": {
+                "春风动力特种车定制平台/定制部门": "个性化定制平台@0",
+                "春风动力特种车定制平台/生产部门": "个性化生产@0",
+                "春风动力特种车定制平台/运输部门": "物流运输@0"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "个性化定制",
+                    "data": {
+                        "start_step": 3
+                    },
+                    "has_gen_next": false,
+                    "id": "1610521294.449585_4967613",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 3
+                }
+            ]
+        },
+        {
+            "role": {
+                "春风动力特种车定制平台/定制部门": "个性化定制平台@0",
+                "春风动力特种车定制平台/生产部门": "个性化生产@0",
+                "春风动力特种车定制平台/运输部门": "物流运输@0"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "个性化定制",
+                    "data": {
+                        "start_step": 4
+                    },
+                    "has_gen_next": false,
+                    "id": "1610521294.4505193_4967616",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 2
+                }
+            ]
+        },
+        {
+            "role": {
+                "春风动力特种车定制平台/定制部门": "个性化定制平台@0",
+                "春风动力特种车定制平台/生产部门": "个性化生产@0",
+                "春风动力特种车定制平台/运输部门": "物流运输@0"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "个性化定制",
+                    "data": {
+                        "start_step": 1
+                    },
+                    "has_gen_next": false,
+                    "id": "1610521294.4473307_4967607",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 5
+                }
+            ]
+        },
+        {
+            "role": {
+                "春风动力特种车定制平台/定制部门": "个性化定制平台@0",
+                "春风动力特种车定制平台/生产部门": "个性化生产@0",
+                "春风动力特种车定制平台/运输部门": "物流运输@0"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "个性化定制",
+                    "data": {
+                        "start_step": 5
+                    },
+                    "has_gen_next": false,
+                    "id": "1610521294.4516091_4967619",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "春风动力特种车定制平台/定制部门": "个性化定制平台@0",
+                "春风动力特种车定制平台/生产部门": "个性化生产@0",
+                "春风动力特种车定制平台/运输部门": "物流运输@0"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "个性化定制",
+                    "data": {
+                        "start_step": 2
+                    },
+                    "has_gen_next": false,
+                    "id": "1610521294.4486883_4967610",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 4
+                }
+            ]
+        }
+    ],
+    "quota": {
+        "Process平均运行时间": {
+            "name": "Process平均运行时间",
+            "text": "0",
+            "type": "value",
+            "val": 0
+        }
+    },
+    "step_count": 5
+}
