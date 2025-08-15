@@ -1,0 +1,3230 @@
+{
+    "config": {},
+    "instance_base": {
+        "config": {},
+        "groups": [],
+        "instances": [
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "255",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "0.0005061127080847069",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2021/4/16 下午2:56:481629",
+                "name": "事故率",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            },
+            {
+                "bindTo": [
+                    "安全服务/安全服务提供商"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2021/4/16 下午2:21:581622",
+                "name": "安全服务提供商",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "bindTo": [
+                    "物联网服务/物联网服务提供商"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2021/4/16 下午1:57:421011",
+                "name": "路侧设备提供商",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "255",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "0.20000000000000073",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2021/4/16 下午2:15:511014",
+                "name": "数据传输速度",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            },
+            {
+                "bindTo": [
+                    "汽车制造/汽车制造商"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2021/4/16 下午2:21:581621",
+                "name": "汽车制造商",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "bindTo": [
+                    "云服务/云服务提供商"
+                ],
+                "config": {},
+                "data_properties": {
+                    "": {
+                        "isPattern": false,
+                        "text": "",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2021/4/16 下午2:21:311620",
+                "name": "云服务提供商",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "255",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "124.26274509803922",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2021/4/16 下午2:14:131013",
+                "name": "平均运行时间",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "255",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "15.105882352941176",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2021/4/16 下午1:58:491012",
+                "name": "平均运行成本",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            }
+        ],
+        "relations": []
+    },
+    "process": [
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 332,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.2675946_28311314",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 37
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "统一身份认证",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 10,
+                        "start_step": 371,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.8924356_28311797",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 2
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 299,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.6735857_28310843",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 70
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 290,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.5409188_28310742",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 77
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "统一身份认证",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 10,
+                        "start_step": 369,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.8904555_28311792",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 2
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 342,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.4983184_28311489",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 24
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 277,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.3258657_28310577",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 89
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "深度分析辅助决策",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 271,
+                        "transferTime": 0.2,
+                        "transfertime": 1.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.9086268_28311806",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 294,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.601256_28310790",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 74
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 313,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.9110234_28311026",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 57
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 312,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.8761647_28311005",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 59
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 314,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.0004642_28311096",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 52
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "路况数据统计分析",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 269,
+                        "transferTime": 0.2,
+                        "transfertime": 2.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.9080749_28311805",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 285,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.4007874_28310630",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 85
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 350,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.6779537_28311635",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 14
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 287,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.4887543_28310700",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 80
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 328,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.2470355_28311291",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 38
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 321,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.1303425_28311199",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 45
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "统一身份认证",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 10,
+                        "start_step": 372,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.8417137_28311759",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 5
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 347,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.584586_28311542",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 19
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 327,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.1481538_28311221",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 44
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 353,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.6924527_28311642",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 13
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 338,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.4630291_28311455",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 26
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 341,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.4966874_28311487",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 24
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 300,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.7084472_28310869",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 68
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 308,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.837295_28310972",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 61
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 334,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.381248_28311394",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 31
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 355,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.783387_28311724",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 8
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "深度分析辅助决策",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 252,
+                        "transferTime": 0.2,
+                        "transfertime": 3.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.6749995_28311624",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 14
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 335,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.2848008_28311327",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 36
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 286,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.5413878_28310743",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 77
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 318,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.1309931_28311203",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 45
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 333,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.2494068_28311298",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 38
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 296,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.6711118_28310839",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 70
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 275,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.29005_28310549",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 91
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "向云服务提供商下发数字证书",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 2,
+                        "start_step": 381,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.9103463_28311810",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 360,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.876153_28311788",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 3
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 331,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.3169708_28311350",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 34
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 291,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.6351337_28310806",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 72
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "向物联网服务提供商下发数字证书",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 3,
+                        "start_step": 378,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.9105153_28311811",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 307,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.8755498_28311004",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 59
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 293,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.6197124_28310799",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 73
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 329,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.2485948_28311297",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 38
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 278,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.273509_28310540",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 92
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 280,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.2929518_28310557",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 91
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "深度分析辅助决策",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 264,
+                        "transferTime": 0.2,
+                        "transfertime": 3.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.8564758_28311768",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 4
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 273,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.3261282_28310579",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 89
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 279,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.3260283_28310578",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 89
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 320,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.018062_28311113",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 51
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 349,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.5302052_28311512",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 22
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 356,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.7648125_28311709",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 9
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 352,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.7446766_28311684",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 10
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 336,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.3967588_28311407",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 30
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 326,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.1805499_28311249",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 42
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 284,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.469594_28310683",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 81
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "深度分析辅助决策",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 255,
+                        "transferTime": 0.2,
+                        "transfertime": 2.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.7778938_28311714",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 8
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "深度分析辅助决策",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 259,
+                        "transferTime": 0.2,
+                        "transfertime": 4.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.7265735_28311668",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 11
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 306,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.913008_28311029",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 57
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 298,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.7784142_28310936",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 64
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 295,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.5760164_28310770",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 75
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 325,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.1487145_28311224",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 44
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 344,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.4648716_28311459",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 26
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 363,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.7838147_28311726",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 8
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 346,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.6441047_28311603",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 16
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 309,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.9293463_28311036",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 56
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 292,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.544197_28310749",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 77
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 301,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.823501_28310966",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 62
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 311,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.9297419_28311037",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 56
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "深度分析辅助决策",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 265,
+                        "transferTime": 0.2,
+                        "transfertime": 1.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.8418462_28311760",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 5
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 330,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.2305863_28311280",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 39
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "统一身份认证",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 10,
+                        "start_step": 368,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.873607_28311780",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 3
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 297,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.6383073_28310815",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 72
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 365,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.842391_28311761",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 5
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 324,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.1807258_28311250",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 42
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 281,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.472322_28310689",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 81
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 364,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.8415043_28311758",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 5
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 339,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.4151824_28311422",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 29
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "深度分析辅助决策",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 267,
+                        "transferTime": 0.2,
+                        "transfertime": 5.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.8738973_28311781",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 3
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "深度分析辅助决策",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 261,
+                        "transferTime": 0.2,
+                        "transfertime": 5.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.8079658_28311734",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 7
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 319,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.0876594_28311166",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 47
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "向云服务提供商下发数字证书",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 2,
+                        "start_step": 380,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.8908656_28311794",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 2
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "统一授权",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 5,
+                        "start_step": 375,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.9112918_28311814",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 315,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.948037_28311050",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 55
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 322,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.1282148_28311192",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 45
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 367,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.9114504_28311815",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "向云服务提供商下发数字证书",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 2,
+                        "start_step": 374,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.7824728_28311720",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 8
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 289,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.4528441_28310665",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 82
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 345,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.6067479_28311565",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 18
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 274,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.2184916_28310494",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 95
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 362,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.7799256_28311719",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 8
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 317,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.1321487_28311207",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 45
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 357,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.7829015_28311721",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 8
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 354,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.7425478_28311677",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 10
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 337,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.4828045_28311478",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 25
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 361,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.7637122_28311705",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 9
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 340,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.4486663_28311448",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 27
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 283,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.3698657_28310610",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 87
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "深度分析辅助决策",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 258,
+                        "transferTime": 0.2,
+                        "transfertime": 1.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.8089395_28311736",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 7
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 359,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.709465_28311655",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 12
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "深度分析辅助决策",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 263,
+                        "transferTime": 0.2,
+                        "transfertime": 4.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.8592525_28311773",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 4
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 276,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.2886407_28310547",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 91
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 351,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.7105205_28311659",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 12
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "向物联网服务提供商下发数字证书",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 3,
+                        "start_step": 373,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.9107738_28311812",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "深度分析辅助决策",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 260,
+                        "transferTime": 0.2,
+                        "transfertime": 5.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.7252274_28311663",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 11
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 310,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.8576543_28310991",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 60
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 282,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.385726_28310621",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 86
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "统一授权",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 5,
+                        "start_step": 370,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.8945484_28311802",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 2
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 272,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.2543263_28310521",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 93
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 304,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.8923109_28311013",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 58
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 343,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.4957798_28311483",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 24
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 358,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.7849536_28311727",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 8
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 305,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.778105_28310935",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 64
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "路况检测",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 270,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.9097128_28311809",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "BPMN概念/EndEvent-1",
+                    "data": {
+                        "AR": 0.0009277268340710542,
+                        "cost": 15,
+                        "start_step": 248,
+                        "transferTime": 0.2,
+                        "transfertime": 4.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.9109037_28311813",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "向云服务提供商下发数字证书",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 2,
+                        "start_step": 379,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.874804_28311785",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 3
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "向云服务提供商下发数字证书",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 2,
+                        "start_step": 377,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.8433836_28311764",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 5
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 366,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.8906987_28311793",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 2
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "统一授权",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 5,
+                        "start_step": 376,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.90958_28311808",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 268,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.2007546_28310477",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 96
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 288,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.5584166_28310756",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 76
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 348,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.5331292_28311518",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 22
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 303,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.8207047_28310961",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 62
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 316,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.0374236_28311133",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 50
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "路况检测",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 266,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.9089048_28311807",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 302,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835305.7435095_28310903",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 66
+                }
+            ]
+        },
+        {
+            "role": {
+                "云服务/云服务提供商": "云服务提供商",
+                "安全服务/安全服务提供商": "安全服务提供商",
+                "汽车制造/汽车制造商": "汽车制造商",
+                "物联网服务/物联网服务提供商": "路侧设备提供商"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "部署路侧设备",
+                    "data": {
+                        "AR": 0.0001,
+                        "cost": 15,
+                        "start_step": 323,
+                        "transferTime": 0.2
+                    },
+                    "has_gen_next": false,
+                    "id": "1618835306.147677_28311218",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 44
+                }
+            ]
+        }
+    ],
+    "quota": {
+        "事故率": {
+            "name": "事故率",
+            "text": "0",
+            "type": "value",
+            "val": 0.0005061127080847069
+        },
+        "平均运行成本": {
+            "name": "平均运行成本",
+            "text": "0",
+            "type": "value",
+            "val": 15.105882352941176
+        },
+        "平均运行时间": {
+            "name": "平均运行时间",
+            "text": "0",
+            "type": "value",
+            "val": 124.26274509803922
+        },
+        "数据传输速度": {
+            "name": "数据传输速度",
+            "text": "0",
+            "type": "value",
+            "val": 0.20000000000000073
+        }
+    },
+    "step_count": 381
+}

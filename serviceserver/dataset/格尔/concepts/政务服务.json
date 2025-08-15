@@ -1,0 +1,2252 @@
+{
+    "concept_data": {
+        "Ability": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Thing"
+                ]
+            },
+            "class_name": "Ability",
+            "default_prop2value": {},
+            "dscp": "能力",
+            "graph_data": {
+                "color": "#1f77b4"
+            },
+            "props": []
+        },
+        "Carrier": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Thing"
+                ]
+            },
+            "class_name": "Carrier",
+            "default_prop2value": {},
+            "dscp": "载体",
+            "graph_data": {
+                "color": "#8c564b"
+            },
+            "props": []
+        },
+        "Environment": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Thing"
+                ]
+            },
+            "class_name": "Environment",
+            "default_prop2value": {},
+            "dscp": "环境",
+            "graph_data": {
+                "color": "#9467bd"
+            },
+            "props": []
+        },
+        "Goal": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Thing"
+                ]
+            },
+            "class_name": "Goal",
+            "default_prop2value": {},
+            "dscp": "目标",
+            "graph_data": {
+                "color": "#d62728"
+            },
+            "props": [
+                "goal_dscp"
+            ]
+        },
+        "Participant": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Thing"
+                ]
+            },
+            "class_name": "Participant",
+            "default_prop2value": {},
+            "dscp": "参与者",
+            "graph_data": {
+                "color": "#2ca02c"
+            },
+            "props": []
+        },
+        "Quota": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Thing"
+                ]
+            },
+            "class_name": "Quota",
+            "default_prop2value": {},
+            "dscp": "指标",
+            "graph_data": {
+                "color": "#e377c2"
+            },
+            "props": [
+                "quota_dscp"
+            ]
+        },
+        "Resource": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Thing"
+                ]
+            },
+            "class_name": "Resource",
+            "default_prop2value": {},
+            "dscp": "资源",
+            "graph_data": {
+                "color": "#17becf"
+            },
+            "props": [
+                "unit",
+                "amount",
+                "has_lock",
+                "divisible"
+            ]
+        },
+        "Task": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Thing"
+                ]
+            },
+            "class_name": "Task",
+            "default_prop2value": {},
+            "dscp": "任务",
+            "graph_data": {
+                "color": "#ff7f0e"
+            },
+            "props": []
+        },
+        "Thing": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": []
+            },
+            "class_name": "Thing",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#bcbd22"
+            },
+            "props": []
+        },
+        "currencyObject": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Resource"
+                ]
+            },
+            "class_name": "currencyObject",
+            "default_prop2value": {},
+            "dscp": "价值",
+            "graph_data": {
+                "color": "#bcbd22"
+            },
+            "props": []
+        },
+        "dataObject": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Resource"
+                ]
+            },
+            "class_name": "dataObject",
+            "default_prop2value": {},
+            "dscp": "数据",
+            "graph_data": {
+                "color": "#7f7f7f"
+            },
+            "props": [
+                "data_size"
+            ]
+        },
+        "上级回复": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Task"
+                ]
+            },
+            "class_name": "上级回复",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#7f7f7f"
+            },
+            "props": []
+        },
+        "上级申报": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Task"
+                ]
+            },
+            "class_name": "上级申报",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#e377c2"
+            },
+            "props": []
+        },
+        "主要河道水位感知": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Task"
+                ]
+            },
+            "class_name": "主要河道水位感知",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#17becf"
+            },
+            "props": []
+        },
+        "举报线索数据": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "dataObject"
+                ]
+            },
+            "class_name": "举报线索数据",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#e377c2"
+            },
+            "props": [
+                "data_size"
+            ]
+        },
+        "交警现场执法": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Task"
+                ]
+            },
+            "class_name": "交警现场执法",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#e377c2"
+            },
+            "props": []
+        },
+        "交通事故简易处理": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Task"
+                ]
+            },
+            "class_name": "交通事故简易处理",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#8c564b"
+            },
+            "props": []
+        },
+        "交通数据": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "dataObject"
+                ]
+            },
+            "class_name": "交通数据",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#8c564b"
+            },
+            "props": [
+                "data_size"
+            ]
+        },
+        "人口数据": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "dataObject"
+                ]
+            },
+            "class_name": "人口数据",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#bcbd22"
+            },
+            "props": [
+                "data_size"
+            ]
+        },
+        "人口数量": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Quota"
+                ]
+            },
+            "class_name": "人口数量",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#2ca02c"
+            },
+            "props": [
+                "quota_dscp"
+            ]
+        },
+        "任务定向派单": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Task"
+                ]
+            },
+            "class_name": "任务定向派单",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#17becf"
+            },
+            "props": []
+        },
+        "信访数据": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "dataObject"
+                ]
+            },
+            "class_name": "信访数据",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#d62728"
+            },
+            "props": [
+                "data_size"
+            ]
+        },
+        "全市供水量负荷": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Quota"
+                ]
+            },
+            "class_name": "全市供水量负荷",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#8c564b"
+            },
+            "props": [
+                "quota_dscp"
+            ]
+        },
+        "公安信息网大数据平台": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Carrier"
+                ]
+            },
+            "class_name": "公安信息网大数据平台",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#2ca02c"
+            },
+            "props": []
+        },
+        "公安信息网服务子平台": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Carrier"
+                ]
+            },
+            "class_name": "公安信息网服务子平台",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#bcbd22"
+            },
+            "props": []
+        },
+        "公安信息网部门": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Participant"
+                ]
+            },
+            "class_name": "公安信息网部门",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#d62728"
+            },
+            "props": []
+        },
+        "出入境数据": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "dataObject"
+                ]
+            },
+            "class_name": "出入境数据",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#2ca02c"
+            },
+            "props": [
+                "data_size"
+            ]
+        },
+        "出警": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Task"
+                ]
+            },
+            "class_name": "出警",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#ff7f0e"
+            },
+            "props": []
+        },
+        "出警时间": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Quota"
+                ]
+            },
+            "class_name": "出警时间",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#7f7f7f"
+            },
+            "props": [
+                "quota_dscp"
+            ]
+        },
+        "出警通知": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Task"
+                ]
+            },
+            "class_name": "出警通知",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#ff7f0e"
+            },
+            "props": []
+        },
+        "办事群众": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Participant"
+                ]
+            },
+            "class_name": "办事群众",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#e377c2"
+            },
+            "props": []
+        },
+        "办公设备": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Resource"
+                ]
+            },
+            "class_name": "办公设备",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#9467bd"
+            },
+            "props": [
+                "unit",
+                "amount",
+                "has_lock",
+                "divisible"
+            ]
+        },
+        "协查通报": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Task"
+                ]
+            },
+            "class_name": "协查通报",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#bcbd22"
+            },
+            "props": []
+        },
+        "发送政务服务请求": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Task"
+                ]
+            },
+            "class_name": "发送政务服务请求",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#d62728"
+            },
+            "props": []
+        },
+        "城市情况精准感知": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Goal"
+                ]
+            },
+            "class_name": "城市情况精准感知",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#1f77b4"
+            },
+            "props": [
+                "goal_dscp"
+            ]
+        },
+        "城市运行数据采集": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Task"
+                ]
+            },
+            "class_name": "城市运行数据采集",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#1f77b4"
+            },
+            "props": []
+        },
+        "城市运行管理数据": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "dataObject"
+                ]
+            },
+            "class_name": "城市运行管理数据",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#d62728"
+            },
+            "props": [
+                "data_size"
+            ]
+        },
+        "完成警务服务": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Task"
+                ]
+            },
+            "class_name": "完成警务服务",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#2ca02c"
+            },
+            "props": []
+        },
+        "实现公安信息移动化与智能化": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Goal"
+                ]
+            },
+            "class_name": "实现公安信息移动化与智能化",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#8c564b"
+            },
+            "props": [
+                "goal_dscp"
+            ]
+        },
+        "巡逻盘查": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Task"
+                ]
+            },
+            "class_name": "巡逻盘查",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#7f7f7f"
+            },
+            "props": []
+        },
+        "市内交通客流量": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Quota"
+                ]
+            },
+            "class_name": "市内交通客流量",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#9467bd"
+            },
+            "props": [
+                "quota_dscp"
+            ]
+        },
+        "应用服务中心": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Carrier"
+                ]
+            },
+            "class_name": "应用服务中心",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#17becf"
+            },
+            "props": []
+        },
+        "建设服务型政府": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Goal"
+                ]
+            },
+            "class_name": "建设服务型政府",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#ff7f0e"
+            },
+            "props": [
+                "goal_dscp"
+            ]
+        },
+        "异常数据警报": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Task"
+                ]
+            },
+            "class_name": "异常数据警报",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#ff7f0e"
+            },
+            "props": []
+        },
+        "感知设备": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Resource"
+                ]
+            },
+            "class_name": "感知设备",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#d62728"
+            },
+            "props": [
+                "unit",
+                "amount",
+                "has_lock",
+                "divisible"
+            ]
+        },
+        "手持移动终端": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Carrier"
+                ]
+            },
+            "class_name": "手持移动终端",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#ff7f0e"
+            },
+            "props": []
+        },
+        "执法器械": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Resource"
+                ]
+            },
+            "class_name": "执法器械",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#bcbd22"
+            },
+            "props": [
+                "unit",
+                "amount",
+                "has_lock",
+                "divisible"
+            ]
+        },
+        "指标异常感应时间": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Quota"
+                ]
+            },
+            "class_name": "指标异常感应时间",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#7f7f7f"
+            },
+            "props": [
+                "quota_dscp"
+            ]
+        },
+        "排查时间": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Quota"
+                ]
+            },
+            "class_name": "排查时间",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#bcbd22"
+            },
+            "props": [
+                "quota_dscp"
+            ]
+        },
+        "提高警务服务效率": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Goal"
+                ]
+            },
+            "class_name": "提高警务服务效率",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#9467bd"
+            },
+            "props": [
+                "goal_dscp"
+            ]
+        },
+        "提高部门协作效率": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Goal"
+                ]
+            },
+            "class_name": "提高部门协作效率",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#2ca02c"
+            },
+            "props": [
+                "goal_dscp"
+            ]
+        },
+        "政务处理响应时间": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Quota"
+                ]
+            },
+            "class_name": "政务处理响应时间",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#e377c2"
+            },
+            "props": [
+                "quota_dscp"
+            ]
+        },
+        "政务处理结果数据": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "dataObject"
+                ]
+            },
+            "class_name": "政务处理结果数据",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#17becf"
+            },
+            "props": [
+                "data_size"
+            ]
+        },
+        "政务服务消费者": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Participant"
+                ]
+            },
+            "class_name": "政务服务消费者",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#bcbd22"
+            },
+            "props": []
+        },
+        "政务服务请求处理": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Task"
+                ]
+            },
+            "class_name": "政务服务请求处理",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#9467bd"
+            },
+            "props": []
+        },
+        "政务请求数据": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "dataObject"
+                ]
+            },
+            "class_name": "政务请求数据",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#bcbd22"
+            },
+            "props": [
+                "data_size"
+            ]
+        },
+        "政务高效处理": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Goal"
+                ]
+            },
+            "class_name": "政务高效处理",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#17becf"
+            },
+            "props": [
+                "goal_dscp"
+            ]
+        },
+        "政府部门": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Participant"
+                ]
+            },
+            "class_name": "政府部门",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#7f7f7f"
+            },
+            "props": []
+        },
+        "数据中心": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Participant"
+                ]
+            },
+            "class_name": "数据中心",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#8c564b"
+            },
+            "props": []
+        },
+        "权限验证": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Task"
+                ]
+            },
+            "class_name": "权限验证",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#e377c2"
+            },
+            "props": []
+        },
+        "档案自动生成": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Task"
+                ]
+            },
+            "class_name": "档案自动生成",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#1f77b4"
+            },
+            "props": []
+        },
+        "水务数据": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "dataObject"
+                ]
+            },
+            "class_name": "水务数据",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#7f7f7f"
+            },
+            "props": [
+                "data_size"
+            ]
+        },
+        "治安数据": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "dataObject"
+                ]
+            },
+            "class_name": "治安数据",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#9467bd"
+            },
+            "props": [
+                "data_size"
+            ]
+        },
+        "物联网终端": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Carrier"
+                ]
+            },
+            "class_name": "物联网终端",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#d62728"
+            },
+            "props": []
+        },
+        "环境数据": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "dataObject"
+                ]
+            },
+            "class_name": "环境数据",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#17becf"
+            },
+            "props": [
+                "data_size"
+            ]
+        },
+        "电子政务系统": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Carrier"
+                ]
+            },
+            "class_name": "电子政务系统",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#ff7f0e"
+            },
+            "props": []
+        },
+        "登录": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Task"
+                ]
+            },
+            "class_name": "登录",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#2ca02c"
+            },
+            "props": []
+        },
+        "社会信息采集": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Task"
+                ]
+            },
+            "class_name": "社会信息采集",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#d62728"
+            },
+            "props": []
+        },
+        "移动安全接入子平台": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Carrier"
+                ]
+            },
+            "class_name": "移动安全接入子平台",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#7f7f7f"
+            },
+            "props": []
+        },
+        "移动警务PKI系统": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Carrier"
+                ]
+            },
+            "class_name": "移动警务PKI系统",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#ff7f0e"
+            },
+            "props": []
+        },
+        "移动警务使用部门": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Participant"
+                ]
+            },
+            "class_name": "移动警务使用部门",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#9467bd"
+            },
+            "props": []
+        },
+        "空气质量指数": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Quota"
+                ]
+            },
+            "class_name": "空气质量指数",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#d62728"
+            },
+            "props": [
+                "quota_dscp"
+            ]
+        },
+        "空气质量指标感知": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Task"
+                ]
+            },
+            "class_name": "空气质量指标感知",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#bcbd22"
+            },
+            "props": []
+        },
+        "空气质量数据": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "dataObject"
+                ]
+            },
+            "class_name": "空气质量数据",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#9467bd"
+            },
+            "props": [
+                "data_size"
+            ]
+        },
+        "线下服务场景": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Carrier"
+                ]
+            },
+            "class_name": "线下服务场景",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#2ca02c"
+            },
+            "props": []
+        },
+        "群众反馈": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Task"
+                ]
+            },
+            "class_name": "群众反馈",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#d62728"
+            },
+            "props": []
+        },
+        "群众反馈数据": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "dataObject"
+                ]
+            },
+            "class_name": "群众反馈数据",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#9467bd"
+            },
+            "props": [
+                "data_size"
+            ]
+        },
+        "群众线索举报": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Task"
+                ]
+            },
+            "class_name": "群众线索举报",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#17becf"
+            },
+            "props": []
+        },
+        "联网服务子平台": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Carrier"
+                ]
+            },
+            "class_name": "联网服务子平台",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#e377c2"
+            },
+            "props": []
+        },
+        "自助服务终端": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Carrier"
+                ]
+            },
+            "class_name": "自助服务终端",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#2ca02c"
+            },
+            "props": []
+        },
+        "规划数据": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "dataObject"
+                ]
+            },
+            "class_name": "规划数据",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#1f77b4"
+            },
+            "props": [
+                "data_size"
+            ]
+        },
+        "警务处理响应时间": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Quota"
+                ]
+            },
+            "class_name": "警务处理响应时间",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#1f77b4"
+            },
+            "props": [
+                "quota_dscp"
+            ]
+        },
+        "警务数据": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "dataObject"
+                ]
+            },
+            "class_name": "警务数据",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#e377c2"
+            },
+            "props": [
+                "data_size"
+            ]
+        },
+        "警务请求数据": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "dataObject"
+                ]
+            },
+            "class_name": "警务请求数据",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#ff7f0e"
+            },
+            "props": [
+                "data_size"
+            ]
+        },
+        "警务部门": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Participant"
+                ]
+            },
+            "class_name": "警务部门",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#1f77b4"
+            },
+            "props": []
+        },
+        "警务部门响应": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Task"
+                ]
+            },
+            "class_name": "警务部门响应",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#1f77b4"
+            },
+            "props": []
+        },
+        "警情反馈": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Task"
+                ]
+            },
+            "class_name": "警情反馈",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#2ca02c"
+            },
+            "props": []
+        },
+        "警车": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Resource"
+                ]
+            },
+            "class_name": "警车",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#7f7f7f"
+            },
+            "props": [
+                "unit",
+                "amount",
+                "has_lock",
+                "divisible"
+            ]
+        },
+        "身份验证": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Task"
+                ]
+            },
+            "class_name": "身份验证",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#8c564b"
+            },
+            "props": []
+        },
+        "车载移动终端": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Carrier"
+                ]
+            },
+            "class_name": "车载移动终端",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#2ca02c"
+            },
+            "props": []
+        },
+        "车辆驾驶管理数据": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "dataObject"
+                ]
+            },
+            "class_name": "车辆驾驶管理数据",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#8c564b"
+            },
+            "props": [
+                "data_size"
+            ]
+        },
+        "部门人员数据": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "dataObject"
+                ]
+            },
+            "class_name": "部门人员数据",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#8c564b"
+            },
+            "props": [
+                "data_size"
+            ]
+        },
+        "部门政务数据": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "dataObject"
+                ]
+            },
+            "class_name": "部门政务数据",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#d62728"
+            },
+            "props": [
+                "data_size"
+            ]
+        },
+        "部门智能数据": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "dataObject"
+                ]
+            },
+            "class_name": "部门智能数据",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#9467bd"
+            },
+            "props": [
+                "data_size"
+            ]
+        },
+        "集中管控中心": {
+            "Description": {
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subClassOf": [
+                    "Carrier"
+                ]
+            },
+            "class_name": "集中管控中心",
+            "default_prop2value": {},
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#1f77b4"
+            },
+            "props": []
+        }
+    },
+    "config": {},
+    "property_data": {
+        "amount": {
+            "Characteristics": {
+                "Functional": false,
+                "cardinality": 1,
+                "constrain_readonly": false,
+                "not_null": false,
+                "readonly": false,
+                "unique": false
+            },
+            "Description": {
+                "disjointWith": [],
+                "domain": [],
+                "equivalentClass": [],
+                "range": [
+                    "NUMERICAL"
+                ],
+                "subPropertyOf": [
+                    "topDataProperty"
+                ]
+            },
+            "class_name": "amount",
+            "dscp": "资源的量",
+            "graph_data": {
+                "color": "#d62728"
+            }
+        },
+        "data_size": {
+            "Characteristics": {
+                "Functional": false,
+                "cardinality": 1,
+                "constrain_readonly": false,
+                "not_null": false,
+                "readonly": false,
+                "unique": false
+            },
+            "Description": {
+                "disjointWith": [],
+                "domain": [],
+                "equivalentClass": [],
+                "range": [
+                    "INT"
+                ],
+                "subPropertyOf": [
+                    "topDataProperty"
+                ]
+            },
+            "class_name": "data_size",
+            "dscp": "数据大小",
+            "graph_data": {
+                "color": "#ff7f0e"
+            }
+        },
+        "data_type": {
+            "Characteristics": {
+                "Functional": false,
+                "cardinality": 1,
+                "constrain_readonly": false,
+                "not_null": false,
+                "readonly": false,
+                "unique": false
+            },
+            "Description": {
+                "disjointWith": [],
+                "domain": [],
+                "equivalentClass": [],
+                "range": [
+                    "TEXT"
+                ],
+                "subPropertyOf": [
+                    "topDataProperty"
+                ]
+            },
+            "class_name": "data_type",
+            "dscp": "数据结构",
+            "graph_data": {
+                "color": "#1f77b4"
+            }
+        },
+        "divisible": {
+            "Characteristics": {
+                "Functional": false,
+                "cardinality": 1,
+                "constrain_readonly": false,
+                "not_null": false,
+                "readonly": false,
+                "unique": false
+            },
+            "Description": {
+                "disjointWith": [],
+                "domain": [],
+                "equivalentClass": [],
+                "range": [
+                    "BOOLEAN"
+                ],
+                "subPropertyOf": [
+                    "topDataProperty"
+                ]
+            },
+            "class_name": "divisible",
+            "dscp": "资源时候不可分割",
+            "graph_data": {
+                "color": "#e377c2"
+            }
+        },
+        "goal_dscp": {
+            "Characteristics": {
+                "Functional": false,
+                "cardinality": 1,
+                "constrain_readonly": false,
+                "not_null": false,
+                "readonly": false,
+                "unique": false
+            },
+            "Description": {
+                "disjointWith": [],
+                "domain": [],
+                "equivalentClass": [],
+                "range": [
+                    "SCRIPT"
+                ],
+                "subPropertyOf": [
+                    "topDataProperty"
+                ]
+            },
+            "class_name": "goal_dscp",
+            "dscp": "目标描述",
+            "graph_data": {
+                "color": "#9467bd"
+            }
+        },
+        "has_lock": {
+            "Characteristics": {
+                "Functional": false,
+                "cardinality": 1,
+                "constrain_readonly": false,
+                "not_null": false,
+                "readonly": false,
+                "unique": false
+            },
+            "Description": {
+                "disjointWith": [],
+                "domain": [],
+                "equivalentClass": [],
+                "range": [
+                    "BOOLEAN"
+                ],
+                "subPropertyOf": [
+                    "topDataProperty"
+                ]
+            },
+            "class_name": "has_lock",
+            "dscp": "资源时候含有锁",
+            "graph_data": {
+                "color": "#8c564b"
+            }
+        },
+        "id": {
+            "Characteristics": {
+                "Functional": false,
+                "cardinality": 1,
+                "constrain_readonly": false,
+                "not_null": false,
+                "readonly": false,
+                "unique": false
+            },
+            "Description": {
+                "disjointWith": [],
+                "domain": [],
+                "equivalentClass": [],
+                "range": [
+                    "TEXT"
+                ],
+                "subPropertyOf": [
+                    "topDataProperty"
+                ]
+            },
+            "class_name": "id",
+            "dscp": "id是",
+            "graph_data": {
+                "color": "#1f77b4"
+            },
+            "unique": true
+        },
+        "lock": {
+            "Characteristics": {
+                "Functional": false,
+                "cardinality": 1,
+                "constrain_readonly": false,
+                "not_null": false,
+                "readonly": false,
+                "unique": false
+            },
+            "Description": {
+                "disjointWith": [],
+                "domain": [],
+                "equivalentClass": [],
+                "range": [
+                    "BOOLEAN"
+                ],
+                "subPropertyOf": [
+                    "topDataProperty"
+                ]
+            },
+            "class_name": "lock",
+            "dscp": "锁",
+            "graph_data": {
+                "color": "#7f7f7f"
+            }
+        },
+        "name": {
+            "Characteristics": {
+                "Functional": false,
+                "cardinality": 1,
+                "constrain_readonly": false,
+                "not_null": true,
+                "readonly": false,
+                "unique": true
+            },
+            "Description": {
+                "disjointWith": [],
+                "domain": [],
+                "equivalentClass": [],
+                "range": [
+                    "TEXT"
+                ],
+                "subPropertyOf": [
+                    "topDataProperty"
+                ]
+            },
+            "class_name": "name",
+            "dscp": "名字是",
+            "graph_data": {
+                "color": "#bcbd22"
+            }
+        },
+        "pre_condition": {
+            "Characteristics": {
+                "Functional": false,
+                "cardinality": 1,
+                "constrain_readonly": false,
+                "not_null": false,
+                "readonly": false,
+                "unique": false
+            },
+            "Description": {
+                "disjointWith": [],
+                "domain": [],
+                "equivalentClass": [],
+                "range": [
+                    "SCRIPT"
+                ],
+                "subPropertyOf": [
+                    "topDataProperty"
+                ]
+            },
+            "class_name": "pre_condition",
+            "dscp": "任务的前置条件",
+            "graph_data": {
+                "color": "#bcbd22"
+            }
+        },
+        "quota_dscp": {
+            "Characteristics": {
+                "Functional": false,
+                "cardinality": 1,
+                "constrain_readonly": false,
+                "not_null": false,
+                "readonly": false,
+                "unique": false
+            },
+            "Description": {
+                "disjointWith": [],
+                "domain": [],
+                "equivalentClass": [],
+                "range": [
+                    "SCRIPT"
+                ],
+                "subPropertyOf": [
+                    "topDataProperty"
+                ]
+            },
+            "class_name": "quota_dscp",
+            "dscp": "描述了指标的变化",
+            "graph_data": {
+                "color": "#17becf"
+            }
+        },
+        "role": {
+            "Characteristics": {
+                "Functional": false,
+                "cardinality": 1,
+                "constrain_readonly": false,
+                "not_null": false,
+                "readonly": false,
+                "unique": false
+            },
+            "Description": {
+                "disjointWith": [],
+                "domain": [],
+                "equivalentClass": [],
+                "range": [
+                    "TEXT"
+                ],
+                "subPropertyOf": [
+                    "topDataProperty"
+                ]
+            },
+            "class_name": "role",
+            "dscp": "输入对应的角色",
+            "graph_data": {
+                "color": "#2ca02c"
+            }
+        },
+        "step": {
+            "Characteristics": {
+                "Functional": false,
+                "cardinality": 1,
+                "constrain_readonly": false,
+                "not_null": false,
+                "readonly": false,
+                "unique": false
+            },
+            "Description": {
+                "disjointWith": [],
+                "domain": [],
+                "equivalentClass": [],
+                "range": [
+                    "SCRIPT"
+                ],
+                "subPropertyOf": [
+                    "topDataProperty"
+                ]
+            },
+            "class_name": "step",
+            "dscp": "每次要做的",
+            "graph_data": {
+                "color": "#17becf"
+            }
+        },
+        "topDataProperty": {
+            "Characteristics": {
+                "Functional": false,
+                "cardinality": 1,
+                "constrain_readonly": false,
+                "not_null": false,
+                "readonly": false,
+                "unique": false
+            },
+            "Description": {
+                "disjointWith": [],
+                "domain": [],
+                "equivalentClass": [],
+                "range": [],
+                "subPropertyOf": []
+            },
+            "class_name": "topDataProperty",
+            "dscp": "默认的",
+            "graph_data": {
+                "color": "#7f7f7f"
+            }
+        },
+        "unit": {
+            "Characteristics": {
+                "Functional": false,
+                "cardinality": 1,
+                "constrain_readonly": false,
+                "not_null": false,
+                "readonly": false,
+                "unique": false
+            },
+            "Description": {
+                "disjointWith": [],
+                "domain": [],
+                "equivalentClass": [],
+                "range": [
+                    "NUMERICAL"
+                ],
+                "subPropertyOf": [
+                    "topDataProperty"
+                ]
+            },
+            "class_name": "unit",
+            "dscp": "资源的最小单位",
+            "graph_data": {
+                "color": "#ff7f0e"
+            }
+        }
+    },
+    "relation_data": {
+        "CanUse": {
+            "Characteristics": {
+                "Asymmetric": false,
+                "Functional": false,
+                "InverseFunctional": false,
+                "Irreflexive": false,
+                "Reflexive": false,
+                "Symmetric": false,
+                "Transitive": false
+            },
+            "Description": {
+                "Domain": [],
+                "InverseOf": [],
+                "Range": [],
+                "disjointWith": [],
+                "domain": [
+                    "Participant"
+                ],
+                "equivalentClass": [],
+                "range": [
+                    "Resource"
+                ],
+                "subPropertyOf": [
+                    "topObjectProperty"
+                ]
+            },
+            "class_name": "CanUse",
+            "dscp": "可使用资源",
+            "graph_data": {
+                "color": "#2ca02c"
+            }
+        },
+        "Carriers": {
+            "Characteristics": {
+                "Asymmetric": false,
+                "Functional": false,
+                "InverseFunctional": false,
+                "Irreflexive": false,
+                "Reflexive": false,
+                "Symmetric": false,
+                "Transitive": false
+            },
+            "Description": {
+                "Domain": [],
+                "InverseOf": [],
+                "Range": [],
+                "disjointWith": [],
+                "domain": [
+                    "Ability"
+                ],
+                "equivalentClass": [],
+                "range": [
+                    "ResourceConcept"
+                ],
+                "subPropertyOf": [
+                    "topObjectProperty"
+                ]
+            },
+            "class_name": "Carriers",
+            "dscp": "能力的载体",
+            "graph_data": {
+                "color": "#e377c2"
+            }
+        },
+        "Goals": {
+            "Characteristics": {
+                "Asymmetric": false,
+                "Functional": false,
+                "InverseFunctional": false,
+                "Irreflexive": false,
+                "Reflexive": false,
+                "Symmetric": false,
+                "Transitive": false
+            },
+            "Description": {
+                "Domain": [],
+                "InverseOf": [],
+                "Range": [],
+                "disjointWith": [],
+                "domain": [
+                    "Participant"
+                ],
+                "equivalentClass": [],
+                "range": [
+                    "Goal"
+                ],
+                "subPropertyOf": [
+                    "topObjectProperty"
+                ]
+            },
+            "class_name": "Goals",
+            "dscp": "目标是",
+            "graph_data": {
+                "color": "#d62728"
+            }
+        },
+        "Implement": {
+            "Characteristics": {
+                "Asymmetric": false,
+                "Functional": false,
+                "InverseFunctional": false,
+                "Irreflexive": false,
+                "Reflexive": false,
+                "Symmetric": false,
+                "Transitive": false
+            },
+            "Description": {
+                "Domain": [],
+                "InverseOf": [],
+                "Range": [],
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subPropertyOf": [
+                    "topObjectProperty"
+                ]
+            },
+            "class_name": "Implement",
+            "dscp": "概念是",
+            "graph_data": {
+                "color": "#9467bd"
+            }
+        },
+        "Involve": {
+            "Characteristics": {
+                "Asymmetric": false,
+                "Functional": false,
+                "InverseFunctional": false,
+                "Irreflexive": false,
+                "Reflexive": false,
+                "Symmetric": false,
+                "Transitive": false
+            },
+            "Description": {
+                "Domain": [],
+                "InverseOf": [],
+                "Range": [],
+                "disjointWith": [],
+                "domain": [
+                    "Ability"
+                ],
+                "equivalentClass": [],
+                "range": [
+                    "ResourceConcept",
+                    "ParticipantConcept"
+                ],
+                "subPropertyOf": [
+                    "topObjectProperty"
+                ]
+            },
+            "class_name": "Involve",
+            "dscp": "涉及的资源",
+            "graph_data": {
+                "color": "#8c564b"
+            }
+        },
+        "PartOf": {
+            "Characteristics": {
+                "Asymmetric": false,
+                "Functional": false,
+                "InverseFunctional": false,
+                "Irreflexive": false,
+                "Reflexive": false,
+                "Symmetric": false,
+                "Transitive": false
+            },
+            "Description": {
+                "Domain": [],
+                "InverseOf": [],
+                "Range": [],
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subPropertyOf": [
+                    "topObjectProperty"
+                ]
+            },
+            "class_name": "PartOf",
+            "dscp": "是···的一部分",
+            "graph_data": {
+                "color": "#1f77b4"
+            }
+        },
+        "Possess": {
+            "Characteristics": {
+                "Asymmetric": false,
+                "Functional": false,
+                "InverseFunctional": false,
+                "Irreflexive": false,
+                "Reflexive": false,
+                "Symmetric": false,
+                "Transitive": false
+            },
+            "Description": {
+                "Domain": [],
+                "InverseOf": [],
+                "Range": [],
+                "disjointWith": [],
+                "domain": [
+                    "Participant"
+                ],
+                "equivalentClass": [],
+                "range": [
+                    "Resource"
+                ],
+                "subPropertyOf": [
+                    "topObjectProperty"
+                ]
+            },
+            "class_name": "Possess",
+            "dscp": "拥有资源",
+            "graph_data": {
+                "color": "#ff7f0e"
+            }
+        },
+        "topObjectProperty": {
+            "Characteristics": {
+                "Asymmetric": false,
+                "Functional": false,
+                "InverseFunctional": false,
+                "Irreflexive": false,
+                "Reflexive": false,
+                "Symmetric": false,
+                "Transitive": false
+            },
+            "Description": {
+                "Domain": [],
+                "InverseOf": [],
+                "Range": [],
+                "disjointWith": [],
+                "equivalentClass": [],
+                "subPropertyOf": []
+            },
+            "class_name": "topObjectProperty",
+            "dscp": "默认",
+            "graph_data": {
+                "color": "#17becf"
+            }
+        }
+    }
+}
