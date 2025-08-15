@@ -1,0 +1,1908 @@
+{
+    "config": {},
+    "instance_base": {
+        "config": {},
+        "groups": [],
+        "instances": [
+            {
+                "bindTo": [
+                    "物业巡查/巡查管理方"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2021/4/19 下午5:35:021022",
+                "name": "物业管理员@0",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/Participant"
+                ]
+            },
+            {
+                "bindTo": [
+                    "物业巡查/巡查管理方"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2021/4/19 下午5:35:021022",
+                "name": "物业管理员@9",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/Participant"
+                ]
+            },
+            {
+                "bindTo": [
+                    "物业巡查/巡查管理方"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2021/4/19 下午5:35:021022",
+                "name": "物业管理员@2",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/Participant"
+                ]
+            },
+            {
+                "bindTo": [
+                    "物业巡查/巡查管理方"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2021/4/19 下午5:35:021022",
+                "name": "物业管理员@4",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/Participant"
+                ]
+            },
+            {
+                "bindTo": [
+                    "物业巡查/巡查管理方"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2021/4/19 下午5:35:021022",
+                "name": "物业管理员@1",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/Participant"
+                ]
+            },
+            {
+                "bindTo": [
+                    "物业巡查/巡查管理方"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2021/4/19 下午5:35:021022",
+                "name": "物业管理员@8",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/Participant"
+                ]
+            },
+            {
+                "bindTo": [
+                    "物业巡查/巡查管理方"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2021/4/19 下午5:35:021022",
+                "name": "物业管理员@3",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/Participant"
+                ]
+            },
+            {
+                "bindTo": [
+                    "物业巡查/巡查管理方"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2021/4/19 下午5:35:021022",
+                "name": "物业管理员@6",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/Participant"
+                ]
+            },
+            {
+                "bindTo": [
+                    "物业巡查/巡查管理方"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2021/4/19 下午5:35:021022",
+                "name": "物业管理员@5",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/Participant"
+                ]
+            },
+            {
+                "bindTo": [
+                    "物业巡查/保安"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2021/4/19 下午5:36:061023",
+                "name": "保安A@0",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/Participant"
+                ]
+            },
+            {
+                "bindTo": [
+                    "物业巡查/巡查管理方"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2021/4/19 下午5:35:021022",
+                "name": "物业管理员@7",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/Participant"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "760",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "9.0",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2021/4/19 下午5:36:321024",
+                "name": "Process平均运行时间",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            }
+        ],
+        "relations": []
+    },
+    "process": [
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@0"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "制定巡查任务",
+                    "data": {
+                        "start_step": 85
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.464587_10825824",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@0"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "异常标定",
+                    "data": {
+                        "start_step": 82
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4567492_10825774",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@0"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "保安巡查",
+                    "data": {
+                        "start_step": 81
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4565485_10825773",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@4"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "保安巡查",
+                    "data": {
+                        "start_step": 81
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.466865_10825840",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@1"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "巡查报告",
+                    "data": {
+                        "start_step": 79
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4671729_10825842",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@6"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "保安巡查",
+                    "data": {
+                        "start_step": 81
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.459657_10825793",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@3"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "巡查报告",
+                    "data": {
+                        "start_step": 79
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4653642_10825828",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@1"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "物业审核",
+                    "data": {
+                        "start_step": 78
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4598422_10825794",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@3"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "制定巡查任务",
+                    "data": {
+                        "start_step": 85
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4660347_10825834",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@9"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "物业审核",
+                    "data": {
+                        "start_step": 78
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4648912_10825825",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@0"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "巡查报告",
+                    "data": {
+                        "start_step": 79
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4617498_10825808",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "自动抓图",
+                    "data": {
+                        "start_step": 84
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4631362_10825815",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "异常发现",
+                    "data": {
+                        "start_step": 83
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.458882_10825789",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@3"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "现场处理",
+                    "data": {
+                        "start_step": 80
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4632263_10825816",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@4"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "制定巡查任务",
+                    "data": {
+                        "start_step": 85
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4663765_10825836",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@7"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "保安巡查",
+                    "data": {
+                        "start_step": 81
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4589686_10825790",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "制定巡查任务",
+                    "data": {
+                        "start_step": 85
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4691606_10825856",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@1"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "保安巡查",
+                    "data": {
+                        "start_step": 81
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4579813_10825782",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@7"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "自动抓图",
+                    "data": {
+                        "start_step": 84
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4578977_10825781",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@5"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "异常发现",
+                    "data": {
+                        "start_step": 83
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4626806_10825813",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@4"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "巡查报告",
+                    "data": {
+                        "start_step": 79
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4575317_10825779",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@8"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "物业审核",
+                    "data": {
+                        "start_step": 78
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4634128_10825817",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@8"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "巡查报告",
+                    "data": {
+                        "start_step": 79
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4578125_10825780",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@9"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "保安巡查",
+                    "data": {
+                        "start_step": 81
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.460096_10825796",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "现场处理",
+                    "data": {
+                        "start_step": 80
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4635808_10825819",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@4"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "自动抓图",
+                    "data": {
+                        "start_step": 84
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4615042_10825805",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@3"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "物业审核",
+                    "data": {
+                        "start_step": 78
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4659517_10825833",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@6"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "巡查报告",
+                    "data": {
+                        "start_step": 79
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.468906_10825854",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@8"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "制定巡查任务",
+                    "data": {
+                        "start_step": 85
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4666202_10825838",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@7"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "物业审核",
+                    "data": {
+                        "start_step": 78
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4658666_10825832",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@1"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "现场处理",
+                    "data": {
+                        "start_step": 80
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4603574_10825798",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@7"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "制定巡查任务",
+                    "data": {
+                        "start_step": 85
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4587154_10825788",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@9"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "异常发现",
+                    "data": {
+                        "start_step": 83
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4602702_10825797",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@7"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "巡查报告",
+                    "data": {
+                        "start_step": 79
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4694939_10825858",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@6"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "现场处理",
+                    "data": {
+                        "start_step": 80
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4693372_10825857",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@5"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "保安巡查",
+                    "data": {
+                        "start_step": 81
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4651952_10825827",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@7"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "现场处理",
+                    "data": {
+                        "start_step": 80
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4618304_10825809",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@5"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "巡查报告",
+                    "data": {
+                        "start_step": 79
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4701629_10825862",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@7"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "异常发现",
+                    "data": {
+                        "start_step": 83
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4641976_10825821",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@8"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "现场处理",
+                    "data": {
+                        "start_step": 80
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4687223_10825853",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@5"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "现场处理",
+                    "data": {
+                        "start_step": 80
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4654531_10825829",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@4"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "物业审核",
+                    "data": {
+                        "start_step": 78
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4667814_10825839",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@9"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "异常标定",
+                    "data": {
+                        "start_step": 82
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4657032_10825831",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@3"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "保安巡查",
+                    "data": {
+                        "start_step": 81
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4642832_10825822",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@1"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "制定巡查任务",
+                    "data": {
+                        "start_step": 85
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4662154_10825835",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@6"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "物业审核",
+                    "data": {
+                        "start_step": 78
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4697983_10825860",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@9"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "制定巡查任务",
+                    "data": {
+                        "start_step": 85
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4572837_10825777",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@6"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "制定巡查任务",
+                    "data": {
+                        "start_step": 85
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.464983_10825826",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@4"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "异常发现",
+                    "data": {
+                        "start_step": 83
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4644976_10825823",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@8"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "保安巡查",
+                    "data": {
+                        "start_step": 81
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4584768_10825786",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@5"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "物业审核",
+                    "data": {
+                        "start_step": 78
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.460713_10825799",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@4"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "现场处理",
+                    "data": {
+                        "start_step": 80
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4609876_10825802",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@5"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "制定巡查任务",
+                    "data": {
+                        "start_step": 85
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4696307_10825859",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@3"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "异常发现",
+                    "data": {
+                        "start_step": 83
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4583926_10825785",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@1"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "自动抓图",
+                    "data": {
+                        "start_step": 84
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.461585_10825806",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@6"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "异常发现",
+                    "data": {
+                        "start_step": 83
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4682288_10825849",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@1"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "BPMN概念/EndEvent-1",
+                    "data": {
+                        "start_step": 77
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4670243_10825841",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@9"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "自动抓图",
+                    "data": {
+                        "start_step": 84
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4634979_10825818",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@0"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "物业审核",
+                    "data": {
+                        "start_step": 78
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4656165_10825830",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@8"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "自动抓图",
+                    "data": {
+                        "start_step": 84
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4586284_10825787",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@7"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "BPMN概念/EndEvent-1",
+                    "data": {
+                        "start_step": 77
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4620717_10825810",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "异常标定",
+                    "data": {
+                        "start_step": 82
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4680457_10825848",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@4"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "BPMN概念/EndEvent-1",
+                    "data": {
+                        "start_step": 77
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.467457_10825843",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@6"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "自动抓图",
+                    "data": {
+                        "start_step": 84
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4625905_10825812",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@5"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "异常标定",
+                    "data": {
+                        "start_step": 82
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4685595_10825852",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@0"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "自动抓图",
+                    "data": {
+                        "start_step": 84
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4665325_10825837",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@9"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "巡查报告",
+                    "data": {
+                        "start_step": 79
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4675398_10825844",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@6"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "异常标定",
+                    "data": {
+                        "start_step": 82
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4683945_10825851",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@9"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "BPMN概念/EndEvent-1",
+                    "data": {
+                        "start_step": 77
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4608004_10825800",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@3"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "异常标定",
+                    "data": {
+                        "start_step": 82
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4599297_10825795",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@1"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "异常标定",
+                    "data": {
+                        "start_step": 82
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4629369_10825814",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@7"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "异常标定",
+                    "data": {
+                        "start_step": 82
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4612489_10825803",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "巡查报告",
+                    "data": {
+                        "start_step": 79
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.463938_10825820",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@0"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "BPMN概念/EndEvent-1",
+                    "data": {
+                        "start_step": 77
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4700792_10825861",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "保安巡查",
+                    "data": {
+                        "start_step": 81
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4678817_10825847",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@8"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "异常标定",
+                    "data": {
+                        "start_step": 82
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4570158_10825775",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@8"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "异常发现",
+                    "data": {
+                        "start_step": 83
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4571931_10825776",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@6"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "BPMN概念/EndEvent-1",
+                    "data": {
+                        "start_step": 77
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.467624_10825845",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@8"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "BPMN概念/EndEvent-1",
+                    "data": {
+                        "start_step": 77
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.462156_10825811",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@3"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "BPMN概念/EndEvent-1",
+                    "data": {
+                        "start_step": 77
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4581506_10825783",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@4"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "异常标定",
+                    "data": {
+                        "start_step": 82
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4677012_10825846",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@0"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "异常发现",
+                    "data": {
+                        "start_step": 83
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4616685_10825807",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "物业审核",
+                    "data": {
+                        "start_step": 78
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.457446_10825778",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@1"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "异常发现",
+                    "data": {
+                        "start_step": 83
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.460901_10825801",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@5"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "自动抓图",
+                    "data": {
+                        "start_step": 84
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4595628_10825792",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@5"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "BPMN概念/EndEvent-1",
+                    "data": {
+                        "start_step": 77
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4614234_10825804",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "BPMN概念/EndEvent-1",
+                    "data": {
+                        "start_step": 77
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4591286_10825791",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@3"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "自动抓图",
+                    "data": {
+                        "start_step": 84
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.468312_10825850",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@9"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "现场处理",
+                    "data": {
+                        "start_step": 80
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4582322_10825784",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物业巡查/保安": "保安A@0",
+                "物业巡查/巡查管理方": "物业管理员@0"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "现场处理",
+                    "data": {
+                        "start_step": 80
+                    },
+                    "has_gen_next": false,
+                    "id": "1625123403.4689975_10825855",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        }
+    ],
+    "quota": {
+        "Process平均运行时间": {
+            "name": "Process平均运行时间",
+            "text": "0",
+            "type": "value",
+            "val": 9.0
+        }
+    },
+    "step_count": 85
+}

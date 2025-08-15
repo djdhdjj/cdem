@@ -1,0 +1,1631 @@
+{
+    "config": {
+        "id": "2021/4/13 下午12:44:25817",
+        "maxStep": "300",
+        "maxTime": null,
+        "name": "智慧社区智能巡查服务"
+    },
+    "instance_base": {
+        "config": {},
+        "groups": [
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/4/19 下午5:34:201019",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "物业巡查/保安"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/4/19 下午5:36:061023",
+                        "name": "保安A",
+                        "object_properties": [],
+                        "type": [
+                            "物业巡查/Participant"
+                        ]
+                    }
+                ],
+                "name": "保安",
+                "num": 1,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/4/19 下午5:33:581018",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "物业巡查/巡查管理方"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/4/19 下午5:35:021022",
+                        "name": "物业管理员",
+                        "object_properties": [],
+                        "type": [
+                            "物业巡查/Participant"
+                        ]
+                    }
+                ],
+                "name": "巡查管理方",
+                "num": 10,
+                "type": []
+            }
+        ],
+        "instances": [
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2021/4/19 下午5:36:321024",
+                "name": "Process平均运行时间",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            }
+        ],
+        "relations": []
+    },
+    "name": "智慧社区智能巡查服务",
+    "node2binding_relations": {
+        "保安A": [
+            "物业巡查/保安"
+        ],
+        "物业管理员": [
+            "物业巡查/巡查管理方"
+        ]
+    },
+    "pattern_instance_base": {
+        "config": {
+            "id": "1615881095.4785836_1130800",
+            "name": "智能巡查服务模式_推荐_1"
+        },
+        "groups": [],
+        "instances": [
+            {
+                "__gohashid": 112264,
+                "bindTo": [],
+                "category": "start",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('开始')\ntoken.data['start_step'] = model.step_count",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "图片巡查模式/2021/3/16 下午3:49:465",
+                "id": "BPMN概念/StartEvent-1",
+                "key": "图片巡查模式/2021/3/16 下午3:50:052892",
+                "loc": "30.999999999999993 209",
+                "name": "BPMN概念/StartEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/StartEvent"
+                ]
+            },
+            {
+                "__gohashid": 114092,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn rendom.randint(3,5)",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('标定成功')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "图片巡查模式/2021/3/16 下午3:49:465",
+                "id": "异常标定",
+                "key": "图片巡查模式/2021/3/16 下午3:50:382896",
+                "loc": "693 265",
+                "name": "异常标定",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/异常标定"
+                ]
+            },
+            {
+                "__gohashid": 112930,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "停车场管理/execution": {
+                        "isPattern": true,
+                        "text": "print('任务制定完成')",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn rendom.randint(3,5)",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "图片巡查模式/2021/3/16 下午3:49:465",
+                "id": "制定巡查任务",
+                "key": "图片巡查模式/2021/3/16 下午3:50:162894",
+                "loc": "139 379",
+                "name": "制定巡查任务",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/制定巡查任务"
+                ]
+            },
+            {
+                "__gohashid": 112570,
+                "bindTo": [],
+                "category": "end",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('End Event')\nend_step = model.step_count\nstart_step = token.data['start_step']\n\navg_process = model.instance_base.findByName('Process平均运行时间') \ntotal = avg_process.amount * avg_process.quota_dscp\n\navg_process.amount = avg_process.amount + 1\navg_process.quota_dscp = (total + end_step - start_step) / avg_process.amount\n",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "图片巡查模式/2021/3/16 下午3:49:465",
+                "id": "BPMN概念/EndEvent-1",
+                "key": "图片巡查模式/2021/3/16 下午3:50:102893",
+                "loc": "931 219",
+                "name": "BPMN概念/EndEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/EndEvent"
+                ]
+            },
+            {
+                "__gohashid": 115075,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "1",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('报告上传')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "图片巡查模式/2021/3/16 下午3:49:464",
+                "id": "巡查报告",
+                "key": "图片巡查模式/2021/3/16 下午3:51:052899",
+                "loc": "891 560",
+                "name": "巡查报告",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/巡查报告"
+                ]
+            },
+            {
+                "__gohashid": 113797,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "1",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('抓图成功')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "图片巡查模式/2021/3/16 下午3:49:465",
+                "id": "自动抓图",
+                "key": "图片巡查模式/2021/3/16 下午3:50:282895",
+                "loc": "323.00000000000006 262",
+                "name": "自动抓图",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/自动抓图"
+                ]
+            },
+            {
+                "__gohashid": 88417,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn rendom.randint(3,5)",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('巡查完成')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "图片巡查模式/2021/3/16 下午3:49:464",
+                "id": "保安巡查",
+                "key": "传统巡查模式/2021/3/16 下午3:47:102871",
+                "loc": "290.00000000000006 616",
+                "name": "保安巡查",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/保安巡查"
+                ]
+            },
+            {
+                "__gohashid": 114795,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "1",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('审核结束')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "图片巡查模式/2021/3/16 下午3:49:465",
+                "id": "物业审核",
+                "key": "图片巡查模式/2021/3/16 下午3:50:532898",
+                "loc": "878 382",
+                "name": "物业审核",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/物业审核"
+                ]
+            },
+            {
+                "__gohashid": 111820,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Tue Mar 16 07:51:35 20214684",
+                "id": "物业巡查/巡查管理方",
+                "isGroup": "true",
+                "key": "图片巡查模式/2021/3/16 下午3:49:465",
+                "loc": "7.999999999999993 170",
+                "name": "物业巡查/巡查管理方",
+                "object_properties": [],
+                "participant": "物业巡查/巡查管理方",
+                "props": [],
+                "size": "1083.5328674316406 300.43518524169923",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 111819,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Tue Mar 16 07:51:35 20214684",
+                "id": "物业巡查/保安",
+                "isGroup": "true",
+                "key": "图片巡查模式/2021/3/16 下午3:49:464",
+                "loc": "8 472",
+                "name": "物业巡查/保安",
+                "object_properties": [],
+                "participant": "物业巡查/保安",
+                "props": [],
+                "size": "1083.5328674316406 324.4351852416992",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 89869,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "1",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('异常发现')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "图片巡查模式/2021/3/16 下午3:49:465",
+                "id": "异常发现",
+                "key": "传统巡查模式/2021/3/16 下午3:47:252872",
+                "loc": "485.00000000000006 391",
+                "name": "异常发现",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/异常发现"
+                ]
+            },
+            {
+                "__gohashid": 114355,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn rendom.randint(3,5)",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('处理完成')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "图片巡查模式/2021/3/16 下午3:49:464",
+                "id": "现场处理",
+                "key": "图片巡查模式/2021/3/16 下午3:50:452897",
+                "loc": "672 717",
+                "name": "现场处理",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/现场处理"
+                ]
+            }
+        ],
+        "relations": [
+            {
+                "__gohashid": 117185,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "图片巡查模式/2021/3/16 下午3:50:452897",
+                "key": "图片巡查模式/2021/3/16 下午3:51:262904",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1230,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 732,
+                            "y": 717
+                        },
+                        {
+                            "s": true,
+                            "x": 742,
+                            "y": 717
+                        },
+                        {
+                            "s": true,
+                            "x": 776.5,
+                            "y": 717
+                        },
+                        {
+                            "s": true,
+                            "x": 776.5,
+                            "y": 560
+                        },
+                        {
+                            "s": true,
+                            "x": 811,
+                            "y": 560
+                        },
+                        {
+                            "s": true,
+                            "x": 831,
+                            "y": 560
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "图片巡查模式/2021/3/16 下午3:51:052899"
+            },
+            {
+                "__gohashid": 115370,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "图片巡查模式/2021/3/16 下午3:50:162894",
+                "key": "图片巡查模式/2021/3/16 下午3:51:162901",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1235,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 199,
+                            "y": 379
+                        },
+                        {
+                            "s": true,
+                            "x": 209,
+                            "y": 379
+                        },
+                        {
+                            "s": true,
+                            "x": 226.00000000000003,
+                            "y": 379
+                        },
+                        {
+                            "s": true,
+                            "x": 226.00000000000003,
+                            "y": 262
+                        },
+                        {
+                            "s": true,
+                            "x": 243.00000000000006,
+                            "y": 262
+                        },
+                        {
+                            "s": true,
+                            "x": 263.00000000000006,
+                            "y": 262
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "图片巡查模式/2021/3/16 下午3:50:282895"
+            },
+            {
+                "__gohashid": 152640,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "传统巡查模式/2021/3/16 下午3:47:252872",
+                "key": "智能巡查服务模式_推荐_1/2021/3/16 下午3:56:092944",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1250,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 545,
+                            "y": 391
+                        },
+                        {
+                            "s": true,
+                            "x": 555,
+                            "y": 391
+                        },
+                        {
+                            "s": true,
+                            "x": 584,
+                            "y": 391
+                        },
+                        {
+                            "s": true,
+                            "x": 584,
+                            "y": 265
+                        },
+                        {
+                            "s": true,
+                            "x": 613,
+                            "y": 265
+                        },
+                        {
+                            "s": true,
+                            "x": 633,
+                            "y": 265
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "图片巡查模式/2021/3/16 下午3:50:382896"
+            },
+            {
+                "__gohashid": 115255,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "图片巡查模式/2021/3/16 下午3:50:052892",
+                "key": "图片巡查模式/2021/3/16 下午3:51:142900",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1234,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 107.482666015625,
+                            "y": 252
+                        },
+                        {
+                            "s": true,
+                            "x": 107.482666015625,
+                            "y": 262
+                        },
+                        {
+                            "s": true,
+                            "x": 107.482666015625,
+                            "y": 260
+                        },
+                        {
+                            "s": true,
+                            "x": 107.482666015625,
+                            "y": 260
+                        },
+                        {
+                            "s": true,
+                            "x": 107.482666015625,
+                            "y": 300
+                        },
+                        {
+                            "s": true,
+                            "x": 139,
+                            "y": 300
+                        },
+                        {
+                            "s": true,
+                            "x": 139,
+                            "y": 319
+                        },
+                        {
+                            "s": true,
+                            "x": 139,
+                            "y": 339
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "图片巡查模式/2021/3/16 下午3:50:162894"
+            },
+            {
+                "__gohashid": 116451,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "图片巡查模式/2021/3/16 下午3:50:282895",
+                "key": "图片巡查模式/2021/3/16 下午3:51:212902",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1256,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 383.00000000000006,
+                            "y": 262
+                        },
+                        {
+                            "s": true,
+                            "x": 393.00000000000006,
+                            "y": 262
+                        },
+                        {
+                            "s": true,
+                            "x": 399.00000000000006,
+                            "y": 262
+                        },
+                        {
+                            "s": true,
+                            "x": 399.00000000000006,
+                            "y": 391
+                        },
+                        {
+                            "s": true,
+                            "x": 405.00000000000006,
+                            "y": 391
+                        },
+                        {
+                            "s": true,
+                            "x": 425.00000000000006,
+                            "y": 391
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "传统巡查模式/2021/3/16 下午3:47:252872"
+            },
+            {
+                "__gohashid": 4425,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "传统巡查模式/2021/3/16 下午3:47:102871",
+                "key": "智能巡查服务模式_推荐_1/2021/3/30 上午11:42:20789",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1241,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 350.00000000000006,
+                            "y": 616
+                        },
+                        {
+                            "s": true,
+                            "x": 360.00000000000006,
+                            "y": 616
+                        },
+                        {
+                            "s": true,
+                            "x": 476,
+                            "y": 616
+                        },
+                        {
+                            "s": true,
+                            "x": 476,
+                            "y": 717
+                        },
+                        {
+                            "s": true,
+                            "x": 592,
+                            "y": 717
+                        },
+                        {
+                            "s": true,
+                            "x": 612,
+                            "y": 717
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "图片巡查模式/2021/3/16 下午3:50:452897"
+            },
+            {
+                "__gohashid": 157012,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "图片巡查模式/2021/3/16 下午3:50:382896",
+                "key": "智能巡查服务模式_推荐_1/2021/3/16 下午3:56:242945",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1251,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 633,
+                            "y": 265
+                        },
+                        {
+                            "s": true,
+                            "x": 623,
+                            "y": 265
+                        },
+                        {
+                            "s": true,
+                            "x": 620,
+                            "y": 265
+                        },
+                        {
+                            "s": true,
+                            "x": 620,
+                            "y": 616
+                        },
+                        {
+                            "s": true,
+                            "x": 370.00000000000006,
+                            "y": 616
+                        },
+                        {
+                            "s": true,
+                            "x": 350.00000000000006,
+                            "y": 616
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "传统巡查模式/2021/3/16 下午3:47:102871"
+            },
+            {
+                "__gohashid": 117307,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "图片巡查模式/2021/3/16 下午3:51:052899",
+                "key": "图片巡查模式/2021/3/16 下午3:51:282905",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1245,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 891,
+                            "y": 520
+                        },
+                        {
+                            "s": true,
+                            "x": 891,
+                            "y": 510
+                        },
+                        {
+                            "s": true,
+                            "x": 891,
+                            "y": 508
+                        },
+                        {
+                            "s": true,
+                            "x": 878,
+                            "y": 508
+                        },
+                        {
+                            "s": true,
+                            "x": 878,
+                            "y": 442
+                        },
+                        {
+                            "s": true,
+                            "x": 878,
+                            "y": 422
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "图片巡查模式/2021/3/16 下午3:50:532898"
+            },
+            {
+                "__gohashid": 117424,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "图片巡查模式/2021/3/16 下午3:50:532898",
+                "key": "图片巡查模式/2021/3/16 下午3:51:302906",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1244,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 878,
+                            "y": 342
+                        },
+                        {
+                            "s": true,
+                            "x": 878,
+                            "y": 332
+                        },
+                        {
+                            "s": true,
+                            "x": 878,
+                            "y": 332
+                        },
+                        {
+                            "s": true,
+                            "x": 1005.2664337158203,
+                            "y": 332
+                        },
+                        {
+                            "s": true,
+                            "x": 1005.2664337158203,
+                            "y": 285
+                        },
+                        {
+                            "s": true,
+                            "x": 1005.2664337158203,
+                            "y": 265
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "图片巡查模式/2021/3/16 下午3:50:102893"
+            }
+        ]
+    },
+    "service pattern": {
+        "config": {
+            "id": "1615881095.4785836_1130800",
+            "name": "智能巡查服务模式_推荐_1"
+        },
+        "elements": {},
+        "evaluate_config": {},
+        "links": [
+            {
+                "__gohashid": 115255,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "图片巡查模式/2021/3/16 下午3:50:052892",
+                "key": "图片巡查模式/2021/3/16 下午3:51:142900",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1234,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 107.482666015625,
+                            "y": 252
+                        },
+                        {
+                            "s": true,
+                            "x": 107.482666015625,
+                            "y": 262
+                        },
+                        {
+                            "s": true,
+                            "x": 107.482666015625,
+                            "y": 260
+                        },
+                        {
+                            "s": true,
+                            "x": 107.482666015625,
+                            "y": 260
+                        },
+                        {
+                            "s": true,
+                            "x": 107.482666015625,
+                            "y": 300
+                        },
+                        {
+                            "s": true,
+                            "x": 139,
+                            "y": 300
+                        },
+                        {
+                            "s": true,
+                            "x": 139,
+                            "y": 319
+                        },
+                        {
+                            "s": true,
+                            "x": 139,
+                            "y": 339
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "图片巡查模式/2021/3/16 下午3:50:162894"
+            },
+            {
+                "__gohashid": 115370,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "图片巡查模式/2021/3/16 下午3:50:162894",
+                "key": "图片巡查模式/2021/3/16 下午3:51:162901",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1235,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 199,
+                            "y": 379
+                        },
+                        {
+                            "s": true,
+                            "x": 209,
+                            "y": 379
+                        },
+                        {
+                            "s": true,
+                            "x": 226.00000000000003,
+                            "y": 379
+                        },
+                        {
+                            "s": true,
+                            "x": 226.00000000000003,
+                            "y": 262
+                        },
+                        {
+                            "s": true,
+                            "x": 243.00000000000006,
+                            "y": 262
+                        },
+                        {
+                            "s": true,
+                            "x": 263.00000000000006,
+                            "y": 262
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "图片巡查模式/2021/3/16 下午3:50:282895"
+            },
+            {
+                "__gohashid": 117185,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "图片巡查模式/2021/3/16 下午3:50:452897",
+                "key": "图片巡查模式/2021/3/16 下午3:51:262904",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1230,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 732,
+                            "y": 717
+                        },
+                        {
+                            "s": true,
+                            "x": 742,
+                            "y": 717
+                        },
+                        {
+                            "s": true,
+                            "x": 776.5,
+                            "y": 717
+                        },
+                        {
+                            "s": true,
+                            "x": 776.5,
+                            "y": 560
+                        },
+                        {
+                            "s": true,
+                            "x": 811,
+                            "y": 560
+                        },
+                        {
+                            "s": true,
+                            "x": 831,
+                            "y": 560
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "图片巡查模式/2021/3/16 下午3:51:052899"
+            },
+            {
+                "__gohashid": 117424,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "图片巡查模式/2021/3/16 下午3:50:532898",
+                "key": "图片巡查模式/2021/3/16 下午3:51:302906",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1244,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 878,
+                            "y": 342
+                        },
+                        {
+                            "s": true,
+                            "x": 878,
+                            "y": 332
+                        },
+                        {
+                            "s": true,
+                            "x": 878,
+                            "y": 332
+                        },
+                        {
+                            "s": true,
+                            "x": 1005.2664337158203,
+                            "y": 332
+                        },
+                        {
+                            "s": true,
+                            "x": 1005.2664337158203,
+                            "y": 285
+                        },
+                        {
+                            "s": true,
+                            "x": 1005.2664337158203,
+                            "y": 265
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "图片巡查模式/2021/3/16 下午3:50:102893"
+            },
+            {
+                "__gohashid": 117307,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "图片巡查模式/2021/3/16 下午3:51:052899",
+                "key": "图片巡查模式/2021/3/16 下午3:51:282905",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1245,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 891,
+                            "y": 520
+                        },
+                        {
+                            "s": true,
+                            "x": 891,
+                            "y": 510
+                        },
+                        {
+                            "s": true,
+                            "x": 891,
+                            "y": 508
+                        },
+                        {
+                            "s": true,
+                            "x": 878,
+                            "y": 508
+                        },
+                        {
+                            "s": true,
+                            "x": 878,
+                            "y": 442
+                        },
+                        {
+                            "s": true,
+                            "x": 878,
+                            "y": 422
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "图片巡查模式/2021/3/16 下午3:50:532898"
+            },
+            {
+                "__gohashid": 152640,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "传统巡查模式/2021/3/16 下午3:47:252872",
+                "key": "智能巡查服务模式_推荐_1/2021/3/16 下午3:56:092944",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1250,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 545,
+                            "y": 391
+                        },
+                        {
+                            "s": true,
+                            "x": 555,
+                            "y": 391
+                        },
+                        {
+                            "s": true,
+                            "x": 584,
+                            "y": 391
+                        },
+                        {
+                            "s": true,
+                            "x": 584,
+                            "y": 265
+                        },
+                        {
+                            "s": true,
+                            "x": 613,
+                            "y": 265
+                        },
+                        {
+                            "s": true,
+                            "x": 633,
+                            "y": 265
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "图片巡查模式/2021/3/16 下午3:50:382896"
+            },
+            {
+                "__gohashid": 157012,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "图片巡查模式/2021/3/16 下午3:50:382896",
+                "key": "智能巡查服务模式_推荐_1/2021/3/16 下午3:56:242945",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1251,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 633,
+                            "y": 265
+                        },
+                        {
+                            "s": true,
+                            "x": 623,
+                            "y": 265
+                        },
+                        {
+                            "s": true,
+                            "x": 620,
+                            "y": 265
+                        },
+                        {
+                            "s": true,
+                            "x": 620,
+                            "y": 616
+                        },
+                        {
+                            "s": true,
+                            "x": 370.00000000000006,
+                            "y": 616
+                        },
+                        {
+                            "s": true,
+                            "x": 350.00000000000006,
+                            "y": 616
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "传统巡查模式/2021/3/16 下午3:47:102871"
+            },
+            {
+                "__gohashid": 116451,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "图片巡查模式/2021/3/16 下午3:50:282895",
+                "key": "图片巡查模式/2021/3/16 下午3:51:212902",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1256,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 383.00000000000006,
+                            "y": 262
+                        },
+                        {
+                            "s": true,
+                            "x": 393.00000000000006,
+                            "y": 262
+                        },
+                        {
+                            "s": true,
+                            "x": 399.00000000000006,
+                            "y": 262
+                        },
+                        {
+                            "s": true,
+                            "x": 399.00000000000006,
+                            "y": 391
+                        },
+                        {
+                            "s": true,
+                            "x": 405.00000000000006,
+                            "y": 391
+                        },
+                        {
+                            "s": true,
+                            "x": 425.00000000000006,
+                            "y": 391
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "传统巡查模式/2021/3/16 下午3:47:252872"
+            },
+            {
+                "__gohashid": 4425,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "传统巡查模式/2021/3/16 下午3:47:102871",
+                "key": "智能巡查服务模式_推荐_1/2021/3/30 上午11:42:20789",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1241,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 350.00000000000006,
+                            "y": 616
+                        },
+                        {
+                            "s": true,
+                            "x": 360.00000000000006,
+                            "y": 616
+                        },
+                        {
+                            "s": true,
+                            "x": 476,
+                            "y": 616
+                        },
+                        {
+                            "s": true,
+                            "x": 476,
+                            "y": 717
+                        },
+                        {
+                            "s": true,
+                            "x": 592,
+                            "y": 717
+                        },
+                        {
+                            "s": true,
+                            "x": 612,
+                            "y": 717
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "图片巡查模式/2021/3/16 下午3:50:452897"
+            }
+        ],
+        "nodes": [
+            {
+                "__gohashid": 111819,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Tue Mar 16 07:51:35 20214684",
+                "id": "物业巡查/保安",
+                "isGroup": "true",
+                "key": "图片巡查模式/2021/3/16 下午3:49:464",
+                "loc": "8 472",
+                "name": "物业巡查/保安",
+                "object_properties": [],
+                "participant": "物业巡查/保安",
+                "props": [],
+                "size": "1083.5328674316406 324.4351852416992",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 111820,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Tue Mar 16 07:51:35 20214684",
+                "id": "物业巡查/巡查管理方",
+                "isGroup": "true",
+                "key": "图片巡查模式/2021/3/16 下午3:49:465",
+                "loc": "7.999999999999993 170",
+                "name": "物业巡查/巡查管理方",
+                "object_properties": [],
+                "participant": "物业巡查/巡查管理方",
+                "props": [],
+                "size": "1083.5328674316406 300.43518524169923",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 112264,
+                "bindTo": [],
+                "category": "start",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('开始')\ntoken.data['start_step'] = model.step_count",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "图片巡查模式/2021/3/16 下午3:49:465",
+                "id": "BPMN概念/StartEvent-1",
+                "key": "图片巡查模式/2021/3/16 下午3:50:052892",
+                "loc": "30.999999999999993 209",
+                "name": "BPMN概念/StartEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/StartEvent"
+                ]
+            },
+            {
+                "__gohashid": 112570,
+                "bindTo": [],
+                "category": "end",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('End Event')\nend_step = model.step_count\nstart_step = token.data['start_step']\n\navg_process = model.instance_base.findByName('Process平均运行时间') \ntotal = avg_process.amount * avg_process.quota_dscp\n\navg_process.amount = avg_process.amount + 1\navg_process.quota_dscp = (total + end_step - start_step) / avg_process.amount\n",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "图片巡查模式/2021/3/16 下午3:49:465",
+                "id": "BPMN概念/EndEvent-1",
+                "key": "图片巡查模式/2021/3/16 下午3:50:102893",
+                "loc": "931 219",
+                "name": "BPMN概念/EndEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/EndEvent"
+                ]
+            },
+            {
+                "__gohashid": 112930,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "停车场管理/execution": {
+                        "isPattern": true,
+                        "text": "print('任务制定完成')",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn rendom.randint(3,5)",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "图片巡查模式/2021/3/16 下午3:49:465",
+                "id": "制定巡查任务",
+                "key": "图片巡查模式/2021/3/16 下午3:50:162894",
+                "loc": "139 379",
+                "name": "制定巡查任务",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/制定巡查任务"
+                ]
+            },
+            {
+                "__gohashid": 113797,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "1",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('抓图成功')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "图片巡查模式/2021/3/16 下午3:49:465",
+                "id": "自动抓图",
+                "key": "图片巡查模式/2021/3/16 下午3:50:282895",
+                "loc": "323.00000000000006 262",
+                "name": "自动抓图",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/自动抓图"
+                ]
+            },
+            {
+                "__gohashid": 114092,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn rendom.randint(3,5)",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('标定成功')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "图片巡查模式/2021/3/16 下午3:49:465",
+                "id": "异常标定",
+                "key": "图片巡查模式/2021/3/16 下午3:50:382896",
+                "loc": "693 265",
+                "name": "异常标定",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/异常标定"
+                ]
+            },
+            {
+                "__gohashid": 114355,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn rendom.randint(3,5)",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('处理完成')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "图片巡查模式/2021/3/16 下午3:49:464",
+                "id": "现场处理",
+                "key": "图片巡查模式/2021/3/16 下午3:50:452897",
+                "loc": "672 717",
+                "name": "现场处理",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/现场处理"
+                ]
+            },
+            {
+                "__gohashid": 114795,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "1",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('审核结束')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "图片巡查模式/2021/3/16 下午3:49:465",
+                "id": "物业审核",
+                "key": "图片巡查模式/2021/3/16 下午3:50:532898",
+                "loc": "878 382",
+                "name": "物业审核",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/物业审核"
+                ]
+            },
+            {
+                "__gohashid": 115075,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "1",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('报告上传')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "图片巡查模式/2021/3/16 下午3:49:464",
+                "id": "巡查报告",
+                "key": "图片巡查模式/2021/3/16 下午3:51:052899",
+                "loc": "891 560",
+                "name": "巡查报告",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/巡查报告"
+                ]
+            },
+            {
+                "__gohashid": 88417,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn rendom.randint(3,5)",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('巡查完成')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "图片巡查模式/2021/3/16 下午3:49:464",
+                "id": "保安巡查",
+                "key": "传统巡查模式/2021/3/16 下午3:47:102871",
+                "loc": "290.00000000000006 616",
+                "name": "保安巡查",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/保安巡查"
+                ]
+            },
+            {
+                "__gohashid": 89869,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "1",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('异常发现')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "图片巡查模式/2021/3/16 下午3:49:465",
+                "id": "异常发现",
+                "key": "传统巡查模式/2021/3/16 下午3:47:252872",
+                "loc": "485.00000000000006 391",
+                "name": "异常发现",
+                "object_properties": [],
+                "type": [
+                    "物业巡查/异常发现"
+                ]
+            },
+            {
+                "__gohashid": "6ab749ad60654de8befd3a69d6793d87",
+                "category": "Pool",
+                "isGroup": "true",
+                "key": "Tue Mar 16 07:51:35 20214684",
+                "loc": "-18.522847498307947 170",
+                "name": "智能巡查服务模式",
+                "type": "BPMN概念/LaneSet"
+            }
+        ],
+        "resource_config": {}
+    }
+}
