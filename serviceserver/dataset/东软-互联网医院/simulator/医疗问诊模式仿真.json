@@ -1,0 +1,1995 @@
+{
+    "config": {
+        "id": "2021/1/6 上午12:28:24737",
+        "maxStep": "100",
+        "maxTime": null,
+        "name": "医疗问诊模式仿真"
+    },
+    "instance_base": {
+        "config": {},
+        "groups": [
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/1/6 下午1:39:36740",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "医疗领域/患者"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/1/6 下午1:39:44741",
+                        "name": "2021/1/6 下午1:39:44741",
+                        "object_properties": [],
+                        "type": [
+                            "医疗领域/Participant"
+                        ]
+                    },
+                    {
+                        "bindTo": [
+                            "医疗领域/患者"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/1/6 下午1:39:58742",
+                        "name": "2021/1/6 下午1:39:58742",
+                        "object_properties": [],
+                        "type": [
+                            "医疗领域/Participant"
+                        ]
+                    },
+                    {
+                        "bindTo": [
+                            "医疗领域/患者"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/1/6 下午1:40:07743",
+                        "name": "2021/1/6 下午1:40:07743",
+                        "object_properties": [],
+                        "type": [
+                            "医疗领域/Participant"
+                        ]
+                    }
+                ],
+                "name": "患者",
+                "num": 10,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "1/7/2021 7:12:39 PM668",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "医疗领域/平台"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "1/7/2021 7:12:47 PM669",
+                        "name": "1/7/2021 7:12:47 PM669",
+                        "object_properties": [],
+                        "type": [
+                            "医疗领域/Participant"
+                        ]
+                    }
+                ],
+                "name": "平台",
+                "num": 1,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/1/6 下午1:40:15744",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "医疗领域/医院"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/1/6 下午1:40:28745",
+                        "name": "2021/1/6 下午1:40:28745",
+                        "object_properties": [],
+                        "type": [
+                            "医疗领域/Participant"
+                        ]
+                    }
+                ],
+                "name": "医院",
+                "num": 1,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/1/6 下午1:38:59738",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "医疗领域/医生"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/1/6 下午1:39:12739",
+                        "name": "李大夫",
+                        "object_properties": [],
+                        "type": [
+                            "医疗领域/Participant"
+                        ]
+                    }
+                ],
+                "name": "医生",
+                "num": 1,
+                "type": []
+            }
+        ],
+        "instances": [
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2021/1/6 下午9:25:39767",
+                "name": "Process平均运行时间",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            }
+        ],
+        "relations": []
+    },
+    "name": "医疗问诊模式仿真",
+    "node2binding_relations": {
+        "1/7/2021 7:12:47 PM669": [
+            "医疗领域/平台"
+        ],
+        "2021/1/6 下午1:39:44741": [
+            "医疗领域/患者"
+        ],
+        "2021/1/6 下午1:39:58742": [
+            "医疗领域/患者"
+        ],
+        "2021/1/6 下午1:40:07743": [
+            "医疗领域/患者"
+        ],
+        "2021/1/6 下午1:40:28745": [
+            "医疗领域/医院"
+        ],
+        "李大夫": [
+            "医疗领域/医生"
+        ]
+    },
+    "pattern_instance_base": {
+        "config": {
+            "id": "2021/1/5 下午2:13:24840",
+            "name": "医疗问诊模式"
+        },
+        "groups": [],
+        "instances": [
+            {
+                "__gohashid": 2506,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "expanded": true,
+                "goal": [],
+                "graph_data": {},
+                "group": "医疗问诊模式/2021/1/5 下午2:16:500",
+                "id": "医疗领域/平台",
+                "isGroup": true,
+                "key": "医疗问诊模式/2021/1/5 下午2:16:505",
+                "loc": "55.06210988844466 1071.5",
+                "name": "医疗领域/平台",
+                "object_properties": [],
+                "participant": "医疗领域/平台",
+                "props": [],
+                "size": "800.8900633513015 161.46412048339835",
+                "superProps": {},
+                "text": "医疗领域/平台",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 4515,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn round(random.uniform(5,10))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('昨晚开始发烧，最高38.5度')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "医疗问诊模式/2021/1/5 下午2:16:501",
+                "id": "病情主诉",
+                "key": "医疗问诊模式/2021/1/5 下午11:09:26728",
+                "loc": "158 372.09375",
+                "name": "病情主诉",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/病情主诉"
+                ]
+            },
+            {
+                "__gohashid": 14717,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('是否应该吃退烧药')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "医疗问诊模式/2021/1/5 下午2:16:501",
+                "id": "问诊",
+                "key": "医疗问诊模式/2021/1/5 下午2:33:08731",
+                "loc": "525 371.75",
+                "name": "问诊",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/问诊"
+                ]
+            },
+            {
+                "__gohashid": 2502,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "医疗问诊模式/2021/1/5 下午2:16:500",
+                "id": "医疗领域/患者",
+                "isGroup": true,
+                "key": "医疗问诊模式/2021/1/5 下午2:16:501",
+                "loc": "55.06210988844466 145.5",
+                "name": "医疗领域/患者",
+                "object_properties": [],
+                "participant": "医疗领域/患者",
+                "props": [],
+                "size": "800.8900633513015 310.194429529558",
+                "superProps": {},
+                "text": "医疗领域/患者",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 3673,
+                "bindTo": [],
+                "category": "end",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"end\")\n\nend_step=model.step_count\nstart_step=token.data['start_step']\n\ntime = end_step-start_step\n\navg_process = model.instance_base.findByName(\"Process平均运行时间\")\ntotal = avg_process.amount*avg_process.quota_dscp\n\navg_process.amount = avg_process.amount+1\navg_process.quota_dscp = (total+time)/avg_process.amount\n\n",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "医疗问诊模式/2021/1/5 下午2:16:505",
+                "id": "结束",
+                "key": "医疗问诊模式/2021/1/5 下午11:22:32725",
+                "loc": "413 1136.09375",
+                "name": "结束",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/EndEvent"
+                ]
+            },
+            {
+                "__gohashid": 21532,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn round(random.uniform(1,5))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "医疗问诊模式/2021/1/5 下午2:16:503",
+                "id": "写病历",
+                "key": "医疗问诊模式/2021/1/5 下午11:11:55732",
+                "loc": "214 972.09375",
+                "name": "写病历",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/患者病历"
+                ]
+            },
+            {
+                "__gohashid": 37446,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 7))\nreturn round(random.uniform(low, up))\n",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"开立处方\")",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "group": "医疗问诊模式/2021/1/5 下午2:16:503",
+                "id": "开立处方",
+                "key": "医疗问诊模式/2021/1/5 下午2:55:03770",
+                "loc": "428.22608661987306 909",
+                "name": "开立处方",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/开处方"
+                ]
+            },
+            {
+                "__gohashid": 46900,
+                "bindTo": [],
+                "category": "start",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"start\")\n\ntoken.data['start_step']=model.step_count",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "医疗问诊模式/2021/1/5 下午2:16:501",
+                "id": "问诊开始",
+                "key": "医疗问诊模式/2021/1/5 下午6:00:58780",
+                "loc": "93 217.75",
+                "name": "问诊开始",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/StartEvent"
+                ]
+            },
+            {
+                "__gohashid": 3447,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))\n",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('温度超过38.5度，建议使用退烧皮栓和退烧药交替使用')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "医疗问诊模式/2021/1/5 下午2:16:502",
+                "id": "看诊",
+                "key": "医疗问诊模式/2021/1/5 下午11:19:11715",
+                "loc": "319.3751611743164 631.09375",
+                "name": "看诊",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/看诊"
+                ]
+            },
+            {
+                "__gohashid": 2504,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "医疗问诊模式/2021/1/5 下午2:16:500",
+                "id": "医疗领域/医院",
+                "isGroup": true,
+                "key": "医疗问诊模式/2021/1/5 下午2:16:503",
+                "loc": "55.06210988844466 779.5",
+                "name": "医疗领域/医院",
+                "object_properties": [],
+                "participant": "医疗领域/医院",
+                "props": [],
+                "size": "800.8900633513015 290.4056640624999",
+                "superProps": {},
+                "text": "医疗领域/医院",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 37863,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "医疗问诊模式/2021/1/5 下午2:16:503",
+                "id": "开立检查检验",
+                "key": "医疗问诊模式/2021/1/5 下午2:55:30771",
+                "loc": "705 927",
+                "name": "开立检查检验",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/开检查检验"
+                ]
+            },
+            {
+                "__gohashid": 2503,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "医疗问诊模式/2021/1/5 下午2:16:500",
+                "id": "医疗领域/医生",
+                "isGroup": true,
+                "key": "医疗问诊模式/2021/1/5 下午2:16:502",
+                "loc": "55.06210988844466 457.5",
+                "name": "医疗领域/医生",
+                "object_properties": [],
+                "participant": "医疗领域/医生",
+                "props": [],
+                "size": "800.8900633513015 320.93516540527344",
+                "superProps": {},
+                "text": "医疗领域/医生",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            }
+        ],
+        "relations": [
+            {
+                "__gohashid": 5874,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "医疗问诊模式/2021/1/5 下午2:33:08731",
+                "key": "医疗问诊模式/2021/1/5 下午11:20:04723",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 4493,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 525,
+                            "y": 411.75
+                        },
+                        {
+                            "s": true,
+                            "x": 525,
+                            "y": 421.75
+                        },
+                        {
+                            "s": true,
+                            "x": 525,
+                            "y": 421.75
+                        },
+                        {
+                            "s": true,
+                            "x": 319.3751611743164,
+                            "y": 421.75
+                        },
+                        {
+                            "s": true,
+                            "x": 319.3751611743164,
+                            "y": 571.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 319.3751611743164,
+                            "y": 591.09375
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "医疗问诊模式/2021/1/5 下午11:19:11715"
+            },
+            {
+                "__gohashid": 4358,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "医疗问诊模式/2021/1/5 下午2:55:30771",
+                "key": "医疗问诊模式/2021/1/5 下午11:22:52728",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 4577,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 705,
+                            "y": 967
+                        },
+                        {
+                            "s": true,
+                            "x": 705,
+                            "y": 977
+                        },
+                        {
+                            "s": true,
+                            "x": 705,
+                            "y": 980
+                        },
+                        {
+                            "s": true,
+                            "x": 474.5,
+                            "y": 980
+                        },
+                        {
+                            "s": true,
+                            "x": 474.5,
+                            "y": 1116.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 474.5,
+                            "y": 1136.09375
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "医疗问诊模式/2021/1/5 下午11:22:32725"
+            },
+            {
+                "__gohashid": 100657,
+                "category": "",
+                "data_properties": {},
+                "from": "医疗问诊模式/2021/1/5 下午2:55:30771",
+                "key": -18,
+                "points": {
+                    "Aa": 0,
+                    "Fa": null,
+                    "__gohashid": 22926,
+                    "bh": null,
+                    "j": [],
+                    "s": true
+                },
+                "to": "医疗问诊模式/2021/1/5 下午2:32:57730"
+            },
+            {
+                "__gohashid": 6056,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "医疗问诊模式/2021/1/5 下午11:19:11715",
+                "key": "医疗问诊模式/2021/1/5 下午11:20:08724",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 4507,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 319.3751611743164,
+                            "y": 671.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 319.3751611743164,
+                            "y": 681.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 319.3751611743164,
+                            "y": 684
+                        },
+                        {
+                            "s": true,
+                            "x": 214,
+                            "y": 684
+                        },
+                        {
+                            "s": true,
+                            "x": 214,
+                            "y": 912.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 214,
+                            "y": 932.09375
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "医疗问诊模式/2021/1/5 下午11:11:55732"
+            },
+            {
+                "__gohashid": 6434,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "医疗问诊模式/2021/1/5 下午11:19:11715",
+                "key": "医疗问诊模式/2021/1/5 下午11:20:14726",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 4535,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 379.3751611743164,
+                            "y": 631.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 389.3751611743164,
+                            "y": 631.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 507.1875805871582,
+                            "y": 631.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 507.1875805871582,
+                            "y": 927
+                        },
+                        {
+                            "s": true,
+                            "x": 625,
+                            "y": 927
+                        },
+                        {
+                            "s": true,
+                            "x": 645,
+                            "y": 927
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "医疗问诊模式/2021/1/5 下午2:55:30771"
+            },
+            {
+                "__gohashid": 3936,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "医疗问诊模式/2021/1/5 下午11:11:55732",
+                "key": "医疗问诊模式/2021/1/5 下午11:22:45726",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 4549,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 274,
+                            "y": 972.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 284,
+                            "y": 972.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 284,
+                            "y": 972.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 284,
+                            "y": 1159.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 431.5,
+                            "y": 1159.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 451.5,
+                            "y": 1159.09375
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "医疗问诊模式/2021/1/5 下午11:22:32725"
+            },
+            {
+                "__gohashid": 10646,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "医疗问诊模式/2021/1/5 下午11:09:26728",
+                "key": "医疗问诊模式/2021/1/5 下午11:10:22730",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 4370,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 218,
+                            "y": 372.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 228,
+                            "y": 372.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 336.5,
+                            "y": 372.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 336.5,
+                            "y": 371.75
+                        },
+                        {
+                            "s": true,
+                            "x": 445,
+                            "y": 371.75
+                        },
+                        {
+                            "s": true,
+                            "x": 465,
+                            "y": 371.75
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "医疗问诊模式/2021/1/5 下午2:33:08731"
+            },
+            {
+                "__gohashid": 17271,
+                "category": "",
+                "data_properties": {},
+                "from": "医疗问诊模式/2021/1/5 下午2:32:57730",
+                "key": -4,
+                "to": "医疗问诊模式/2021/1/5 下午2:33:08731"
+            },
+            {
+                "__gohashid": 6234,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "医疗问诊模式/2021/1/5 下午11:19:11715",
+                "key": "医疗问诊模式/2021/1/5 下午11:20:11725",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 4521,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 319.3751611743164,
+                            "y": 671.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 319.3751611743164,
+                            "y": 681.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 319.3751611743164,
+                            "y": 765.046875
+                        },
+                        {
+                            "s": true,
+                            "x": 428.22608661987306,
+                            "y": 765.046875
+                        },
+                        {
+                            "s": true,
+                            "x": 428.22608661987306,
+                            "y": 849
+                        },
+                        {
+                            "s": true,
+                            "x": 428.22608661987306,
+                            "y": 869
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "医疗问诊模式/2021/1/5 下午2:55:03770"
+            },
+            {
+                "__gohashid": 4110,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "医疗问诊模式/2021/1/5 下午2:55:03770",
+                "key": "医疗问诊模式/2021/1/5 下午11:22:48727",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 4563,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 428.22608661987306,
+                            "y": 949
+                        },
+                        {
+                            "s": true,
+                            "x": 428.22608661987306,
+                            "y": 959
+                        },
+                        {
+                            "s": true,
+                            "x": 428.22608661987306,
+                            "y": 956
+                        },
+                        {
+                            "s": true,
+                            "x": 428.22608661987306,
+                            "y": 956
+                        },
+                        {
+                            "s": true,
+                            "x": 428.22608661987306,
+                            "y": 980
+                        },
+                        {
+                            "s": true,
+                            "x": 474.5,
+                            "y": 980
+                        },
+                        {
+                            "s": true,
+                            "x": 474.5,
+                            "y": 1116.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 474.5,
+                            "y": 1136.09375
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "医疗问诊模式/2021/1/5 下午11:22:32725"
+            },
+            {
+                "__gohashid": 4849,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "医疗问诊模式/2021/1/5 下午6:00:58780",
+                "key": "医疗问诊模式/2021/1/5 下午11:09:56729",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 4351,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 157,
+                            "y": 260.75
+                        },
+                        {
+                            "s": true,
+                            "x": 157,
+                            "y": 270.75
+                        },
+                        {
+                            "s": true,
+                            "x": 158,
+                            "y": 270.75
+                        },
+                        {
+                            "s": true,
+                            "x": 158,
+                            "y": 270.75
+                        },
+                        {
+                            "s": true,
+                            "x": 158,
+                            "y": 312.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 158,
+                            "y": 332.09375
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "医疗问诊模式/2021/1/5 下午11:09:26728"
+            }
+        ]
+    },
+    "service pattern": {
+        "config": {
+            "id": "2021/1/5 下午2:13:24840",
+            "name": "医疗问诊模式"
+        },
+        "elements": {
+            "Carrier": [
+                "医疗领域/医生",
+                "医疗领域/医院",
+                "医疗领域/平台",
+                "医疗领域/患者"
+            ],
+            "Goal": [
+                "医疗领域/康复",
+                "医疗领域/完成看诊"
+            ],
+            "Participant": [
+                "医疗领域/患者",
+                "医疗领域/医生",
+                "医疗领域/医院",
+                "医疗领域/平台"
+            ],
+            "Quota": [
+                "医疗领域/看诊量"
+            ],
+            "Task": [
+                "医疗领域/开处方",
+                "医疗领域/开检查检验",
+                "医疗领域/病情主诉",
+                "医疗领域/问诊",
+                "医疗领域/收单",
+                "医疗领域/患者病历",
+                "医疗领域/完成看诊",
+                "医疗领域/看诊"
+            ],
+            "currencyObject": [
+                "医疗领域/挂号费"
+            ],
+            "dataObject": [
+                "医疗领域/患者病历"
+            ],
+            "resourceObject": [
+                "医疗领域/号源数"
+            ]
+        },
+        "evaluate_config": {
+            "医疗问诊模式/2021/1/5 下午2:16:500": {
+                "name": "BPMN概念/LaneSet-1"
+            },
+            "医疗问诊模式/2021/1/5 下午2:16:501": {
+                "name": "医疗领域/患者"
+            },
+            "医疗问诊模式/2021/1/5 下午2:16:502": {
+                "name": "医疗领域/医生"
+            },
+            "医疗问诊模式/2021/1/5 下午2:16:503": {
+                "name": "医疗领域/医院"
+            },
+            "医疗问诊模式/2021/1/5 下午2:16:504": {
+                "name": "医疗领域/支付公司"
+            },
+            "医疗问诊模式/2021/1/5 下午2:16:505": {
+                "name": "医疗领域/平台"
+            },
+            "医疗问诊模式/2021/1/5 下午2:30:29725": {
+                "cost": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "name": "BPMN概念/StartEvent-2",
+                "reliability": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": 0,
+                    "type": "constant"
+                }
+            },
+            "医疗问诊模式/2021/1/5 下午2:30:53726": {
+                "cost": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "name": "医生排班",
+                "reliability": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": 0,
+                    "type": "constant"
+                }
+            },
+            "医疗问诊模式/2021/1/5 下午2:32:25728": {
+                "cost": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "name": "挂号",
+                "reliability": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": 0,
+                    "type": "constant"
+                }
+            },
+            "医疗问诊模式/2021/1/5 下午2:32:45729": {
+                "cost": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "name": "处方缴费",
+                "reliability": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": 0,
+                    "type": "constant"
+                }
+            },
+            "医疗问诊模式/2021/1/5 下午2:33:08731": {
+                "cost": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "name": "问诊",
+                "reliability": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": 0,
+                    "type": "constant"
+                }
+            },
+            "医疗问诊模式/2021/1/5 下午2:37:09735": {
+                "cost": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "name": "收单",
+                "reliability": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": 0,
+                    "type": "constant"
+                }
+            },
+            "医疗问诊模式/2021/1/5 下午2:55:03770": {
+                "cost": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "name": "开立处方",
+                "reliability": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": 0,
+                    "type": "constant"
+                }
+            },
+            "医疗问诊模式/2021/1/5 下午2:55:30771": {
+                "cost": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "name": "开立检查检验",
+                "reliability": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": 0,
+                    "type": "constant"
+                }
+            },
+            "医疗问诊模式/2021/1/5 下午5:16:52778": {
+                "cost": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "name": "BPMN概念/EndEvent-1",
+                "reliability": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": 0,
+                    "type": "constant"
+                }
+            },
+            "医疗问诊模式/2021/1/5 下午6:00:58780": {
+                "cost": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "name": "BPMN概念/StartEvent-3",
+                "reliability": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": 0,
+                    "type": "constant"
+                }
+            },
+            "医疗问诊模式/2021/1/5 下午6:03:10785": {
+                "amount": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "name": "挂号费",
+                "type": "constant",
+                "unit": "元"
+            },
+            "医疗问诊模式/2021/1/5 下午6:10:52797": {
+                "cost": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "name": "BPMN概念/EndEvent-3",
+                "reliability": {
+                    "n": 0,
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": 0,
+                    "type": "constant"
+                }
+            }
+        },
+        "links": [
+            {
+                "__gohashid": 17271,
+                "category": "",
+                "data_properties": {},
+                "from": "医疗问诊模式/2021/1/5 下午2:32:57730",
+                "key": -4,
+                "to": "医疗问诊模式/2021/1/5 下午2:33:08731"
+            },
+            {
+                "__gohashid": 100657,
+                "category": "",
+                "data_properties": {},
+                "from": "医疗问诊模式/2021/1/5 下午2:55:30771",
+                "key": -18,
+                "points": {
+                    "Aa": 0,
+                    "Fa": null,
+                    "__gohashid": 22926,
+                    "bh": null,
+                    "j": [],
+                    "s": true
+                },
+                "to": "医疗问诊模式/2021/1/5 下午2:32:57730"
+            },
+            {
+                "__gohashid": 4849,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "医疗问诊模式/2021/1/5 下午6:00:58780",
+                "key": "医疗问诊模式/2021/1/5 下午11:09:56729",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 4351,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 157,
+                            "y": 260.75
+                        },
+                        {
+                            "s": true,
+                            "x": 157,
+                            "y": 270.75
+                        },
+                        {
+                            "s": true,
+                            "x": 158,
+                            "y": 270.75
+                        },
+                        {
+                            "s": true,
+                            "x": 158,
+                            "y": 270.75
+                        },
+                        {
+                            "s": true,
+                            "x": 158,
+                            "y": 312.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 158,
+                            "y": 332.09375
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "医疗问诊模式/2021/1/5 下午11:09:26728"
+            },
+            {
+                "__gohashid": 10646,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "医疗问诊模式/2021/1/5 下午11:09:26728",
+                "key": "医疗问诊模式/2021/1/5 下午11:10:22730",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 4370,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 218,
+                            "y": 372.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 228,
+                            "y": 372.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 336.5,
+                            "y": 372.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 336.5,
+                            "y": 371.75
+                        },
+                        {
+                            "s": true,
+                            "x": 445,
+                            "y": 371.75
+                        },
+                        {
+                            "s": true,
+                            "x": 465,
+                            "y": 371.75
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "医疗问诊模式/2021/1/5 下午2:33:08731"
+            },
+            {
+                "__gohashid": 5874,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "医疗问诊模式/2021/1/5 下午2:33:08731",
+                "key": "医疗问诊模式/2021/1/5 下午11:20:04723",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 4493,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 525,
+                            "y": 411.75
+                        },
+                        {
+                            "s": true,
+                            "x": 525,
+                            "y": 421.75
+                        },
+                        {
+                            "s": true,
+                            "x": 525,
+                            "y": 421.75
+                        },
+                        {
+                            "s": true,
+                            "x": 319.3751611743164,
+                            "y": 421.75
+                        },
+                        {
+                            "s": true,
+                            "x": 319.3751611743164,
+                            "y": 571.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 319.3751611743164,
+                            "y": 591.09375
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "医疗问诊模式/2021/1/5 下午11:19:11715"
+            },
+            {
+                "__gohashid": 6056,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "医疗问诊模式/2021/1/5 下午11:19:11715",
+                "key": "医疗问诊模式/2021/1/5 下午11:20:08724",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 4507,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 319.3751611743164,
+                            "y": 671.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 319.3751611743164,
+                            "y": 681.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 319.3751611743164,
+                            "y": 684
+                        },
+                        {
+                            "s": true,
+                            "x": 214,
+                            "y": 684
+                        },
+                        {
+                            "s": true,
+                            "x": 214,
+                            "y": 912.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 214,
+                            "y": 932.09375
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "医疗问诊模式/2021/1/5 下午11:11:55732"
+            },
+            {
+                "__gohashid": 6234,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "医疗问诊模式/2021/1/5 下午11:19:11715",
+                "key": "医疗问诊模式/2021/1/5 下午11:20:11725",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 4521,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 319.3751611743164,
+                            "y": 671.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 319.3751611743164,
+                            "y": 681.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 319.3751611743164,
+                            "y": 765.046875
+                        },
+                        {
+                            "s": true,
+                            "x": 428.22608661987306,
+                            "y": 765.046875
+                        },
+                        {
+                            "s": true,
+                            "x": 428.22608661987306,
+                            "y": 849
+                        },
+                        {
+                            "s": true,
+                            "x": 428.22608661987306,
+                            "y": 869
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "医疗问诊模式/2021/1/5 下午2:55:03770"
+            },
+            {
+                "__gohashid": 6434,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "医疗问诊模式/2021/1/5 下午11:19:11715",
+                "key": "医疗问诊模式/2021/1/5 下午11:20:14726",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 4535,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 379.3751611743164,
+                            "y": 631.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 389.3751611743164,
+                            "y": 631.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 507.1875805871582,
+                            "y": 631.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 507.1875805871582,
+                            "y": 927
+                        },
+                        {
+                            "s": true,
+                            "x": 625,
+                            "y": 927
+                        },
+                        {
+                            "s": true,
+                            "x": 645,
+                            "y": 927
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "医疗问诊模式/2021/1/5 下午2:55:30771"
+            },
+            {
+                "__gohashid": 3936,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "医疗问诊模式/2021/1/5 下午11:11:55732",
+                "key": "医疗问诊模式/2021/1/5 下午11:22:45726",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 4549,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 274,
+                            "y": 972.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 284,
+                            "y": 972.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 284,
+                            "y": 972.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 284,
+                            "y": 1159.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 431.5,
+                            "y": 1159.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 451.5,
+                            "y": 1159.09375
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "医疗问诊模式/2021/1/5 下午11:22:32725"
+            },
+            {
+                "__gohashid": 4110,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "医疗问诊模式/2021/1/5 下午2:55:03770",
+                "key": "医疗问诊模式/2021/1/5 下午11:22:48727",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 4563,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 428.22608661987306,
+                            "y": 949
+                        },
+                        {
+                            "s": true,
+                            "x": 428.22608661987306,
+                            "y": 959
+                        },
+                        {
+                            "s": true,
+                            "x": 428.22608661987306,
+                            "y": 956
+                        },
+                        {
+                            "s": true,
+                            "x": 428.22608661987306,
+                            "y": 956
+                        },
+                        {
+                            "s": true,
+                            "x": 428.22608661987306,
+                            "y": 980
+                        },
+                        {
+                            "s": true,
+                            "x": 474.5,
+                            "y": 980
+                        },
+                        {
+                            "s": true,
+                            "x": 474.5,
+                            "y": 1116.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 474.5,
+                            "y": 1136.09375
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "医疗问诊模式/2021/1/5 下午11:22:32725"
+            },
+            {
+                "__gohashid": 4358,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "医疗问诊模式/2021/1/5 下午2:55:30771",
+                "key": "医疗问诊模式/2021/1/5 下午11:22:52728",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 4577,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 705,
+                            "y": 967
+                        },
+                        {
+                            "s": true,
+                            "x": 705,
+                            "y": 977
+                        },
+                        {
+                            "s": true,
+                            "x": 705,
+                            "y": 980
+                        },
+                        {
+                            "s": true,
+                            "x": 474.5,
+                            "y": 980
+                        },
+                        {
+                            "s": true,
+                            "x": 474.5,
+                            "y": 1116.09375
+                        },
+                        {
+                            "s": true,
+                            "x": 474.5,
+                            "y": 1136.09375
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "医疗问诊模式/2021/1/5 下午11:22:32725"
+            }
+        ],
+        "nodes": [
+            {
+                "__gohashid": 2502,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "医疗问诊模式/2021/1/5 下午2:16:500",
+                "id": "医疗领域/患者",
+                "isGroup": true,
+                "key": "医疗问诊模式/2021/1/5 下午2:16:501",
+                "loc": "55.06210988844466 145.5",
+                "name": "医疗领域/患者",
+                "object_properties": [],
+                "participant": "医疗领域/患者",
+                "props": [],
+                "size": "800.8900633513015 310.194429529558",
+                "superProps": {},
+                "text": "医疗领域/患者",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 2503,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "医疗问诊模式/2021/1/5 下午2:16:500",
+                "id": "医疗领域/医生",
+                "isGroup": true,
+                "key": "医疗问诊模式/2021/1/5 下午2:16:502",
+                "loc": "55.06210988844466 457.5",
+                "name": "医疗领域/医生",
+                "object_properties": [],
+                "participant": "医疗领域/医生",
+                "props": [],
+                "size": "800.8900633513015 320.93516540527344",
+                "superProps": {},
+                "text": "医疗领域/医生",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 2504,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "医疗问诊模式/2021/1/5 下午2:16:500",
+                "id": "医疗领域/医院",
+                "isGroup": true,
+                "key": "医疗问诊模式/2021/1/5 下午2:16:503",
+                "loc": "55.06210988844466 779.5",
+                "name": "医疗领域/医院",
+                "object_properties": [],
+                "participant": "医疗领域/医院",
+                "props": [],
+                "size": "800.8900633513015 290.4056640624999",
+                "superProps": {},
+                "text": "医疗领域/医院",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 2506,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "expanded": true,
+                "goal": [],
+                "graph_data": {},
+                "group": "医疗问诊模式/2021/1/5 下午2:16:500",
+                "id": "医疗领域/平台",
+                "isGroup": true,
+                "key": "医疗问诊模式/2021/1/5 下午2:16:505",
+                "loc": "55.06210988844466 1071.5",
+                "name": "医疗领域/平台",
+                "object_properties": [],
+                "participant": "医疗领域/平台",
+                "props": [],
+                "size": "800.8900633513015 161.46412048339835",
+                "superProps": {},
+                "text": "医疗领域/平台",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 14717,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('是否应该吃退烧药')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "医疗问诊模式/2021/1/5 下午2:16:501",
+                "id": "问诊",
+                "key": "医疗问诊模式/2021/1/5 下午2:33:08731",
+                "loc": "525 371.75",
+                "name": "问诊",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/问诊"
+                ]
+            },
+            {
+                "__gohashid": 37446,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 7))\nreturn round(random.uniform(low, up))\n",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"开立处方\")",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "group": "医疗问诊模式/2021/1/5 下午2:16:503",
+                "id": "开立处方",
+                "key": "医疗问诊模式/2021/1/5 下午2:55:03770",
+                "loc": "428.22608661987306 909",
+                "name": "开立处方",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/开处方"
+                ]
+            },
+            {
+                "__gohashid": 37863,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "医疗问诊模式/2021/1/5 下午2:16:503",
+                "id": "开立检查检验",
+                "key": "医疗问诊模式/2021/1/5 下午2:55:30771",
+                "loc": "705 927",
+                "name": "开立检查检验",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/开检查检验"
+                ]
+            },
+            {
+                "__gohashid": 46900,
+                "bindTo": [],
+                "category": "start",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"start\")\n\ntoken.data['start_step']=model.step_count",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "医疗问诊模式/2021/1/5 下午2:16:501",
+                "id": "问诊开始",
+                "key": "医疗问诊模式/2021/1/5 下午6:00:58780",
+                "loc": "93 217.75",
+                "name": "问诊开始",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/StartEvent"
+                ]
+            },
+            {
+                "__gohashid": 4515,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn round(random.uniform(5,10))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('昨晚开始发烧，最高38.5度')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "医疗问诊模式/2021/1/5 下午2:16:501",
+                "id": "病情主诉",
+                "key": "医疗问诊模式/2021/1/5 下午11:09:26728",
+                "loc": "158 372.09375",
+                "name": "病情主诉",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/病情主诉"
+                ]
+            },
+            {
+                "__gohashid": 21532,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn round(random.uniform(1,5))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "医疗问诊模式/2021/1/5 下午2:16:503",
+                "id": "写病历",
+                "key": "医疗问诊模式/2021/1/5 下午11:11:55732",
+                "loc": "214 972.09375",
+                "name": "写病历",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/患者病历"
+                ]
+            },
+            {
+                "__gohashid": 3447,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))\n",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('温度超过38.5度，建议使用退烧皮栓和退烧药交替使用')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "医疗问诊模式/2021/1/5 下午2:16:502",
+                "id": "看诊",
+                "key": "医疗问诊模式/2021/1/5 下午11:19:11715",
+                "loc": "319.3751611743164 631.09375",
+                "name": "看诊",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/看诊"
+                ]
+            },
+            {
+                "__gohashid": 3673,
+                "bindTo": [],
+                "category": "end",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"end\")\n\nend_step=model.step_count\nstart_step=token.data['start_step']\n\ntime = end_step-start_step\n\navg_process = model.instance_base.findByName(\"Process平均运行时间\")\ntotal = avg_process.amount*avg_process.quota_dscp\n\navg_process.amount = avg_process.amount+1\navg_process.quota_dscp = (total+time)/avg_process.amount\n\n",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "医疗问诊模式/2021/1/5 下午2:16:505",
+                "id": "结束",
+                "key": "医疗问诊模式/2021/1/5 下午11:22:32725",
+                "loc": "413 1136.09375",
+                "name": "结束",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/EndEvent"
+                ]
+            },
+            {
+                "__gohashid": 2501,
+                "category": "Pool",
+                "isGroup": true,
+                "key": "医疗问诊模式/2021/1/5 下午2:16:500",
+                "loc": "28.539262390136713 145.5",
+                "name": "BPMN概念/LaneSet-1",
+                "type": "BPMN概念/LaneSet"
+            }
+        ],
+        "resource_config": {}
+    }
+}

@@ -1,0 +1,3563 @@
+{
+    "config": {
+        "id": "2021/1/9 下午7:05:10811",
+        "maxStep": "200",
+        "maxTime": null,
+        "name": "移动问诊模式仿真"
+    },
+    "instance_base": {
+        "config": {},
+        "groups": [
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/1/9 下午7:14:50831",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "医疗领域/物流公司"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/1/9 下午7:14:53832",
+                        "name": "2021/1/9 下午7:14:53832",
+                        "object_properties": [],
+                        "type": [
+                            "医疗领域/Participant"
+                        ]
+                    }
+                ],
+                "name": "物流公司",
+                "num": 1,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/1/9 下午7:13:06823",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "医疗领域/患者"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/1/9 下午7:13:19824",
+                        "name": "2021/1/9 下午7:13:19824",
+                        "object_properties": [],
+                        "type": [
+                            "医疗领域/Participant"
+                        ]
+                    }
+                ],
+                "name": "患者",
+                "num": 10,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/1/9 下午7:14:31829",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "医疗领域/支付公司"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/1/9 下午7:14:34830",
+                        "name": "2021/1/9 下午7:14:34830",
+                        "object_properties": [],
+                        "type": [
+                            "医疗领域/Participant"
+                        ]
+                    }
+                ],
+                "name": "支付公司",
+                "num": 1,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/1/9 下午7:14:11827",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "医疗领域/医院"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/1/9 下午7:14:15828",
+                        "name": "2021/1/9 下午7:14:15828",
+                        "object_properties": [],
+                        "type": [
+                            "医疗领域/Participant"
+                        ]
+                    }
+                ],
+                "name": "医院",
+                "num": 1,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/1/9 下午7:13:50825",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "医疗领域/医生"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/1/9 下午7:13:54826",
+                        "name": "2021/1/9 下午7:13:54826",
+                        "object_properties": [],
+                        "type": [
+                            "医疗领域/Participant"
+                        ]
+                    }
+                ],
+                "name": "医生",
+                "num": 1,
+                "type": []
+            }
+        ],
+        "instances": [
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2021/1/9 下午7:15:39837",
+                "name": "Process平均运行时间",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/Quota"
+                ]
+            }
+        ],
+        "relations": []
+    },
+    "name": "移动问诊模式仿真",
+    "node2binding_relations": {
+        "2021/1/9 下午7:13:19824": [
+            "医疗领域/患者"
+        ],
+        "2021/1/9 下午7:13:54826": [
+            "医疗领域/医生"
+        ],
+        "2021/1/9 下午7:14:15828": [
+            "医疗领域/医院"
+        ],
+        "2021/1/9 下午7:14:34830": [
+            "医疗领域/支付公司"
+        ],
+        "2021/1/9 下午7:14:53832": [
+            "医疗领域/物流公司"
+        ]
+    },
+    "pattern_instance_base": {
+        "config": {
+            "id": "2021/1/9 下午6:03:41777",
+            "name": "移动问诊模式"
+        },
+        "groups": [],
+        "instances": [
+            {
+                "__gohashid": 40783,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('支付成功')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:195",
+                "id": "处方费收单",
+                "key": "移动问诊模式/2021/1/9 下午6:28:21781",
+                "loc": "670.5770120654297 965.2005432056632",
+                "name": "处方费收单",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/收单"
+                ]
+            },
+            {
+                "__gohashid": 7847,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn round(random.uniform(5,20))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('昨晚开始发烧，最高38.5度')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:194",
+                "id": "问诊",
+                "key": "移动问诊模式/2021/1/9 下午6:22:40766",
+                "loc": "273.2360392204421 270.98037515794204",
+                "name": "问诊",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/问诊"
+                ]
+            },
+            {
+                "__gohashid": 91720,
+                "bindTo": [],
+                "category": "end",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"end\")\n\nend_step=model.step_count\nstart_step=token.data['start_step']\n\ntime = end_step-start_step\n\navg_process = model.instance_base.findByName(\"Process平均运行时间\")\ntotal = avg_process.amount*avg_process.quota_dscp\n\navg_process.amount = avg_process.amount+1\navg_process.quota_dscp = (total+time)/avg_process.amount\n\n",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:194",
+                "id": "BPMN概念/EndEvent-1",
+                "key": "移动问诊模式/2021/1/9 下午7:03:08804",
+                "loc": "705 129.53706257897102",
+                "name": "BPMN概念/EndEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/EndEvent"
+                ]
+            },
+            {
+                "__gohashid": 8386,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn round(random.uniform(1,10))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('温度超过38.5度，建议使用退烧栓和退烧药交替使用')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:192",
+                "id": "看诊",
+                "key": "移动问诊模式/2021/1/9 下午6:23:09767",
+                "loc": "272.8130512858718 495.20054320566305",
+                "name": "看诊",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/看诊"
+                ]
+            },
+            {
+                "__gohashid": 27927,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:194",
+                "id": "处方缴费",
+                "key": "移动问诊模式/2021/1/9 下午6:24:50773",
+                "loc": "617.2360392204421 281.98037515794204",
+                "name": "处方缴费",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/支付"
+                ]
+            },
+            {
+                "__gohashid": 6575,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('支付成功')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:195",
+                "id": "挂号费收单",
+                "key": "移动问诊模式/2021/1/9 下午6:22:16764",
+                "loc": "161 934.980375157942",
+                "name": "挂号费收单",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/收单"
+                ]
+            },
+            {
+                "__gohashid": 35864,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:194",
+                "id": "检查检验缴费",
+                "key": "移动问诊模式/2021/1/9 下午6:26:48777",
+                "loc": "408.2360392204421 102.98037515794204",
+                "name": "检查检验缴费",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/支付"
+                ]
+            },
+            {
+                "__gohashid": 41455,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('支付成功')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:195",
+                "id": "检查检验费收单",
+                "key": "移动问诊模式/2021/1/9 下午6:28:46782",
+                "loc": "459 957.980375157942",
+                "name": "检查检验费收单",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/收单"
+                ]
+            },
+            {
+                "__gohashid": 9294,
+                "bindTo": [],
+                "category": "currencyObject",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": true,
+                        "text": "20",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:194",
+                "id": "挂号费",
+                "key": "移动问诊模式/2021/1/9 下午6:12:21771",
+                "loc": "279.8130512858718 -51.799456794336834",
+                "name": "挂号费",
+                "object_properties": [],
+                "text": "currencyObject",
+                "type": [
+                    "医疗领域/挂号费"
+                ]
+            },
+            {
+                "__gohashid": 4006,
+                "bindTo": [],
+                "category": "start",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"start\")\n\ntoken.data['start_step']=model.step_count",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:194",
+                "id": "BPMN概念/StartEvent-1",
+                "key": "移动问诊模式/2021/1/9 下午6:11:06763",
+                "loc": "79.23603922044207 -183.01962484205796",
+                "name": "BPMN概念/StartEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/StartEvent"
+                ]
+            },
+            {
+                "__gohashid": 5184,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "expanded": true,
+                "goal": [],
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:190",
+                "id": "医疗领域/支付公司",
+                "isGroup": true,
+                "key": "移动问诊模式/2021/1/9 下午6:06:195",
+                "loc": "42.99999999999996 875.0839457073552",
+                "name": "医疗领域/支付公司",
+                "object_properties": [],
+                "participant": "医疗领域/支付公司",
+                "props": [],
+                "size": "870.103515625 182.97426148183683",
+                "superProps": {},
+                "text": "医疗领域/支付公司",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 10549,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:194",
+                "id": "药品收货",
+                "key": "移动问诊模式/2021/1/9 下午6:52:03792",
+                "loc": "786.2360392204421 315.537062578971",
+                "name": "药品收货",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/药品收货"
+                ]
+            },
+            {
+                "__gohashid": 38483,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:193",
+                "id": "药品邮寄",
+                "key": "移动问诊模式/2021/1/9 下午6:27:24779",
+                "loc": "798.2360392204421 796.980375157942",
+                "name": "药品邮寄",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/药品邮寄"
+                ]
+            },
+            {
+                "__gohashid": 29292,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('做个血常规')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:192",
+                "id": "开检查检验",
+                "key": "移动问诊模式/2021/1/9 下午6:25:31775",
+                "loc": "270.2360392204421 632.980375157942",
+                "name": "开检查检验",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/开检查检验"
+                ]
+            },
+            {
+                "__gohashid": 28502,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:192",
+                "id": "开处方",
+                "key": "移动问诊模式/2021/1/9 下午6:25:14774",
+                "loc": "562.8130512858718 537.200543205663",
+                "name": "开处方",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/开处方"
+                ]
+            },
+            {
+                "__gohashid": 13035,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('昨晚开始发烧，最高38.5度')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:194",
+                "id": "病情主诉",
+                "key": "移动问诊模式/2021/1/9 下午6:23:39769",
+                "loc": "262.2360392204421 123.98037515794204",
+                "name": "病情主诉",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/病情主诉"
+                ]
+            },
+            {
+                "__gohashid": 15583,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:193",
+                "id": "写病历",
+                "key": "移动问诊模式/2021/1/9 下午6:13:26775",
+                "loc": "620.2360392204421 792.980375157942",
+                "name": "写病历",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/患者病历"
+                ]
+            },
+            {
+                "__gohashid": 29908,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:194",
+                "id": "做检查检验",
+                "key": "移动问诊模式/2021/1/9 下午6:25:59776",
+                "loc": "492.2360392204421 231.98037515794204",
+                "name": "做检查检验",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/做检查检验"
+                ]
+            },
+            {
+                "__gohashid": 5182,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "expanded": true,
+                "goal": [],
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:190",
+                "id": "医疗领域/医院",
+                "isGroup": true,
+                "key": "移动问诊模式/2021/1/9 下午6:06:193",
+                "loc": "42.999999999999964 711.0839457073552",
+                "name": "医疗领域/医院",
+                "object_properties": [],
+                "participant": "医疗领域/医院",
+                "props": [],
+                "size": "870.103515625 162.33161469228605",
+                "superProps": {},
+                "text": "医疗领域/医院",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 9864,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:196",
+                "id": "药品派送",
+                "key": "移动问诊模式/2021/1/9 下午6:51:31791",
+                "loc": "677.2360392204421 1153.537062578971",
+                "name": "药品派送",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/药品发货"
+                ]
+            },
+            {
+                "__gohashid": 5183,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "expanded": true,
+                "goal": [],
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:190",
+                "id": "医疗领域/患者",
+                "isGroup": true,
+                "key": "移动问诊模式/2021/1/9 下午6:06:194",
+                "loc": "42.999999999999964 -196.91605429264487",
+                "name": "医疗领域/患者",
+                "object_properties": [],
+                "participant": "医疗领域/患者",
+                "props": [],
+                "size": "870.103515625 600.9742614818368",
+                "superProps": {},
+                "text": "医疗领域/患者",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 7371,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn round(random.uniform(1,10))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:194",
+                "id": "挂号",
+                "key": "移动问诊模式/2021/1/9 下午6:11:44769",
+                "loc": "135.81305128587178 -33.31488851393294",
+                "name": "挂号",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/挂号"
+                ]
+            },
+            {
+                "__gohashid": 5185,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "expanded": true,
+                "goal": [],
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:190",
+                "id": "医疗领域/物流公司",
+                "isGroup": true,
+                "key": "移动问诊模式/2021/1/9 下午6:06:196",
+                "loc": "42.99999999999996 1059.0839457073553",
+                "name": "医疗领域/物流公司",
+                "object_properties": [],
+                "participant": "医疗领域/物流公司",
+                "props": [],
+                "size": "870.103515625 182.35387166822983",
+                "superProps": {},
+                "text": "医疗领域/物流公司",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 5181,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "expanded": true,
+                "goal": [],
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:190",
+                "id": "医疗领域/医生",
+                "isGroup": true,
+                "key": "移动问诊模式/2021/1/9 下午6:06:192",
+                "loc": "42.999999999999964 405.08394570735516",
+                "name": "医疗领域/医生",
+                "object_properties": [],
+                "participant": "医疗领域/医生",
+                "props": [],
+                "size": "870.103515625 304.33161469228605",
+                "superProps": {},
+                "text": "医疗领域/医生",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 17070,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:194",
+                "id": "支付挂号费",
+                "key": "移动问诊模式/2021/1/9 下午6:14:01776",
+                "loc": "127.23603922044207 107.98037515794204",
+                "name": "支付挂号费",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/支付挂号费"
+                ]
+            }
+        ],
+        "relations": [
+            {
+                "__gohashid": 53361,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:23:09767",
+                "key": "移动问诊模式/2021/1/9 下午6:30:52784",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1530,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 272.8130512858718,
+                            "y": 535.200543205663
+                        },
+                        {
+                            "s": true,
+                            "x": 272.8130512858718,
+                            "y": 545.200543205663
+                        },
+                        {
+                            "s": true,
+                            "x": 272.8130512858718,
+                            "y": 548
+                        },
+                        {
+                            "s": true,
+                            "x": 272.8130512858718,
+                            "y": 548
+                        },
+                        {
+                            "s": true,
+                            "x": 272.8130512858718,
+                            "y": 572
+                        },
+                        {
+                            "s": true,
+                            "x": 270.2360392204421,
+                            "y": 572
+                        },
+                        {
+                            "s": true,
+                            "x": 270.2360392204421,
+                            "y": 572.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 270.2360392204421,
+                            "y": 592.980375157942
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:25:31775"
+            },
+            {
+                "__gohashid": 92801,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:52:03792",
+                "key": "移动问诊模式/2021/1/9 下午7:03:15805",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1642,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 786.2360392204421,
+                            "y": 275.537062578971
+                        },
+                        {
+                            "s": true,
+                            "x": 786.2360392204421,
+                            "y": 265.537062578971
+                        },
+                        {
+                            "s": true,
+                            "x": 786.2360392204421,
+                            "y": 265.537062578971
+                        },
+                        {
+                            "s": true,
+                            "x": 777.5517578125,
+                            "y": 265.537062578971
+                        },
+                        {
+                            "s": true,
+                            "x": 777.5517578125,
+                            "y": 195.53706257897102
+                        },
+                        {
+                            "s": true,
+                            "x": 777.5517578125,
+                            "y": 175.53706257897102
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午7:03:08804"
+            },
+            {
+                "__gohashid": 19411,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:23:39769",
+                "key": "移动问诊模式/2021/1/9 下午6:24:24771",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1545,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 262.2360392204421,
+                            "y": 163.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 262.2360392204421,
+                            "y": 173.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 262.2360392204421,
+                            "y": 172
+                        },
+                        {
+                            "s": true,
+                            "x": 262.2360392204421,
+                            "y": 172
+                        },
+                        {
+                            "s": true,
+                            "x": 262.2360392204421,
+                            "y": 196
+                        },
+                        {
+                            "s": true,
+                            "x": 273.2360392204421,
+                            "y": 196
+                        },
+                        {
+                            "s": true,
+                            "x": 273.2360392204421,
+                            "y": 210.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 273.2360392204421,
+                            "y": 230.98037515794204
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:22:40766"
+            },
+            {
+                "__gohashid": 7609,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:11:44769",
+                "key": "移动问诊模式/2021/1/9 下午6:11:48770",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1534,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 135.81305128587178,
+                            "y": -73.31488851393294
+                        },
+                        {
+                            "s": true,
+                            "x": 135.81305128587178,
+                            "y": -83.31488851393294
+                        },
+                        {
+                            "s": true,
+                            "x": 135.81305128587178,
+                            "y": -84
+                        },
+                        {
+                            "s": true,
+                            "x": 153.94917398606708,
+                            "y": -84
+                        },
+                        {
+                            "s": true,
+                            "x": 153.94917398606708,
+                            "y": -120.01962484205796
+                        },
+                        {
+                            "s": true,
+                            "x": 153.94917398606708,
+                            "y": -140.01962484205796
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:11:06763"
+            },
+            {
+                "__gohashid": 13712,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:22:16764",
+                "key": "移动问诊模式/2021/1/9 下午6:52:41793",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1655,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 161,
+                            "y": 894.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 161,
+                            "y": 884.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 161,
+                            "y": 884
+                        },
+                        {
+                            "s": true,
+                            "x": 161,
+                            "y": 884
+                        },
+                        {
+                            "s": true,
+                            "x": 161,
+                            "y": 220
+                        },
+                        {
+                            "s": true,
+                            "x": 262.2360392204421,
+                            "y": 220
+                        },
+                        {
+                            "s": true,
+                            "x": 262.2360392204421,
+                            "y": 183.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 262.2360392204421,
+                            "y": 163.98037515794204
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:23:39769"
+            },
+            {
+                "__gohashid": 81610,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:25:14774",
+                "key": "移动问诊模式/2021/1/9 下午7:01:33798",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1670,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 562.8130512858718,
+                            "y": 497.20054320566305
+                        },
+                        {
+                            "s": true,
+                            "x": 562.8130512858718,
+                            "y": 487.20054320566305
+                        },
+                        {
+                            "s": true,
+                            "x": 562.8130512858718,
+                            "y": 484
+                        },
+                        {
+                            "s": true,
+                            "x": 617.2360392204421,
+                            "y": 484
+                        },
+                        {
+                            "s": true,
+                            "x": 617.2360392204421,
+                            "y": 341.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 617.2360392204421,
+                            "y": 321.98037515794204
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:24:50773"
+            },
+            {
+                "__gohashid": 81446,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:25:59776",
+                "key": "移动问诊模式/2021/1/9 下午7:01:27797",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1665,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 492.2360392204421,
+                            "y": 271.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 492.2360392204421,
+                            "y": 281.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 492.2360392204421,
+                            "y": 284
+                        },
+                        {
+                            "s": true,
+                            "x": 492.2360392204421,
+                            "y": 284
+                        },
+                        {
+                            "s": true,
+                            "x": 492.2360392204421,
+                            "y": 356
+                        },
+                        {
+                            "s": true,
+                            "x": 562.8130512858718,
+                            "y": 356
+                        },
+                        {
+                            "s": true,
+                            "x": 562.8130512858718,
+                            "y": 477.20054320566305
+                        },
+                        {
+                            "s": true,
+                            "x": 562.8130512858718,
+                            "y": 497.20054320566305
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:25:14774"
+            },
+            {
+                "__gohashid": 55779,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:25:31775",
+                "key": "移动问诊模式/2021/1/9 下午6:31:02785",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1645,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 270.2360392204421,
+                            "y": 592.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 270.2360392204421,
+                            "y": 582.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 270.2360392204421,
+                            "y": 580
+                        },
+                        {
+                            "s": true,
+                            "x": 408.2360392204421,
+                            "y": 580
+                        },
+                        {
+                            "s": true,
+                            "x": 408.2360392204421,
+                            "y": 162.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 408.2360392204421,
+                            "y": 142.98037515794204
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:26:48777"
+            },
+            {
+                "__gohashid": 6177,
+                "category": "currencyFlowIn",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:12:21771",
+                "key": "移动问诊模式/2021/1/9 下午6:22:08763",
+                "points": {
+                    "Aa": 11,
+                    "Fa": null,
+                    "__gohashid": 1538,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 262.51305128587177,
+                            "y": -44.63279012767016
+                        },
+                        {
+                            "s": true,
+                            "x": 252.51305128587177,
+                            "y": -44.63279012767016
+                        },
+                        {
+                            "s": true,
+                            "x": 252,
+                            "y": -44.63279012767016
+                        },
+                        {
+                            "s": true,
+                            "x": 252,
+                            "y": -44.63279012767016
+                        },
+                        {
+                            "s": true,
+                            "x": 244,
+                            "y": -44.63279012767016
+                        },
+                        {
+                            "s": true,
+                            "x": 244,
+                            "y": 44
+                        },
+                        {
+                            "s": true,
+                            "x": 127.23603922044208,
+                            "y": 44
+                        },
+                        {
+                            "s": true,
+                            "x": 127.23603922044208,
+                            "y": 57.980375157942035
+                        },
+                        {
+                            "s": true,
+                            "x": 127.23603922044208,
+                            "y": 67.98037515794204
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:14:01776"
+            },
+            {
+                "__gohashid": 84304,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:24:50773",
+                "key": "移动问诊模式/2021/1/9 下午7:02:29801",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1685,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 617.2360392204421,
+                            "y": 321.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 617.2360392204421,
+                            "y": 331.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 617.2360392204421,
+                            "y": 332
+                        },
+                        {
+                            "s": true,
+                            "x": 617.2360392204421,
+                            "y": 332
+                        },
+                        {
+                            "s": true,
+                            "x": 617.2360392204421,
+                            "y": 388
+                        },
+                        {
+                            "s": true,
+                            "x": 798.2360392204421,
+                            "y": 388
+                        },
+                        {
+                            "s": true,
+                            "x": 798.2360392204421,
+                            "y": 736.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 798.2360392204421,
+                            "y": 756.980375157942
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:27:24779"
+            },
+            {
+                "__gohashid": 14546,
+                "category": "currencyFlowOut",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:11:44769",
+                "key": "移动问诊模式/2021/1/9 下午6:13:01773",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1535,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 195.81305128587178,
+                            "y": -33.31488851393294
+                        },
+                        {
+                            "s": true,
+                            "x": 205.81305128587178,
+                            "y": -33.31488851393294
+                        },
+                        {
+                            "s": true,
+                            "x": 205.81305128587178,
+                            "y": -33.31488851393294
+                        },
+                        {
+                            "s": true,
+                            "x": 205.81305128587178,
+                            "y": -58.9661234610035
+                        },
+                        {
+                            "s": true,
+                            "x": 244.51305128587177,
+                            "y": -58.9661234610035
+                        },
+                        {
+                            "s": true,
+                            "x": 262.51305128587177,
+                            "y": -58.9661234610035
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:12:21771"
+            },
+            {
+                "__gohashid": 82376,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:24:50773",
+                "key": "移动问诊模式/2021/1/9 下午7:01:44799",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1675,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 617.2360392204421,
+                            "y": 321.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 617.2360392204421,
+                            "y": 331.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 617.2360392204421,
+                            "y": 332
+                        },
+                        {
+                            "s": true,
+                            "x": 692,
+                            "y": 332
+                        },
+                        {
+                            "s": true,
+                            "x": 692,
+                            "y": 868
+                        },
+                        {
+                            "s": true,
+                            "x": 670.5770120654297,
+                            "y": 868
+                        },
+                        {
+                            "s": true,
+                            "x": 670.5770120654297,
+                            "y": 905.2005432056632
+                        },
+                        {
+                            "s": true,
+                            "x": 670.5770120654297,
+                            "y": 925.2005432056632
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:28:21781"
+            },
+            {
+                "__gohashid": 80068,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:28:46782",
+                "key": "移动问诊模式/2021/1/9 下午7:01:06796",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1660,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 459,
+                            "y": 917.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 459,
+                            "y": 907.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 459,
+                            "y": 907.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 492.2360392204421,
+                            "y": 907.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 492.2360392204421,
+                            "y": 291.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 492.2360392204421,
+                            "y": 271.98037515794204
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:25:59776"
+            },
+            {
+                "__gohashid": 19600,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:22:40766",
+                "key": "移动问诊模式/2021/1/9 下午6:24:27772",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1546,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 273.2360392204421,
+                            "y": 310.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 273.2360392204421,
+                            "y": 320.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 272.8130512858718,
+                            "y": 320.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 272.8130512858718,
+                            "y": 320.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 272.8130512858718,
+                            "y": 435.20054320566305
+                        },
+                        {
+                            "s": true,
+                            "x": 272.8130512858718,
+                            "y": 455.20054320566305
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:23:09767"
+            },
+            {
+                "__gohashid": 83106,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:25:14774",
+                "key": "移动问诊模式/2021/1/9 下午7:02:14800",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1680,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 562.8130512858718,
+                            "y": 577.200543205663
+                        },
+                        {
+                            "s": true,
+                            "x": 562.8130512858718,
+                            "y": 587.200543205663
+                        },
+                        {
+                            "s": true,
+                            "x": 562.8130512858718,
+                            "y": 588
+                        },
+                        {
+                            "s": true,
+                            "x": 562.8130512858718,
+                            "y": 588
+                        },
+                        {
+                            "s": true,
+                            "x": 562.8130512858718,
+                            "y": 612
+                        },
+                        {
+                            "s": true,
+                            "x": 620.2360392204421,
+                            "y": 612
+                        },
+                        {
+                            "s": true,
+                            "x": 620.2360392204421,
+                            "y": 732.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 620.2360392204421,
+                            "y": 752.980375157942
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:13:26775"
+            },
+            {
+                "__gohashid": 6850,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:14:01776",
+                "key": "移动问诊模式/2021/1/9 下午6:22:31765",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1540,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 127.23603922044207,
+                            "y": 147.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 127.23603922044207,
+                            "y": 157.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 127.23603922044207,
+                            "y": 156
+                        },
+                        {
+                            "s": true,
+                            "x": 127.23603922044207,
+                            "y": 156
+                        },
+                        {
+                            "s": true,
+                            "x": 127.23603922044207,
+                            "y": 180
+                        },
+                        {
+                            "s": true,
+                            "x": 161,
+                            "y": 180
+                        },
+                        {
+                            "s": true,
+                            "x": 161,
+                            "y": 874.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 161,
+                            "y": 894.980375157942
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:22:16764"
+            },
+            {
+                "__gohashid": 56126,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:26:48777",
+                "key": "移动问诊模式/2021/1/9 下午6:31:10786",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1650,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 408.2360392204421,
+                            "y": 142.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 408.2360392204421,
+                            "y": 152.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 408.2360392204421,
+                            "y": 156
+                        },
+                        {
+                            "s": true,
+                            "x": 408.2360392204421,
+                            "y": 156
+                        },
+                        {
+                            "s": true,
+                            "x": 408.2360392204421,
+                            "y": 308
+                        },
+                        {
+                            "s": true,
+                            "x": 459,
+                            "y": 308
+                        },
+                        {
+                            "s": true,
+                            "x": 459,
+                            "y": 897.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 459,
+                            "y": 917.980375157942
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:28:46782"
+            },
+            {
+                "__gohashid": 91296,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:51:31791",
+                "key": "移动问诊模式/2021/1/9 下午7:03:04803",
+                "points": {
+                    "Aa": 12,
+                    "Fa": null,
+                    "__gohashid": 1695,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 677.2360392204421,
+                            "y": 1113.537062578971
+                        },
+                        {
+                            "s": true,
+                            "x": 677.2360392204421,
+                            "y": 1103.537062578971
+                        },
+                        {
+                            "s": true,
+                            "x": 677.2360392204421,
+                            "y": 1100
+                        },
+                        {
+                            "s": true,
+                            "x": 740,
+                            "y": 1100
+                        },
+                        {
+                            "s": true,
+                            "x": 740,
+                            "y": 916
+                        },
+                        {
+                            "s": true,
+                            "x": 732,
+                            "y": 916
+                        },
+                        {
+                            "s": true,
+                            "x": 732,
+                            "y": 748
+                        },
+                        {
+                            "s": true,
+                            "x": 786.2360392204421,
+                            "y": 748
+                        },
+                        {
+                            "s": true,
+                            "x": 786.2360392204421,
+                            "y": 375.537062578971
+                        },
+                        {
+                            "s": true,
+                            "x": 786.2360392204421,
+                            "y": 355.537062578971
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:52:03792"
+            },
+            {
+                "__gohashid": 88382,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:27:24779",
+                "key": "移动问诊模式/2021/1/9 下午7:02:44802",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1690,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 798.2360392204421,
+                            "y": 836.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 798.2360392204421,
+                            "y": 846.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 798.2360392204421,
+                            "y": 844
+                        },
+                        {
+                            "s": true,
+                            "x": 798.2360392204421,
+                            "y": 844
+                        },
+                        {
+                            "s": true,
+                            "x": 798.2360392204421,
+                            "y": 1036
+                        },
+                        {
+                            "s": true,
+                            "x": 677.2360392204421,
+                            "y": 1036
+                        },
+                        {
+                            "s": true,
+                            "x": 677.2360392204421,
+                            "y": 1093.537062578971
+                        },
+                        {
+                            "s": true,
+                            "x": 677.2360392204421,
+                            "y": 1113.537062578971
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:51:31791"
+            }
+        ]
+    },
+    "service pattern": {
+        "config": {
+            "id": "2021/1/9 下午6:03:41777",
+            "name": "移动问诊模式"
+        },
+        "elements": {
+            "Goal": [
+                "医疗领域/完成报告查看",
+                "医疗领域/完成看诊",
+                "医疗领域/完成药品缴费",
+                "医疗领域/完成预约"
+            ],
+            "Participant": [
+                "医疗领域/医生",
+                "医疗领域/医院",
+                "医疗领域/患者",
+                "医疗领域/支付公司",
+                "医疗领域/物流公司"
+            ],
+            "Quota": [
+                "医疗领域/平均看诊时间",
+                "医疗领域/看诊量"
+            ],
+            "Task": [
+                "医疗领域/处方缴费",
+                "医疗领域/开处方",
+                "医疗领域/收单",
+                "医疗领域/查报告",
+                "医疗领域/检查预约",
+                "医疗领域/病情主诉",
+                "医疗领域/挂号",
+                "医疗领域/开检查检验",
+                "医疗领域/看诊",
+                "医疗领域/问诊",
+                "医疗领域/患者病历",
+                "医疗领域/支付挂号费",
+                "医疗领域/做检查检验",
+                "医疗领域/支付",
+                "医疗领域/药品发货",
+                "医疗领域/药品收货",
+                "医疗领域/药品邮寄",
+                "医疗领域/医生排班",
+                "医疗领域/看报告"
+            ],
+            "currencyObject": [
+                "医疗领域/挂号费"
+            ],
+            "dataObject": [
+                "医疗领域/号源数"
+            ]
+        },
+        "evaluate_config": {},
+        "links": [
+            {
+                "__gohashid": 7609,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:11:44769",
+                "key": "移动问诊模式/2021/1/9 下午6:11:48770",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1534,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 135.81305128587178,
+                            "y": -73.31488851393294
+                        },
+                        {
+                            "s": true,
+                            "x": 135.81305128587178,
+                            "y": -83.31488851393294
+                        },
+                        {
+                            "s": true,
+                            "x": 135.81305128587178,
+                            "y": -84
+                        },
+                        {
+                            "s": true,
+                            "x": 153.94917398606708,
+                            "y": -84
+                        },
+                        {
+                            "s": true,
+                            "x": 153.94917398606708,
+                            "y": -120.01962484205796
+                        },
+                        {
+                            "s": true,
+                            "x": 153.94917398606708,
+                            "y": -140.01962484205796
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:11:06763"
+            },
+            {
+                "__gohashid": 14546,
+                "category": "currencyFlowOut",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:11:44769",
+                "key": "移动问诊模式/2021/1/9 下午6:13:01773",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1535,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 195.81305128587178,
+                            "y": -33.31488851393294
+                        },
+                        {
+                            "s": true,
+                            "x": 205.81305128587178,
+                            "y": -33.31488851393294
+                        },
+                        {
+                            "s": true,
+                            "x": 205.81305128587178,
+                            "y": -33.31488851393294
+                        },
+                        {
+                            "s": true,
+                            "x": 205.81305128587178,
+                            "y": -58.9661234610035
+                        },
+                        {
+                            "s": true,
+                            "x": 244.51305128587177,
+                            "y": -58.9661234610035
+                        },
+                        {
+                            "s": true,
+                            "x": 262.51305128587177,
+                            "y": -58.9661234610035
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:12:21771"
+            },
+            {
+                "__gohashid": 6177,
+                "category": "currencyFlowIn",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:12:21771",
+                "key": "移动问诊模式/2021/1/9 下午6:22:08763",
+                "points": {
+                    "Aa": 11,
+                    "Fa": null,
+                    "__gohashid": 1538,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 262.51305128587177,
+                            "y": -44.63279012767016
+                        },
+                        {
+                            "s": true,
+                            "x": 252.51305128587177,
+                            "y": -44.63279012767016
+                        },
+                        {
+                            "s": true,
+                            "x": 252,
+                            "y": -44.63279012767016
+                        },
+                        {
+                            "s": true,
+                            "x": 252,
+                            "y": -44.63279012767016
+                        },
+                        {
+                            "s": true,
+                            "x": 244,
+                            "y": -44.63279012767016
+                        },
+                        {
+                            "s": true,
+                            "x": 244,
+                            "y": 44
+                        },
+                        {
+                            "s": true,
+                            "x": 127.23603922044208,
+                            "y": 44
+                        },
+                        {
+                            "s": true,
+                            "x": 127.23603922044208,
+                            "y": 57.980375157942035
+                        },
+                        {
+                            "s": true,
+                            "x": 127.23603922044208,
+                            "y": 67.98037515794204
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:14:01776"
+            },
+            {
+                "__gohashid": 6850,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:14:01776",
+                "key": "移动问诊模式/2021/1/9 下午6:22:31765",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1540,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 127.23603922044207,
+                            "y": 147.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 127.23603922044207,
+                            "y": 157.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 127.23603922044207,
+                            "y": 156
+                        },
+                        {
+                            "s": true,
+                            "x": 127.23603922044207,
+                            "y": 156
+                        },
+                        {
+                            "s": true,
+                            "x": 127.23603922044207,
+                            "y": 180
+                        },
+                        {
+                            "s": true,
+                            "x": 161,
+                            "y": 180
+                        },
+                        {
+                            "s": true,
+                            "x": 161,
+                            "y": 874.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 161,
+                            "y": 894.980375157942
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:22:16764"
+            },
+            {
+                "__gohashid": 19411,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:23:39769",
+                "key": "移动问诊模式/2021/1/9 下午6:24:24771",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1545,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 262.2360392204421,
+                            "y": 163.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 262.2360392204421,
+                            "y": 173.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 262.2360392204421,
+                            "y": 172
+                        },
+                        {
+                            "s": true,
+                            "x": 262.2360392204421,
+                            "y": 172
+                        },
+                        {
+                            "s": true,
+                            "x": 262.2360392204421,
+                            "y": 196
+                        },
+                        {
+                            "s": true,
+                            "x": 273.2360392204421,
+                            "y": 196
+                        },
+                        {
+                            "s": true,
+                            "x": 273.2360392204421,
+                            "y": 210.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 273.2360392204421,
+                            "y": 230.98037515794204
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:22:40766"
+            },
+            {
+                "__gohashid": 19600,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:22:40766",
+                "key": "移动问诊模式/2021/1/9 下午6:24:27772",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1546,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 273.2360392204421,
+                            "y": 310.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 273.2360392204421,
+                            "y": 320.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 272.8130512858718,
+                            "y": 320.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 272.8130512858718,
+                            "y": 320.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 272.8130512858718,
+                            "y": 435.20054320566305
+                        },
+                        {
+                            "s": true,
+                            "x": 272.8130512858718,
+                            "y": 455.20054320566305
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:23:09767"
+            },
+            {
+                "__gohashid": 53361,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:23:09767",
+                "key": "移动问诊模式/2021/1/9 下午6:30:52784",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1530,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 272.8130512858718,
+                            "y": 535.200543205663
+                        },
+                        {
+                            "s": true,
+                            "x": 272.8130512858718,
+                            "y": 545.200543205663
+                        },
+                        {
+                            "s": true,
+                            "x": 272.8130512858718,
+                            "y": 548
+                        },
+                        {
+                            "s": true,
+                            "x": 272.8130512858718,
+                            "y": 548
+                        },
+                        {
+                            "s": true,
+                            "x": 272.8130512858718,
+                            "y": 572
+                        },
+                        {
+                            "s": true,
+                            "x": 270.2360392204421,
+                            "y": 572
+                        },
+                        {
+                            "s": true,
+                            "x": 270.2360392204421,
+                            "y": 572.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 270.2360392204421,
+                            "y": 592.980375157942
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:25:31775"
+            },
+            {
+                "__gohashid": 55779,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:25:31775",
+                "key": "移动问诊模式/2021/1/9 下午6:31:02785",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1645,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 270.2360392204421,
+                            "y": 592.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 270.2360392204421,
+                            "y": 582.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 270.2360392204421,
+                            "y": 580
+                        },
+                        {
+                            "s": true,
+                            "x": 408.2360392204421,
+                            "y": 580
+                        },
+                        {
+                            "s": true,
+                            "x": 408.2360392204421,
+                            "y": 162.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 408.2360392204421,
+                            "y": 142.98037515794204
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:26:48777"
+            },
+            {
+                "__gohashid": 56126,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:26:48777",
+                "key": "移动问诊模式/2021/1/9 下午6:31:10786",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1650,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 408.2360392204421,
+                            "y": 142.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 408.2360392204421,
+                            "y": 152.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 408.2360392204421,
+                            "y": 156
+                        },
+                        {
+                            "s": true,
+                            "x": 408.2360392204421,
+                            "y": 156
+                        },
+                        {
+                            "s": true,
+                            "x": 408.2360392204421,
+                            "y": 308
+                        },
+                        {
+                            "s": true,
+                            "x": 459,
+                            "y": 308
+                        },
+                        {
+                            "s": true,
+                            "x": 459,
+                            "y": 897.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 459,
+                            "y": 917.980375157942
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:28:46782"
+            },
+            {
+                "__gohashid": 13712,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:22:16764",
+                "key": "移动问诊模式/2021/1/9 下午6:52:41793",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1655,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 161,
+                            "y": 894.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 161,
+                            "y": 884.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 161,
+                            "y": 884
+                        },
+                        {
+                            "s": true,
+                            "x": 161,
+                            "y": 884
+                        },
+                        {
+                            "s": true,
+                            "x": 161,
+                            "y": 220
+                        },
+                        {
+                            "s": true,
+                            "x": 262.2360392204421,
+                            "y": 220
+                        },
+                        {
+                            "s": true,
+                            "x": 262.2360392204421,
+                            "y": 183.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 262.2360392204421,
+                            "y": 163.98037515794204
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:23:39769"
+            },
+            {
+                "__gohashid": 80068,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:28:46782",
+                "key": "移动问诊模式/2021/1/9 下午7:01:06796",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1660,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 459,
+                            "y": 917.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 459,
+                            "y": 907.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 459,
+                            "y": 907.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 492.2360392204421,
+                            "y": 907.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 492.2360392204421,
+                            "y": 291.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 492.2360392204421,
+                            "y": 271.98037515794204
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:25:59776"
+            },
+            {
+                "__gohashid": 81446,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:25:59776",
+                "key": "移动问诊模式/2021/1/9 下午7:01:27797",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1665,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 492.2360392204421,
+                            "y": 271.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 492.2360392204421,
+                            "y": 281.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 492.2360392204421,
+                            "y": 284
+                        },
+                        {
+                            "s": true,
+                            "x": 492.2360392204421,
+                            "y": 284
+                        },
+                        {
+                            "s": true,
+                            "x": 492.2360392204421,
+                            "y": 356
+                        },
+                        {
+                            "s": true,
+                            "x": 562.8130512858718,
+                            "y": 356
+                        },
+                        {
+                            "s": true,
+                            "x": 562.8130512858718,
+                            "y": 477.20054320566305
+                        },
+                        {
+                            "s": true,
+                            "x": 562.8130512858718,
+                            "y": 497.20054320566305
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:25:14774"
+            },
+            {
+                "__gohashid": 81610,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:25:14774",
+                "key": "移动问诊模式/2021/1/9 下午7:01:33798",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1670,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 562.8130512858718,
+                            "y": 497.20054320566305
+                        },
+                        {
+                            "s": true,
+                            "x": 562.8130512858718,
+                            "y": 487.20054320566305
+                        },
+                        {
+                            "s": true,
+                            "x": 562.8130512858718,
+                            "y": 484
+                        },
+                        {
+                            "s": true,
+                            "x": 617.2360392204421,
+                            "y": 484
+                        },
+                        {
+                            "s": true,
+                            "x": 617.2360392204421,
+                            "y": 341.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 617.2360392204421,
+                            "y": 321.98037515794204
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:24:50773"
+            },
+            {
+                "__gohashid": 82376,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:24:50773",
+                "key": "移动问诊模式/2021/1/9 下午7:01:44799",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1675,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 617.2360392204421,
+                            "y": 321.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 617.2360392204421,
+                            "y": 331.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 617.2360392204421,
+                            "y": 332
+                        },
+                        {
+                            "s": true,
+                            "x": 692,
+                            "y": 332
+                        },
+                        {
+                            "s": true,
+                            "x": 692,
+                            "y": 868
+                        },
+                        {
+                            "s": true,
+                            "x": 670.5770120654297,
+                            "y": 868
+                        },
+                        {
+                            "s": true,
+                            "x": 670.5770120654297,
+                            "y": 905.2005432056632
+                        },
+                        {
+                            "s": true,
+                            "x": 670.5770120654297,
+                            "y": 925.2005432056632
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:28:21781"
+            },
+            {
+                "__gohashid": 83106,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:25:14774",
+                "key": "移动问诊模式/2021/1/9 下午7:02:14800",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1680,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 562.8130512858718,
+                            "y": 577.200543205663
+                        },
+                        {
+                            "s": true,
+                            "x": 562.8130512858718,
+                            "y": 587.200543205663
+                        },
+                        {
+                            "s": true,
+                            "x": 562.8130512858718,
+                            "y": 588
+                        },
+                        {
+                            "s": true,
+                            "x": 562.8130512858718,
+                            "y": 588
+                        },
+                        {
+                            "s": true,
+                            "x": 562.8130512858718,
+                            "y": 612
+                        },
+                        {
+                            "s": true,
+                            "x": 620.2360392204421,
+                            "y": 612
+                        },
+                        {
+                            "s": true,
+                            "x": 620.2360392204421,
+                            "y": 732.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 620.2360392204421,
+                            "y": 752.980375157942
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:13:26775"
+            },
+            {
+                "__gohashid": 84304,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:24:50773",
+                "key": "移动问诊模式/2021/1/9 下午7:02:29801",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1685,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 617.2360392204421,
+                            "y": 321.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 617.2360392204421,
+                            "y": 331.98037515794204
+                        },
+                        {
+                            "s": true,
+                            "x": 617.2360392204421,
+                            "y": 332
+                        },
+                        {
+                            "s": true,
+                            "x": 617.2360392204421,
+                            "y": 332
+                        },
+                        {
+                            "s": true,
+                            "x": 617.2360392204421,
+                            "y": 388
+                        },
+                        {
+                            "s": true,
+                            "x": 798.2360392204421,
+                            "y": 388
+                        },
+                        {
+                            "s": true,
+                            "x": 798.2360392204421,
+                            "y": 736.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 798.2360392204421,
+                            "y": 756.980375157942
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:27:24779"
+            },
+            {
+                "__gohashid": 88382,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:27:24779",
+                "key": "移动问诊模式/2021/1/9 下午7:02:44802",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1690,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 798.2360392204421,
+                            "y": 836.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 798.2360392204421,
+                            "y": 846.980375157942
+                        },
+                        {
+                            "s": true,
+                            "x": 798.2360392204421,
+                            "y": 844
+                        },
+                        {
+                            "s": true,
+                            "x": 798.2360392204421,
+                            "y": 844
+                        },
+                        {
+                            "s": true,
+                            "x": 798.2360392204421,
+                            "y": 1036
+                        },
+                        {
+                            "s": true,
+                            "x": 677.2360392204421,
+                            "y": 1036
+                        },
+                        {
+                            "s": true,
+                            "x": 677.2360392204421,
+                            "y": 1093.537062578971
+                        },
+                        {
+                            "s": true,
+                            "x": 677.2360392204421,
+                            "y": 1113.537062578971
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:51:31791"
+            },
+            {
+                "__gohashid": 91296,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:51:31791",
+                "key": "移动问诊模式/2021/1/9 下午7:03:04803",
+                "points": {
+                    "Aa": 12,
+                    "Fa": null,
+                    "__gohashid": 1695,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 677.2360392204421,
+                            "y": 1113.537062578971
+                        },
+                        {
+                            "s": true,
+                            "x": 677.2360392204421,
+                            "y": 1103.537062578971
+                        },
+                        {
+                            "s": true,
+                            "x": 677.2360392204421,
+                            "y": 1100
+                        },
+                        {
+                            "s": true,
+                            "x": 740,
+                            "y": 1100
+                        },
+                        {
+                            "s": true,
+                            "x": 740,
+                            "y": 916
+                        },
+                        {
+                            "s": true,
+                            "x": 732,
+                            "y": 916
+                        },
+                        {
+                            "s": true,
+                            "x": 732,
+                            "y": 748
+                        },
+                        {
+                            "s": true,
+                            "x": 786.2360392204421,
+                            "y": 748
+                        },
+                        {
+                            "s": true,
+                            "x": 786.2360392204421,
+                            "y": 375.537062578971
+                        },
+                        {
+                            "s": true,
+                            "x": 786.2360392204421,
+                            "y": 355.537062578971
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午6:52:03792"
+            },
+            {
+                "__gohashid": 92801,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "移动问诊模式/2021/1/9 下午6:52:03792",
+                "key": "移动问诊模式/2021/1/9 下午7:03:15805",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1642,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 786.2360392204421,
+                            "y": 275.537062578971
+                        },
+                        {
+                            "s": true,
+                            "x": 786.2360392204421,
+                            "y": 265.537062578971
+                        },
+                        {
+                            "s": true,
+                            "x": 786.2360392204421,
+                            "y": 265.537062578971
+                        },
+                        {
+                            "s": true,
+                            "x": 777.5517578125,
+                            "y": 265.537062578971
+                        },
+                        {
+                            "s": true,
+                            "x": 777.5517578125,
+                            "y": 195.53706257897102
+                        },
+                        {
+                            "s": true,
+                            "x": 777.5517578125,
+                            "y": 175.53706257897102
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "移动问诊模式/2021/1/9 下午7:03:08804"
+            }
+        ],
+        "nodes": [
+            {
+                "__gohashid": 5181,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "expanded": true,
+                "goal": [],
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:190",
+                "id": "医疗领域/医生",
+                "isGroup": true,
+                "key": "移动问诊模式/2021/1/9 下午6:06:192",
+                "loc": "42.999999999999964 405.08394570735516",
+                "name": "医疗领域/医生",
+                "object_properties": [],
+                "participant": "医疗领域/医生",
+                "props": [],
+                "size": "870.103515625 304.33161469228605",
+                "superProps": {},
+                "text": "医疗领域/医生",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 5182,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "expanded": true,
+                "goal": [],
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:190",
+                "id": "医疗领域/医院",
+                "isGroup": true,
+                "key": "移动问诊模式/2021/1/9 下午6:06:193",
+                "loc": "42.999999999999964 711.0839457073552",
+                "name": "医疗领域/医院",
+                "object_properties": [],
+                "participant": "医疗领域/医院",
+                "props": [],
+                "size": "870.103515625 162.33161469228605",
+                "superProps": {},
+                "text": "医疗领域/医院",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 5183,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "expanded": true,
+                "goal": [],
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:190",
+                "id": "医疗领域/患者",
+                "isGroup": true,
+                "key": "移动问诊模式/2021/1/9 下午6:06:194",
+                "loc": "42.999999999999964 -196.91605429264487",
+                "name": "医疗领域/患者",
+                "object_properties": [],
+                "participant": "医疗领域/患者",
+                "props": [],
+                "size": "870.103515625 600.9742614818368",
+                "superProps": {},
+                "text": "医疗领域/患者",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 5184,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "expanded": true,
+                "goal": [],
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:190",
+                "id": "医疗领域/支付公司",
+                "isGroup": true,
+                "key": "移动问诊模式/2021/1/9 下午6:06:195",
+                "loc": "42.99999999999996 875.0839457073552",
+                "name": "医疗领域/支付公司",
+                "object_properties": [],
+                "participant": "医疗领域/支付公司",
+                "props": [],
+                "size": "870.103515625 182.97426148183683",
+                "superProps": {},
+                "text": "医疗领域/支付公司",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 5185,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "expanded": true,
+                "goal": [],
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:190",
+                "id": "医疗领域/物流公司",
+                "isGroup": true,
+                "key": "移动问诊模式/2021/1/9 下午6:06:196",
+                "loc": "42.99999999999996 1059.0839457073553",
+                "name": "医疗领域/物流公司",
+                "object_properties": [],
+                "participant": "医疗领域/物流公司",
+                "props": [],
+                "size": "870.103515625 182.35387166822983",
+                "superProps": {},
+                "text": "医疗领域/物流公司",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 4006,
+                "bindTo": [],
+                "category": "start",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"start\")\n\ntoken.data['start_step']=model.step_count",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:194",
+                "id": "BPMN概念/StartEvent-1",
+                "key": "移动问诊模式/2021/1/9 下午6:11:06763",
+                "loc": "79.23603922044207 -183.01962484205796",
+                "name": "BPMN概念/StartEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/StartEvent"
+                ]
+            },
+            {
+                "__gohashid": 7371,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn round(random.uniform(1,10))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:194",
+                "id": "挂号",
+                "key": "移动问诊模式/2021/1/9 下午6:11:44769",
+                "loc": "135.81305128587178 -33.31488851393294",
+                "name": "挂号",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/挂号"
+                ]
+            },
+            {
+                "__gohashid": 9294,
+                "bindTo": [],
+                "category": "currencyObject",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": true,
+                        "text": "20",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:194",
+                "id": "挂号费",
+                "key": "移动问诊模式/2021/1/9 下午6:12:21771",
+                "loc": "279.8130512858718 -51.799456794336834",
+                "name": "挂号费",
+                "object_properties": [],
+                "text": "currencyObject",
+                "type": [
+                    "医疗领域/挂号费"
+                ]
+            },
+            {
+                "__gohashid": 15583,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:193",
+                "id": "写病历",
+                "key": "移动问诊模式/2021/1/9 下午6:13:26775",
+                "loc": "620.2360392204421 792.980375157942",
+                "name": "写病历",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/患者病历"
+                ]
+            },
+            {
+                "__gohashid": 17070,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:194",
+                "id": "支付挂号费",
+                "key": "移动问诊模式/2021/1/9 下午6:14:01776",
+                "loc": "127.23603922044207 107.98037515794204",
+                "name": "支付挂号费",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/支付挂号费"
+                ]
+            },
+            {
+                "__gohashid": 6575,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('支付成功')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:195",
+                "id": "挂号费收单",
+                "key": "移动问诊模式/2021/1/9 下午6:22:16764",
+                "loc": "161 934.980375157942",
+                "name": "挂号费收单",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/收单"
+                ]
+            },
+            {
+                "__gohashid": 7847,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn round(random.uniform(5,20))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('昨晚开始发烧，最高38.5度')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:194",
+                "id": "问诊",
+                "key": "移动问诊模式/2021/1/9 下午6:22:40766",
+                "loc": "273.2360392204421 270.98037515794204",
+                "name": "问诊",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/问诊"
+                ]
+            },
+            {
+                "__gohashid": 8386,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn round(random.uniform(1,10))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('温度超过38.5度，建议使用退烧栓和退烧药交替使用')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:192",
+                "id": "看诊",
+                "key": "移动问诊模式/2021/1/9 下午6:23:09767",
+                "loc": "272.8130512858718 495.20054320566305",
+                "name": "看诊",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/看诊"
+                ]
+            },
+            {
+                "__gohashid": 13035,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('昨晚开始发烧，最高38.5度')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:194",
+                "id": "病情主诉",
+                "key": "移动问诊模式/2021/1/9 下午6:23:39769",
+                "loc": "262.2360392204421 123.98037515794204",
+                "name": "病情主诉",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/病情主诉"
+                ]
+            },
+            {
+                "__gohashid": 27927,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:194",
+                "id": "处方缴费",
+                "key": "移动问诊模式/2021/1/9 下午6:24:50773",
+                "loc": "617.2360392204421 281.98037515794204",
+                "name": "处方缴费",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/支付"
+                ]
+            },
+            {
+                "__gohashid": 28502,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:192",
+                "id": "开处方",
+                "key": "移动问诊模式/2021/1/9 下午6:25:14774",
+                "loc": "562.8130512858718 537.200543205663",
+                "name": "开处方",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/开处方"
+                ]
+            },
+            {
+                "__gohashid": 29292,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('做个血常规')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:192",
+                "id": "开检查检验",
+                "key": "移动问诊模式/2021/1/9 下午6:25:31775",
+                "loc": "270.2360392204421 632.980375157942",
+                "name": "开检查检验",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/开检查检验"
+                ]
+            },
+            {
+                "__gohashid": 29908,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:194",
+                "id": "做检查检验",
+                "key": "移动问诊模式/2021/1/9 下午6:25:59776",
+                "loc": "492.2360392204421 231.98037515794204",
+                "name": "做检查检验",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/做检查检验"
+                ]
+            },
+            {
+                "__gohashid": 35864,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:194",
+                "id": "检查检验缴费",
+                "key": "移动问诊模式/2021/1/9 下午6:26:48777",
+                "loc": "408.2360392204421 102.98037515794204",
+                "name": "检查检验缴费",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/支付"
+                ]
+            },
+            {
+                "__gohashid": 38483,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:193",
+                "id": "药品邮寄",
+                "key": "移动问诊模式/2021/1/9 下午6:27:24779",
+                "loc": "798.2360392204421 796.980375157942",
+                "name": "药品邮寄",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/药品邮寄"
+                ]
+            },
+            {
+                "__gohashid": 40783,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('支付成功')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:195",
+                "id": "处方费收单",
+                "key": "移动问诊模式/2021/1/9 下午6:28:21781",
+                "loc": "670.5770120654297 965.2005432056632",
+                "name": "处方费收单",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/收单"
+                ]
+            },
+            {
+                "__gohashid": 41455,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('支付成功')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:195",
+                "id": "检查检验费收单",
+                "key": "移动问诊模式/2021/1/9 下午6:28:46782",
+                "loc": "459 957.980375157942",
+                "name": "检查检验费收单",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/收单"
+                ]
+            },
+            {
+                "__gohashid": 9864,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:196",
+                "id": "药品派送",
+                "key": "移动问诊模式/2021/1/9 下午6:51:31791",
+                "loc": "677.2360392204421 1153.537062578971",
+                "name": "药品派送",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/药品发货"
+                ]
+            },
+            {
+                "__gohashid": 10549,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:194",
+                "id": "药品收货",
+                "key": "移动问诊模式/2021/1/9 下午6:52:03792",
+                "loc": "786.2360392204421 315.537062578971",
+                "name": "药品收货",
+                "object_properties": [],
+                "type": [
+                    "医疗领域/药品收货"
+                ]
+            },
+            {
+                "__gohashid": 91720,
+                "bindTo": [],
+                "category": "end",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"end\")\n\nend_step=model.step_count\nstart_step=token.data['start_step']\n\ntime = end_step-start_step\n\navg_process = model.instance_base.findByName(\"Process平均运行时间\")\ntotal = avg_process.amount*avg_process.quota_dscp\n\navg_process.amount = avg_process.amount+1\navg_process.quota_dscp = (total+time)/avg_process.amount\n\n",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "移动问诊模式/2021/1/9 下午6:06:194",
+                "id": "BPMN概念/EndEvent-1",
+                "key": "移动问诊模式/2021/1/9 下午7:03:08804",
+                "loc": "705 129.53706257897102",
+                "name": "BPMN概念/EndEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/EndEvent"
+                ]
+            },
+            {
+                "__gohashid": 5179,
+                "category": "Pool",
+                "isGroup": true,
+                "key": "移动问诊模式/2021/1/9 下午6:06:190",
+                "loc": "16.477152501692018 -196.91605429264487",
+                "name": "BPMN概念/LaneSet-1",
+                "type": "BPMN概念/LaneSet"
+            }
+        ],
+        "resource_config": {}
+    }
+}
