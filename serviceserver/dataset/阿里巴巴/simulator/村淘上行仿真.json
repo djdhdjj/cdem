@@ -1,0 +1,3033 @@
+{
+    "config": {
+        "id": "11/1/2020 10:07:31 PM257",
+        "maxStep": "1000",
+        "maxTime": null,
+        "name": "村淘上行仿真"
+    },
+    "instance_base": {
+        "config": {},
+        "groups": [
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "11/1/2020 10:18:49 PM331",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "电商概念/买家"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "11/1/2020 10:21:25 PM343",
+                        "name": "买家",
+                        "object_properties": [],
+                        "type": [
+                            "基础领域术语库/Participant"
+                        ]
+                    }
+                ],
+                "name": "买家G",
+                "num": 1,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "11/1/2020 10:20:14 PM334",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "电商概念/淘乡甜"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "11/1/2020 10:21:28 PM346",
+                        "name": "淘乡甜",
+                        "object_properties": [],
+                        "type": [
+                            "基础领域术语库/Participant"
+                        ]
+                    }
+                ],
+                "name": "淘乡甜G",
+                "num": 1,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "11/1/2020 10:17:45 PM328",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "物流概念/县级服务中心"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "11/1/2020 10:21:21 PM340",
+                        "name": "县级服务中心",
+                        "object_properties": [],
+                        "type": [
+                            "基础领域术语库/Participant"
+                        ]
+                    }
+                ],
+                "name": "县级服务中心G",
+                "num": 10,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "11/1/2020 10:18:27 PM330",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "物流概念/二级物流服务提供商"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "11/1/2020 10:21:24 PM342",
+                        "name": "二级物流提供商",
+                        "object_properties": [],
+                        "type": [
+                            "基础领域术语库/Participant"
+                        ]
+                    }
+                ],
+                "name": "二级物流服务提供商G",
+                "num": 1,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "11/1/2020 10:18:11 PM329",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "电商概念/村小二"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "11/1/2020 10:21:23 PM341",
+                        "name": "村小二",
+                        "object_properties": [],
+                        "type": [
+                            "基础领域术语库/Participant"
+                        ]
+                    }
+                ],
+                "name": "村小二G",
+                "num": 1,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "11/1/2020 10:20:13 PM332",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "物流概念/第三方物流"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "11/1/2020 10:21:27 PM344",
+                        "name": "第三方物流",
+                        "object_properties": [],
+                        "type": [
+                            "基础领域术语库/Participant"
+                        ]
+                    }
+                ],
+                "name": "第三方物流G",
+                "num": 1,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "11/1/2020 10:20:14 PM333",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "支付概念/第三方支付"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "11/1/2020 10:21:27 PM345",
+                        "name": "第三方支付",
+                        "object_properties": [],
+                        "type": [
+                            "基础领域术语库/Participant"
+                        ]
+                    }
+                ],
+                "name": "第三方支付G",
+                "num": 1,
+                "type": []
+            }
+        ],
+        "instances": [
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "11/2/2020 2:54:14 AM315",
+                "name": "平均配送时间",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "11/2/2020 1:38:33 AM315",
+                "name": "Process平均运行时间",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "11/2/2020 2:57:29 AM316",
+                "name": "平均售后率",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            }
+        ],
+        "relations": []
+    },
+    "name": "村淘上行仿真",
+    "node2binding_relations": {
+        "买家": [
+            "电商概念/买家"
+        ],
+        "二级物流提供商": [
+            "物流概念/二级物流服务提供商"
+        ],
+        "县级服务中心": [
+            "物流概念/县级服务中心"
+        ],
+        "村小二": [
+            "电商概念/村小二"
+        ],
+        "淘乡甜": [
+            "电商概念/淘乡甜"
+        ],
+        "第三方支付": [
+            "支付概念/第三方支付"
+        ],
+        "第三方物流": [
+            "物流概念/第三方物流"
+        ]
+    },
+    "pattern_instance_base": {
+        "config": {
+            "id": "1603712996.614903_56631",
+            "name": "村淘上行_最终"
+        },
+        "groups": [],
+        "instances": [
+            {
+                "__gohashid": 21338,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('签收')\nreceive_step = model.step_count\nsend_step = token.data['send_step']\n\navg_delivery_time = model.instance_base.findByName('平均配送时间')\ntotal = avg_delivery_time.quota_dscp * avg_delivery_time.amount\n\navg_delivery_time.amount = avg_delivery_time.amount + 1\navg_delivery_time.quota_dscp = (total + receive_step - send_step) / avg_delivery_time.amount\n",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:438",
+                "id": "签收",
+                "key": "农产品外销模式/2020/10/26 下午7:37:38167",
+                "loc": "1011 1371",
+                "name": "签收",
+                "objectProperty": {
+                    "CarrierIs": "物流概念/物流平台"
+                },
+                "object_properties": [],
+                "type": [
+                    "电商概念/签收"
+                ]
+            },
+            {
+                "__gohashid": 4704,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 5))\nup = round(random.uniform(8, 14))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "# 配送交互动作0803\nif token.data['second_resource_num']>1:\n    token.data['second_resource_num'] = token.data['second_resource_num'] - 1\n    print('一级配送')\n    token.data['second_resource_num'] = token.data['second_resource_num'] + 1\nelse:\n    print('服务繁忙，请稍候')\ntoken.data['cost'] = token.data['cost'] + 5",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "多级物流模式/2020/10/23 下午8:56:167",
+                "id": "二级配送",
+                "key": "多级物流模式/2020/10/24 下午12:21:40122",
+                "loc": "737 818",
+                "name": "二级配送",
+                "object_properties": [],
+                "type": [
+                    "物流概念/二级配送"
+                ]
+            },
+            {
+                "__gohashid": 22077,
+                "bindTo": [],
+                "category": "exclusive",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/condition": {
+                        "isPattern": true,
+                        "text": "print('Exclusive Gateway')\n\nins = ins = model.instance_base.findByName('平均售后申请率')\nins.amount = ins.amount + 1\n\nimport random\nreturn random.random() > 0.5\n",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:438",
+                "id": "BPMN概念/ExclusiveGateWay-1",
+                "key": "农产品外销模式/2020/10/26 下午7:37:50169",
+                "loc": "1299 1411",
+                "name": "BPMN概念/ExclusiveGateWay-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/ExclusiveGateWay"
+                ]
+            },
+            {
+                "__gohashid": 4429,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 7))\nreturn round(random.uniform(low, up))\n",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "# 配送交互动作0803\nif token.data['first_resource_num']>1:\n    token.data['first_resource_num'] = token.data['first_resource_num'] - 1\n    print('一级配送')\n    token.data['first_resource_num'] = token.data['first_resource_num'] + 1\nelse:\n    print('服务繁忙，请稍候')\ntoken.data['cost'] = token.data['cost'] + 5",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:437",
+                "id": "一级配送",
+                "key": "多级物流模式/2020/10/24 下午12:21:31121",
+                "loc": "884 1728",
+                "name": "一级配送",
+                "object_properties": [],
+                "type": [
+                    "物流概念/一级配送"
+                ]
+            },
+            {
+                "__gohashid": 4728,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "expanded": true,
+                "goal": [],
+                "graph_data": {},
+                "group": "Mon Oct 26 11:49:56 20207405",
+                "id": "物流概念/县级服务中心",
+                "isGroup": "true",
+                "key": "多级物流模式/2020/10/23 下午8:56:169",
+                "loc": "7.999999999999986 118",
+                "name": "物流概念/县级服务中心",
+                "object_properties": [],
+                "participant": "物流概念/县级服务中心",
+                "props": [],
+                "size": "2800 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 12000,
+                "bindTo": [],
+                "category": "start",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('开始')\n# 设定初始条件\ntoken.data['start_step'] = model.step_count\ntoken.data['first_resource_num'] = 10000\ntoken.data['second_resource_num'] = 100\ntoken.data['cost'] = 0",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:438",
+                "id": "BPMN概念/StartEvent-1",
+                "key": "农产品外销模式/2020/10/26 下午7:25:58151",
+                "loc": "47.99999999999999 1354",
+                "name": "BPMN概念/StartEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/StartEvent"
+                ]
+            },
+            {
+                "__gohashid": 19975,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('发货')\ntoken.data['send_step'] = model.step_count\ntoken.data['cost'] = token.data['cost']+1",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:439",
+                "id": "发货",
+                "key": "农产品外销模式/2020/10/26 下午7:36:32163",
+                "loc": "341 1056",
+                "name": "发货",
+                "object_properties": [],
+                "type": [
+                    "电商概念/发货"
+                ]
+            },
+            {
+                "__gohashid": 40928,
+                "bindTo": [],
+                "category": "currencyObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:437",
+                "id": "订单金额",
+                "key": "多级物流模式/2020/10/24 下午7:54:23128",
+                "loc": "715 1755",
+                "name": "订单金额",
+                "object_properties": [],
+                "type": [
+                    "物流概念/资金"
+                ]
+            },
+            {
+                "__gohashid": 30270,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('资金结算')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:436",
+                "id": "资金结算",
+                "key": "农产品外销模式/2020/10/26 下午7:38:43173",
+                "loc": "1589 2077",
+                "name": "资金结算",
+                "objectProperty": {
+                    "CarrierIs": "支付概念/支付平台"
+                },
+                "object_properties": [],
+                "type": [
+                    "支付概念/资金结算"
+                ]
+            },
+            {
+                "__gohashid": 4726,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Mon Oct 26 11:49:56 20207405",
+                "id": "物流概念/二级物流服务提供商",
+                "isGroup": "true",
+                "key": "多级物流模式/2020/10/23 下午8:56:167",
+                "loc": "8 694",
+                "name": "物流概念/二级物流服务提供商",
+                "object_properties": [],
+                "participant": "物流概念/二级物流服务提供商",
+                "props": [],
+                "size": "2800 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 42612,
+                "bindTo": [],
+                "category": "end",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint('End Event')\nend_step = model.step_count\nstart_step = token.data['start_step']\n\navg_process_time = model.instance_base.findByName('Process平均运行时间')\ntotal = avg_process_time.amount * avg_process_time.quota_dscp\n\navg_process_time.amount = avg_process_time.amount + 1\navg_process_time.quota_dscp = (total + end_step - start_step) / avg_process_time.amount\n\nins = model.instance_base.findByName('平均售后率')\n# total = ins.quota_dscp * ins.amount\n# ins.quota_dscp = (total + 1) / ins.amount\nins.quota_dscp = (random.random())/10",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:436",
+                "id": "BPMN概念/EndEvent-1",
+                "key": "农产品外销模式/2020/10/26 下午7:39:29177",
+                "loc": "1744 2058",
+                "name": "BPMN概念/EndEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/EndEvent"
+                ]
+            },
+            {
+                "__gohashid": 17909,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('订单支付')\ntoken.data['seller_id_money'] = token.data['seller_id_money'] + token.data['order_money'] ",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:436",
+                "id": "订单支付",
+                "key": "农产品外销模式/2020/10/26 下午7:33:45160",
+                "loc": "489 1956",
+                "name": "订单支付",
+                "objectProperty": {
+                    "CarrierIs": "支付概念/支付平台"
+                },
+                "object_properties": [],
+                "type": [
+                    "电商概念/支付"
+                ]
+            },
+            {
+                "__gohashid": 5290,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('包裹中转')\ntoken.data['cost'] = token.data['cost'] + 10",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "多级物流模式/2020/10/23 下午8:56:169",
+                "id": "包裹中转",
+                "key": "多级物流模式/2020/10/24 下午12:22:02124",
+                "loc": "777 279",
+                "name": "包裹中转",
+                "object_properties": [],
+                "type": [
+                    "物流概念/包裹中转"
+                ]
+            },
+            {
+                "__gohashid": 26856,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint('申请售后')\nins = model.instance_base.findByName('平均售后率')\n# total = ins.quota_dscp * ins.amount\n# ins.quota_dscp = (total + 1) / ins.amount\nins = (random.randint(1,10))/100",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:435",
+                "id": "申请售后",
+                "key": "农产品外销模式/2020/10/26 下午7:38:11171",
+                "loc": "1302 2360",
+                "name": "申请售后",
+                "objectProperty": {
+                    "CarrierIs": "电商概念/电商平台"
+                },
+                "object_properties": [],
+                "type": [
+                    "电商概念/售后"
+                ]
+            },
+            {
+                "__gohashid": 11289,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Mon Oct 26 11:49:56 20207405",
+                "id": "支付概念/第三方支付",
+                "isGroup": "true",
+                "key": "农产品外销模式/2020/10/26 下午7:25:436",
+                "loc": "7.999999999999986 1904",
+                "name": "支付概念/第三方支付",
+                "object_properties": [],
+                "participant": "支付概念/第三方支付",
+                "props": [],
+                "size": "2800 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 22315,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:439",
+                "id": "收货人数据",
+                "key": "多级物流模式/2020/10/24 下午7:52:57120",
+                "loc": "586 1139",
+                "name": "收货人数据",
+                "object_properties": [],
+                "type": [
+                    "物流概念/收货人用户数据"
+                ]
+            },
+            {
+                "__gohashid": 11291,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Mon Oct 26 11:49:56 20207405",
+                "id": "电商概念/买家",
+                "isGroup": "true",
+                "key": "农产品外销模式/2020/10/26 下午7:25:438",
+                "loc": "7.999999999999993 1302",
+                "name": "电商概念/买家",
+                "object_properties": [],
+                "participant": "电商概念/买家",
+                "props": [],
+                "size": "2800 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 12818,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('接受并确认订单')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:435",
+                "id": "接收并确认订单",
+                "key": "农产品外销模式/2020/10/26 下午7:29:39154",
+                "loc": "219 2350",
+                "name": "接收并确认订单",
+                "objectProperty": {
+                    "CarrierIs": "电商概念/电商平台"
+                },
+                "object_properties": [],
+                "type": [
+                    "电商概念/订单转发"
+                ]
+            },
+            {
+                "__gohashid": 11288,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Mon Oct 26 11:49:56 20207405",
+                "id": "电商概念/淘乡甜",
+                "isGroup": "true",
+                "key": "农产品外销模式/2020/10/26 下午7:25:435",
+                "loc": "7.999999999999986 2205",
+                "name": "电商概念/淘乡甜",
+                "object_properties": [],
+                "participant": "电商概念/淘乡甜",
+                "props": [],
+                "size": "2800 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 12265,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nimport time\nprint('下单')\ntoken.data['order_money'] = random.randint(10,10000)\n",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:438",
+                "id": "下单",
+                "key": "农产品外销模式/2020/10/26 下午7:26:02152",
+                "loc": "298 1354",
+                "name": "下单",
+                "objectProperty": {
+                    "CarrierIs": "电商概念/电商平台"
+                },
+                "object_properties": [],
+                "type": [
+                    "电商概念/下单"
+                ]
+            },
+            {
+                "__gohashid": 11290,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Mon Oct 26 11:49:56 20207405",
+                "id": "物流概念/第三方物流",
+                "isGroup": "true",
+                "key": "农产品外销模式/2020/10/26 下午7:25:437",
+                "loc": "7.999999999999986 1603",
+                "name": "物流概念/第三方物流",
+                "object_properties": [],
+                "participant": "物流概念/第三方物流",
+                "props": [],
+                "size": "2800 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 4727,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Mon Oct 26 11:49:56 20207405",
+                "id": "11/1/2020 10:07:52 PM216",
+                "isGroup": "true",
+                "key": "多级物流模式/2020/10/23 下午8:56:168",
+                "loc": "7.999999999999986 399",
+                "name": "电商概念/村小二",
+                "object_properties": [],
+                "participant": "电商概念/村小二",
+                "props": [],
+                "size": "2800 300",
+                "superProps": {},
+                "type": "BPMN概念/Lane"
+            }
+        ],
+        "relations": [
+            {
+                "__gohashid": 64071,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "多级物流模式/2020/10/24 下午7:52:57120",
+                "key": "村淘上行_5e5a9a36178111eb87d1cd454c57d1aa/2020/10/26 下午7:53:57248",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 9031,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 586,
+                            "y": 1117.5
+                        },
+                        {
+                            "s": true,
+                            "x": 586,
+                            "y": 1107.5
+                        },
+                        {
+                            "s": true,
+                            "x": 586,
+                            "y": 1107.5
+                        },
+                        {
+                            "s": true,
+                            "x": 737,
+                            "y": 1107.5
+                        },
+                        {
+                            "s": true,
+                            "x": 737,
+                            "y": 868
+                        },
+                        {
+                            "s": true,
+                            "x": 737,
+                            "y": 858
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "多级物流模式/2020/10/24 下午12:21:40122"
+            },
+            {
+                "__gohashid": 75596,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "多级物流模式/2020/10/24 下午12:21:31121",
+                "key": "村淘上行_5e5a9a36178111eb87d1cd454c57d1aa/2020/10/26 下午7:54:59251",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 9048,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 884,
+                            "y": 1688
+                        },
+                        {
+                            "s": true,
+                            "x": 884,
+                            "y": 1678
+                        },
+                        {
+                            "s": true,
+                            "x": 884,
+                            "y": 1676
+                        },
+                        {
+                            "s": true,
+                            "x": 1011,
+                            "y": 1676
+                        },
+                        {
+                            "s": true,
+                            "x": 1011,
+                            "y": 1431
+                        },
+                        {
+                            "s": true,
+                            "x": 1011,
+                            "y": 1411
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "农产品外销模式/2020/10/26 下午7:37:38167"
+            },
+            {
+                "__gohashid": 36806,
+                "category": "controlFlow",
+                "controlFlowNo": false,
+                "controlFlowYes": true,
+                "data_properties": {},
+                "from": "农产品外销模式/2020/10/26 下午7:37:50169",
+                "key": "农产品外销模式/2020/10/26 下午7:39:03176",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 8778,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1299,
+                            "y": 1442.5
+                        },
+                        {
+                            "s": true,
+                            "x": 1299,
+                            "y": 1452.5
+                        },
+                        {
+                            "s": true,
+                            "x": 1299,
+                            "y": 1734.75
+                        },
+                        {
+                            "s": true,
+                            "x": 1589,
+                            "y": 1734.75
+                        },
+                        {
+                            "s": true,
+                            "x": 1589,
+                            "y": 2017
+                        },
+                        {
+                            "s": true,
+                            "x": 1589,
+                            "y": 2037
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "农产品外销模式/2020/10/26 下午7:38:43173"
+            },
+            {
+                "__gohashid": 92974,
+                "category": "currencyFlowIn",
+                "data_properties": {},
+                "from": "多级物流模式/2020/10/24 下午7:54:23128",
+                "key": "村淘上行_5e5a9a36178111eb87d1cd454c57d1aa/2020/10/26 下午7:56:23253",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 9064,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 732.3000000000001,
+                            "y": 1755
+                        },
+                        {
+                            "s": true,
+                            "x": 742.3000000000001,
+                            "y": 1755
+                        },
+                        {
+                            "s": true,
+                            "x": 742.3000000000001,
+                            "y": 1755
+                        },
+                        {
+                            "s": true,
+                            "x": 742.3000000000001,
+                            "y": 2077
+                        },
+                        {
+                            "s": true,
+                            "x": 1519,
+                            "y": 2077
+                        },
+                        {
+                            "s": true,
+                            "x": 1529,
+                            "y": 2077
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "农产品外销模式/2020/10/26 下午7:38:43173"
+            },
+            {
+                "__gohashid": 57655,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "多级物流模式/2020/10/24 下午12:21:40122",
+                "key": "村淘上行_5e5a9a36178111eb87d1cd454c57d1aa/2020/10/26 下午7:53:19246",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 9013,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 737,
+                            "y": 778
+                        },
+                        {
+                            "s": true,
+                            "x": 737,
+                            "y": 768
+                        },
+                        {
+                            "s": true,
+                            "x": 737,
+                            "y": 768
+                        },
+                        {
+                            "s": true,
+                            "x": 777,
+                            "y": 768
+                        },
+                        {
+                            "s": true,
+                            "x": 777,
+                            "y": 339
+                        },
+                        {
+                            "s": true,
+                            "x": 777,
+                            "y": 319
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "多级物流模式/2020/10/24 下午12:22:02124"
+            },
+            {
+                "__gohashid": 16905,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "农产品外销模式/2020/10/26 下午7:26:02152",
+                "key": "农产品外销模式/2020/10/26 下午7:33:00159",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 8773,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1394
+                        },
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1404
+                        },
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1404
+                        },
+                        {
+                            "s": true,
+                            "x": 219,
+                            "y": 1404
+                        },
+                        {
+                            "s": true,
+                            "x": 219,
+                            "y": 2290
+                        },
+                        {
+                            "s": true,
+                            "x": 219,
+                            "y": 2310
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "农产品外销模式/2020/10/26 下午7:29:39154"
+            },
+            {
+                "__gohashid": 20319,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "农产品外销模式/2020/10/26 下午7:33:45160",
+                "key": "农产品外销模式/2020/10/26 下午7:36:41164",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 8775,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 1916
+                        },
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 1906
+                        },
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 1908
+                        },
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 1908
+                        },
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 1308
+                        },
+                        {
+                            "s": true,
+                            "x": 341,
+                            "y": 1308
+                        },
+                        {
+                            "s": true,
+                            "x": 341,
+                            "y": 1116
+                        },
+                        {
+                            "s": true,
+                            "x": 341,
+                            "y": 1096
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "农产品外销模式/2020/10/26 下午7:36:32163"
+            },
+            {
+                "__gohashid": 26454,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "农产品外销模式/2020/10/26 下午7:37:38167",
+                "key": "农产品外销模式/2020/10/26 下午7:38:03170",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 8776,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1071,
+                            "y": 1371
+                        },
+                        {
+                            "s": true,
+                            "x": 1081,
+                            "y": 1371
+                        },
+                        {
+                            "s": true,
+                            "x": 1084,
+                            "y": 1371
+                        },
+                        {
+                            "s": true,
+                            "x": 1084,
+                            "y": 1411
+                        },
+                        {
+                            "s": true,
+                            "x": 1247.5,
+                            "y": 1411
+                        },
+                        {
+                            "s": true,
+                            "x": 1267.5,
+                            "y": 1411
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "农产品外销模式/2020/10/26 下午7:37:50169"
+            },
+            {
+                "__gohashid": 18119,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "农产品外销模式/2020/10/26 下午7:29:39154",
+                "key": "农产品外销模式/2020/10/26 下午7:33:47161",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 8774,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 219,
+                            "y": 2310
+                        },
+                        {
+                            "s": true,
+                            "x": 219,
+                            "y": 2300
+                        },
+                        {
+                            "s": true,
+                            "x": 219,
+                            "y": 2300
+                        },
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 2300
+                        },
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 2016
+                        },
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 1996
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "农产品外销模式/2020/10/26 下午7:33:45160"
+            },
+            {
+                "__gohashid": 45102,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "农产品外销模式/2020/10/26 下午7:38:43173",
+                "key": "农产品外销模式/2020/10/26 下午7:39:41179",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 8768,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1649,
+                            "y": 2077
+                        },
+                        {
+                            "s": true,
+                            "x": 1659,
+                            "y": 2077
+                        },
+                        {
+                            "s": true,
+                            "x": 1660,
+                            "y": 2077
+                        },
+                        {
+                            "s": true,
+                            "x": 1660,
+                            "y": 2081
+                        },
+                        {
+                            "s": true,
+                            "x": 1775.2664337158203,
+                            "y": 2081
+                        },
+                        {
+                            "s": true,
+                            "x": 1795.2664337158203,
+                            "y": 2081
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "农产品外销模式/2020/10/26 下午7:39:29177"
+            },
+            {
+                "__gohashid": 57146,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "农产品外销模式/2020/10/26 下午7:36:32163",
+                "key": "村淘上行_5e5a9a36178111eb87d1cd454c57d1aa/2020/10/26 下午7:53:04245",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 9005,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 401,
+                            "y": 1056
+                        },
+                        {
+                            "s": true,
+                            "x": 411,
+                            "y": 1056
+                        },
+                        {
+                            "s": true,
+                            "x": 534,
+                            "y": 1056
+                        },
+                        {
+                            "s": true,
+                            "x": 534,
+                            "y": 818
+                        },
+                        {
+                            "s": true,
+                            "x": 657,
+                            "y": 818
+                        },
+                        {
+                            "s": true,
+                            "x": 677,
+                            "y": 818
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "多级物流模式/2020/10/24 下午12:21:40122"
+            },
+            {
+                "__gohashid": 67996,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "多级物流模式/2020/10/24 下午12:22:02124",
+                "key": "村淘上行_5e5a9a36178111eb87d1cd454c57d1aa/2020/10/26 下午7:54:10249",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 9040,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 777,
+                            "y": 319
+                        },
+                        {
+                            "s": true,
+                            "x": 777,
+                            "y": 329
+                        },
+                        {
+                            "s": true,
+                            "x": 777,
+                            "y": 332
+                        },
+                        {
+                            "s": true,
+                            "x": 777,
+                            "y": 332
+                        },
+                        {
+                            "s": true,
+                            "x": 777,
+                            "y": 340
+                        },
+                        {
+                            "s": true,
+                            "x": 884,
+                            "y": 340
+                        },
+                        {
+                            "s": true,
+                            "x": 884,
+                            "y": 1668
+                        },
+                        {
+                            "s": true,
+                            "x": 884,
+                            "y": 1688
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "多级物流模式/2020/10/24 下午12:21:31121"
+            },
+            {
+                "__gohashid": 61795,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "农产品外销模式/2020/10/26 下午7:36:32163",
+                "key": "村淘上行_5e5a9a36178111eb87d1cd454c57d1aa/2020/10/26 下午7:53:51247",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 9021,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 401,
+                            "y": 1056
+                        },
+                        {
+                            "s": true,
+                            "x": 411,
+                            "y": 1056
+                        },
+                        {
+                            "s": true,
+                            "x": 412,
+                            "y": 1056
+                        },
+                        {
+                            "s": true,
+                            "x": 412,
+                            "y": 1139
+                        },
+                        {
+                            "s": true,
+                            "x": 558.7,
+                            "y": 1139
+                        },
+                        {
+                            "s": true,
+                            "x": 568.7,
+                            "y": 1139
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "多级物流模式/2020/10/24 下午7:52:57120"
+            },
+            {
+                "__gohashid": 92645,
+                "category": "currencyFlowOut",
+                "data_properties": {},
+                "from": "农产品外销模式/2020/10/26 下午7:33:45160",
+                "key": "村淘上行_5e5a9a36178111eb87d1cd454c57d1aa/2020/10/26 下午7:56:09252",
+                "points": {
+                    "Aa": 9,
+                    "Fa": null,
+                    "__gohashid": 9056,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 1916
+                        },
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 1906
+                        },
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 1908
+                        },
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 1908
+                        },
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 1755
+                        },
+                        {
+                            "s": true,
+                            "x": 687.7,
+                            "y": 1755
+                        },
+                        {
+                            "s": true,
+                            "x": 697.7,
+                            "y": 1755
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "多级物流模式/2020/10/24 下午7:54:23128"
+            },
+            {
+                "__gohashid": 12471,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "农产品外销模式/2020/10/26 下午7:25:58151",
+                "key": "农产品外销模式/2020/10/26 下午7:26:06153",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 8772,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 145.982666015625,
+                            "y": 1375.5
+                        },
+                        {
+                            "s": true,
+                            "x": 155.982666015625,
+                            "y": 1375.5
+                        },
+                        {
+                            "s": true,
+                            "x": 156,
+                            "y": 1375.5
+                        },
+                        {
+                            "s": true,
+                            "x": 156,
+                            "y": 1375.5
+                        },
+                        {
+                            "s": true,
+                            "x": 212,
+                            "y": 1375.5
+                        },
+                        {
+                            "s": true,
+                            "x": 212,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 218,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 238,
+                            "y": 1354
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "农产品外销模式/2020/10/26 下午7:26:02152"
+            },
+            {
+                "__gohashid": 29909,
+                "category": "controlFlow",
+                "controlFlowNo": true,
+                "controlFlowYes": false,
+                "data_properties": {},
+                "from": "农产品外销模式/2020/10/26 下午7:37:50169",
+                "key": "农产品外销模式/2020/10/26 下午7:38:25172",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 8777,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1299,
+                            "y": 1442.5
+                        },
+                        {
+                            "s": true,
+                            "x": 1299,
+                            "y": 1452.5
+                        },
+                        {
+                            "s": true,
+                            "x": 1302,
+                            "y": 1452.5
+                        },
+                        {
+                            "s": true,
+                            "x": 1302,
+                            "y": 1452.5
+                        },
+                        {
+                            "s": true,
+                            "x": 1302,
+                            "y": 2300
+                        },
+                        {
+                            "s": true,
+                            "x": 1302,
+                            "y": 2320
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "农产品外销模式/2020/10/26 下午7:38:11171"
+            },
+            {
+                "__gohashid": 36045,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "农产品外销模式/2020/10/26 下午7:38:11171",
+                "key": "农产品外销模式/2020/10/26 下午7:38:53174",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 8779,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1362,
+                            "y": 2360
+                        },
+                        {
+                            "s": true,
+                            "x": 1372,
+                            "y": 2360
+                        },
+                        {
+                            "s": true,
+                            "x": 1440.5,
+                            "y": 2360
+                        },
+                        {
+                            "s": true,
+                            "x": 1440.5,
+                            "y": 2077
+                        },
+                        {
+                            "s": true,
+                            "x": 1509,
+                            "y": 2077
+                        },
+                        {
+                            "s": true,
+                            "x": 1529,
+                            "y": 2077
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "农产品外销模式/2020/10/26 下午7:38:43173"
+            }
+        ]
+    },
+    "service pattern": {
+        "config": {
+            "id": "1603712996.614903_56631",
+            "name": "村淘上行_最终"
+        },
+        "elements": {},
+        "evaluate_config": {},
+        "links": [
+            {
+                "__gohashid": 12471,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "农产品外销模式/2020/10/26 下午7:25:58151",
+                "key": "农产品外销模式/2020/10/26 下午7:26:06153",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 8772,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 145.982666015625,
+                            "y": 1375.5
+                        },
+                        {
+                            "s": true,
+                            "x": 155.982666015625,
+                            "y": 1375.5
+                        },
+                        {
+                            "s": true,
+                            "x": 156,
+                            "y": 1375.5
+                        },
+                        {
+                            "s": true,
+                            "x": 156,
+                            "y": 1375.5
+                        },
+                        {
+                            "s": true,
+                            "x": 212,
+                            "y": 1375.5
+                        },
+                        {
+                            "s": true,
+                            "x": 212,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 218,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 238,
+                            "y": 1354
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "农产品外销模式/2020/10/26 下午7:26:02152"
+            },
+            {
+                "__gohashid": 16905,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "农产品外销模式/2020/10/26 下午7:26:02152",
+                "key": "农产品外销模式/2020/10/26 下午7:33:00159",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 8773,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1394
+                        },
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1404
+                        },
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1404
+                        },
+                        {
+                            "s": true,
+                            "x": 219,
+                            "y": 1404
+                        },
+                        {
+                            "s": true,
+                            "x": 219,
+                            "y": 2290
+                        },
+                        {
+                            "s": true,
+                            "x": 219,
+                            "y": 2310
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "农产品外销模式/2020/10/26 下午7:29:39154"
+            },
+            {
+                "__gohashid": 18119,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "农产品外销模式/2020/10/26 下午7:29:39154",
+                "key": "农产品外销模式/2020/10/26 下午7:33:47161",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 8774,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 219,
+                            "y": 2310
+                        },
+                        {
+                            "s": true,
+                            "x": 219,
+                            "y": 2300
+                        },
+                        {
+                            "s": true,
+                            "x": 219,
+                            "y": 2300
+                        },
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 2300
+                        },
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 2016
+                        },
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 1996
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "农产品外销模式/2020/10/26 下午7:33:45160"
+            },
+            {
+                "__gohashid": 20319,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "农产品外销模式/2020/10/26 下午7:33:45160",
+                "key": "农产品外销模式/2020/10/26 下午7:36:41164",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 8775,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 1916
+                        },
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 1906
+                        },
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 1908
+                        },
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 1908
+                        },
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 1308
+                        },
+                        {
+                            "s": true,
+                            "x": 341,
+                            "y": 1308
+                        },
+                        {
+                            "s": true,
+                            "x": 341,
+                            "y": 1116
+                        },
+                        {
+                            "s": true,
+                            "x": 341,
+                            "y": 1096
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "农产品外销模式/2020/10/26 下午7:36:32163"
+            },
+            {
+                "__gohashid": 26454,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "农产品外销模式/2020/10/26 下午7:37:38167",
+                "key": "农产品外销模式/2020/10/26 下午7:38:03170",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 8776,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1071,
+                            "y": 1371
+                        },
+                        {
+                            "s": true,
+                            "x": 1081,
+                            "y": 1371
+                        },
+                        {
+                            "s": true,
+                            "x": 1084,
+                            "y": 1371
+                        },
+                        {
+                            "s": true,
+                            "x": 1084,
+                            "y": 1411
+                        },
+                        {
+                            "s": true,
+                            "x": 1247.5,
+                            "y": 1411
+                        },
+                        {
+                            "s": true,
+                            "x": 1267.5,
+                            "y": 1411
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "农产品外销模式/2020/10/26 下午7:37:50169"
+            },
+            {
+                "__gohashid": 29909,
+                "category": "controlFlow",
+                "controlFlowNo": true,
+                "controlFlowYes": false,
+                "data_properties": {},
+                "from": "农产品外销模式/2020/10/26 下午7:37:50169",
+                "key": "农产品外销模式/2020/10/26 下午7:38:25172",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 8777,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1299,
+                            "y": 1442.5
+                        },
+                        {
+                            "s": true,
+                            "x": 1299,
+                            "y": 1452.5
+                        },
+                        {
+                            "s": true,
+                            "x": 1302,
+                            "y": 1452.5
+                        },
+                        {
+                            "s": true,
+                            "x": 1302,
+                            "y": 1452.5
+                        },
+                        {
+                            "s": true,
+                            "x": 1302,
+                            "y": 2300
+                        },
+                        {
+                            "s": true,
+                            "x": 1302,
+                            "y": 2320
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "农产品外销模式/2020/10/26 下午7:38:11171"
+            },
+            {
+                "__gohashid": 36806,
+                "category": "controlFlow",
+                "controlFlowNo": false,
+                "controlFlowYes": true,
+                "data_properties": {},
+                "from": "农产品外销模式/2020/10/26 下午7:37:50169",
+                "key": "农产品外销模式/2020/10/26 下午7:39:03176",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 8778,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1299,
+                            "y": 1442.5
+                        },
+                        {
+                            "s": true,
+                            "x": 1299,
+                            "y": 1452.5
+                        },
+                        {
+                            "s": true,
+                            "x": 1299,
+                            "y": 1734.75
+                        },
+                        {
+                            "s": true,
+                            "x": 1589,
+                            "y": 1734.75
+                        },
+                        {
+                            "s": true,
+                            "x": 1589,
+                            "y": 2017
+                        },
+                        {
+                            "s": true,
+                            "x": 1589,
+                            "y": 2037
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "农产品外销模式/2020/10/26 下午7:38:43173"
+            },
+            {
+                "__gohashid": 36045,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "农产品外销模式/2020/10/26 下午7:38:11171",
+                "key": "农产品外销模式/2020/10/26 下午7:38:53174",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 8779,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1362,
+                            "y": 2360
+                        },
+                        {
+                            "s": true,
+                            "x": 1372,
+                            "y": 2360
+                        },
+                        {
+                            "s": true,
+                            "x": 1440.5,
+                            "y": 2360
+                        },
+                        {
+                            "s": true,
+                            "x": 1440.5,
+                            "y": 2077
+                        },
+                        {
+                            "s": true,
+                            "x": 1509,
+                            "y": 2077
+                        },
+                        {
+                            "s": true,
+                            "x": 1529,
+                            "y": 2077
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "农产品外销模式/2020/10/26 下午7:38:43173"
+            },
+            {
+                "__gohashid": 45102,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "农产品外销模式/2020/10/26 下午7:38:43173",
+                "key": "农产品外销模式/2020/10/26 下午7:39:41179",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 8768,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1649,
+                            "y": 2077
+                        },
+                        {
+                            "s": true,
+                            "x": 1659,
+                            "y": 2077
+                        },
+                        {
+                            "s": true,
+                            "x": 1660,
+                            "y": 2077
+                        },
+                        {
+                            "s": true,
+                            "x": 1660,
+                            "y": 2081
+                        },
+                        {
+                            "s": true,
+                            "x": 1775.2664337158203,
+                            "y": 2081
+                        },
+                        {
+                            "s": true,
+                            "x": 1795.2664337158203,
+                            "y": 2081
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "农产品外销模式/2020/10/26 下午7:39:29177"
+            },
+            {
+                "__gohashid": 57146,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "农产品外销模式/2020/10/26 下午7:36:32163",
+                "key": "村淘上行_5e5a9a36178111eb87d1cd454c57d1aa/2020/10/26 下午7:53:04245",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 9005,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 401,
+                            "y": 1056
+                        },
+                        {
+                            "s": true,
+                            "x": 411,
+                            "y": 1056
+                        },
+                        {
+                            "s": true,
+                            "x": 534,
+                            "y": 1056
+                        },
+                        {
+                            "s": true,
+                            "x": 534,
+                            "y": 818
+                        },
+                        {
+                            "s": true,
+                            "x": 657,
+                            "y": 818
+                        },
+                        {
+                            "s": true,
+                            "x": 677,
+                            "y": 818
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "多级物流模式/2020/10/24 下午12:21:40122"
+            },
+            {
+                "__gohashid": 57655,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "多级物流模式/2020/10/24 下午12:21:40122",
+                "key": "村淘上行_5e5a9a36178111eb87d1cd454c57d1aa/2020/10/26 下午7:53:19246",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 9013,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 737,
+                            "y": 778
+                        },
+                        {
+                            "s": true,
+                            "x": 737,
+                            "y": 768
+                        },
+                        {
+                            "s": true,
+                            "x": 737,
+                            "y": 768
+                        },
+                        {
+                            "s": true,
+                            "x": 777,
+                            "y": 768
+                        },
+                        {
+                            "s": true,
+                            "x": 777,
+                            "y": 339
+                        },
+                        {
+                            "s": true,
+                            "x": 777,
+                            "y": 319
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "多级物流模式/2020/10/24 下午12:22:02124"
+            },
+            {
+                "__gohashid": 61795,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "农产品外销模式/2020/10/26 下午7:36:32163",
+                "key": "村淘上行_5e5a9a36178111eb87d1cd454c57d1aa/2020/10/26 下午7:53:51247",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 9021,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 401,
+                            "y": 1056
+                        },
+                        {
+                            "s": true,
+                            "x": 411,
+                            "y": 1056
+                        },
+                        {
+                            "s": true,
+                            "x": 412,
+                            "y": 1056
+                        },
+                        {
+                            "s": true,
+                            "x": 412,
+                            "y": 1139
+                        },
+                        {
+                            "s": true,
+                            "x": 558.7,
+                            "y": 1139
+                        },
+                        {
+                            "s": true,
+                            "x": 568.7,
+                            "y": 1139
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "多级物流模式/2020/10/24 下午7:52:57120"
+            },
+            {
+                "__gohashid": 64071,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "多级物流模式/2020/10/24 下午7:52:57120",
+                "key": "村淘上行_5e5a9a36178111eb87d1cd454c57d1aa/2020/10/26 下午7:53:57248",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 9031,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 586,
+                            "y": 1117.5
+                        },
+                        {
+                            "s": true,
+                            "x": 586,
+                            "y": 1107.5
+                        },
+                        {
+                            "s": true,
+                            "x": 586,
+                            "y": 1107.5
+                        },
+                        {
+                            "s": true,
+                            "x": 737,
+                            "y": 1107.5
+                        },
+                        {
+                            "s": true,
+                            "x": 737,
+                            "y": 868
+                        },
+                        {
+                            "s": true,
+                            "x": 737,
+                            "y": 858
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "多级物流模式/2020/10/24 下午12:21:40122"
+            },
+            {
+                "__gohashid": 67996,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "多级物流模式/2020/10/24 下午12:22:02124",
+                "key": "村淘上行_5e5a9a36178111eb87d1cd454c57d1aa/2020/10/26 下午7:54:10249",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 9040,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 777,
+                            "y": 319
+                        },
+                        {
+                            "s": true,
+                            "x": 777,
+                            "y": 329
+                        },
+                        {
+                            "s": true,
+                            "x": 777,
+                            "y": 332
+                        },
+                        {
+                            "s": true,
+                            "x": 777,
+                            "y": 332
+                        },
+                        {
+                            "s": true,
+                            "x": 777,
+                            "y": 340
+                        },
+                        {
+                            "s": true,
+                            "x": 884,
+                            "y": 340
+                        },
+                        {
+                            "s": true,
+                            "x": 884,
+                            "y": 1668
+                        },
+                        {
+                            "s": true,
+                            "x": 884,
+                            "y": 1688
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "多级物流模式/2020/10/24 下午12:21:31121"
+            },
+            {
+                "__gohashid": 75596,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "多级物流模式/2020/10/24 下午12:21:31121",
+                "key": "村淘上行_5e5a9a36178111eb87d1cd454c57d1aa/2020/10/26 下午7:54:59251",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 9048,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 884,
+                            "y": 1688
+                        },
+                        {
+                            "s": true,
+                            "x": 884,
+                            "y": 1678
+                        },
+                        {
+                            "s": true,
+                            "x": 884,
+                            "y": 1676
+                        },
+                        {
+                            "s": true,
+                            "x": 1011,
+                            "y": 1676
+                        },
+                        {
+                            "s": true,
+                            "x": 1011,
+                            "y": 1431
+                        },
+                        {
+                            "s": true,
+                            "x": 1011,
+                            "y": 1411
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "农产品外销模式/2020/10/26 下午7:37:38167"
+            },
+            {
+                "__gohashid": 92645,
+                "category": "currencyFlowOut",
+                "data_properties": {},
+                "from": "农产品外销模式/2020/10/26 下午7:33:45160",
+                "key": "村淘上行_5e5a9a36178111eb87d1cd454c57d1aa/2020/10/26 下午7:56:09252",
+                "points": {
+                    "Aa": 9,
+                    "Fa": null,
+                    "__gohashid": 9056,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 1916
+                        },
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 1906
+                        },
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 1908
+                        },
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 1908
+                        },
+                        {
+                            "s": true,
+                            "x": 489,
+                            "y": 1755
+                        },
+                        {
+                            "s": true,
+                            "x": 687.7,
+                            "y": 1755
+                        },
+                        {
+                            "s": true,
+                            "x": 697.7,
+                            "y": 1755
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "多级物流模式/2020/10/24 下午7:54:23128"
+            },
+            {
+                "__gohashid": 92974,
+                "category": "currencyFlowIn",
+                "data_properties": {},
+                "from": "多级物流模式/2020/10/24 下午7:54:23128",
+                "key": "村淘上行_5e5a9a36178111eb87d1cd454c57d1aa/2020/10/26 下午7:56:23253",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 9064,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 732.3000000000001,
+                            "y": 1755
+                        },
+                        {
+                            "s": true,
+                            "x": 742.3000000000001,
+                            "y": 1755
+                        },
+                        {
+                            "s": true,
+                            "x": 742.3000000000001,
+                            "y": 1755
+                        },
+                        {
+                            "s": true,
+                            "x": 742.3000000000001,
+                            "y": 2077
+                        },
+                        {
+                            "s": true,
+                            "x": 1519,
+                            "y": 2077
+                        },
+                        {
+                            "s": true,
+                            "x": 1529,
+                            "y": 2077
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "农产品外销模式/2020/10/26 下午7:38:43173"
+            }
+        ],
+        "nodes": [
+            {
+                "__gohashid": 11288,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Mon Oct 26 11:49:56 20207405",
+                "id": "电商概念/淘乡甜",
+                "isGroup": "true",
+                "key": "农产品外销模式/2020/10/26 下午7:25:435",
+                "loc": "7.999999999999986 2205",
+                "name": "电商概念/淘乡甜",
+                "object_properties": [],
+                "participant": "电商概念/淘乡甜",
+                "props": [],
+                "size": "2800 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 11289,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Mon Oct 26 11:49:56 20207405",
+                "id": "支付概念/第三方支付",
+                "isGroup": "true",
+                "key": "农产品外销模式/2020/10/26 下午7:25:436",
+                "loc": "7.999999999999986 1904",
+                "name": "支付概念/第三方支付",
+                "object_properties": [],
+                "participant": "支付概念/第三方支付",
+                "props": [],
+                "size": "2800 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 11290,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Mon Oct 26 11:49:56 20207405",
+                "id": "物流概念/第三方物流",
+                "isGroup": "true",
+                "key": "农产品外销模式/2020/10/26 下午7:25:437",
+                "loc": "7.999999999999986 1603",
+                "name": "物流概念/第三方物流",
+                "object_properties": [],
+                "participant": "物流概念/第三方物流",
+                "props": [],
+                "size": "2800 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 11291,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Mon Oct 26 11:49:56 20207405",
+                "id": "电商概念/买家",
+                "isGroup": "true",
+                "key": "农产品外销模式/2020/10/26 下午7:25:438",
+                "loc": "7.999999999999993 1302",
+                "name": "电商概念/买家",
+                "object_properties": [],
+                "participant": "电商概念/买家",
+                "props": [],
+                "size": "2800 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 4727,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Mon Oct 26 11:49:56 20207405",
+                "id": "11/1/2020 10:07:52 PM216",
+                "isGroup": "true",
+                "key": "多级物流模式/2020/10/23 下午8:56:168",
+                "loc": "7.999999999999986 399",
+                "name": "电商概念/村小二",
+                "object_properties": [],
+                "participant": "电商概念/村小二",
+                "props": [],
+                "size": "2800 300",
+                "superProps": {},
+                "type": "BPMN概念/Lane"
+            },
+            {
+                "__gohashid": 12000,
+                "bindTo": [],
+                "category": "start",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('开始')\n# 设定初始条件\ntoken.data['start_step'] = model.step_count\ntoken.data['first_resource_num'] = 10000\ntoken.data['second_resource_num'] = 100\ntoken.data['cost'] = 0",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:438",
+                "id": "BPMN概念/StartEvent-1",
+                "key": "农产品外销模式/2020/10/26 下午7:25:58151",
+                "loc": "47.99999999999999 1354",
+                "name": "BPMN概念/StartEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/StartEvent"
+                ]
+            },
+            {
+                "__gohashid": 12265,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nimport time\nprint('下单')\ntoken.data['order_money'] = random.randint(10,10000)\n",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:438",
+                "id": "下单",
+                "key": "农产品外销模式/2020/10/26 下午7:26:02152",
+                "loc": "298 1354",
+                "name": "下单",
+                "objectProperty": {
+                    "CarrierIs": "电商概念/电商平台"
+                },
+                "object_properties": [],
+                "type": [
+                    "电商概念/下单"
+                ]
+            },
+            {
+                "__gohashid": 12818,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('接受并确认订单')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:435",
+                "id": "接收并确认订单",
+                "key": "农产品外销模式/2020/10/26 下午7:29:39154",
+                "loc": "219 2350",
+                "name": "接收并确认订单",
+                "objectProperty": {
+                    "CarrierIs": "电商概念/电商平台"
+                },
+                "object_properties": [],
+                "type": [
+                    "电商概念/订单转发"
+                ]
+            },
+            {
+                "__gohashid": 17909,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('订单支付')\ntoken.data['seller_id_money'] = token.data['seller_id_money'] + token.data['order_money'] ",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:436",
+                "id": "订单支付",
+                "key": "农产品外销模式/2020/10/26 下午7:33:45160",
+                "loc": "489 1956",
+                "name": "订单支付",
+                "objectProperty": {
+                    "CarrierIs": "支付概念/支付平台"
+                },
+                "object_properties": [],
+                "type": [
+                    "电商概念/支付"
+                ]
+            },
+            {
+                "__gohashid": 19975,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('发货')\ntoken.data['send_step'] = model.step_count\ntoken.data['cost'] = token.data['cost']+1",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:439",
+                "id": "发货",
+                "key": "农产品外销模式/2020/10/26 下午7:36:32163",
+                "loc": "341 1056",
+                "name": "发货",
+                "object_properties": [],
+                "type": [
+                    "电商概念/发货"
+                ]
+            },
+            {
+                "__gohashid": 21338,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('签收')\nreceive_step = model.step_count\nsend_step = token.data['send_step']\n\navg_delivery_time = model.instance_base.findByName('平均配送时间')\ntotal = avg_delivery_time.quota_dscp * avg_delivery_time.amount\n\navg_delivery_time.amount = avg_delivery_time.amount + 1\navg_delivery_time.quota_dscp = (total + receive_step - send_step) / avg_delivery_time.amount\n",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:438",
+                "id": "签收",
+                "key": "农产品外销模式/2020/10/26 下午7:37:38167",
+                "loc": "1011 1371",
+                "name": "签收",
+                "objectProperty": {
+                    "CarrierIs": "物流概念/物流平台"
+                },
+                "object_properties": [],
+                "type": [
+                    "电商概念/签收"
+                ]
+            },
+            {
+                "__gohashid": 22077,
+                "bindTo": [],
+                "category": "exclusive",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/condition": {
+                        "isPattern": true,
+                        "text": "print('Exclusive Gateway')\n\nins = ins = model.instance_base.findByName('平均售后申请率')\nins.amount = ins.amount + 1\n\nimport random\nreturn random.random() > 0.5\n",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:438",
+                "id": "BPMN概念/ExclusiveGateWay-1",
+                "key": "农产品外销模式/2020/10/26 下午7:37:50169",
+                "loc": "1299 1411",
+                "name": "BPMN概念/ExclusiveGateWay-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/ExclusiveGateWay"
+                ]
+            },
+            {
+                "__gohashid": 26856,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint('申请售后')\nins = model.instance_base.findByName('平均售后率')\n# total = ins.quota_dscp * ins.amount\n# ins.quota_dscp = (total + 1) / ins.amount\nins = (random.randint(1,10))/100",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:435",
+                "id": "申请售后",
+                "key": "农产品外销模式/2020/10/26 下午7:38:11171",
+                "loc": "1302 2360",
+                "name": "申请售后",
+                "objectProperty": {
+                    "CarrierIs": "电商概念/电商平台"
+                },
+                "object_properties": [],
+                "type": [
+                    "电商概念/售后"
+                ]
+            },
+            {
+                "__gohashid": 30270,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('资金结算')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:436",
+                "id": "资金结算",
+                "key": "农产品外销模式/2020/10/26 下午7:38:43173",
+                "loc": "1589 2077",
+                "name": "资金结算",
+                "objectProperty": {
+                    "CarrierIs": "支付概念/支付平台"
+                },
+                "object_properties": [],
+                "type": [
+                    "支付概念/资金结算"
+                ]
+            },
+            {
+                "__gohashid": 42612,
+                "bindTo": [],
+                "category": "end",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint('End Event')\nend_step = model.step_count\nstart_step = token.data['start_step']\n\navg_process_time = model.instance_base.findByName('Process平均运行时间')\ntotal = avg_process_time.amount * avg_process_time.quota_dscp\n\navg_process_time.amount = avg_process_time.amount + 1\navg_process_time.quota_dscp = (total + end_step - start_step) / avg_process_time.amount\n\nins = model.instance_base.findByName('平均售后率')\n# total = ins.quota_dscp * ins.amount\n# ins.quota_dscp = (total + 1) / ins.amount\nins.quota_dscp = (random.random())/10",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:436",
+                "id": "BPMN概念/EndEvent-1",
+                "key": "农产品外销模式/2020/10/26 下午7:39:29177",
+                "loc": "1744 2058",
+                "name": "BPMN概念/EndEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/EndEvent"
+                ]
+            },
+            {
+                "__gohashid": 4726,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Mon Oct 26 11:49:56 20207405",
+                "id": "物流概念/二级物流服务提供商",
+                "isGroup": "true",
+                "key": "多级物流模式/2020/10/23 下午8:56:167",
+                "loc": "8 694",
+                "name": "物流概念/二级物流服务提供商",
+                "object_properties": [],
+                "participant": "物流概念/二级物流服务提供商",
+                "props": [],
+                "size": "2800 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 4728,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "expanded": true,
+                "goal": [],
+                "graph_data": {},
+                "group": "Mon Oct 26 11:49:56 20207405",
+                "id": "物流概念/县级服务中心",
+                "isGroup": "true",
+                "key": "多级物流模式/2020/10/23 下午8:56:169",
+                "loc": "7.999999999999986 118",
+                "name": "物流概念/县级服务中心",
+                "object_properties": [],
+                "participant": "物流概念/县级服务中心",
+                "props": [],
+                "size": "2800 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 4429,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 3))\nup = round(random.uniform(5, 7))\nreturn round(random.uniform(low, up))\n",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "# 配送交互动作0803\nif token.data['first_resource_num']>1:\n    token.data['first_resource_num'] = token.data['first_resource_num'] - 1\n    print('一级配送')\n    token.data['first_resource_num'] = token.data['first_resource_num'] + 1\nelse:\n    print('服务繁忙，请稍候')\ntoken.data['cost'] = token.data['cost'] + 5",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:437",
+                "id": "一级配送",
+                "key": "多级物流模式/2020/10/24 下午12:21:31121",
+                "loc": "884 1728",
+                "name": "一级配送",
+                "object_properties": [],
+                "type": [
+                    "物流概念/一级配送"
+                ]
+            },
+            {
+                "__gohashid": 4704,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nlow = round(random.uniform(1, 5))\nup = round(random.uniform(8, 14))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "# 配送交互动作0803\nif token.data['second_resource_num']>1:\n    token.data['second_resource_num'] = token.data['second_resource_num'] - 1\n    print('一级配送')\n    token.data['second_resource_num'] = token.data['second_resource_num'] + 1\nelse:\n    print('服务繁忙，请稍候')\ntoken.data['cost'] = token.data['cost'] + 5",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "多级物流模式/2020/10/23 下午8:56:167",
+                "id": "二级配送",
+                "key": "多级物流模式/2020/10/24 下午12:21:40122",
+                "loc": "737 818",
+                "name": "二级配送",
+                "object_properties": [],
+                "type": [
+                    "物流概念/二级配送"
+                ]
+            },
+            {
+                "__gohashid": 5290,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print('包裹中转')\ntoken.data['cost'] = token.data['cost'] + 10",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "多级物流模式/2020/10/23 下午8:56:169",
+                "id": "包裹中转",
+                "key": "多级物流模式/2020/10/24 下午12:22:02124",
+                "loc": "777 279",
+                "name": "包裹中转",
+                "object_properties": [],
+                "type": [
+                    "物流概念/包裹中转"
+                ]
+            },
+            {
+                "__gohashid": 22315,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:439",
+                "id": "收货人数据",
+                "key": "多级物流模式/2020/10/24 下午7:52:57120",
+                "loc": "586 1139",
+                "name": "收货人数据",
+                "object_properties": [],
+                "type": [
+                    "物流概念/收货人用户数据"
+                ]
+            },
+            {
+                "__gohashid": 40928,
+                "bindTo": [],
+                "category": "currencyObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "农产品外销模式/2020/10/26 下午7:25:437",
+                "id": "订单金额",
+                "key": "多级物流模式/2020/10/24 下午7:54:23128",
+                "loc": "715 1755",
+                "name": "订单金额",
+                "object_properties": [],
+                "type": [
+                    "物流概念/资金"
+                ]
+            }
+        ],
+        "resource_config": {}
+    }
+}

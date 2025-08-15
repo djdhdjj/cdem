@@ -1,0 +1,1812 @@
+{
+    "config": {},
+    "instance_base": {
+        "config": {},
+        "groups": [],
+        "instances": [
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.5465193",
+                "price": 21,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.7884398",
+                "price": 22,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.4878635",
+                "price": 22,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.5486972",
+                "price": 25,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.724938",
+                "price": 21,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.8398633",
+                "price": 20,
+                "type": []
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2020/8/13 下午4:41:01104",
+                "name": "快递小哥@0",
+                "object_properties": [],
+                "type": [
+                    "物流概念/运输工具"
+                ]
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.6625934",
+                "price": 22,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.286222",
+                "price": 19,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.9496832",
+                "price": 21,
+                "type": []
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "126106",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/9/22 下午8:00:11179",
+                "name": "资金@0",
+                "object_properties": [],
+                "type": [
+                    "物流概念/currencyObject"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/has_lock": {
+                        "isPattern": false,
+                        "text": "True",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/9/22 下午7:11:10168",
+                "name": "运输工具@0",
+                "object_properties": [],
+                "type": [
+                    "物流概念/运输工具"
+                ]
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.844178",
+                "price": 19,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.6271663",
+                "price": 18,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.9552042",
+                "price": 19,
+                "type": []
+            },
+            {
+                "bindTo": [
+                    "物流概念/发货人"
+                ],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/step": {
+                        "isPattern": false,
+                        "text": "# 每个step，资金都会+100\nprint(self.name, '资金加100')\nname_id = self.name[self.name.index('@'):]\nmoney_name = '资金' + name_id\n\nmoney = self.own_resource.find(lambda elm: elm.name == money_name)\nmoney.amount = money.amount + 100",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/9/22 下午8:02:24182",
+                "name": "发货人@1",
+                "object_properties": [
+                    {
+                        "target": "资金",
+                        "type": [
+                            "基础领域术语库/Possess"
+                        ]
+                    },
+                    {
+                        "target": "满意度",
+                        "type": [
+                            "基础领域术语库/QuotaIs"
+                        ]
+                    },
+                    {
+                        "target": "发货人货物",
+                        "type": [
+                            "基础领域术语库/Possess"
+                        ]
+                    }
+                ],
+                "type": [
+                    "物流概念/发货人",
+                    "基础领域术语库/Participant"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "302",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/9/22 下午7:56:47173",
+                "name": "收货人货物@2",
+                "object_properties": [],
+                "type": [
+                    "物流概念/货物"
+                ]
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.7043202",
+                "price": 17,
+                "type": []
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "98.99303700807705",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/9/22 下午8:00:33181",
+                "name": "满意度@2",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            },
+            {
+                "bindTo": [
+                    "物流概念/发货人"
+                ],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/step": {
+                        "isPattern": false,
+                        "text": "# 每个step，资金都会+100\nprint(self.name, '资金加100')\nname_id = self.name[self.name.index('@'):]\nmoney_name = '资金' + name_id\n\nmoney = self.own_resource.find(lambda elm: elm.name == money_name)\nmoney.amount = money.amount + 100",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/9/22 下午8:02:24182",
+                "name": "发货人@0",
+                "object_properties": [
+                    {
+                        "target": "资金",
+                        "type": [
+                            "基础领域术语库/Possess"
+                        ]
+                    },
+                    {
+                        "target": "满意度",
+                        "type": [
+                            "基础领域术语库/QuotaIs"
+                        ]
+                    },
+                    {
+                        "target": "发货人货物",
+                        "type": [
+                            "基础领域术语库/Possess"
+                        ]
+                    }
+                ],
+                "type": [
+                    "物流概念/发货人",
+                    "基础领域术语库/Participant"
+                ]
+            },
+            {
+                "bindTo": [
+                    "物流概念/收货人"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2020/9/22 下午7:11:25170",
+                "name": "收货人@1",
+                "object_properties": [
+                    {
+                        "target": "收货人货物",
+                        "type": [
+                            "基础领域术语库/Possess"
+                        ]
+                    }
+                ],
+                "type": [
+                    "物流概念/收货人",
+                    "基础领域术语库/Participant"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "99676",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/9/22 下午7:55:57172",
+                "name": "发货人货物@0",
+                "object_properties": [],
+                "type": [
+                    "物流概念/货物"
+                ]
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.9123845",
+                "price": 18,
+                "type": []
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "13291.909740787298",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/9/22 下午7:10:49167",
+                "name": "快递公司利润",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.725952",
+                "price": 21,
+                "type": []
+            },
+            {
+                "bindTo": [
+                    "物流概念/收货人"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2020/9/22 下午7:11:25170",
+                "name": "收货人@0",
+                "object_properties": [
+                    {
+                        "target": "收货人货物",
+                        "type": [
+                            "基础领域术语库/Possess"
+                        ]
+                    }
+                ],
+                "type": [
+                    "物流概念/收货人",
+                    "基础领域术语库/Participant"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "126069",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/9/22 下午8:00:11179",
+                "name": "资金@1",
+                "object_properties": [],
+                "type": [
+                    "物流概念/currencyObject"
+                ]
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.550418",
+                "price": 19,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.447096",
+                "price": 24,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.589253",
+                "price": 18,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.7846725",
+                "price": 21,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.8179312",
+                "price": 19,
+                "type": []
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "972",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/9/22 下午7:10:41166",
+                "name": "快递单数",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "99676",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/9/22 下午7:55:57172",
+                "name": "发货人货物@1",
+                "object_properties": [],
+                "type": [
+                    "物流概念/货物"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "126113",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/9/22 下午8:00:11179",
+                "name": "资金@2",
+                "object_properties": [],
+                "type": [
+                    "物流概念/currencyObject"
+                ]
+            },
+            {
+                "bindTo": [
+                    "物流概念/收货人"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2020/9/22 下午7:11:25170",
+                "name": "收货人@2",
+                "object_properties": [
+                    {
+                        "target": "收货人货物",
+                        "type": [
+                            "基础领域术语库/Possess"
+                        ]
+                    }
+                ],
+                "type": [
+                    "物流概念/收货人",
+                    "基础领域术语库/Participant"
+                ]
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.666799",
+                "price": 20,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.788712",
+                "price": 24,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.4889216",
+                "price": 25,
+                "type": []
+            },
+            {
+                "bindTo": [
+                    "物流概念/快递公司"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2020/9/22 下午7:10:34165",
+                "name": "快递公司",
+                "object_properties": [
+                    {
+                        "target": "快递公司货物",
+                        "type": [
+                            "基础领域术语库/Possess"
+                        ]
+                    }
+                ],
+                "type": [
+                    "物流概念/快递公司",
+                    "基础领域术语库/Participant"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "296",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/9/22 下午7:56:47173",
+                "name": "收货人货物@0",
+                "object_properties": [],
+                "type": [
+                    "物流概念/货物"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "99676",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/9/22 下午7:55:57172",
+                "name": "发货人货物@2",
+                "object_properties": [],
+                "type": [
+                    "物流概念/货物"
+                ]
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.666253",
+                "price": 20,
+                "type": []
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "# 找到所有的满意度quota，计算dscp的平均值\nall_satisfaction = instance_base.instances.findAll(lambda elm: elm.name.startswith('满意度'))\nall_values = all_satisfaction.map(lambda elm: elm.quota_dscp)\n\nfrom functools import reduce\nreduced = reduce(lambda x, y: x + y, all_values)\nreturn reduced / len(all_values)",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/9/22 下午7:08:22163",
+                "name": "发货人平均满意度",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.7019346",
+                "price": 17,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.7026973",
+                "price": 17,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.8430817",
+                "price": 18,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.9120796",
+                "price": 19,
+                "type": []
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "99.27126206527468",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/9/22 下午8:00:33181",
+                "name": "满意度@1",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.9481966",
+                "price": 22,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.9100478",
+                "price": 19,
+                "type": []
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/step": {
+                        "isPattern": false,
+                        "text": "# 获得平均满意度\n# 满意度=》引入的发货人数量的公式\n# 创建新的发货人的group\navg_sat = instance_base.findByName('发货人平均满意度')\nall_sender = instance_base.instances.findAll(lambda elm: elm.name.startswith('发货人'))\ncnt = len(all_sender)\n",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/9/22 下午7:08:14162",
+                "name": "引入发货人",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Environment"
+                ]
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.7219925",
+                "price": 25,
+                "type": []
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "24",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/9/22 下午7:57:03174",
+                "name": "快递公司货物",
+                "object_properties": [],
+                "type": [
+                    "物流概念/货物"
+                ]
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.5880291",
+                "price": 18,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.8189569",
+                "price": 18,
+                "type": []
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "98.99721321965046",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/9/22 下午8:00:33181",
+                "name": "满意度@0",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "name": "订单1621409806.82095",
+                "price": 19,
+                "type": []
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "347",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/9/22 下午7:56:47173",
+                "name": "收货人货物@1",
+                "object_properties": [],
+                "type": [
+                    "物流概念/货物"
+                ]
+            },
+            {
+                "bindTo": [
+                    "物流概念/发货人"
+                ],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/step": {
+                        "isPattern": false,
+                        "text": "# 每个step，资金都会+100\nprint(self.name, '资金加100')\nname_id = self.name[self.name.index('@'):]\nmoney_name = '资金' + name_id\n\nmoney = self.own_resource.find(lambda elm: elm.name == money_name)\nmoney.amount = money.amount + 100",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/9/22 下午8:02:24182",
+                "name": "发货人@2",
+                "object_properties": [
+                    {
+                        "target": "资金",
+                        "type": [
+                            "基础领域术语库/Possess"
+                        ]
+                    },
+                    {
+                        "target": "满意度",
+                        "type": [
+                            "基础领域术语库/QuotaIs"
+                        ]
+                    },
+                    {
+                        "target": "发货人货物",
+                        "type": [
+                            "基础领域术语库/Possess"
+                        ]
+                    }
+                ],
+                "type": [
+                    "物流概念/发货人",
+                    "基础领域术语库/Participant"
+                ]
+            }
+        ],
+        "relations": [
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2020/9/22 下午8:03:51185",
+                "name": "2020/9/22 下午8:03:51185@0",
+                "source": "发货人@0",
+                "target": "发货人货物@0",
+                "type": [
+                    "基础领域术语库/Possess"
+                ]
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2020/9/22 下午8:03:37184",
+                "name": "2020/9/22 下午8:03:37184@0",
+                "source": "发货人@0",
+                "target": "资金@0",
+                "type": [
+                    "基础领域术语库/Possess"
+                ]
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2020/9/22 下午8:03:51185",
+                "name": "2020/9/22 下午8:03:51185@2",
+                "source": "发货人@2",
+                "target": "发货人货物@2",
+                "type": [
+                    "基础领域术语库/Possess"
+                ]
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2020/9/22 下午8:03:30183",
+                "name": "2020/9/22 下午8:03:30183@0",
+                "source": "发货人@0",
+                "target": "满意度@0",
+                "type": [
+                    "基础领域术语库/QuotaIs"
+                ]
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2020/9/22 下午8:06:35186",
+                "name": "2020/9/22 下午8:06:35186@2",
+                "source": "收货人@2",
+                "target": "收货人货物@2",
+                "type": [
+                    "基础领域术语库/Possess"
+                ]
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2020/9/22 下午8:06:35186",
+                "name": "2020/9/22 下午8:06:35186@1",
+                "source": "收货人@1",
+                "target": "收货人货物@1",
+                "type": [
+                    "基础领域术语库/Possess"
+                ]
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2020/9/22 下午8:03:37184",
+                "name": "2020/9/22 下午8:03:37184@2",
+                "source": "发货人@2",
+                "target": "资金@2",
+                "type": [
+                    "基础领域术语库/Possess"
+                ]
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2020/9/22 下午8:03:30183",
+                "name": "2020/9/22 下午8:03:30183@2",
+                "source": "发货人@2",
+                "target": "满意度@2",
+                "type": [
+                    "基础领域术语库/QuotaIs"
+                ]
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2020/9/22 下午8:10:22187",
+                "name": "2020/9/22 下午8:10:22187",
+                "source": "快递公司",
+                "target": "快递公司货物",
+                "type": [
+                    "基础领域术语库/Possess"
+                ]
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2020/9/22 下午8:03:51185",
+                "name": "2020/9/22 下午8:03:51185@1",
+                "source": "发货人@1",
+                "target": "发货人货物@1",
+                "type": [
+                    "基础领域术语库/Possess"
+                ]
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2020/9/22 下午8:03:37184",
+                "name": "2020/9/22 下午8:03:37184@1",
+                "source": "发货人@1",
+                "target": "资金@1",
+                "type": [
+                    "基础领域术语库/Possess"
+                ]
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2020/9/22 下午8:06:35186",
+                "name": "2020/9/22 下午8:06:35186@0",
+                "source": "收货人@0",
+                "target": "收货人货物@0",
+                "type": [
+                    "基础领域术语库/Possess"
+                ]
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2020/9/22 下午8:03:30183",
+                "name": "2020/9/22 下午8:03:30183@1",
+                "source": "发货人@1",
+                "target": "满意度@1",
+                "type": [
+                    "基础领域术语库/QuotaIs"
+                ]
+            }
+        ]
+    },
+    "process": [
+        {
+            "role": {
+                "物流概念/发货人": "发货人@2",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@1"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "快递收货",
+                    "data": {
+                        "order_id": "订单1621409806.9481966",
+                        "start_step": 326
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.948393_1310181",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@1",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@1"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "运输",
+                    "data": {
+                        "order_id": "订单1621409806.7846725",
+                        "start_step": 322
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.842225_1310068",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 3
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@2",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@1"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "运输",
+                    "data": {
+                        "order_id": "订单1621409806.7219925",
+                        "start_step": 321
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.8163846_1310008",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 4
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@0",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "收件人收货",
+                    "data": {
+                        "order_id": "订单1621409806.788712",
+                        "start_step": 322
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.953594_1310205",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@2",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@0"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "交易成功",
+                    "data": {
+                        "order_id": "订单1621409806.6625934",
+                        "start_step": 319
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.9545748_1310210",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@2",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "交易成功",
+                    "data": {
+                        "order_id": "订单1621409806.7019346",
+                        "start_step": 320
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.9489183_1310183",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@0",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "下单",
+                    "data": {},
+                    "has_gen_next": false,
+                    "id": "1621409806.9538822_1310206",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@0",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@0"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "是否送达",
+                    "data": {
+                        "order_id": "订单1621409806.725952",
+                        "start_step": 321
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.9491394_1310185",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@0",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "是否下单",
+                    "data": {},
+                    "has_gen_next": false,
+                    "id": "1621409806.9499848_1310192",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@0",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "运输",
+                    "data": {
+                        "order_id": "订单1621409806.5880291",
+                        "start_step": 317
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.6640394_1309824",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 8
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@1",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "下单",
+                    "data": {},
+                    "has_gen_next": false,
+                    "id": "1621409806.949036_1310184",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@1",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "付款",
+                    "data": {
+                        "order_id": "订单1621409806.9120796",
+                        "start_step": 325
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.9514744_1310196",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@1",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "是否送达",
+                    "data": {
+                        "order_id": "订单1621409806.666253",
+                        "start_step": 319
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.9481142_1310178",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@1",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@0"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "运输",
+                    "data": {
+                        "order_id": "订单1621409806.7026973",
+                        "start_step": 320
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.7900107_1309988",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 5
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@1",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@1"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "是否送达",
+                    "data": {
+                        "order_id": "订单1621409806.724938",
+                        "start_step": 321
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.9492674_1310186",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@1",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "运输",
+                    "data": {
+                        "order_id": "订单1621409806.8189569",
+                        "start_step": 323
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.909782_1310142",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 2
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@0",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@1"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "交易成功",
+                    "data": {
+                        "order_id": "订单1621409806.5465193",
+                        "start_step": 316
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.953453_1310204",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@1",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "快递收货",
+                    "data": {
+                        "order_id": "订单1621409806.9552042",
+                        "start_step": 326
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.9554172_1310213",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@2",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "交易成功",
+                    "data": {
+                        "order_id": "订单1621409806.550418",
+                        "start_step": 316
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.9512124_1310195",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@2",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "运输",
+                    "data": {
+                        "order_id": "订单1621409806.82095",
+                        "start_step": 323
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.909319_1310140",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 2
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@0",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@1"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "是否送达",
+                    "data": {
+                        "order_id": "订单1621409806.447096",
+                        "start_step": 314
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.9540782_1310208",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@1",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@1"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "是否送达",
+                    "data": {
+                        "order_id": "订单1621409806.5486972",
+                        "start_step": 316
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.953001_1310203",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@2",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@0"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "运输",
+                    "data": {
+                        "order_id": "订单1621409806.7884398",
+                        "start_step": 322
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.8413723_1310063",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 3
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@2",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "付款",
+                    "data": {
+                        "order_id": "订单1621409806.9100478",
+                        "start_step": 325
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.9517186_1310197",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@1",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "交易成功",
+                    "data": {
+                        "order_id": "订单1621409806.589253",
+                        "start_step": 317
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.9494987_1310187",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@1",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@1"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "收件人收货",
+                    "data": {
+                        "order_id": "订单1621409806.4878635",
+                        "start_step": 315
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.9502192_1310194",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@2",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@1"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "交易成功",
+                    "data": {
+                        "order_id": "订单1621409806.4889216",
+                        "start_step": 315
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.9523134_1310199",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@2",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@1"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "运输",
+                    "data": {
+                        "order_id": "订单1621409806.8430817",
+                        "start_step": 324
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.9557712_1310214",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@2",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@0"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "下单",
+                    "data": {},
+                    "has_gen_next": false,
+                    "id": "1621409806.952428_1310200",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@0",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@0"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "快递收货",
+                    "data": {
+                        "order_id": "订单1621409806.9496832",
+                        "start_step": 326
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.9498746_1310191",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@1",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@1"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "确认收货",
+                    "data": {
+                        "order_id": "订单1621409806.6271663",
+                        "start_step": 318
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.9486356_1310182",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@1",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "运输",
+                    "data": {
+                        "order_id": "订单1621409806.844178",
+                        "start_step": 324
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.9520469_1310198",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@0",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@0"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "运输",
+                    "data": {
+                        "order_id": "订单1621409806.8398633",
+                        "start_step": 324
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.9543478_1310209",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@0",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@1"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "运输",
+                    "data": {
+                        "order_id": "订单1621409806.8179312",
+                        "start_step": 323
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.9063208_1310129",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 2
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@0",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "运输",
+                    "data": {
+                        "order_id": "订单1621409806.7043202",
+                        "start_step": 320
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.790324_1309989",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 5
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@0",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@2"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "付款",
+                    "data": {
+                        "order_id": "订单1621409806.9123845",
+                        "start_step": 325
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.952769_1310201",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@1",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@0"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "是否下单",
+                    "data": {},
+                    "has_gen_next": false,
+                    "id": "1621409806.9528956_1310202",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@2",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@0"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "是否下单",
+                    "data": {},
+                    "has_gen_next": false,
+                    "id": "1621409806.9496076_1310188",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@0",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@1"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "是否送达",
+                    "data": {
+                        "order_id": "订单1621409806.666799",
+                        "start_step": 319
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.9539816_1310207",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        },
+        {
+            "role": {
+                "物流概念/发货人": "发货人@0",
+                "物流概念/快递公司": "快递公司",
+                "物流概念/收货人": "收货人@1"
+            },
+            "tokens": [
+                {
+                    "BPMN_node": "是否送达",
+                    "data": {
+                        "order_id": "订单1621409806.286222",
+                        "start_step": 311
+                    },
+                    "has_gen_next": false,
+                    "id": "1621409806.9500852_1310193",
+                    "is_executed": false,
+                    "is_fail": false,
+                    "now_duration": 1
+                }
+            ]
+        }
+    ],
+    "quota": {
+        "发货人平均满意度": {
+            "name": "发货人平均满意度",
+            "text": "# 找到所有的满意度quota，计算dscp的平均值\nall_satisfaction = instance_base.instances.findAll(lambda elm: elm.name.startswith('满意度'))\nall_values = all_satisfaction.map(lambda elm: elm.quota_dscp)\n\nfrom functools import reduce\nreduced = reduce(lambda x, y: x + y, all_values)\nreturn reduced / len(all_values)",
+            "type": "normal",
+            "val": 99.08717076433408
+        },
+        "快递公司利润": {
+            "name": "快递公司利润",
+            "text": "0",
+            "type": "value",
+            "val": 13291.909740787298
+        },
+        "快递单数": {
+            "name": "快递单数",
+            "text": "0",
+            "type": "value",
+            "val": 972
+        },
+        "满意度@0": {
+            "name": "满意度@0",
+            "text": "80",
+            "type": "value",
+            "val": 98.99721321965046
+        },
+        "满意度@1": {
+            "name": "满意度@1",
+            "text": "80",
+            "type": "value",
+            "val": 99.27126206527468
+        },
+        "满意度@2": {
+            "name": "满意度@2",
+            "text": "80",
+            "type": "value",
+            "val": 98.99303700807705
+        }
+    },
+    "step_count": 326
+}

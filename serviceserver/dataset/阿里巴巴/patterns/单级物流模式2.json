@@ -1,0 +1,449 @@
+{
+    "config": {
+        "id": "7/15/2020 9:50:41 AM60",
+        "name": "单级物流模式2"
+    },
+    "elements": {
+        "Carrier": [
+            "物流概念/物流平台"
+        ],
+        "Goal": [
+            "物流概念/完成配送",
+            "物流概念/盈利目标"
+        ],
+        "Participant": [
+            "物流概念/发货人",
+            "物流概念/收货人",
+            "物流概念/快递公司"
+        ],
+        "Quota": [
+            "物流概念/平均配送时间",
+            "物流概念/月利润",
+            "物流概念/月快递订单量",
+            "物流概念/用户好评率",
+            "物流概念/用户留存率"
+        ],
+        "Task": [
+            "物流概念/下单",
+            "物流概念/付款",
+            "物流概念/收货",
+            "物流概念/运输"
+        ],
+        "currencyObject": [
+            "物流概念/货物",
+            "物流概念/运输工具"
+        ],
+        "dataObject": [
+            "物流概念/发货人信息",
+            "物流概念/快递公司信息",
+            "物流概念/收货人信息",
+            "物流概念/物流订单"
+        ],
+        "resourceObject": [
+            "物流概念/货物",
+            "物流概念/运输工具"
+        ]
+    },
+    "evaluate_config": {
+        "单级物流模式2/7/15/2020 9:50:47 AM62": {
+            "name": "BPMN概念/LaneSet-1"
+        },
+        "单级物流模式2/7/15/2020 9:50:47 AM63": {
+            "name": "物流概念/发货人"
+        },
+        "单级物流模式2/7/15/2020 9:50:47 AM64": {
+            "name": "物流概念/收货人"
+        },
+        "单级物流模式2/7/15/2020 9:50:50 AM65": {
+            "cost": {
+                "n": 0,
+                "type": "constant"
+            },
+            "duration": {
+                "n": 0,
+                "type": "constant"
+            },
+            "name": "BPMN概念/StartEvent-1",
+            "reliability": {
+                "n": 0,
+                "type": "constant"
+            },
+            "throughput": {
+                "n": 0,
+                "type": "constant"
+            }
+        },
+        "单级物流模式2/7/15/2020 9:50:53 AM66": {
+            "cost": {
+                "n": 0,
+                "type": "constant"
+            },
+            "duration": {
+                "n": 0,
+                "type": "constant"
+            },
+            "name": "BPMN概念/ExclusiveGateWay-1",
+            "reliability": {
+                "n": 0,
+                "type": "constant"
+            },
+            "throughput": {
+                "n": 0,
+                "type": "constant"
+            }
+        },
+        "单级物流模式2/7/15/2020 9:51:01 AM68": {
+            "cost": {
+                "n": 0,
+                "type": "constant"
+            },
+            "duration": {
+                "n": 0,
+                "type": "constant"
+            },
+            "name": "undefined-1",
+            "reliability": {
+                "n": 0,
+                "type": "constant"
+            },
+            "throughput": {
+                "n": 0,
+                "type": "constant"
+            }
+        },
+        "单级物流模式2/7/15/2020 9:51:07 AM69": {
+            "cost": {
+                "n": 0,
+                "type": "constant"
+            },
+            "duration": {
+                "n": 0,
+                "type": "constant"
+            },
+            "name": "undefined-2",
+            "reliability": {
+                "n": 0,
+                "type": "constant"
+            },
+            "throughput": {
+                "n": 0,
+                "type": "constant"
+            }
+        }
+    },
+    "links": [
+        {
+            "__gohashid": 9587,
+            "category": "controlFlow",
+            "data_properties": {},
+            "from": "单级物流模式2/7/15/2020 9:50:50 AM65",
+            "key": "单级物流模式2/7/15/2020 9:50:57 AM67",
+            "points": {
+                "Aa": 8,
+                "Fa": null,
+                "__gohashid": 6321,
+                "bh": null,
+                "j": [
+                    {
+                        "s": true,
+                        "x": -206.5,
+                        "y": 203.62278112257553
+                    },
+                    {
+                        "s": true,
+                        "x": -196.5,
+                        "y": 203.62278112257553
+                    },
+                    {
+                        "s": true,
+                        "x": -196.5,
+                        "y": 204.12278112257553
+                    },
+                    {
+                        "s": true,
+                        "x": -196.5,
+                        "y": 204.12278112257553
+                    },
+                    {
+                        "s": true,
+                        "x": -69,
+                        "y": 204.12278112257553
+                    },
+                    {
+                        "s": true,
+                        "x": -49,
+                        "y": 204.12278112257553
+                    }
+                ],
+                "s": true
+            },
+            "to": "单级物流模式2/7/15/2020 9:50:53 AM66"
+        },
+        {
+            "__gohashid": 11560,
+            "category": "controlFlow",
+            "controlFlowNo": false,
+            "controlFlowYes": true,
+            "data_properties": {},
+            "from": "单级物流模式2/7/15/2020 9:50:53 AM66",
+            "key": "单级物流模式2/7/15/2020 9:51:17 AM71",
+            "points": {
+                "Aa": 10,
+                "Fa": null,
+                "__gohashid": 6328,
+                "bh": null,
+                "j": [
+                    {
+                        "s": true,
+                        "x": 14,
+                        "y": 204.12278112257553
+                    },
+                    {
+                        "s": true,
+                        "x": 24,
+                        "y": 204.12278112257553
+                    },
+                    {
+                        "s": true,
+                        "x": 28,
+                        "y": 204.12278112257553
+                    },
+                    {
+                        "s": true,
+                        "x": 28,
+                        "y": 204.12278112257553
+                    },
+                    {
+                        "s": true,
+                        "x": 92,
+                        "y": 204.12278112257553
+                    },
+                    {
+                        "s": true,
+                        "x": 92,
+                        "y": 196.53472137451172
+                    },
+                    {
+                        "s": true,
+                        "x": 106,
+                        "y": 196.53472137451172
+                    },
+                    {
+                        "s": true,
+                        "x": 126,
+                        "y": 196.53472137451172
+                    }
+                ],
+                "s": true
+            },
+            "to": "单级物流模式2/7/15/2020 9:51:01 AM68",
+            "yesOrNo": true
+        },
+        {
+            "__gohashid": 11715,
+            "category": "controlFlow",
+            "controlFlowNo": true,
+            "controlFlowYes": false,
+            "data_properties": {},
+            "from": "单级物流模式2/7/15/2020 9:50:53 AM66",
+            "key": "单级物流模式2/7/15/2020 9:51:19 AM72",
+            "points": {
+                "Aa": 10,
+                "Fa": null,
+                "__gohashid": 6392,
+                "bh": null,
+                "j": [
+                    {
+                        "s": true,
+                        "x": -17.5,
+                        "y": 235.62278112257553
+                    },
+                    {
+                        "s": true,
+                        "x": -17.5,
+                        "y": 245.62278112257553
+                    },
+                    {
+                        "s": true,
+                        "x": -17.5,
+                        "y": 245.62278112257553
+                    },
+                    {
+                        "s": true,
+                        "x": 92,
+                        "y": 245.62278112257553
+                    },
+                    {
+                        "s": true,
+                        "x": 92,
+                        "y": 268
+                    },
+                    {
+                        "s": true,
+                        "x": 173,
+                        "y": 268
+                    },
+                    {
+                        "s": true,
+                        "x": 173,
+                        "y": 337.5347213745117
+                    },
+                    {
+                        "s": true,
+                        "x": 173,
+                        "y": 357.5347213745117
+                    }
+                ],
+                "s": true
+            },
+            "to": "单级物流模式2/7/15/2020 9:51:07 AM69",
+            "yesOrNo": true
+        },
+        {
+            "__gohashid": 17661,
+            "category": "controlFlow",
+            "data_properties": {},
+            "from": "单级物流模式2/7/15/2020 9:51:01 AM68",
+            "key": "单级物流模式2/7/15/2020 9:55:20 AM76",
+            "points": {
+                "Aa": 10,
+                "Fa": null,
+                "__gohashid": 6404,
+                "bh": null,
+                "j": [
+                    {
+                        "s": true,
+                        "x": 186,
+                        "y": 236.53472137451172
+                    },
+                    {
+                        "s": true,
+                        "x": 186,
+                        "y": 246.53472137451172
+                    },
+                    {
+                        "s": true,
+                        "x": 186,
+                        "y": 244
+                    },
+                    {
+                        "s": true,
+                        "x": 186,
+                        "y": 244
+                    },
+                    {
+                        "s": true,
+                        "x": 186,
+                        "y": 268
+                    },
+                    {
+                        "s": true,
+                        "x": 173,
+                        "y": 268
+                    },
+                    {
+                        "s": true,
+                        "x": 173,
+                        "y": 337.5347213745117
+                    },
+                    {
+                        "s": true,
+                        "x": 173,
+                        "y": 357.5347213745117
+                    }
+                ],
+                "s": true
+            },
+            "to": "单级物流模式2/7/15/2020 9:51:07 AM69"
+        }
+    ],
+    "nodes": [
+        {
+            "__gohashid": 7610,
+            "category": "Lane",
+            "data_properties": {},
+            "goal": [],
+            "group": "单级物流模式2/7/15/2020 9:50:47 AM62",
+            "isGroup": true,
+            "key": "单级物流模式2/7/15/2020 9:50:47 AM63",
+            "loc": "-314.5 101.53472137451172",
+            "name": "物流概念/发货人",
+            "participant": "物流概念/发货人",
+            "props": [],
+            "size": "578.5 205.62509816969464",
+            "superProps": [],
+            "text": "物流概念/发货人",
+            "type": "BPMN概念/Lane"
+        },
+        {
+            "__gohashid": 7635,
+            "category": "Lane",
+            "data_properties": {},
+            "goal": [],
+            "group": "单级物流模式2/7/15/2020 9:50:47 AM62",
+            "isGroup": true,
+            "key": "单级物流模式2/7/15/2020 9:50:47 AM64",
+            "loc": "-314.5 308.5347213745117",
+            "name": "物流概念/收货人",
+            "participant": "物流概念/收货人",
+            "props": [],
+            "size": "578.5 183.22000631178452",
+            "superProps": [],
+            "text": "物流概念/收货人",
+            "type": "BPMN概念/Lane"
+        },
+        {
+            "__gohashid": 8080,
+            "category": "start",
+            "data_properties": {},
+            "group": "单级物流模式2/7/15/2020 9:50:47 AM63",
+            "key": "单级物流模式2/7/15/2020 9:50:50 AM65",
+            "loc": "-302.5 182.12278112257553",
+            "name": "BPMN概念/StartEvent-1",
+            "props": [],
+            "superProps": [],
+            "type": "BPMN概念/StartEvent"
+        },
+        {
+            "__gohashid": 8415,
+            "category": "exclusive",
+            "data_properties": {},
+            "group": "单级物流模式2/7/15/2020 9:50:47 AM63",
+            "key": "单级物流模式2/7/15/2020 9:50:53 AM66",
+            "loc": "-17.5 204.12278112257553",
+            "name": "BPMN概念/ExclusiveGateWay-1",
+            "type": "BPMN概念/ExclusiveGateWay"
+        },
+        {
+            "__gohashid": 9819,
+            "category": "task",
+            "data_properties": {},
+            "group": "单级物流模式2/7/15/2020 9:50:47 AM63",
+            "key": "单级物流模式2/7/15/2020 9:51:01 AM68",
+            "loc": "186 196.53472137451172",
+            "name": "undefined-1",
+            "type": "物流概念/下单"
+        },
+        {
+            "__gohashid": 10918,
+            "category": "task",
+            "data_properties": {},
+            "group": "单级物流模式2/7/15/2020 9:50:47 AM64",
+            "key": "单级物流模式2/7/15/2020 9:51:07 AM69",
+            "loc": "173 397.5347213745117",
+            "name": "undefined-2",
+            "type": "物流概念/收货"
+        },
+        {
+            "__gohashid": 7590,
+            "category": "Pool",
+            "isGroup": true,
+            "key": "单级物流模式2/7/15/2020 9:50:47 AM62",
+            "loc": "-341.02284749830795 101.53472137451172",
+            "name": "BPMN概念/LaneSet-1",
+            "text": "Pool",
+            "type": "BPMN概念/LaneSet"
+        }
+    ],
+    "resource_config": {}
+}

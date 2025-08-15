@@ -1,0 +1,179 @@
+{
+    "config": {},
+    "instance_base": {
+        "config": {},
+        "groups": [],
+        "instances": [
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2020/8/17 下午12:07:47118",
+                "name": "Gin1@3",
+                "object_properties": [],
+                "type": []
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "print('我是发货人')",
+                        "type": "computed"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/7/29 下午4:40:2272",
+                "name": "发1",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/step": {
+                        "isPattern": false,
+                        "text": "print('我是收货人')",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/7/29 下午5:02:1973",
+                "name": "收1",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Participant"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2020/8/17 下午12:07:47118",
+                "name": "Gin1@4",
+                "object_properties": [],
+                "type": []
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2020/8/17 下午12:07:47118",
+                "name": "Gin1@2",
+                "object_properties": [],
+                "type": []
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "13",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/8/6 上午10:48:4025",
+                "name": "Quota1",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2020/8/17 下午12:07:47118",
+                "name": "Gin1@1",
+                "object_properties": [],
+                "type": []
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2020/8/17 下午12:07:47118",
+                "name": "Gin1@0",
+                "object_properties": [],
+                "type": []
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "print('Quota Normal')\nreturn self.toJson()",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/8/7 上午10:21:1826",
+                "name": "Quota Normal",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            }
+        ],
+        "relations": []
+    },
+    "process": [
+        {
+            "role": {
+                "物流概念/发货人": "发1",
+                "物流概念/收货人": "收1"
+            },
+            "tokens": []
+        }
+    ],
+    "quota": {
+        "Quota Normal": {
+            "name": "Quota Normal",
+            "text": "print('Quota Normal')\nreturn self.toJson()",
+            "type": "normal",
+            "val": {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "print('Quota Normal')\nreturn self.toJson()",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "id": "2020/8/7 上午10:21:1826",
+                "name": "Quota Normal",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            }
+        },
+        "Quota1": {
+            "name": "Quota1",
+            "text": "13",
+            "type": "value",
+            "val": 13
+        },
+        "发1": {
+            "name": "发1",
+            "text": "print('我是发货人')",
+            "type": "computed",
+            "val": null
+        }
+    },
+    "step_count": 12
+}

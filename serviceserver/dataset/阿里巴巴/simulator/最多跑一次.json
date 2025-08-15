@@ -1,0 +1,4866 @@
+{
+    "config": {
+        "id": "2021/4/17 上午9:29:561287",
+        "maxStep": "4000",
+        "maxTime": null,
+        "name": "最多跑一次"
+    },
+    "instance_base": {
+        "config": {},
+        "groups": [
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/4/17 上午9:53:081322",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "政务服务概念/企业"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/4/17 上午9:53:181323",
+                        "name": "2021/4/17 上午9:53:181323",
+                        "object_properties": [],
+                        "type": [
+                            "BPMN概念/Lane"
+                        ]
+                    }
+                ],
+                "name": "企业",
+                "num": 10,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/4/17 上午9:52:491320",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "政务服务概念/个人"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/4/17 上午9:52:581321",
+                        "name": "2021/4/17 上午9:52:581321",
+                        "object_properties": [],
+                        "type": [
+                            "BPMN概念/Lane"
+                        ]
+                    }
+                ],
+                "name": "群众",
+                "num": 100,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/4/17 上午9:53:321324",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "政务服务概念/政府部门"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/4/17 上午9:53:421325",
+                        "name": "2021/4/17 上午9:53:421325",
+                        "object_properties": [],
+                        "type": [
+                            "BPMN概念/Lane"
+                        ]
+                    }
+                ],
+                "name": "政府部门",
+                "num": 5,
+                "type": []
+            }
+        ],
+        "instances": [
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "1",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "15",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2021/4/17 上午9:52:161319",
+                "name": "政务协同时间",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2021/4/17 上午9:49:201316",
+                "name": "平均运行成本",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "1",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "0.935",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2021/4/17 上午9:50:561318",
+                "name": "用户满意度",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            },
+            {
+                "bindTo": [
+                    "人工智能服务/AI服务提供商"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2021/4/17 上午9:54:011327",
+                "name": "It服务提供商",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2021/4/17 上午9:50:101317",
+                "name": "平均运行时间",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            }
+        ],
+        "relations": []
+    },
+    "name": "最多跑一次",
+    "node2binding_relations": {
+        "2021/4/17 上午9:52:581321": [
+            "政务服务概念/个人"
+        ],
+        "2021/4/17 上午9:53:181323": [
+            "政务服务概念/企业"
+        ],
+        "2021/4/17 上午9:53:421325": [
+            "政务服务概念/政府部门"
+        ],
+        "It服务提供商": [
+            "人工智能服务/AI服务提供商"
+        ]
+    },
+    "pattern_instance_base": {
+        "config": {
+            "id": "1618622360.5683742_1911818",
+            "name": "最多跑一次2.0_推荐_1"
+        },
+        "groups": [],
+        "instances": [
+            {
+                "__gohashid": 8983,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Sat Apr 17 01:19:20 20212799",
+                "id": "人工智能服务/AI服务提供商",
+                "isGroup": "true",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:25:326",
+                "loc": "-10.508926391601548 98",
+                "name": "人工智能服务/AI服务提供商",
+                "object_properties": [],
+                "participant": "人工智能服务/AI服务提供商",
+                "props": [],
+                "size": "2100 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 35732,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:324",
+                "id": "connectNode",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:31:301736",
+                "loc": "569.9927520751953 795",
+                "name": "connectNode",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/task"
+                ]
+            },
+            {
+                "__gohashid": 73215,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "2",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"分析完毕\")\ntoken.data['SR'] = (token.data['SR']+ramdom.randint(7,10)/10)/2",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:323",
+                "id": "用户满意度分析",
+                "key": "线上政务模式/2021/4/16 下午7:09:091994",
+                "loc": "779.4910736083984 1096",
+                "name": "用户满意度分析",
+                "objectProperty": {
+                    "CarrierIs": "政务服务概念/数据中台"
+                },
+                "object_properties": [],
+                "type": [
+                    "政务服务概念/评价提交"
+                ]
+            },
+            {
+                "__gohashid": 22300,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn random.randint(5,13)",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"生成完毕\")\ntoken.data['cost'] = token.data['cost'] + random.random()*10",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:326",
+                "id": "推理规则生成",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:29:141726",
+                "loc": "311.49107360839844 150",
+                "name": "推理规则生成",
+                "object_properties": [],
+                "type": [
+                    "人工智能服务/推理规则生成"
+                ]
+            },
+            {
+                "__gohashid": 91315,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:325",
+                "id": "企业办件材料",
+                "key": "线上政务模式/2021/4/16 下午7:11:232004",
+                "loc": "1330 451",
+                "name": "企业办件材料",
+                "object_properties": [],
+                "type": [
+                    "政务服务概念/事项清单"
+                ]
+            },
+            {
+                "__gohashid": 70515,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "3",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"提交完毕\")\n",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:324",
+                "id": "个人提交办件请求",
+                "key": "线上政务模式/2021/4/16 下午7:07:231987",
+                "loc": "1069.9927520751953 795",
+                "name": "个人提交办件请求",
+                "objectProperty": {
+                    "CarrierIs": "政务服务概念/政务中台"
+                },
+                "object_properties": [],
+                "type": [
+                    "政务服务概念/办件提交"
+                ]
+            },
+            {
+                "__gohashid": 28937,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn random.randint(3,8)",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"导引完毕\")\ntoken.data['cost'] = token.data['cost'] + random.random()*3",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:325",
+                "id": "智能导引个人服务",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:29:421728",
+                "loc": "580 451",
+                "name": "智能导引个人服务",
+                "object_properties": [],
+                "type": [
+                    "人工智能服务/智能导引"
+                ]
+            },
+            {
+                "__gohashid": 37099,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:324",
+                "id": "政务数据",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:31:401739",
+                "loc": "69.99275207519531 795",
+                "name": "政务数据",
+                "object_properties": [],
+                "type": [
+                    "政务服务概念/办件数据"
+                ]
+            },
+            {
+                "__gohashid": 76591,
+                "bindTo": [],
+                "category": "end",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "end_step=model.step_count\nstart_step=token.data['start_step']\ntime = end_step-start_step\n\n\navg_process = model.instance_base.findByName(\"平均运行时间\")\ntotal = avg_process.amount*avg_process.quota_dscp\n\n\navg_process.amount = avg_process.amount+1\navg_process.quota_dscp = (total+time)/avg_process.amount\n\n\navg_cost=model.instance_base.findByName(\"平均运行成本\")\nprocess_cost= token.data['cost']\ntotal_cost=avg_cost.amount*avg_cost.quota_dscp\navg_cost.amount=avg_cost.amount+1\navg_cost.quota_dscp = (total_cost+process_cost)/avg_cost.amount\n\navg_CoopTime = model.instance_base.findByName(\"政务协同时间\")\nprocess_CoopTime = token.data['CoopTime']\ntotal_CoopTime = avg_CoopTime.amount*avg_CoopTime.quota_dscp\navg_CoopTime.amount = avg_CoopTime.amount+1\navg_CoopTime.quota_dscp = (total_CoopTime+process_CoopTime)/avg_CoopTime.amount\n\navg_SR = model.instance_base.findByName(\"用户满意度\")\nprocess_SR = token.data['SR']\ntotal_SR = avg_SR.amount*avg_SR.quota_dscp\navg_SR.amount = avg_SR.amount+1\navg_SR.quota_dscp = (total_SR+process_SR)/avg_SR.amount\n\n",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:323",
+                "id": "BPMN概念/EndEvent-1",
+                "key": "线上政务模式/2021/4/16 下午7:09:481996",
+                "loc": "1279.4910736083984 1096",
+                "name": "BPMN概念/EndEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/EndEvent"
+                ]
+            },
+            {
+                "__gohashid": 72458,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn random.randint(3,10)",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"处理完毕\")\ntoken.data['cost'] = token.data['cost'] + random.randint(1,4)\n",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:323",
+                "id": "反馈办件结果",
+                "key": "线上政务模式/2021/4/16 下午7:08:441991",
+                "loc": "529.4910736083984 1096",
+                "name": "反馈办件结果",
+                "object_properties": [],
+                "type": [
+                    "政务服务概念/办件结果反馈"
+                ]
+            },
+            {
+                "__gohashid": 8980,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Sat Apr 17 01:19:20 20212799",
+                "id": "政务服务概念/政府部门",
+                "isGroup": "true",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:25:323",
+                "loc": "-10.508926391601562 1044",
+                "name": "政务服务概念/政府部门",
+                "object_properties": [],
+                "participant": "政务服务概念/政府部门",
+                "props": [],
+                "size": "2100 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 13771,
+                "bindTo": [],
+                "category": "start",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"start\")\n\ntoken.data['start_step'] = model.step_count\ntoken.data['cost'] = 10\ntoken.data['CoopTime'] = 10\ntoken.data['SR'] = 0.962  # 满意度",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:323",
+                "id": "BPMN概念/StartEvent-2",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:26:361721",
+                "loc": "29.491073608398438 1096",
+                "name": "BPMN概念/StartEvent-2",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/StartEvent"
+                ]
+            },
+            {
+                "__gohashid": 91959,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:325",
+                "id": "个人办件材料",
+                "key": "线上政务模式/2021/4/16 下午7:11:472007",
+                "loc": "1080 451",
+                "name": "个人办件材料",
+                "object_properties": [],
+                "type": [
+                    "政务服务概念/事项清单"
+                ]
+            },
+            {
+                "__gohashid": 8982,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Sat Apr 17 01:19:20 20212799",
+                "id": "政务服务概念/企业",
+                "isGroup": "true",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:25:325",
+                "loc": "-10.508926391601562 399",
+                "name": "政务服务概念/企业",
+                "object_properties": [],
+                "participant": "政务服务概念/企业",
+                "props": [],
+                "size": "2100 342.4351852416992",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 70754,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "3",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"提交完毕\")\n",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:325",
+                "id": "企业提交办件请求",
+                "key": "线上政务模式/2021/4/16 下午7:07:251988",
+                "loc": "830 451",
+                "name": "企业提交办件请求",
+                "objectProperty": {
+                    "CarrierIs": "政务服务概念/政务中台"
+                },
+                "object_properties": [],
+                "type": [
+                    "政务服务概念/办件提交"
+                ]
+            },
+            {
+                "__gohashid": 38057,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:325",
+                "id": "语义schema",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:32:081742",
+                "loc": "80 451",
+                "name": "语义schema",
+                "object_properties": [],
+                "type": [
+                    "人工智能服务/语义schema"
+                ]
+            },
+            {
+                "__gohashid": 14084,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random \nreturn random.randint(30,60)",
+                        "type": "computed"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"构建完毕\")\ntoken.data['cost'] = token.data['cost'] + random.random()*100",
+                        "type": "computed"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:323",
+                "id": "构建政务知识图谱",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:26:411722",
+                "loc": "279.49107360839844 1096",
+                "name": "构建政务知识图谱",
+                "object_properties": [],
+                "type": [
+                    "人工智能服务/知识图谱构建"
+                ]
+            },
+            {
+                "__gohashid": 69445,
+                "bindTo": [],
+                "category": "exclusive",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/condition": {
+                        "isPattern": true,
+                        "text": "return True",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:326",
+                "id": "是否是个人",
+                "key": "线上政务模式/2021/4/16 下午7:07:171985",
+                "loc": "811.4910736083984 150",
+                "name": "是否是个人",
+                "object_properties": [],
+                "type": "BPMN概念/ExclusiveGateWay"
+            },
+            {
+                "__gohashid": 65547,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "5",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"上线完毕\")\ntoken.data['cost'] = token.data['cost'] + random.random()*6",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:326",
+                "id": "办件上线",
+                "key": "线上政务模式/2021/4/16 下午7:06:251981",
+                "loc": "561.4910736083984 150",
+                "name": "办件上线",
+                "objectProperty": {
+                    "CarrierIs": "云服务概念/云服务平台"
+                },
+                "object_properties": [],
+                "type": [
+                    "政务服务概念/办件上线"
+                ]
+            },
+            {
+                "__gohashid": 88118,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn random.random()*10",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"提交评价数据\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:323",
+                "id": "用户评价",
+                "key": "线上政务模式/2021/4/16 下午7:10:542001",
+                "loc": "673.9943549290543 1251.9196134558526",
+                "name": "用户评价",
+                "object_properties": [],
+                "type": [
+                    "政务服务概念/服务评价数据"
+                ]
+            },
+            {
+                "__gohashid": 8981,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Sat Apr 17 01:19:20 20212799",
+                "id": "政务服务概念/个人",
+                "isGroup": "true",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:25:324",
+                "loc": "-10.508926391601562 743",
+                "name": "政务服务概念/个人",
+                "object_properties": [],
+                "participant": "政务服务概念/个人",
+                "props": [],
+                "size": "2100 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 87192,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:324",
+                "id": "办件政务数据",
+                "key": "线上政务模式/2021/4/16 下午7:10:271998",
+                "loc": "819.9927520751953 795",
+                "name": "办件政务数据",
+                "object_properties": [],
+                "type": [
+                    "政务服务概念/办件数据"
+                ]
+            },
+            {
+                "__gohashid": 30010,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "3",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"导引完毕\")\ntoken.data['cost'] = token.data['cost'] + random.random()*3",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:325",
+                "id": "法人导引服务",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:30:041729",
+                "loc": "402.9927520751953 616",
+                "name": "法人导引服务",
+                "object_properties": [],
+                "type": [
+                    "人工智能服务/智能导引"
+                ]
+            },
+            {
+                "__gohashid": 14413,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "15",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"构建完毕\")\ntoken.data['cost'] = token.data['cost'] + random.random()*100",
+                        "type": "computed"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:326",
+                "id": "搭建智能推理平台",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:26:451724",
+                "loc": "131.49107360839844 210",
+                "name": "搭建智能推理平台",
+                "object_properties": [],
+                "type": [
+                    "人工智能服务/智能推理子平台搭建"
+                ]
+            }
+        ],
+        "relations": [
+            {
+                "__gohashid": "6d7eae2497714d478715f5c1d49b6682",
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:31:301736",
+                "key": "Sat Apr 17 01:19:20 20217454",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1727,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 569.9927520751953,
+                            "y": 755
+                        },
+                        {
+                            "s": true,
+                            "x": 569.9927520751953,
+                            "y": 745
+                        },
+                        {
+                            "s": true,
+                            "x": 569.9927520751953,
+                            "y": 745
+                        },
+                        {
+                            "s": true,
+                            "x": 508,
+                            "y": 745
+                        },
+                        {
+                            "s": true,
+                            "x": 508,
+                            "y": 404
+                        },
+                        {
+                            "s": true,
+                            "x": 561.4910736083984,
+                            "y": 404
+                        },
+                        {
+                            "s": true,
+                            "x": 561.4910736083984,
+                            "y": 210
+                        },
+                        {
+                            "s": true,
+                            "x": 561.4910736083984,
+                            "y": 190
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:06:251981"
+            },
+            {
+                "__gohashid": 5267,
+                "category": "controlFlow",
+                "controlFlowNo": false,
+                "controlFlowYes": true,
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:07:171985",
+                "key": "最多跑一次2.0_推荐_1/2021/4/17 上午9:20:201173",
+                "points": {
+                    "Aa": 12,
+                    "Fa": null,
+                    "__gohashid": 2117,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 811.4910736083984,
+                            "y": 181.5
+                        },
+                        {
+                            "s": true,
+                            "x": 811.4910736083984,
+                            "y": 191.5
+                        },
+                        {
+                            "s": true,
+                            "x": 811.4910736083984,
+                            "y": 188
+                        },
+                        {
+                            "s": true,
+                            "x": 811.4910736083984,
+                            "y": 188
+                        },
+                        {
+                            "s": true,
+                            "x": 811.4910736083984,
+                            "y": 228
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 228
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 524
+                        },
+                        {
+                            "s": true,
+                            "x": 1069.9927520751953,
+                            "y": 524
+                        },
+                        {
+                            "s": true,
+                            "x": 1069.9927520751953,
+                            "y": 735
+                        },
+                        {
+                            "s": true,
+                            "x": 1069.9927520751953,
+                            "y": 755
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:07:231987",
+                "yesOrNo": true
+            },
+            {
+                "__gohashid": 37701,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:26:411722",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:31:591741",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1693,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 279.49107360839844,
+                            "y": 1056
+                        },
+                        {
+                            "s": true,
+                            "x": 279.49107360839844,
+                            "y": 1046
+                        },
+                        {
+                            "s": true,
+                            "x": 279.49107360839844,
+                            "y": 1044
+                        },
+                        {
+                            "s": true,
+                            "x": 69.99275207519531,
+                            "y": 1044
+                        },
+                        {
+                            "s": true,
+                            "x": 69.99275207519531,
+                            "y": 826.5
+                        },
+                        {
+                            "s": true,
+                            "x": 69.99275207519531,
+                            "y": 816.5
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:31:401739"
+            },
+            {
+                "__gohashid": 6329,
+                "category": "controlFlow",
+                "controlFlowNo": true,
+                "controlFlowYes": false,
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:30:441732",
+                "key": "最多跑一次2.0_推荐_1/2021/4/17 上午9:21:231176",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 7116,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 482.5
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 492.5
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 492
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 492
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 532
+                        },
+                        {
+                            "s": true,
+                            "x": 319.9927520751953,
+                            "y": 532
+                        },
+                        {
+                            "s": true,
+                            "x": 319.9927520751953,
+                            "y": 692
+                        },
+                        {
+                            "s": true,
+                            "x": 319.9927520751953,
+                            "y": 712
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:30:041729",
+                "yesOrNo": true
+            },
+            {
+                "__gohashid": 38238,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:26:451724",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:32:101743",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1701,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 111.49107360839844,
+                            "y": 250
+                        },
+                        {
+                            "s": true,
+                            "x": 111.49107360839844,
+                            "y": 260
+                        },
+                        {
+                            "s": true,
+                            "x": 111.49107360839844,
+                            "y": 260
+                        },
+                        {
+                            "s": true,
+                            "x": 111.49107360839844,
+                            "y": 260
+                        },
+                        {
+                            "s": true,
+                            "x": 111.49107360839844,
+                            "y": 284
+                        },
+                        {
+                            "s": true,
+                            "x": 74.23333333333333,
+                            "y": 284
+                        },
+                        {
+                            "s": true,
+                            "x": 74.23333333333333,
+                            "y": 411.5
+                        },
+                        {
+                            "s": true,
+                            "x": 74.23333333333333,
+                            "y": 429.5
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:32:081742"
+            },
+            {
+                "__gohashid": 36686,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:30:041729",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:31:321737",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1721,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 402.9927520751953,
+                            "y": 656
+                        },
+                        {
+                            "s": true,
+                            "x": 402.9927520751953,
+                            "y": 666
+                        },
+                        {
+                            "s": true,
+                            "x": 402.9927520751953,
+                            "y": 668
+                        },
+                        {
+                            "s": true,
+                            "x": 569.9927520751953,
+                            "y": 668
+                        },
+                        {
+                            "s": true,
+                            "x": 569.9927520751953,
+                            "y": 735
+                        },
+                        {
+                            "s": true,
+                            "x": 569.9927520751953,
+                            "y": 755
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:31:301736"
+            },
+            {
+                "__gohashid": 32806,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:29:141726",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:30:571733",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 6712,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 311.49107360839844,
+                            "y": 190
+                        },
+                        {
+                            "s": true,
+                            "x": 311.49107360839844,
+                            "y": 200
+                        },
+                        {
+                            "s": true,
+                            "x": 311.49107360839844,
+                            "y": 204
+                        },
+                        {
+                            "s": true,
+                            "x": 311.49107360839844,
+                            "y": 204
+                        },
+                        {
+                            "s": true,
+                            "x": 311.49107360839844,
+                            "y": 228
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 228
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 399.5
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 419.5
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:30:441732"
+            },
+            {
+                "__gohashid": 5694,
+                "category": "controlFlow",
+                "controlFlowNo": true,
+                "controlFlowYes": false,
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:07:171985",
+                "key": "最多跑一次2.0_推荐_1/2021/4/17 上午9:20:391174",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 2137,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 811.4910736083984,
+                            "y": 181.5
+                        },
+                        {
+                            "s": true,
+                            "x": 811.4910736083984,
+                            "y": 191.5
+                        },
+                        {
+                            "s": true,
+                            "x": 811.4910736083984,
+                            "y": 291.25
+                        },
+                        {
+                            "s": true,
+                            "x": 830,
+                            "y": 291.25
+                        },
+                        {
+                            "s": true,
+                            "x": 830,
+                            "y": 391
+                        },
+                        {
+                            "s": true,
+                            "x": 830,
+                            "y": 411
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:07:251988",
+                "yesOrNo": true
+            },
+            {
+                "__gohashid": 90786,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:10:542001",
+                "key": "线上政务模式/2021/4/16 下午7:11:012003",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1795,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 673.9943549290545,
+                            "y": 1230.4196134558526
+                        },
+                        {
+                            "s": true,
+                            "x": 673.9943549290545,
+                            "y": 1220.4196134558526
+                        },
+                        {
+                            "s": true,
+                            "x": 673.9943549290545,
+                            "y": 1220
+                        },
+                        {
+                            "s": true,
+                            "x": 779.4910736083984,
+                            "y": 1220
+                        },
+                        {
+                            "s": true,
+                            "x": 779.4910736083984,
+                            "y": 1146
+                        },
+                        {
+                            "s": true,
+                            "x": 779.4910736083984,
+                            "y": 1136
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:09:091994"
+            },
+            {
+                "__gohashid": 72813,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:07:251988",
+                "key": "线上政务模式/2021/4/16 下午7:08:481993",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1764,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 830,
+                            "y": 491
+                        },
+                        {
+                            "s": true,
+                            "x": 830,
+                            "y": 501
+                        },
+                        {
+                            "s": true,
+                            "x": 830,
+                            "y": 501
+                        },
+                        {
+                            "s": true,
+                            "x": 740,
+                            "y": 501
+                        },
+                        {
+                            "s": true,
+                            "x": 740,
+                            "y": 868
+                        },
+                        {
+                            "s": true,
+                            "x": 529.4910736083984,
+                            "y": 868
+                        },
+                        {
+                            "s": true,
+                            "x": 529.4910736083984,
+                            "y": 1036
+                        },
+                        {
+                            "s": true,
+                            "x": 529.4910736083984,
+                            "y": 1056
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:08:441991"
+            },
+            {
+                "__gohashid": "cf27efc6a6e7432e8059e63aca4c562e",
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:31:301736",
+                "key": "Sat Apr 17 01:19:20 20217164",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1733,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 629.9927520751953,
+                            "y": 795
+                        },
+                        {
+                            "s": true,
+                            "x": 639.9927520751953,
+                            "y": 795
+                        },
+                        {
+                            "s": true,
+                            "x": 639.9927520751953,
+                            "y": 795
+                        },
+                        {
+                            "s": true,
+                            "x": 639.9927520751953,
+                            "y": 795
+                        },
+                        {
+                            "s": true,
+                            "x": 792.6927520751954,
+                            "y": 795
+                        },
+                        {
+                            "s": true,
+                            "x": 802.6927520751954,
+                            "y": 795
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:10:271998"
+            },
+            {
+                "__gohashid": 73410,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:08:441991",
+                "key": "线上政务模式/2021/4/16 下午7:09:111995",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1685,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 589.4910736083984,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 599.4910736083984,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 649.4910736083984,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 649.4910736083984,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 699.4910736083984,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 719.4910736083984,
+                            "y": 1096
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:09:091994"
+            },
+            {
+                "__gohashid": 91633,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:11:232004",
+                "key": "线上政务模式/2021/4/16 下午7:11:362006",
+                "points": {
+                    "Aa": 9,
+                    "Fa": null,
+                    "__gohashid": 2089,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1312.7,
+                            "y": 458.1666666666667
+                        },
+                        {
+                            "s": true,
+                            "x": 1302.7,
+                            "y": 458.1666666666667
+                        },
+                        {
+                            "s": true,
+                            "x": 1300,
+                            "y": 458.1666666666667
+                        },
+                        {
+                            "s": true,
+                            "x": 1300,
+                            "y": 868
+                        },
+                        {
+                            "s": true,
+                            "x": 549.4910736083984,
+                            "y": 868
+                        },
+                        {
+                            "s": true,
+                            "x": 549.4910736083984,
+                            "y": 1046
+                        },
+                        {
+                            "s": true,
+                            "x": 549.4910736083984,
+                            "y": 1056
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:08:441991"
+            },
+            {
+                "__gohashid": 94494,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:11:472007",
+                "key": "线上政务模式/2021/4/16 下午7:11:522009",
+                "points": {
+                    "Aa": 11,
+                    "Fa": null,
+                    "__gohashid": 2103,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1062.7,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 1052.7,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 1052,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 1052,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 996,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 996,
+                            "y": 868
+                        },
+                        {
+                            "s": true,
+                            "x": 509.49107360839844,
+                            "y": 868
+                        },
+                        {
+                            "s": true,
+                            "x": 509.49107360839844,
+                            "y": 1038
+                        },
+                        {
+                            "s": true,
+                            "x": 509.49107360839844,
+                            "y": 1056
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:08:441991"
+            },
+            {
+                "__gohashid": 37533,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:31:401739",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:31:561740",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1736,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 69.99275207519531,
+                            "y": 773.5
+                        },
+                        {
+                            "s": true,
+                            "x": 69.99275207519531,
+                            "y": 763.5
+                        },
+                        {
+                            "s": true,
+                            "x": 69.99275207519531,
+                            "y": 763.5
+                        },
+                        {
+                            "s": true,
+                            "x": 172,
+                            "y": 763.5
+                        },
+                        {
+                            "s": true,
+                            "x": 172,
+                            "y": 420
+                        },
+                        {
+                            "s": true,
+                            "x": 151.49107360839844,
+                            "y": 420
+                        },
+                        {
+                            "s": true,
+                            "x": 151.49107360839844,
+                            "y": 268
+                        },
+                        {
+                            "s": true,
+                            "x": 151.49107360839844,
+                            "y": 250
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:26:451724"
+            },
+            {
+                "__gohashid": 70152,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:29:141726",
+                "key": "最多跑一次2.0_推荐_1/2021/4/18 下午11:24:101403",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 2147,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 311.49107360839844,
+                            "y": 190
+                        },
+                        {
+                            "s": true,
+                            "x": 311.49107360839844,
+                            "y": 200
+                        },
+                        {
+                            "s": true,
+                            "x": 311.49107360839844,
+                            "y": 204
+                        },
+                        {
+                            "s": true,
+                            "x": 402.9927520751953,
+                            "y": 204
+                        },
+                        {
+                            "s": true,
+                            "x": 402.9927520751953,
+                            "y": 556
+                        },
+                        {
+                            "s": true,
+                            "x": 402.9927520751953,
+                            "y": 576
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:30:041729"
+            },
+            {
+                "__gohashid": 6080,
+                "category": "controlFlow",
+                "controlFlowNo": false,
+                "controlFlowYes": true,
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:30:441732",
+                "key": "最多跑一次2.0_推荐_1/2021/4/17 上午9:20:591175",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 6868,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 361.5,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 371.5,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 371.5,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 371.5,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 500,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 520,
+                            "y": 451
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:29:421728",
+                "yesOrNo": true
+            },
+            {
+                "__gohashid": 72658,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:07:231987",
+                "key": "线上政务模式/2021/4/16 下午7:08:461992",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1750,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1009.9927520751953,
+                            "y": 795
+                        },
+                        {
+                            "s": true,
+                            "x": 999.9927520751953,
+                            "y": 795
+                        },
+                        {
+                            "s": true,
+                            "x": 996,
+                            "y": 795
+                        },
+                        {
+                            "s": true,
+                            "x": 996,
+                            "y": 868
+                        },
+                        {
+                            "s": true,
+                            "x": 708,
+                            "y": 868
+                        },
+                        {
+                            "s": true,
+                            "x": 708,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 609.4910736083984,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 589.4910736083984,
+                            "y": 1096
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:08:441991"
+            },
+            {
+                "__gohashid": 90668,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:08:441991",
+                "key": "线上政务模式/2021/4/16 下午7:11:002002",
+                "points": {
+                    "Aa": 9,
+                    "Fa": null,
+                    "__gohashid": 1774,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 529.4910736083984,
+                            "y": 1136
+                        },
+                        {
+                            "s": true,
+                            "x": 529.4910736083984,
+                            "y": 1146
+                        },
+                        {
+                            "s": true,
+                            "x": 529.4910736083984,
+                            "y": 1148
+                        },
+                        {
+                            "s": true,
+                            "x": 529.4910736083984,
+                            "y": 1148
+                        },
+                        {
+                            "s": true,
+                            "x": 529.4910736083984,
+                            "y": 1251.9196134558526
+                        },
+                        {
+                            "s": true,
+                            "x": 646.6943549290544,
+                            "y": 1251.9196134558526
+                        },
+                        {
+                            "s": true,
+                            "x": 656.6943549290544,
+                            "y": 1251.9196134558526
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:10:542001"
+            },
+            {
+                "__gohashid": 26074,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:26:451724",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:29:281727",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1700,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 191.49107360839844,
+                            "y": 210
+                        },
+                        {
+                            "s": true,
+                            "x": 201.49107360839844,
+                            "y": 210
+                        },
+                        {
+                            "s": true,
+                            "x": 216.49107360839844,
+                            "y": 210
+                        },
+                        {
+                            "s": true,
+                            "x": 216.49107360839844,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 231.49107360839844,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 251.49107360839844,
+                            "y": 150
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:29:141726"
+            },
+            {
+                "__gohashid": 38362,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:32:081742",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:32:121744",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1742,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 85.76666666666668,
+                            "y": 429.5
+                        },
+                        {
+                            "s": true,
+                            "x": 85.76666666666668,
+                            "y": 419.5
+                        },
+                        {
+                            "s": true,
+                            "x": 85.76666666666668,
+                            "y": 419.5
+                        },
+                        {
+                            "s": true,
+                            "x": 311.49107360839844,
+                            "y": 419.5
+                        },
+                        {
+                            "s": true,
+                            "x": 311.49107360839844,
+                            "y": 200
+                        },
+                        {
+                            "s": true,
+                            "x": 311.49107360839844,
+                            "y": 190
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:29:141726"
+            },
+            {
+                "__gohashid": 91511,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:07:251988",
+                "key": "线上政务模式/2021/4/16 下午7:11:342005",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1770,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 890,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 420
+                        },
+                        {
+                            "s": true,
+                            "x": 1156,
+                            "y": 420
+                        },
+                        {
+                            "s": true,
+                            "x": 1156,
+                            "y": 443.8333333333333
+                        },
+                        {
+                            "s": true,
+                            "x": 1294.7,
+                            "y": 443.8333333333333
+                        },
+                        {
+                            "s": true,
+                            "x": 1312.7,
+                            "y": 443.8333333333333
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:11:232004"
+            },
+            {
+                "__gohashid": 87608,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:10:271998",
+                "key": "线上政务模式/2021/4/16 下午7:10:351999",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1800,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 819.9927520751953,
+                            "y": 773.5
+                        },
+                        {
+                            "s": true,
+                            "x": 819.9927520751953,
+                            "y": 763.5
+                        },
+                        {
+                            "s": true,
+                            "x": 819.9927520751953,
+                            "y": 763.5
+                        },
+                        {
+                            "s": true,
+                            "x": 764,
+                            "y": 763.5
+                        },
+                        {
+                            "s": true,
+                            "x": 764,
+                            "y": 404
+                        },
+                        {
+                            "s": true,
+                            "x": 561.4910736083984,
+                            "y": 404
+                        },
+                        {
+                            "s": true,
+                            "x": 561.4910736083984,
+                            "y": 200
+                        },
+                        {
+                            "s": true,
+                            "x": 561.4910736083984,
+                            "y": 190
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:06:251981"
+            },
+            {
+                "__gohashid": 14226,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:26:361721",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:26:431723",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1676,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 127.47373962402344,
+                            "y": 1117.5
+                        },
+                        {
+                            "s": true,
+                            "x": 137.47373962402344,
+                            "y": 1117.5
+                        },
+                        {
+                            "s": true,
+                            "x": 140,
+                            "y": 1117.5
+                        },
+                        {
+                            "s": true,
+                            "x": 140,
+                            "y": 1117.5
+                        },
+                        {
+                            "s": true,
+                            "x": 196,
+                            "y": 1117.5
+                        },
+                        {
+                            "s": true,
+                            "x": 196,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 199.49107360839844,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 219.49107360839844,
+                            "y": 1096
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:26:411722"
+            },
+            {
+                "__gohashid": 36854,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:29:421728",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:31:351738",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1715,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 491
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 501
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 500
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 500
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 524
+                        },
+                        {
+                            "s": true,
+                            "x": 569.9927520751953,
+                            "y": 524
+                        },
+                        {
+                            "s": true,
+                            "x": 569.9927520751953,
+                            "y": 735
+                        },
+                        {
+                            "s": true,
+                            "x": 569.9927520751953,
+                            "y": 755
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:31:301736"
+            },
+            {
+                "__gohashid": 92341,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:07:231987",
+                "key": "线上政务模式/2021/4/16 下午7:11:492008",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1756,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1069.9927520751953,
+                            "y": 755
+                        },
+                        {
+                            "s": true,
+                            "x": 1069.9927520751953,
+                            "y": 745
+                        },
+                        {
+                            "s": true,
+                            "x": 1069.9927520751953,
+                            "y": 745
+                        },
+                        {
+                            "s": true,
+                            "x": 1080,
+                            "y": 745
+                        },
+                        {
+                            "s": true,
+                            "x": 1080,
+                            "y": 482.5
+                        },
+                        {
+                            "s": true,
+                            "x": 1080,
+                            "y": 472.5
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:11:472007"
+            },
+            {
+                "__gohashid": 76781,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:09:091994",
+                "key": "线上政务模式/2021/4/16 下午7:09:501997",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1784,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 839.4910736083984,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 849.4910736083984,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 852,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 852,
+                            "y": 1119
+                        },
+                        {
+                            "s": true,
+                            "x": 1310.7575073242188,
+                            "y": 1119
+                        },
+                        {
+                            "s": true,
+                            "x": 1330.7575073242188,
+                            "y": 1119
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:09:481996"
+            },
+            {
+                "__gohashid": 21981,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:26:411722",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:28:491725",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1688,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 279.49107360839844,
+                            "y": 1056
+                        },
+                        {
+                            "s": true,
+                            "x": 279.49107360839844,
+                            "y": 1046
+                        },
+                        {
+                            "s": true,
+                            "x": 279.49107360839844,
+                            "y": 1044
+                        },
+                        {
+                            "s": true,
+                            "x": 279.49107360839844,
+                            "y": 1044
+                        },
+                        {
+                            "s": true,
+                            "x": 279.49107360839844,
+                            "y": 420
+                        },
+                        {
+                            "s": true,
+                            "x": 131.49107360839844,
+                            "y": 420
+                        },
+                        {
+                            "s": true,
+                            "x": 131.49107360839844,
+                            "y": 270
+                        },
+                        {
+                            "s": true,
+                            "x": 131.49107360839844,
+                            "y": 250
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:26:451724"
+            },
+            {
+                "__gohashid": 70319,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:06:251981",
+                "key": "线上政务模式/2021/4/16 下午7:07:211986",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1749,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 621.4910736083984,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 631.4910736083984,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 631.4910736083984,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 631.4910736083984,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 759.9910736083984,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 779.9910736083984,
+                            "y": 150
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:07:171985"
+            }
+        ]
+    },
+    "service pattern": {
+        "config": {
+            "id": "1618622360.5683742_1911818",
+            "name": "最多跑一次2.0_推荐_1"
+        },
+        "elements": {},
+        "evaluate_config": {
+            "Sat Apr 17 01:19:20 20212799": {
+                "name": "最多跑一次2.0"
+            },
+            "智能政务导引服务模式/2021/4/16 下午6:25:323": {
+                "name": "政务服务概念/政府部门"
+            },
+            "智能政务导引服务模式/2021/4/16 下午6:25:324": {
+                "name": "政务服务概念/个人"
+            },
+            "智能政务导引服务模式/2021/4/16 下午6:25:325": {
+                "name": "政务服务概念/企业"
+            },
+            "智能政务导引服务模式/2021/4/16 下午6:25:326": {
+                "name": "人工智能服务/AI服务提供商"
+            },
+            "智能政务导引服务模式/2021/4/16 下午6:26:361721": {
+                "cost": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "name": "BPMN概念/StartEvent-2",
+                "reliability": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "100",
+                    "type": "constant"
+                }
+            },
+            "智能政务导引服务模式/2021/4/16 下午6:26:411722": {
+                "cost": {
+                    "n": "5",
+                    "type": "constant"
+                },
+                "duration": {
+                    "mu": "10",
+                    "n": 0,
+                    "sigma": "5",
+                    "type": "gaussian"
+                },
+                "name": "构建政务知识图谱",
+                "reliability": {
+                    "n": "0.99",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "100",
+                    "type": "constant"
+                }
+            },
+            "智能政务导引服务模式/2021/4/16 下午6:26:451724": {
+                "cost": {
+                    "n": "10",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "10",
+                    "type": "constant"
+                },
+                "name": "搭建智能推理平台",
+                "reliability": {
+                    "m": "0.99",
+                    "n": "0.98",
+                    "type": "uniform"
+                },
+                "throughput": {
+                    "n": "100",
+                    "type": "constant"
+                }
+            },
+            "智能政务导引服务模式/2021/4/16 下午6:29:141726": {
+                "cost": {
+                    "n": "2",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "3",
+                    "type": "constant"
+                },
+                "name": "推理规则生成",
+                "reliability": {
+                    "n": "0.99",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "100",
+                    "type": "constant"
+                }
+            },
+            "智能政务导引服务模式/2021/4/16 下午6:29:421728": {
+                "cost": {
+                    "n": "2",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "3",
+                    "type": "constant"
+                },
+                "name": "智能导引个人服务",
+                "reliability": {
+                    "mu": "0.99",
+                    "n": "0.99",
+                    "sigma": "2",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "100",
+                    "type": "constant"
+                }
+            },
+            "智能政务导引服务模式/2021/4/16 下午6:30:041729": {
+                "cost": {
+                    "n": "2",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "3",
+                    "type": "constant"
+                },
+                "name": "法人导引服务",
+                "reliability": {
+                    "n": "0.99",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "100",
+                    "type": "constant"
+                }
+            },
+            "智能政务导引服务模式/2021/4/16 下午6:30:441732": {
+                "cost": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "name": "是否是个人",
+                "reliability": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "1000",
+                    "type": "constant"
+                }
+            },
+            "智能政务导引服务模式/2021/4/16 下午6:31:301736": {
+                "cost": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "name": "connectNode",
+                "reliability": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "100",
+                    "type": "constant"
+                }
+            },
+            "智能政务导引服务模式/2021/4/16 下午6:31:401739": {
+                "amount": {
+                    "n": "100",
+                    "type": "constant"
+                },
+                "name": "政务数据",
+                "type": "constant",
+                "unit": "G"
+            },
+            "智能政务导引服务模式/2021/4/16 下午6:32:081742": {
+                "amount": {
+                    "n": "20",
+                    "type": "constant"
+                },
+                "name": "语义schema",
+                "type": "constant",
+                "unit": "MB"
+            },
+            "线上政务模式/2021/4/16 下午7:06:251981": {
+                "cost": {
+                    "n": "2",
+                    "type": "constant"
+                },
+                "duration": {
+                    "mu": "5",
+                    "n": 0,
+                    "sigma": "5",
+                    "type": "gaussian"
+                },
+                "name": "办件上线",
+                "reliability": {
+                    "n": "0.99",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "100",
+                    "type": "constant"
+                }
+            },
+            "线上政务模式/2021/4/16 下午7:07:171985": {
+                "cost": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "name": "是否是个人",
+                "reliability": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "100",
+                    "type": "constant"
+                }
+            },
+            "线上政务模式/2021/4/16 下午7:07:231987": {
+                "cost": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "2",
+                    "type": "constant"
+                },
+                "name": "个人提交办件请求",
+                "reliability": {
+                    "n": "0.998",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "100",
+                    "type": "constant"
+                }
+            },
+            "线上政务模式/2021/4/16 下午7:07:251988": {
+                "cost": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "2",
+                    "type": "constant"
+                },
+                "name": "企业提交办件请求",
+                "reliability": {
+                    "n": "0.998",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "100",
+                    "type": "constant"
+                }
+            },
+            "线上政务模式/2021/4/16 下午7:08:441991": {
+                "cost": {
+                    "n": "2",
+                    "type": "constant"
+                },
+                "duration": {
+                    "mu": "5",
+                    "n": 0,
+                    "sigma": "3",
+                    "type": "gaussian"
+                },
+                "name": "反馈办件结果",
+                "reliability": {
+                    "n": "0.999",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "100",
+                    "type": "constant"
+                }
+            },
+            "线上政务模式/2021/4/16 下午7:09:091994": {
+                "cost": {
+                    "n": "0.5",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "0.5",
+                    "type": "constant"
+                },
+                "name": "用户满意度分析",
+                "reliability": {
+                    "n": "0.998",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "1000",
+                    "type": "constant"
+                }
+            },
+            "线上政务模式/2021/4/16 下午7:09:481996": {
+                "cost": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "name": "BPMN概念/EndEvent-1",
+                "reliability": {
+                    "n": "1",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "100",
+                    "type": "constant"
+                }
+            },
+            "线上政务模式/2021/4/16 下午7:10:271998": {
+                "amount": {
+                    "n": "10",
+                    "type": "constant"
+                },
+                "name": "办件政务数据",
+                "type": "constant",
+                "unit": "MB"
+            },
+            "线上政务模式/2021/4/16 下午7:10:542001": {
+                "amount": {
+                    "n": "100",
+                    "type": "constant"
+                },
+                "name": "用户评价",
+                "type": "constant",
+                "unit": "KB "
+            },
+            "线上政务模式/2021/4/16 下午7:11:232004": {
+                "amount": {
+                    "n": "200",
+                    "type": "constant"
+                },
+                "name": "企业办件材料",
+                "type": "constant",
+                "unit": "KB"
+            },
+            "线上政务模式/2021/4/16 下午7:11:472007": {
+                "amount": {
+                    "n": "200",
+                    "type": "constant"
+                },
+                "name": "个人办件材料",
+                "type": "constant",
+                "unit": "KB"
+            }
+        },
+        "links": [
+            {
+                "__gohashid": 14226,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:26:361721",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:26:431723",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1676,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 127.47373962402344,
+                            "y": 1117.5
+                        },
+                        {
+                            "s": true,
+                            "x": 137.47373962402344,
+                            "y": 1117.5
+                        },
+                        {
+                            "s": true,
+                            "x": 140,
+                            "y": 1117.5
+                        },
+                        {
+                            "s": true,
+                            "x": 140,
+                            "y": 1117.5
+                        },
+                        {
+                            "s": true,
+                            "x": 196,
+                            "y": 1117.5
+                        },
+                        {
+                            "s": true,
+                            "x": 196,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 199.49107360839844,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 219.49107360839844,
+                            "y": 1096
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:26:411722"
+            },
+            {
+                "__gohashid": 21981,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:26:411722",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:28:491725",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1688,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 279.49107360839844,
+                            "y": 1056
+                        },
+                        {
+                            "s": true,
+                            "x": 279.49107360839844,
+                            "y": 1046
+                        },
+                        {
+                            "s": true,
+                            "x": 279.49107360839844,
+                            "y": 1044
+                        },
+                        {
+                            "s": true,
+                            "x": 279.49107360839844,
+                            "y": 1044
+                        },
+                        {
+                            "s": true,
+                            "x": 279.49107360839844,
+                            "y": 420
+                        },
+                        {
+                            "s": true,
+                            "x": 131.49107360839844,
+                            "y": 420
+                        },
+                        {
+                            "s": true,
+                            "x": 131.49107360839844,
+                            "y": 270
+                        },
+                        {
+                            "s": true,
+                            "x": 131.49107360839844,
+                            "y": 250
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:26:451724"
+            },
+            {
+                "__gohashid": 37701,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:26:411722",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:31:591741",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1693,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 279.49107360839844,
+                            "y": 1056
+                        },
+                        {
+                            "s": true,
+                            "x": 279.49107360839844,
+                            "y": 1046
+                        },
+                        {
+                            "s": true,
+                            "x": 279.49107360839844,
+                            "y": 1044
+                        },
+                        {
+                            "s": true,
+                            "x": 69.99275207519531,
+                            "y": 1044
+                        },
+                        {
+                            "s": true,
+                            "x": 69.99275207519531,
+                            "y": 826.5
+                        },
+                        {
+                            "s": true,
+                            "x": 69.99275207519531,
+                            "y": 816.5
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:31:401739"
+            },
+            {
+                "__gohashid": 26074,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:26:451724",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:29:281727",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1700,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 191.49107360839844,
+                            "y": 210
+                        },
+                        {
+                            "s": true,
+                            "x": 201.49107360839844,
+                            "y": 210
+                        },
+                        {
+                            "s": true,
+                            "x": 216.49107360839844,
+                            "y": 210
+                        },
+                        {
+                            "s": true,
+                            "x": 216.49107360839844,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 231.49107360839844,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 251.49107360839844,
+                            "y": 150
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:29:141726"
+            },
+            {
+                "__gohashid": 38238,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:26:451724",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:32:101743",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1701,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 111.49107360839844,
+                            "y": 250
+                        },
+                        {
+                            "s": true,
+                            "x": 111.49107360839844,
+                            "y": 260
+                        },
+                        {
+                            "s": true,
+                            "x": 111.49107360839844,
+                            "y": 260
+                        },
+                        {
+                            "s": true,
+                            "x": 111.49107360839844,
+                            "y": 260
+                        },
+                        {
+                            "s": true,
+                            "x": 111.49107360839844,
+                            "y": 284
+                        },
+                        {
+                            "s": true,
+                            "x": 74.23333333333333,
+                            "y": 284
+                        },
+                        {
+                            "s": true,
+                            "x": 74.23333333333333,
+                            "y": 411.5
+                        },
+                        {
+                            "s": true,
+                            "x": 74.23333333333333,
+                            "y": 429.5
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:32:081742"
+            },
+            {
+                "__gohashid": 32806,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:29:141726",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:30:571733",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 6712,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 311.49107360839844,
+                            "y": 190
+                        },
+                        {
+                            "s": true,
+                            "x": 311.49107360839844,
+                            "y": 200
+                        },
+                        {
+                            "s": true,
+                            "x": 311.49107360839844,
+                            "y": 204
+                        },
+                        {
+                            "s": true,
+                            "x": 311.49107360839844,
+                            "y": 204
+                        },
+                        {
+                            "s": true,
+                            "x": 311.49107360839844,
+                            "y": 228
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 228
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 399.5
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 419.5
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:30:441732"
+            },
+            {
+                "__gohashid": 36854,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:29:421728",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:31:351738",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1715,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 491
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 501
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 500
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 500
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 524
+                        },
+                        {
+                            "s": true,
+                            "x": 569.9927520751953,
+                            "y": 524
+                        },
+                        {
+                            "s": true,
+                            "x": 569.9927520751953,
+                            "y": 735
+                        },
+                        {
+                            "s": true,
+                            "x": 569.9927520751953,
+                            "y": 755
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:31:301736"
+            },
+            {
+                "__gohashid": 36686,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:30:041729",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:31:321737",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1721,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 402.9927520751953,
+                            "y": 656
+                        },
+                        {
+                            "s": true,
+                            "x": 402.9927520751953,
+                            "y": 666
+                        },
+                        {
+                            "s": true,
+                            "x": 402.9927520751953,
+                            "y": 668
+                        },
+                        {
+                            "s": true,
+                            "x": 569.9927520751953,
+                            "y": 668
+                        },
+                        {
+                            "s": true,
+                            "x": 569.9927520751953,
+                            "y": 735
+                        },
+                        {
+                            "s": true,
+                            "x": 569.9927520751953,
+                            "y": 755
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:31:301736"
+            },
+            {
+                "__gohashid": "6d7eae2497714d478715f5c1d49b6682",
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:31:301736",
+                "key": "Sat Apr 17 01:19:20 20217454",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1727,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 569.9927520751953,
+                            "y": 755
+                        },
+                        {
+                            "s": true,
+                            "x": 569.9927520751953,
+                            "y": 745
+                        },
+                        {
+                            "s": true,
+                            "x": 569.9927520751953,
+                            "y": 745
+                        },
+                        {
+                            "s": true,
+                            "x": 508,
+                            "y": 745
+                        },
+                        {
+                            "s": true,
+                            "x": 508,
+                            "y": 404
+                        },
+                        {
+                            "s": true,
+                            "x": 561.4910736083984,
+                            "y": 404
+                        },
+                        {
+                            "s": true,
+                            "x": 561.4910736083984,
+                            "y": 210
+                        },
+                        {
+                            "s": true,
+                            "x": 561.4910736083984,
+                            "y": 190
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:06:251981"
+            },
+            {
+                "__gohashid": "cf27efc6a6e7432e8059e63aca4c562e",
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:31:301736",
+                "key": "Sat Apr 17 01:19:20 20217164",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1733,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 629.9927520751953,
+                            "y": 795
+                        },
+                        {
+                            "s": true,
+                            "x": 639.9927520751953,
+                            "y": 795
+                        },
+                        {
+                            "s": true,
+                            "x": 639.9927520751953,
+                            "y": 795
+                        },
+                        {
+                            "s": true,
+                            "x": 639.9927520751953,
+                            "y": 795
+                        },
+                        {
+                            "s": true,
+                            "x": 792.6927520751954,
+                            "y": 795
+                        },
+                        {
+                            "s": true,
+                            "x": 802.6927520751954,
+                            "y": 795
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:10:271998"
+            },
+            {
+                "__gohashid": 37533,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:31:401739",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:31:561740",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1736,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 69.99275207519531,
+                            "y": 773.5
+                        },
+                        {
+                            "s": true,
+                            "x": 69.99275207519531,
+                            "y": 763.5
+                        },
+                        {
+                            "s": true,
+                            "x": 69.99275207519531,
+                            "y": 763.5
+                        },
+                        {
+                            "s": true,
+                            "x": 172,
+                            "y": 763.5
+                        },
+                        {
+                            "s": true,
+                            "x": 172,
+                            "y": 420
+                        },
+                        {
+                            "s": true,
+                            "x": 151.49107360839844,
+                            "y": 420
+                        },
+                        {
+                            "s": true,
+                            "x": 151.49107360839844,
+                            "y": 268
+                        },
+                        {
+                            "s": true,
+                            "x": 151.49107360839844,
+                            "y": 250
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:26:451724"
+            },
+            {
+                "__gohashid": 38362,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:32:081742",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:32:121744",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1742,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 85.76666666666668,
+                            "y": 429.5
+                        },
+                        {
+                            "s": true,
+                            "x": 85.76666666666668,
+                            "y": 419.5
+                        },
+                        {
+                            "s": true,
+                            "x": 85.76666666666668,
+                            "y": 419.5
+                        },
+                        {
+                            "s": true,
+                            "x": 311.49107360839844,
+                            "y": 419.5
+                        },
+                        {
+                            "s": true,
+                            "x": 311.49107360839844,
+                            "y": 200
+                        },
+                        {
+                            "s": true,
+                            "x": 311.49107360839844,
+                            "y": 190
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:29:141726"
+            },
+            {
+                "__gohashid": 70319,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:06:251981",
+                "key": "线上政务模式/2021/4/16 下午7:07:211986",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1749,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 621.4910736083984,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 631.4910736083984,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 631.4910736083984,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 631.4910736083984,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 759.9910736083984,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 779.9910736083984,
+                            "y": 150
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:07:171985"
+            },
+            {
+                "__gohashid": 72658,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:07:231987",
+                "key": "线上政务模式/2021/4/16 下午7:08:461992",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1750,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1009.9927520751953,
+                            "y": 795
+                        },
+                        {
+                            "s": true,
+                            "x": 999.9927520751953,
+                            "y": 795
+                        },
+                        {
+                            "s": true,
+                            "x": 996,
+                            "y": 795
+                        },
+                        {
+                            "s": true,
+                            "x": 996,
+                            "y": 868
+                        },
+                        {
+                            "s": true,
+                            "x": 708,
+                            "y": 868
+                        },
+                        {
+                            "s": true,
+                            "x": 708,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 609.4910736083984,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 589.4910736083984,
+                            "y": 1096
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:08:441991"
+            },
+            {
+                "__gohashid": 92341,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:07:231987",
+                "key": "线上政务模式/2021/4/16 下午7:11:492008",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1756,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1069.9927520751953,
+                            "y": 755
+                        },
+                        {
+                            "s": true,
+                            "x": 1069.9927520751953,
+                            "y": 745
+                        },
+                        {
+                            "s": true,
+                            "x": 1069.9927520751953,
+                            "y": 745
+                        },
+                        {
+                            "s": true,
+                            "x": 1080,
+                            "y": 745
+                        },
+                        {
+                            "s": true,
+                            "x": 1080,
+                            "y": 482.5
+                        },
+                        {
+                            "s": true,
+                            "x": 1080,
+                            "y": 472.5
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:11:472007"
+            },
+            {
+                "__gohashid": 72813,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:07:251988",
+                "key": "线上政务模式/2021/4/16 下午7:08:481993",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1764,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 830,
+                            "y": 491
+                        },
+                        {
+                            "s": true,
+                            "x": 830,
+                            "y": 501
+                        },
+                        {
+                            "s": true,
+                            "x": 830,
+                            "y": 501
+                        },
+                        {
+                            "s": true,
+                            "x": 740,
+                            "y": 501
+                        },
+                        {
+                            "s": true,
+                            "x": 740,
+                            "y": 868
+                        },
+                        {
+                            "s": true,
+                            "x": 529.4910736083984,
+                            "y": 868
+                        },
+                        {
+                            "s": true,
+                            "x": 529.4910736083984,
+                            "y": 1036
+                        },
+                        {
+                            "s": true,
+                            "x": 529.4910736083984,
+                            "y": 1056
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:08:441991"
+            },
+            {
+                "__gohashid": 91511,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:07:251988",
+                "key": "线上政务模式/2021/4/16 下午7:11:342005",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1770,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 890,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 420
+                        },
+                        {
+                            "s": true,
+                            "x": 1156,
+                            "y": 420
+                        },
+                        {
+                            "s": true,
+                            "x": 1156,
+                            "y": 443.8333333333333
+                        },
+                        {
+                            "s": true,
+                            "x": 1294.7,
+                            "y": 443.8333333333333
+                        },
+                        {
+                            "s": true,
+                            "x": 1312.7,
+                            "y": 443.8333333333333
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:11:232004"
+            },
+            {
+                "__gohashid": 73410,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:08:441991",
+                "key": "线上政务模式/2021/4/16 下午7:09:111995",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1685,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 589.4910736083984,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 599.4910736083984,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 649.4910736083984,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 649.4910736083984,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 699.4910736083984,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 719.4910736083984,
+                            "y": 1096
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:09:091994"
+            },
+            {
+                "__gohashid": 90668,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:08:441991",
+                "key": "线上政务模式/2021/4/16 下午7:11:002002",
+                "points": {
+                    "Aa": 9,
+                    "Fa": null,
+                    "__gohashid": 1774,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 529.4910736083984,
+                            "y": 1136
+                        },
+                        {
+                            "s": true,
+                            "x": 529.4910736083984,
+                            "y": 1146
+                        },
+                        {
+                            "s": true,
+                            "x": 529.4910736083984,
+                            "y": 1148
+                        },
+                        {
+                            "s": true,
+                            "x": 529.4910736083984,
+                            "y": 1148
+                        },
+                        {
+                            "s": true,
+                            "x": 529.4910736083984,
+                            "y": 1251.9196134558526
+                        },
+                        {
+                            "s": true,
+                            "x": 646.6943549290544,
+                            "y": 1251.9196134558526
+                        },
+                        {
+                            "s": true,
+                            "x": 656.6943549290544,
+                            "y": 1251.9196134558526
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:10:542001"
+            },
+            {
+                "__gohashid": 76781,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:09:091994",
+                "key": "线上政务模式/2021/4/16 下午7:09:501997",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1784,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 839.4910736083984,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 849.4910736083984,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 852,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 852,
+                            "y": 1119
+                        },
+                        {
+                            "s": true,
+                            "x": 1310.7575073242188,
+                            "y": 1119
+                        },
+                        {
+                            "s": true,
+                            "x": 1330.7575073242188,
+                            "y": 1119
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:09:481996"
+            },
+            {
+                "__gohashid": 87608,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:10:271998",
+                "key": "线上政务模式/2021/4/16 下午7:10:351999",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1800,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 819.9927520751953,
+                            "y": 773.5
+                        },
+                        {
+                            "s": true,
+                            "x": 819.9927520751953,
+                            "y": 763.5
+                        },
+                        {
+                            "s": true,
+                            "x": 819.9927520751953,
+                            "y": 763.5
+                        },
+                        {
+                            "s": true,
+                            "x": 764,
+                            "y": 763.5
+                        },
+                        {
+                            "s": true,
+                            "x": 764,
+                            "y": 404
+                        },
+                        {
+                            "s": true,
+                            "x": 561.4910736083984,
+                            "y": 404
+                        },
+                        {
+                            "s": true,
+                            "x": 561.4910736083984,
+                            "y": 200
+                        },
+                        {
+                            "s": true,
+                            "x": 561.4910736083984,
+                            "y": 190
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:06:251981"
+            },
+            {
+                "__gohashid": 90786,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:10:542001",
+                "key": "线上政务模式/2021/4/16 下午7:11:012003",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1795,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 673.9943549290545,
+                            "y": 1230.4196134558526
+                        },
+                        {
+                            "s": true,
+                            "x": 673.9943549290545,
+                            "y": 1220.4196134558526
+                        },
+                        {
+                            "s": true,
+                            "x": 673.9943549290545,
+                            "y": 1220
+                        },
+                        {
+                            "s": true,
+                            "x": 779.4910736083984,
+                            "y": 1220
+                        },
+                        {
+                            "s": true,
+                            "x": 779.4910736083984,
+                            "y": 1146
+                        },
+                        {
+                            "s": true,
+                            "x": 779.4910736083984,
+                            "y": 1136
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:09:091994"
+            },
+            {
+                "__gohashid": 91633,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:11:232004",
+                "key": "线上政务模式/2021/4/16 下午7:11:362006",
+                "points": {
+                    "Aa": 9,
+                    "Fa": null,
+                    "__gohashid": 2089,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1312.7,
+                            "y": 458.1666666666667
+                        },
+                        {
+                            "s": true,
+                            "x": 1302.7,
+                            "y": 458.1666666666667
+                        },
+                        {
+                            "s": true,
+                            "x": 1300,
+                            "y": 458.1666666666667
+                        },
+                        {
+                            "s": true,
+                            "x": 1300,
+                            "y": 868
+                        },
+                        {
+                            "s": true,
+                            "x": 549.4910736083984,
+                            "y": 868
+                        },
+                        {
+                            "s": true,
+                            "x": 549.4910736083984,
+                            "y": 1046
+                        },
+                        {
+                            "s": true,
+                            "x": 549.4910736083984,
+                            "y": 1056
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:08:441991"
+            },
+            {
+                "__gohashid": 94494,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:11:472007",
+                "key": "线上政务模式/2021/4/16 下午7:11:522009",
+                "points": {
+                    "Aa": 11,
+                    "Fa": null,
+                    "__gohashid": 2103,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1062.7,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 1052.7,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 1052,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 1052,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 996,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 996,
+                            "y": 868
+                        },
+                        {
+                            "s": true,
+                            "x": 509.49107360839844,
+                            "y": 868
+                        },
+                        {
+                            "s": true,
+                            "x": 509.49107360839844,
+                            "y": 1038
+                        },
+                        {
+                            "s": true,
+                            "x": 509.49107360839844,
+                            "y": 1056
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:08:441991"
+            },
+            {
+                "__gohashid": 5267,
+                "category": "controlFlow",
+                "controlFlowNo": false,
+                "controlFlowYes": true,
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:07:171985",
+                "key": "最多跑一次2.0_推荐_1/2021/4/17 上午9:20:201173",
+                "points": {
+                    "Aa": 12,
+                    "Fa": null,
+                    "__gohashid": 2117,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 811.4910736083984,
+                            "y": 181.5
+                        },
+                        {
+                            "s": true,
+                            "x": 811.4910736083984,
+                            "y": 191.5
+                        },
+                        {
+                            "s": true,
+                            "x": 811.4910736083984,
+                            "y": 188
+                        },
+                        {
+                            "s": true,
+                            "x": 811.4910736083984,
+                            "y": 188
+                        },
+                        {
+                            "s": true,
+                            "x": 811.4910736083984,
+                            "y": 228
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 228
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 524
+                        },
+                        {
+                            "s": true,
+                            "x": 1069.9927520751953,
+                            "y": 524
+                        },
+                        {
+                            "s": true,
+                            "x": 1069.9927520751953,
+                            "y": 735
+                        },
+                        {
+                            "s": true,
+                            "x": 1069.9927520751953,
+                            "y": 755
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:07:231987",
+                "yesOrNo": true
+            },
+            {
+                "__gohashid": 5694,
+                "category": "controlFlow",
+                "controlFlowNo": true,
+                "controlFlowYes": false,
+                "data_properties": {},
+                "from": "线上政务模式/2021/4/16 下午7:07:171985",
+                "key": "最多跑一次2.0_推荐_1/2021/4/17 上午9:20:391174",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 2137,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 811.4910736083984,
+                            "y": 181.5
+                        },
+                        {
+                            "s": true,
+                            "x": 811.4910736083984,
+                            "y": 191.5
+                        },
+                        {
+                            "s": true,
+                            "x": 811.4910736083984,
+                            "y": 291.25
+                        },
+                        {
+                            "s": true,
+                            "x": 830,
+                            "y": 291.25
+                        },
+                        {
+                            "s": true,
+                            "x": 830,
+                            "y": 391
+                        },
+                        {
+                            "s": true,
+                            "x": 830,
+                            "y": 411
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "线上政务模式/2021/4/16 下午7:07:251988",
+                "yesOrNo": true
+            },
+            {
+                "__gohashid": 6080,
+                "category": "controlFlow",
+                "controlFlowNo": false,
+                "controlFlowYes": true,
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:30:441732",
+                "key": "最多跑一次2.0_推荐_1/2021/4/17 上午9:20:591175",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 6868,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 361.5,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 371.5,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 371.5,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 371.5,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 500,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 520,
+                            "y": 451
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:29:421728",
+                "yesOrNo": true
+            },
+            {
+                "__gohashid": 6329,
+                "category": "controlFlow",
+                "controlFlowNo": true,
+                "controlFlowYes": false,
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:30:441732",
+                "key": "最多跑一次2.0_推荐_1/2021/4/17 上午9:21:231176",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 7116,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 482.5
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 492.5
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 492
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 492
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 532
+                        },
+                        {
+                            "s": true,
+                            "x": 319.9927520751953,
+                            "y": 532
+                        },
+                        {
+                            "s": true,
+                            "x": 319.9927520751953,
+                            "y": 692
+                        },
+                        {
+                            "s": true,
+                            "x": 319.9927520751953,
+                            "y": 712
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:30:041729",
+                "yesOrNo": true
+            },
+            {
+                "__gohashid": 70152,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能政务导引服务模式/2021/4/16 下午6:29:141726",
+                "key": "最多跑一次2.0_推荐_1/2021/4/18 下午11:24:101403",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 2147,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 311.49107360839844,
+                            "y": 190
+                        },
+                        {
+                            "s": true,
+                            "x": 311.49107360839844,
+                            "y": 200
+                        },
+                        {
+                            "s": true,
+                            "x": 311.49107360839844,
+                            "y": 204
+                        },
+                        {
+                            "s": true,
+                            "x": 402.9927520751953,
+                            "y": 204
+                        },
+                        {
+                            "s": true,
+                            "x": 402.9927520751953,
+                            "y": 556
+                        },
+                        {
+                            "s": true,
+                            "x": 402.9927520751953,
+                            "y": 576
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能政务导引服务模式/2021/4/16 下午6:30:041729"
+            }
+        ],
+        "nodes": [
+            {
+                "__gohashid": 8980,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Sat Apr 17 01:19:20 20212799",
+                "id": "政务服务概念/政府部门",
+                "isGroup": "true",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:25:323",
+                "loc": "-10.508926391601562 1044",
+                "name": "政务服务概念/政府部门",
+                "object_properties": [],
+                "participant": "政务服务概念/政府部门",
+                "props": [],
+                "size": "2100 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 8981,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Sat Apr 17 01:19:20 20212799",
+                "id": "政务服务概念/个人",
+                "isGroup": "true",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:25:324",
+                "loc": "-10.508926391601562 743",
+                "name": "政务服务概念/个人",
+                "object_properties": [],
+                "participant": "政务服务概念/个人",
+                "props": [],
+                "size": "2100 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 8982,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Sat Apr 17 01:19:20 20212799",
+                "id": "政务服务概念/企业",
+                "isGroup": "true",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:25:325",
+                "loc": "-10.508926391601562 399",
+                "name": "政务服务概念/企业",
+                "object_properties": [],
+                "participant": "政务服务概念/企业",
+                "props": [],
+                "size": "2100 342.4351852416992",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 8983,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Sat Apr 17 01:19:20 20212799",
+                "id": "人工智能服务/AI服务提供商",
+                "isGroup": "true",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:25:326",
+                "loc": "-10.508926391601548 98",
+                "name": "人工智能服务/AI服务提供商",
+                "object_properties": [],
+                "participant": "人工智能服务/AI服务提供商",
+                "props": [],
+                "size": "2100 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 13771,
+                "bindTo": [],
+                "category": "start",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"start\")\n\ntoken.data['start_step'] = model.step_count\ntoken.data['cost'] = 10\ntoken.data['CoopTime'] = 10\ntoken.data['SR'] = 0.962  # 满意度",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:323",
+                "id": "BPMN概念/StartEvent-2",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:26:361721",
+                "loc": "29.491073608398438 1096",
+                "name": "BPMN概念/StartEvent-2",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/StartEvent"
+                ]
+            },
+            {
+                "__gohashid": 14084,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random \nreturn random.randint(30,60)",
+                        "type": "computed"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"构建完毕\")\ntoken.data['cost'] = token.data['cost'] + random.random()*100",
+                        "type": "computed"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:323",
+                "id": "构建政务知识图谱",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:26:411722",
+                "loc": "279.49107360839844 1096",
+                "name": "构建政务知识图谱",
+                "object_properties": [],
+                "type": [
+                    "人工智能服务/知识图谱构建"
+                ]
+            },
+            {
+                "__gohashid": 14413,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "15",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"构建完毕\")\ntoken.data['cost'] = token.data['cost'] + random.random()*100",
+                        "type": "computed"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:326",
+                "id": "搭建智能推理平台",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:26:451724",
+                "loc": "131.49107360839844 210",
+                "name": "搭建智能推理平台",
+                "object_properties": [],
+                "type": [
+                    "人工智能服务/智能推理子平台搭建"
+                ]
+            },
+            {
+                "__gohashid": 22300,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn random.randint(5,13)",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"生成完毕\")\ntoken.data['cost'] = token.data['cost'] + random.random()*10",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:326",
+                "id": "推理规则生成",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:29:141726",
+                "loc": "311.49107360839844 150",
+                "name": "推理规则生成",
+                "object_properties": [],
+                "type": [
+                    "人工智能服务/推理规则生成"
+                ]
+            },
+            {
+                "__gohashid": 28937,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn random.randint(3,8)",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"导引完毕\")\ntoken.data['cost'] = token.data['cost'] + random.random()*3",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:325",
+                "id": "智能导引个人服务",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:29:421728",
+                "loc": "580 451",
+                "name": "智能导引个人服务",
+                "object_properties": [],
+                "type": [
+                    "人工智能服务/智能导引"
+                ]
+            },
+            {
+                "__gohashid": 30010,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "3",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"导引完毕\")\ntoken.data['cost'] = token.data['cost'] + random.random()*3",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:325",
+                "id": "法人导引服务",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:30:041729",
+                "loc": "402.9927520751953 616",
+                "name": "法人导引服务",
+                "object_properties": [],
+                "type": [
+                    "人工智能服务/智能导引"
+                ]
+            },
+            {
+                "__gohashid": 69445,
+                "bindTo": [],
+                "category": "exclusive",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/condition": {
+                        "isPattern": true,
+                        "text": "return True",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:326",
+                "id": "是否是个人",
+                "key": "线上政务模式/2021/4/16 下午7:07:171985",
+                "loc": "811.4910736083984 150",
+                "name": "是否是个人",
+                "object_properties": [],
+                "type": "BPMN概念/ExclusiveGateWay"
+            },
+            {
+                "__gohashid": 35732,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:324",
+                "id": "connectNode",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:31:301736",
+                "loc": "569.9927520751953 795",
+                "name": "connectNode",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/task"
+                ]
+            },
+            {
+                "__gohashid": 37099,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:324",
+                "id": "政务数据",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:31:401739",
+                "loc": "69.99275207519531 795",
+                "name": "政务数据",
+                "object_properties": [],
+                "type": [
+                    "政务服务概念/办件数据"
+                ]
+            },
+            {
+                "__gohashid": 38057,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:325",
+                "id": "语义schema",
+                "key": "智能政务导引服务模式/2021/4/16 下午6:32:081742",
+                "loc": "80 451",
+                "name": "语义schema",
+                "object_properties": [],
+                "type": [
+                    "人工智能服务/语义schema"
+                ]
+            },
+            {
+                "__gohashid": 65547,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "5",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"上线完毕\")\ntoken.data['cost'] = token.data['cost'] + random.random()*6",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:326",
+                "id": "办件上线",
+                "key": "线上政务模式/2021/4/16 下午7:06:251981",
+                "loc": "561.4910736083984 150",
+                "name": "办件上线",
+                "objectProperty": {
+                    "CarrierIs": "云服务概念/云服务平台"
+                },
+                "object_properties": [],
+                "type": [
+                    "政务服务概念/办件上线"
+                ]
+            },
+            {
+                "__gohashid": 70515,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "3",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"提交完毕\")\n",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:324",
+                "id": "个人提交办件请求",
+                "key": "线上政务模式/2021/4/16 下午7:07:231987",
+                "loc": "1069.9927520751953 795",
+                "name": "个人提交办件请求",
+                "objectProperty": {
+                    "CarrierIs": "政务服务概念/政务中台"
+                },
+                "object_properties": [],
+                "type": [
+                    "政务服务概念/办件提交"
+                ]
+            },
+            {
+                "__gohashid": 70754,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "3",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"提交完毕\")\n",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:325",
+                "id": "企业提交办件请求",
+                "key": "线上政务模式/2021/4/16 下午7:07:251988",
+                "loc": "830 451",
+                "name": "企业提交办件请求",
+                "objectProperty": {
+                    "CarrierIs": "政务服务概念/政务中台"
+                },
+                "object_properties": [],
+                "type": [
+                    "政务服务概念/办件提交"
+                ]
+            },
+            {
+                "__gohashid": 72458,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn random.randint(3,10)",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"处理完毕\")\ntoken.data['cost'] = token.data['cost'] + random.randint(1,4)\n",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:323",
+                "id": "反馈办件结果",
+                "key": "线上政务模式/2021/4/16 下午7:08:441991",
+                "loc": "529.4910736083984 1096",
+                "name": "反馈办件结果",
+                "object_properties": [],
+                "type": [
+                    "政务服务概念/办件结果反馈"
+                ]
+            },
+            {
+                "__gohashid": 73215,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "2",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"分析完毕\")\ntoken.data['SR'] = (token.data['SR']+ramdom.randint(7,10)/10)/2",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:323",
+                "id": "用户满意度分析",
+                "key": "线上政务模式/2021/4/16 下午7:09:091994",
+                "loc": "779.4910736083984 1096",
+                "name": "用户满意度分析",
+                "objectProperty": {
+                    "CarrierIs": "政务服务概念/数据中台"
+                },
+                "object_properties": [],
+                "type": [
+                    "政务服务概念/评价提交"
+                ]
+            },
+            {
+                "__gohashid": 76591,
+                "bindTo": [],
+                "category": "end",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "end_step=model.step_count\nstart_step=token.data['start_step']\ntime = end_step-start_step\n\n\navg_process = model.instance_base.findByName(\"平均运行时间\")\ntotal = avg_process.amount*avg_process.quota_dscp\n\n\navg_process.amount = avg_process.amount+1\navg_process.quota_dscp = (total+time)/avg_process.amount\n\n\navg_cost=model.instance_base.findByName(\"平均运行成本\")\nprocess_cost= token.data['cost']\ntotal_cost=avg_cost.amount*avg_cost.quota_dscp\navg_cost.amount=avg_cost.amount+1\navg_cost.quota_dscp = (total_cost+process_cost)/avg_cost.amount\n\navg_CoopTime = model.instance_base.findByName(\"政务协同时间\")\nprocess_CoopTime = token.data['CoopTime']\ntotal_CoopTime = avg_CoopTime.amount*avg_CoopTime.quota_dscp\navg_CoopTime.amount = avg_CoopTime.amount+1\navg_CoopTime.quota_dscp = (total_CoopTime+process_CoopTime)/avg_CoopTime.amount\n\navg_SR = model.instance_base.findByName(\"用户满意度\")\nprocess_SR = token.data['SR']\ntotal_SR = avg_SR.amount*avg_SR.quota_dscp\navg_SR.amount = avg_SR.amount+1\navg_SR.quota_dscp = (total_SR+process_SR)/avg_SR.amount\n\n",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:323",
+                "id": "BPMN概念/EndEvent-1",
+                "key": "线上政务模式/2021/4/16 下午7:09:481996",
+                "loc": "1279.4910736083984 1096",
+                "name": "BPMN概念/EndEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/EndEvent"
+                ]
+            },
+            {
+                "__gohashid": 87192,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:324",
+                "id": "办件政务数据",
+                "key": "线上政务模式/2021/4/16 下午7:10:271998",
+                "loc": "819.9927520751953 795",
+                "name": "办件政务数据",
+                "object_properties": [],
+                "type": [
+                    "政务服务概念/办件数据"
+                ]
+            },
+            {
+                "__gohashid": 88118,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn random.random()*10",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"提交评价数据\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:323",
+                "id": "用户评价",
+                "key": "线上政务模式/2021/4/16 下午7:10:542001",
+                "loc": "673.9943549290543 1251.9196134558526",
+                "name": "用户评价",
+                "object_properties": [],
+                "type": [
+                    "政务服务概念/服务评价数据"
+                ]
+            },
+            {
+                "__gohashid": 91315,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:325",
+                "id": "企业办件材料",
+                "key": "线上政务模式/2021/4/16 下午7:11:232004",
+                "loc": "1330 451",
+                "name": "企业办件材料",
+                "object_properties": [],
+                "type": [
+                    "政务服务概念/事项清单"
+                ]
+            },
+            {
+                "__gohashid": 91959,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "智能政务导引服务模式/2021/4/16 下午6:25:325",
+                "id": "个人办件材料",
+                "key": "线上政务模式/2021/4/16 下午7:11:472007",
+                "loc": "1080 451",
+                "name": "个人办件材料",
+                "object_properties": [],
+                "type": [
+                    "政务服务概念/事项清单"
+                ]
+            },
+            {
+                "__gohashid": "43eeb28c372d496d8b0642b77ebb4397",
+                "category": "Pool",
+                "isGroup": "true",
+                "key": "Sat Apr 17 01:19:20 20212799",
+                "loc": "-37.0317738899095 98",
+                "name": "最多跑一次2.0",
+                "type": "BPMN概念/LaneSet"
+            }
+        ],
+        "resource_config": {}
+    }
+}
