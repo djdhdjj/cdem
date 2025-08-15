@@ -1,0 +1,168 @@
+{
+    "config": {
+        "id": "1615541584.53159_248395",
+        "name": "52_推荐_2"
+    },
+    "elements": {},
+    "evaluate_config": {},
+    "fusion_args": {
+        "mapping": {
+            "传统医疗服务模式/3/4/2021 5:08:04 PM1": "原子2/3/4/2021 5:19:28 PM1"
+        },
+        "name": "52",
+        "name_mapping": {
+            "医疗/医生": "医疗/医生"
+        },
+        "patterns": [
+            "传统医疗服务模式",
+            "原子2"
+        ],
+        "relation": "call",
+        "structure": 0,
+        "theta": 0.30000000000000004
+    },
+    "links": [
+        {
+            "__gohashid": 5566,
+            "category": "controlFlow",
+            "data_properties": {},
+            "from": "传统医疗服务模式/3/4/2021 5:08:45 PM763",
+            "key": "传统医疗服务模式/3/4/2021 5:10:26 PM768",
+            "to": "传统医疗服务模式/3/4/2021 5:08:53 PM764"
+        },
+        {
+            "__gohashid": 5751,
+            "category": "controlFlow",
+            "data_properties": {},
+            "from": "传统医疗服务模式/3/4/2021 5:08:53 PM764",
+            "key": "传统医疗服务模式/3/4/2021 5:10:28 PM769",
+            "to": "传统医疗服务模式/3/4/2021 5:09:34 PM765"
+        },
+        {
+            "__gohashid": 5876,
+            "category": "controlFlow",
+            "data_properties": {},
+            "from": "传统医疗服务模式/3/4/2021 5:09:34 PM765",
+            "key": "传统医疗服务模式/3/4/2021 5:10:30 PM770",
+            "to": "传统医疗服务模式/3/4/2021 5:10:03 PM766"
+        },
+        {
+            "__gohashid": 6040,
+            "category": "controlFlow",
+            "data_properties": {},
+            "from": "传统医疗服务模式/3/4/2021 5:10:03 PM766",
+            "key": "传统医疗服务模式/3/4/2021 5:10:32 PM771",
+            "to": "传统医疗服务模式/3/4/2021 5:10:20 PM767"
+        }
+    ],
+    "nodes": [
+        {
+            "__gohashid": 2487,
+            "category": "Lane",
+            "data_properties": {},
+            "goal": [],
+            "group": "Fri Mar 12 09:33:04 20211561",
+            "isGroup": "true",
+            "key": "传统医疗服务模式/3/4/2021 5:08:04 PM1",
+            "loc": "40 900",
+            "name": "医疗/医生",
+            "participant": "医疗/医生",
+            "props": [],
+            "size": "1050 300",
+            "superProps": {},
+            "type": "BPMN概念/Lane"
+        },
+        {
+            "__gohashid": 2488,
+            "category": "Lane",
+            "data_properties": {},
+            "goal": [],
+            "group": "Fri Mar 12 09:33:04 20211561",
+            "isGroup": "true",
+            "key": "传统医疗服务模式/3/4/2021 5:08:04 PM2",
+            "loc": "40 600",
+            "name": "医疗/患者",
+            "participant": "医疗/患者",
+            "props": [],
+            "size": "1050 300",
+            "superProps": {},
+            "type": "BPMN概念/Lane"
+        },
+        {
+            "__gohashid": 3210,
+            "category": "start",
+            "data_properties": {},
+            "group": "传统医疗服务模式/3/4/2021 5:08:04 PM2",
+            "key": "传统医疗服务模式/3/4/2021 5:08:45 PM763",
+            "loc": "80 450",
+            "name": "开始",
+            "type": "BPMN概念/StartEvent"
+        },
+        {
+            "__gohashid": 3612,
+            "category": "task",
+            "data_properties": {},
+            "group": "传统医疗服务模式/3/4/2021 5:08:04 PM2",
+            "key": "传统医疗服务模式/3/4/2021 5:08:53 PM764",
+            "loc": "330 450",
+            "name": "挂号",
+            "type": "医疗/挂号"
+        },
+        {
+            "__gohashid": 4442,
+            "category": "task",
+            "data_properties": {},
+            "group": "传统医疗服务模式/3/4/2021 5:08:04 PM1",
+            "key": "传统医疗服务模式/3/4/2021 5:09:34 PM765",
+            "loc": "80 750",
+            "name": "付费",
+            "type": "医疗/付费"
+        },
+        {
+            "__gohashid": 4931,
+            "category": "task",
+            "data_properties": {},
+            "group": "传统医疗服务模式/3/4/2021 5:08:04 PM1",
+            "key": "传统医疗服务模式/3/4/2021 5:10:03 PM766",
+            "loc": "330 750",
+            "name": "做检查",
+            "type": "医疗/做检查"
+        },
+        {
+            "__gohashid": 5357,
+            "category": "end",
+            "data_properties": {},
+            "group": "传统医疗服务模式/3/4/2021 5:08:04 PM1",
+            "key": "传统医疗服务模式/3/4/2021 5:10:20 PM767",
+            "loc": "580 750",
+            "name": "结束",
+            "type": "BPMN概念/EndEvent"
+        },
+        {
+            "__gohashid": 2488,
+            "category": "Lane",
+            "data_properties": {},
+            "goal": [],
+            "group": "Fri Mar 12 09:33:04 20211561",
+            "isGroup": "true",
+            "key": "原子2/3/4/2021 5:19:28 PM2",
+            "loc": "40 300",
+            "name": "医疗/患者",
+            "participant": "医疗/患者",
+            "props": [],
+            "size": "1050 300",
+            "superProps": {},
+            "type": "BPMN概念/Lane"
+        },
+        {
+            "__gohashid": "a2c01dfd4ba54a46a18b1bbac92d29f1",
+            "category": "Pool",
+            "isGroup": "true",
+            "key": "Fri Mar 12 09:33:04 20211561",
+            "loc": "0 0",
+            "name": "52",
+            "type": "BPMN概念/LaneSet"
+        }
+    ],
+    "resource_config": {}
+}
