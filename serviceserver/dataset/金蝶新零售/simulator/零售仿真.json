@@ -1,0 +1,1734 @@
+{
+    "config": {
+        "id": "2021/3/9 上午9:27:11899",
+        "maxStep": "1000",
+        "maxTime": null,
+        "name": "零售仿真"
+    },
+    "instance_base": {
+        "config": {},
+        "groups": [
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/3/10 上午9:33:46822",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "零售/买家"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/3/10 上午9:33:58823",
+                        "name": "交割货物",
+                        "object_properties": [],
+                        "type": [
+                            "物流/交割货物"
+                        ]
+                    }
+                ],
+                "name": "交割货物",
+                "num": 10,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/3/10 上午9:32:15818",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "零售/卖家"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/3/10 上午9:32:31819",
+                        "name": "订单发货",
+                        "object_properties": [],
+                        "type": [
+                            "零售/订单发货"
+                        ]
+                    }
+                ],
+                "name": "订单发货",
+                "num": 10,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/3/10 上午9:31:20816",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "零售/卖家",
+                            "零售/买家"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/3/10 上午9:31:53817",
+                        "name": "订单报价",
+                        "object_properties": [],
+                        "type": [
+                            "零售/订单报价"
+                        ]
+                    }
+                ],
+                "name": "订单报价",
+                "num": 10,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/3/10 上午9:29:20809",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "零售/卖家"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/3/10 上午9:29:34810",
+                        "name": "商家求售",
+                        "object_properties": [],
+                        "type": [
+                            "零售/商家求售"
+                        ]
+                    }
+                ],
+                "name": "店家求售",
+                "num": 10,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/3/10 上午9:30:44814",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "零售/卖家"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/3/10 上午9:30:53815",
+                        "name": "商家求购",
+                        "object_properties": [],
+                        "type": [
+                            "零售/商家求购"
+                        ]
+                    }
+                ],
+                "name": "商家求购",
+                "num": 10,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/3/10 上午9:32:48820",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "零售/物流公司"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/3/10 上午9:32:56821",
+                        "name": "订单运输",
+                        "object_properties": [],
+                        "type": [
+                            "物流/装货运输"
+                        ]
+                    }
+                ],
+                "name": "订单运输",
+                "num": 10,
+                "type": []
+            }
+        ],
+        "instances": [
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2021/3/10 上午9:35:13824",
+                "name": "Process平均运行时间",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            }
+        ],
+        "relations": []
+    },
+    "name": "零售仿真",
+    "node2binding_relations": {
+        "交割货物": [
+            "零售/买家"
+        ],
+        "商家求售": [
+            "零售/卖家"
+        ],
+        "商家求购": [
+            "零售/卖家"
+        ],
+        "订单发货": [
+            "零售/卖家"
+        ],
+        "订单报价": [
+            "零售/卖家",
+            "零售/买家"
+        ],
+        "订单运输": [
+            "零售/物流公司"
+        ]
+    },
+    "pattern_instance_base": {
+        "config": {
+            "id": "2021/1/19 上午10:02:13724",
+            "name": "零售"
+        },
+        "groups": [],
+        "instances": [
+            {
+                "__gohashid": 24240,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\n\nreturn round(random.uniform(0,0.5))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "零售/2021/1/19 上午10:06:142",
+                "id": "订单报价",
+                "key": "零售/2021/1/19 上午10:09:26746",
+                "loc": "397.615 337.04",
+                "name": "订单报价",
+                "object_properties": [],
+                "type": [
+                    "零售/订单报价"
+                ]
+            },
+            {
+                "__gohashid": 10076,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\n\nreturn round(random.uniform(0,0.5))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "零售/2021/1/19 上午10:06:142",
+                "id": "商家求售",
+                "key": "零售/2021/1/19 上午10:07:37737",
+                "loc": "152.91858661987305 336.5025",
+                "name": "商家求售",
+                "object_properties": [],
+                "type": [
+                    "零售/商家求售"
+                ]
+            },
+            {
+                "__gohashid": 33337,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\n\nreturn round(random.uniform(0,0.2))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "零售/2021/1/19 上午10:06:141",
+                "id": "交割货物",
+                "key": "零售/2021/1/19 上午10:10:35754",
+                "loc": "736 121.9375",
+                "name": "交割货物",
+                "object_properties": [],
+                "type": [
+                    "物流/交割货物"
+                ]
+            },
+            {
+                "__gohashid": 2487,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "零售/2021/1/19 上午10:06:140",
+                "id": "零售/买家",
+                "isGroup": true,
+                "key": "零售/2021/1/19 上午10:06:141",
+                "loc": "55.06210988844466 -3.5",
+                "name": "零售/买家",
+                "object_properties": [],
+                "participant": "零售/买家",
+                "props": [],
+                "size": "950.4707270256179 283.37037048339846",
+                "superProps": {},
+                "text": "零售/买家",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 23173,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\n\nreturn round(random.uniform(0,0.5))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "零售/2021/1/19 上午10:06:142",
+                "id": "订单发货",
+                "key": "零售/2021/1/19 上午10:08:54744",
+                "loc": "584.3874999999999 337.91",
+                "name": "订单发货",
+                "object_properties": [],
+                "type": [
+                    "零售/订单发货"
+                ]
+            },
+            {
+                "__gohashid": 2488,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "零售/2021/1/19 上午10:06:140",
+                "id": "零售/卖家",
+                "isGroup": true,
+                "key": "零售/2021/1/19 上午10:06:142",
+                "loc": "55.06210988844466 281.5",
+                "name": "零售/卖家",
+                "object_properties": [],
+                "participant": "零售/卖家",
+                "props": [],
+                "size": "950.4707270256179 305.43516540527344",
+                "superProps": {},
+                "text": "零售/卖家",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 9346,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\n\nreturn round(random.uniform(0,0.5))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "零售/2021/1/19 上午10:06:141",
+                "id": "商家求购",
+                "key": "零售/2021/1/19 上午10:07:18736",
+                "loc": "287 77.9375",
+                "name": "商家求购",
+                "object_properties": [],
+                "type": [
+                    "零售/商家求购"
+                ]
+            },
+            {
+                "__gohashid": 2489,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "零售/2021/1/19 上午10:06:140",
+                "id": "零售/物流公司",
+                "isGroup": true,
+                "key": "零售/2021/1/19 上午10:06:143",
+                "loc": "55.06210988844467 588.5",
+                "name": "零售/物流公司",
+                "object_properties": [],
+                "participant": "零售/物流公司",
+                "props": [],
+                "size": "950.4707270256179 283.37037048339846",
+                "superProps": {},
+                "text": "零售/物流公司",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 3089,
+                "bindTo": [],
+                "category": "start",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"start\")\ntoken.data['start_step']=model.step_count",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "零售/2021/1/19 上午10:06:141",
+                "id": "BPMN概念/StartEvent-1",
+                "key": "零售/2021/1/19 上午10:06:18733",
+                "loc": "76 117.9375",
+                "name": "BPMN概念/StartEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/StartEvent"
+                ]
+            },
+            {
+                "__gohashid": 34397,
+                "bindTo": [],
+                "category": "end",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"end\")\n\nend_step=model.step_count\nstart_step=token.data['start_step']\n\ntime = end_step-start_step\n\navg_process = model.instance_base.findByName(\"Process平均运行时间\")\ntotal = avg_process.amount*avg_process.quota_dscp\n\navg_process.amount = avg_process.amount+1\navg_process.quota_dscp = (total + end_step - start_step) / avg_process.amount",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "零售/2021/1/19 上午10:06:141",
+                "id": "BPMN概念/EndEvent-1",
+                "key": "零售/2021/1/19 上午10:11:05756",
+                "loc": "843 97.9375",
+                "name": "BPMN概念/EndEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/EndEvent"
+                ]
+            },
+            {
+                "__gohashid": 32755,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\n\nreturn round(random.uniform(1,3))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "零售/2021/1/19 上午10:06:143",
+                "id": "装货运输",
+                "key": "零售/2021/1/19 上午10:10:16752",
+                "loc": "584.645 659.27",
+                "name": "装货运输",
+                "object_properties": [],
+                "type": [
+                    "物流/装货运输"
+                ]
+            }
+        ],
+        "relations": [
+            {
+                "__gohashid": 10316,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "零售/2021/1/19 上午10:06:18733",
+                "key": "零售/2021/1/19 上午10:07:51738",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1224,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 173.982666015625,
+                            "y": 139.4375
+                        },
+                        {
+                            "s": true,
+                            "x": 183.982666015625,
+                            "y": 139.4375
+                        },
+                        {
+                            "s": true,
+                            "x": 183.982666015625,
+                            "y": 139.4375
+                        },
+                        {
+                            "s": true,
+                            "x": 183.982666015625,
+                            "y": 77.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 207,
+                            "y": 77.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 227,
+                            "y": 77.9375
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "零售/2021/1/19 上午10:07:18736"
+            },
+            {
+                "__gohashid": 34743,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "零售/2021/1/19 上午10:10:35754",
+                "key": "零售/2021/1/19 上午10:11:08757",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1233,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 796,
+                            "y": 121.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 806,
+                            "y": 121.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 806,
+                            "y": 120.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 806,
+                            "y": 120.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 874.2664337158203,
+                            "y": 120.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 894.2664337158203,
+                            "y": 120.9375
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "零售/2021/1/19 上午10:11:05756"
+            },
+            {
+                "__gohashid": 7584,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "零售/2021/1/19 上午10:09:26746",
+                "key": "零售/2021/3/9 上午9:00:47769",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1296,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 457.615,
+                            "y": 337.04
+                        },
+                        {
+                            "s": true,
+                            "x": 467.615,
+                            "y": 337.04
+                        },
+                        {
+                            "s": true,
+                            "x": 486.00124999999997,
+                            "y": 337.04
+                        },
+                        {
+                            "s": true,
+                            "x": 486.00124999999997,
+                            "y": 337.91
+                        },
+                        {
+                            "s": true,
+                            "x": 504.38749999999993,
+                            "y": 337.91
+                        },
+                        {
+                            "s": true,
+                            "x": 524.3874999999999,
+                            "y": 337.91
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "零售/2021/1/19 上午10:08:54744"
+            },
+            {
+                "__gohashid": 30909,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "零售/2021/1/19 上午10:07:37737",
+                "key": "零售/2021/1/19 上午10:09:53748",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1241,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 212.91858661987305,
+                            "y": 336.5025
+                        },
+                        {
+                            "s": true,
+                            "x": 222.91858661987305,
+                            "y": 336.5025
+                        },
+                        {
+                            "s": true,
+                            "x": 270.26679330993653,
+                            "y": 336.5025
+                        },
+                        {
+                            "s": true,
+                            "x": 270.26679330993653,
+                            "y": 337.04
+                        },
+                        {
+                            "s": true,
+                            "x": 317.615,
+                            "y": 337.04
+                        },
+                        {
+                            "s": true,
+                            "x": 337.615,
+                            "y": 337.04
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "零售/2021/1/19 上午10:09:26746"
+            },
+            {
+                "__gohashid": 33915,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "零售/2021/1/19 上午10:10:16752",
+                "key": "零售/2021/1/19 上午10:10:57755",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1252,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 584.645,
+                            "y": 619.27
+                        },
+                        {
+                            "s": true,
+                            "x": 584.645,
+                            "y": 609.27
+                        },
+                        {
+                            "s": true,
+                            "x": 584.645,
+                            "y": 609.27
+                        },
+                        {
+                            "s": true,
+                            "x": 736,
+                            "y": 609.27
+                        },
+                        {
+                            "s": true,
+                            "x": 736,
+                            "y": 181.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 736,
+                            "y": 161.9375
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "零售/2021/1/19 上午10:10:35754"
+            },
+            {
+                "__gohashid": 10530,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "零售/2021/1/19 上午10:06:18733",
+                "key": "零售/2021/1/19 上午10:07:54739",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1236,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 152.482666015625,
+                            "y": 160.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 152.482666015625,
+                            "y": 170.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 152.91858661987305,
+                            "y": 170.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 152.91858661987305,
+                            "y": 170.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 152.91858661987305,
+                            "y": 276.5025
+                        },
+                        {
+                            "s": true,
+                            "x": 152.91858661987305,
+                            "y": 296.5025
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "零售/2021/1/19 上午10:07:37737"
+            },
+            {
+                "__gohashid": 31097,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "零售/2021/1/19 上午10:07:18736",
+                "key": "零售/2021/1/19 上午10:09:57749",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1242,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 287,
+                            "y": 117.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 287,
+                            "y": 127.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 287,
+                            "y": 127.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 397.615,
+                            "y": 127.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 397.615,
+                            "y": 277.04
+                        },
+                        {
+                            "s": true,
+                            "x": 397.615,
+                            "y": 297.04
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "零售/2021/1/19 上午10:09:26746"
+            },
+            {
+                "__gohashid": 33027,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "零售/2021/1/19 上午10:08:54744",
+                "key": "零售/2021/1/19 上午10:10:30753",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1247,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 584.3874999999999,
+                            "y": 377.91
+                        },
+                        {
+                            "s": true,
+                            "x": 584.3874999999999,
+                            "y": 387.91
+                        },
+                        {
+                            "s": true,
+                            "x": 584.645,
+                            "y": 387.91
+                        },
+                        {
+                            "s": true,
+                            "x": 584.645,
+                            "y": 387.91
+                        },
+                        {
+                            "s": true,
+                            "x": 584.645,
+                            "y": 599.27
+                        },
+                        {
+                            "s": true,
+                            "x": 584.645,
+                            "y": 619.27
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "零售/2021/1/19 上午10:10:16752"
+            }
+        ]
+    },
+    "service pattern": {
+        "config": {
+            "id": "2021/1/19 上午10:02:13724",
+            "name": "零售"
+        },
+        "elements": {
+            "Carrier": [
+                "零售/价值提升平台"
+            ],
+            "Goal": [
+                "零售/完成购物"
+            ],
+            "Participant": [
+                "零售/买家",
+                "零售/卖家",
+                "零售/物流公司"
+            ],
+            "Quota": [
+                "零售/销售量",
+                "零售/顾客满意度",
+                "零售/营业额"
+            ],
+            "Task": [
+                "零售/顾客下单",
+                "零售/商家求购",
+                "零售/商家求售",
+                "零售/订单发货",
+                "零售/订单报价",
+                "物流/装货运输",
+                "物流/交割货物"
+            ],
+            "currencyObject": [
+                "零售/商品"
+            ],
+            "dataObject": [
+                "零售/订单数据",
+                "零售/物流数据"
+            ],
+            "resourceObject": [
+                "零售/商品"
+            ]
+        },
+        "evaluate_config": {
+            "零售/2021/1/19 上午10:06:140": {
+                "name": "BPMN概念/LaneSet-1"
+            },
+            "零售/2021/1/19 上午10:06:141": {
+                "name": "零售/买家"
+            },
+            "零售/2021/1/19 上午10:06:142": {
+                "name": "零售/卖家"
+            },
+            "零售/2021/1/19 上午10:06:143": {
+                "name": "零售/物流公司"
+            },
+            "零售/2021/1/19 上午10:06:18733": {
+                "cost": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "name": "BPMN概念/StartEvent-1",
+                "reliability": {
+                    "n": "1000",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "1",
+                    "type": "constant"
+                }
+            },
+            "零售/2021/1/19 上午10:07:18736": {
+                "cost": {
+                    "m": "5",
+                    "n": "",
+                    "type": "constant"
+                },
+                "duration": {
+                    "mu": "3",
+                    "n": 0,
+                    "sigma": "6",
+                    "type": "constant"
+                },
+                "name": "商家求购",
+                "reliability": {
+                    "n": "",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "",
+                    "type": "constant"
+                }
+            },
+            "零售/2021/1/19 上午10:07:37737": {
+                "cost": {
+                    "m": "5",
+                    "n": "",
+                    "type": "constant"
+                },
+                "duration": {
+                    "mu": "3",
+                    "n": 0,
+                    "sigma": "6",
+                    "type": "constant"
+                },
+                "name": "商家求售",
+                "reliability": {
+                    "n": "",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "",
+                    "type": "constant"
+                }
+            },
+            "零售/2021/1/19 上午10:08:54744": {
+                "cost": {
+                    "mu": "3",
+                    "n": 0,
+                    "sigma": "6",
+                    "type": "constant"
+                },
+                "duration": {
+                    "m": "10",
+                    "n": "",
+                    "type": "constant"
+                },
+                "name": "订单发货",
+                "reliability": {
+                    "n": "",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "",
+                    "type": "constant"
+                }
+            },
+            "零售/2021/1/19 上午10:09:26746": {
+                "cost": {
+                    "m": "5",
+                    "n": "",
+                    "type": "constant"
+                },
+                "duration": {
+                    "mu": "3",
+                    "n": 0,
+                    "sigma": "6",
+                    "type": "constant"
+                },
+                "name": "订单报价",
+                "reliability": {
+                    "n": "",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "",
+                    "type": "constant"
+                }
+            },
+            "零售/2021/1/19 上午10:10:16752": {
+                "cost": {
+                    "m": "6",
+                    "n": "",
+                    "type": "constant"
+                },
+                "duration": {
+                    "mu": "4",
+                    "n": 0,
+                    "sigma": "10",
+                    "type": "constant"
+                },
+                "name": "装货运输",
+                "reliability": {
+                    "n": "",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "",
+                    "type": "constant"
+                }
+            },
+            "零售/2021/1/19 上午10:10:35754": {
+                "cost": {
+                    "m": "6",
+                    "n": "",
+                    "type": "constant"
+                },
+                "duration": {
+                    "mu": "4",
+                    "n": 0,
+                    "sigma": "10",
+                    "type": "constant"
+                },
+                "name": "交割货物",
+                "reliability": {
+                    "n": "",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "",
+                    "type": "constant"
+                }
+            },
+            "零售/2021/1/19 上午10:11:05756": {
+                "cost": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "duration": {
+                    "n": "0.1",
+                    "type": "constant"
+                },
+                "name": "BPMN概念/EndEvent-1",
+                "reliability": {
+                    "n": "1000",
+                    "type": "constant"
+                },
+                "throughput": {
+                    "n": "1",
+                    "type": "constant"
+                }
+            }
+        },
+        "links": [
+            {
+                "__gohashid": 10316,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "零售/2021/1/19 上午10:06:18733",
+                "key": "零售/2021/1/19 上午10:07:51738",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1224,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 173.982666015625,
+                            "y": 139.4375
+                        },
+                        {
+                            "s": true,
+                            "x": 183.982666015625,
+                            "y": 139.4375
+                        },
+                        {
+                            "s": true,
+                            "x": 183.982666015625,
+                            "y": 139.4375
+                        },
+                        {
+                            "s": true,
+                            "x": 183.982666015625,
+                            "y": 77.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 207,
+                            "y": 77.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 227,
+                            "y": 77.9375
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "零售/2021/1/19 上午10:07:18736"
+            },
+            {
+                "__gohashid": 10530,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "零售/2021/1/19 上午10:06:18733",
+                "key": "零售/2021/1/19 上午10:07:54739",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1236,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 152.482666015625,
+                            "y": 160.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 152.482666015625,
+                            "y": 170.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 152.91858661987305,
+                            "y": 170.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 152.91858661987305,
+                            "y": 170.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 152.91858661987305,
+                            "y": 276.5025
+                        },
+                        {
+                            "s": true,
+                            "x": 152.91858661987305,
+                            "y": 296.5025
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "零售/2021/1/19 上午10:07:37737"
+            },
+            {
+                "__gohashid": 30909,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "零售/2021/1/19 上午10:07:37737",
+                "key": "零售/2021/1/19 上午10:09:53748",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1241,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 212.91858661987305,
+                            "y": 336.5025
+                        },
+                        {
+                            "s": true,
+                            "x": 222.91858661987305,
+                            "y": 336.5025
+                        },
+                        {
+                            "s": true,
+                            "x": 270.26679330993653,
+                            "y": 336.5025
+                        },
+                        {
+                            "s": true,
+                            "x": 270.26679330993653,
+                            "y": 337.04
+                        },
+                        {
+                            "s": true,
+                            "x": 317.615,
+                            "y": 337.04
+                        },
+                        {
+                            "s": true,
+                            "x": 337.615,
+                            "y": 337.04
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "零售/2021/1/19 上午10:09:26746"
+            },
+            {
+                "__gohashid": 31097,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "零售/2021/1/19 上午10:07:18736",
+                "key": "零售/2021/1/19 上午10:09:57749",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1242,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 287,
+                            "y": 117.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 287,
+                            "y": 127.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 287,
+                            "y": 127.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 397.615,
+                            "y": 127.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 397.615,
+                            "y": 277.04
+                        },
+                        {
+                            "s": true,
+                            "x": 397.615,
+                            "y": 297.04
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "零售/2021/1/19 上午10:09:26746"
+            },
+            {
+                "__gohashid": 33027,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "零售/2021/1/19 上午10:08:54744",
+                "key": "零售/2021/1/19 上午10:10:30753",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1247,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 584.3874999999999,
+                            "y": 377.91
+                        },
+                        {
+                            "s": true,
+                            "x": 584.3874999999999,
+                            "y": 387.91
+                        },
+                        {
+                            "s": true,
+                            "x": 584.645,
+                            "y": 387.91
+                        },
+                        {
+                            "s": true,
+                            "x": 584.645,
+                            "y": 387.91
+                        },
+                        {
+                            "s": true,
+                            "x": 584.645,
+                            "y": 599.27
+                        },
+                        {
+                            "s": true,
+                            "x": 584.645,
+                            "y": 619.27
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "零售/2021/1/19 上午10:10:16752"
+            },
+            {
+                "__gohashid": 33915,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "零售/2021/1/19 上午10:10:16752",
+                "key": "零售/2021/1/19 上午10:10:57755",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1252,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 584.645,
+                            "y": 619.27
+                        },
+                        {
+                            "s": true,
+                            "x": 584.645,
+                            "y": 609.27
+                        },
+                        {
+                            "s": true,
+                            "x": 584.645,
+                            "y": 609.27
+                        },
+                        {
+                            "s": true,
+                            "x": 736,
+                            "y": 609.27
+                        },
+                        {
+                            "s": true,
+                            "x": 736,
+                            "y": 181.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 736,
+                            "y": 161.9375
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "零售/2021/1/19 上午10:10:35754"
+            },
+            {
+                "__gohashid": 34743,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "零售/2021/1/19 上午10:10:35754",
+                "key": "零售/2021/1/19 上午10:11:08757",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1233,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 796,
+                            "y": 121.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 806,
+                            "y": 121.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 806,
+                            "y": 120.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 806,
+                            "y": 120.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 874.2664337158203,
+                            "y": 120.9375
+                        },
+                        {
+                            "s": true,
+                            "x": 894.2664337158203,
+                            "y": 120.9375
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "零售/2021/1/19 上午10:11:05756"
+            },
+            {
+                "__gohashid": 7584,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "零售/2021/1/19 上午10:09:26746",
+                "key": "零售/2021/3/9 上午9:00:47769",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1296,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 457.615,
+                            "y": 337.04
+                        },
+                        {
+                            "s": true,
+                            "x": 467.615,
+                            "y": 337.04
+                        },
+                        {
+                            "s": true,
+                            "x": 486.00124999999997,
+                            "y": 337.04
+                        },
+                        {
+                            "s": true,
+                            "x": 486.00124999999997,
+                            "y": 337.91
+                        },
+                        {
+                            "s": true,
+                            "x": 504.38749999999993,
+                            "y": 337.91
+                        },
+                        {
+                            "s": true,
+                            "x": 524.3874999999999,
+                            "y": 337.91
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "零售/2021/1/19 上午10:08:54744"
+            }
+        ],
+        "nodes": [
+            {
+                "__gohashid": 2487,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "零售/2021/1/19 上午10:06:140",
+                "id": "零售/买家",
+                "isGroup": true,
+                "key": "零售/2021/1/19 上午10:06:141",
+                "loc": "55.06210988844466 -3.5",
+                "name": "零售/买家",
+                "object_properties": [],
+                "participant": "零售/买家",
+                "props": [],
+                "size": "950.4707270256179 283.37037048339846",
+                "superProps": {},
+                "text": "零售/买家",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 2488,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "零售/2021/1/19 上午10:06:140",
+                "id": "零售/卖家",
+                "isGroup": true,
+                "key": "零售/2021/1/19 上午10:06:142",
+                "loc": "55.06210988844466 281.5",
+                "name": "零售/卖家",
+                "object_properties": [],
+                "participant": "零售/卖家",
+                "props": [],
+                "size": "950.4707270256179 305.43516540527344",
+                "superProps": {},
+                "text": "零售/卖家",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 2489,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "零售/2021/1/19 上午10:06:140",
+                "id": "零售/物流公司",
+                "isGroup": true,
+                "key": "零售/2021/1/19 上午10:06:143",
+                "loc": "55.06210988844467 588.5",
+                "name": "零售/物流公司",
+                "object_properties": [],
+                "participant": "零售/物流公司",
+                "props": [],
+                "size": "950.4707270256179 283.37037048339846",
+                "superProps": {},
+                "text": "零售/物流公司",
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 3089,
+                "bindTo": [],
+                "category": "start",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"start\")\ntoken.data['start_step']=model.step_count",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "零售/2021/1/19 上午10:06:141",
+                "id": "BPMN概念/StartEvent-1",
+                "key": "零售/2021/1/19 上午10:06:18733",
+                "loc": "76 117.9375",
+                "name": "BPMN概念/StartEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/StartEvent"
+                ]
+            },
+            {
+                "__gohashid": 9346,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\n\nreturn round(random.uniform(0,0.5))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "零售/2021/1/19 上午10:06:141",
+                "id": "商家求购",
+                "key": "零售/2021/1/19 上午10:07:18736",
+                "loc": "287 77.9375",
+                "name": "商家求购",
+                "object_properties": [],
+                "type": [
+                    "零售/商家求购"
+                ]
+            },
+            {
+                "__gohashid": 10076,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\n\nreturn round(random.uniform(0,0.5))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "零售/2021/1/19 上午10:06:142",
+                "id": "商家求售",
+                "key": "零售/2021/1/19 上午10:07:37737",
+                "loc": "152.91858661987305 336.5025",
+                "name": "商家求售",
+                "object_properties": [],
+                "type": [
+                    "零售/商家求售"
+                ]
+            },
+            {
+                "__gohashid": 23173,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\n\nreturn round(random.uniform(0,0.5))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "零售/2021/1/19 上午10:06:142",
+                "id": "订单发货",
+                "key": "零售/2021/1/19 上午10:08:54744",
+                "loc": "584.3874999999999 337.91",
+                "name": "订单发货",
+                "object_properties": [],
+                "type": [
+                    "零售/订单发货"
+                ]
+            },
+            {
+                "__gohashid": 24240,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\n\nreturn round(random.uniform(0,0.5))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "零售/2021/1/19 上午10:06:142",
+                "id": "订单报价",
+                "key": "零售/2021/1/19 上午10:09:26746",
+                "loc": "397.615 337.04",
+                "name": "订单报价",
+                "object_properties": [],
+                "type": [
+                    "零售/订单报价"
+                ]
+            },
+            {
+                "__gohashid": 32755,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\n\nreturn round(random.uniform(1,3))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "零售/2021/1/19 上午10:06:143",
+                "id": "装货运输",
+                "key": "零售/2021/1/19 上午10:10:16752",
+                "loc": "584.645 659.27",
+                "name": "装货运输",
+                "object_properties": [],
+                "type": [
+                    "物流/装货运输"
+                ]
+            },
+            {
+                "__gohashid": 33337,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\n\nreturn round(random.uniform(0,0.2))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "零售/2021/1/19 上午10:06:141",
+                "id": "交割货物",
+                "key": "零售/2021/1/19 上午10:10:35754",
+                "loc": "736 121.9375",
+                "name": "交割货物",
+                "object_properties": [],
+                "type": [
+                    "物流/交割货物"
+                ]
+            },
+            {
+                "__gohashid": 34397,
+                "bindTo": [],
+                "category": "end",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"end\")\n\nend_step=model.step_count\nstart_step=token.data['start_step']\n\ntime = end_step-start_step\n\navg_process = model.instance_base.findByName(\"Process平均运行时间\")\ntotal = avg_process.amount*avg_process.quota_dscp\n\navg_process.amount = avg_process.amount+1\navg_process.quota_dscp = (total + end_step - start_step) / avg_process.amount",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "零售/2021/1/19 上午10:06:141",
+                "id": "BPMN概念/EndEvent-1",
+                "key": "零售/2021/1/19 上午10:11:05756",
+                "loc": "843 97.9375",
+                "name": "BPMN概念/EndEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/EndEvent"
+                ]
+            },
+            {
+                "__gohashid": 2486,
+                "category": "Pool",
+                "isGroup": true,
+                "key": "零售/2021/1/19 上午10:06:140",
+                "loc": "28.53926239013672 -3.5",
+                "name": "BPMN概念/LaneSet-1",
+                "type": "BPMN概念/LaneSet"
+            }
+        ],
+        "resource_config": {}
+    }
+}
