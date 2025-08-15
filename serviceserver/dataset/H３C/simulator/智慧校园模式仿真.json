@@ -1,0 +1,4386 @@
+{
+    "config": {
+        "id": "2021/4/2 上午10:22:441216",
+        "maxStep": "1000",
+        "maxTime": null,
+        "name": "智慧校园模式仿真"
+    },
+    "instance_base": {
+        "config": {},
+        "groups": [
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/4/2 下午1:02:401252",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "校园服务/学校"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "4/2/2021 2:17:55 PM908",
+                        "name": "4/2/2021 2:17:55 PM908",
+                        "object_properties": [],
+                        "type": []
+                    }
+                ],
+                "name": "教师",
+                "num": 10,
+                "type": []
+            },
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/4/2 下午12:59:201248",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "校园服务/学生"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "4/2/2021 2:18:01 PM909",
+                        "name": "4/2/2021 2:18:01 PM909",
+                        "object_properties": [],
+                        "type": []
+                    }
+                ],
+                "name": "学生",
+                "num": 10,
+                "type": []
+            }
+        ],
+        "instances": [
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2021/4/2 下午12:59:581249",
+                "name": "平均运行成本",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            },
+            {
+                "bindTo": [
+                    "物联网服务/物联网服务提供商"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2021/4/2 下午1:04:161255",
+                "name": "物联网服务提供商",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2021/4/2 下午1:01:561251",
+                "name": "平均运行时间",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            },
+            {
+                "bindTo": [
+                    "人工智能服务/AI服务提供商"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2021/4/2 下午1:03:371254",
+                "name": "AI服务提供商",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "1",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "0.88",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2021/4/2 下午1:00:571250",
+                "name": "排障成功率",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            },
+            {
+                "bindTo": [
+                    "物联网服务/物联网设备提供商"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2021/4/2 下午1:04:301256",
+                "name": "物联网设备提供商",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            }
+        ],
+        "relations": []
+    },
+    "name": "智慧校园模式仿真",
+    "node2binding_relations": {
+        "4/2/2021 2:17:55 PM908": [
+            "校园服务/学校"
+        ],
+        "4/2/2021 2:18:01 PM909": [
+            "校园服务/学生"
+        ],
+        "AI服务提供商": [
+            "人工智能服务/AI服务提供商"
+        ],
+        "物联网服务提供商": [
+            "物联网服务/物联网服务提供商"
+        ],
+        "物联网设备提供商": [
+            "物联网服务/物联网设备提供商"
+        ]
+    },
+    "pattern_instance_base": {
+        "config": {
+            "id": "1617330054.1751406_3093592",
+            "name": "智慧校园_推荐_7"
+        },
+        "groups": [],
+        "instances": [
+            {
+                "__gohashid": 17197,
+                "bindTo": [],
+                "category": "end",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "end_step=model.step_count\nstart_step=token.data['start_step']\ntime = end_step-start_step\nprint('time:', time)\n\navg_process = model.instance_base.findByName(\"平均运行时间\")\ntotal = avg_process.amount*avg_process.quota_dscp\n\n\navg_process.amount = avg_process.amount+1\navg_process.quota_dscp = (total+time)/avg_process.amount\n\n\navg_cost=model.instance_base.findByName(\"平均运行成本\")\nprocess_cost= token.data['cost']\ntotal_cost=avg_cost.amount*avg_cost.quota_dscp\navg_cost.amount=avg_cost.amount+1\navg_cost.quota_dscp = (total_cost+process_cost)/avg_cost.amount\n\navg_repairRate = model.instance_base.findByName(\"排障成功率\")\nprocess_rate = token.data['RP']\ntotal_rate = avg_repairRate.amount*avg_repairRate.quota_dscp\navg_repairRate.amount = avg_repairRate.amount+1\navg_repairRate.quota_dscp = (total_rate+process_rate)/avg_repairRate.amount",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能排课模式/2021/3/30 上午10:03:273",
+                "id": "BPMN概念/EndEvent-1",
+                "key": "智能考勤模式/2021/3/30 上午10:38:421222",
+                "loc": "1048 1053",
+                "name": "BPMN概念/EndEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/EndEvent"
+                ]
+            },
+            {
+                "__gohashid": 35652,
+                "bindTo": [],
+                "category": "exclusive",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/condition": {
+                        "isPattern": true,
+                        "text": "return True",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能排课模式/2021/3/30 上午10:03:273",
+                "id": "BPMN概念/ExclusiveGateWay-1",
+                "key": "智能答题模式/2021/3/29 下午8:13:02952",
+                "loc": "1298 1053",
+                "name": "BPMN概念/ExclusiveGateWay-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/ExclusiveGateWay"
+                ]
+            },
+            {
+                "__gohashid": 33073,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "智能考勤模式/2021/3/30 上午10:36:033",
+                "id": "学生课程数据",
+                "key": "智能考勤模式/2021/3/30 上午10:41:291230",
+                "loc": "330 451",
+                "name": "学生课程数据",
+                "object_properties": [],
+                "type": [
+                    "校园服务/课程表数据"
+                ]
+            },
+            {
+                "__gohashid": 8207,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\n\nreturn random.randint(5,25)",
+                        "type": "computed"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"录入成功\")",
+                        "type": "computed"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能排课模式/2021/3/30 上午10:03:272",
+                "id": "输入排课数据",
+                "key": "智能排课模式/2021/3/30 上午10:03:59864",
+                "loc": "80 1354",
+                "name": "输入排课数据",
+                "objectProperty": {
+                    "CarrierIs": "人工智能服务/人工智能服务平台"
+                },
+                "object_properties": [],
+                "type": [
+                    "人工智能服务/接受输入"
+                ]
+            },
+            {
+                "__gohashid": 6631,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Fri Apr  2 02:20:54 20212880",
+                "id": "人工智能服务/AI服务提供商",
+                "isGroup": "true",
+                "key": "智能排课模式/2021/3/30 上午10:03:272",
+                "loc": "8 1302",
+                "name": "人工智能服务/AI服务提供商",
+                "object_properties": [],
+                "participant": "人工智能服务/AI服务提供商",
+                "props": [],
+                "size": "2100 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 7805,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"考勤数据传送\")\ntoken.data['cost'] = token.data['cost'] + 0.2",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能考勤模式/2021/3/30 上午10:36:033",
+                "id": "考勤数据传输",
+                "key": "智能考勤模式/2021/3/30 上午10:37:371219",
+                "loc": "580 451",
+                "name": "考勤数据传输",
+                "objectProperty": {
+                    "CarrierIs": "物联网服务/物联网平台"
+                },
+                "object_properties": [],
+                "type": [
+                    "物联网服务/数据传输"
+                ]
+            },
+            {
+                "__gohashid": 11457,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "2",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"排课成功\")\ntoken.data['cost'] = token.data['cost']+ random.int(100,1000)",
+                        "type": "computed"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能排课模式/2021/3/30 上午10:03:272",
+                "id": "智能排课",
+                "key": "智能排课模式/2021/3/30 上午10:04:13866",
+                "loc": "330 1354",
+                "name": "智能排课",
+                "objectProperty": {
+                    "CarrierIs": "人工智能服务/人工智能服务平台"
+                },
+                "object_properties": [],
+                "type": [
+                    "人工智能服务/AI活动"
+                ]
+            },
+            {
+                "__gohashid": 7266,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"检测学生数据\")\ntoken.data['cost'] = token.data['cost']+ 1\n",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能考勤模式/2021/3/30 上午10:36:033",
+                "id": "上课学生检测",
+                "key": "智能考勤模式/2021/3/30 上午10:37:221217",
+                "loc": "80 451",
+                "name": "上课学生检测",
+                "object_properties": [],
+                "type": [
+                    "物联网服务/终端采集数据"
+                ]
+            },
+            {
+                "__gohashid": 11798,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"排课结果输出\")",
+                        "type": "computed"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能排课模式/2021/3/30 上午10:03:272",
+                "id": "输出智能排课结果",
+                "key": "智能排课模式/2021/3/30 上午10:04:22867",
+                "loc": "830 1354",
+                "name": "输出智能排课结果",
+                "objectProperty": {
+                    "CarrierIs": "人工智能服务/人工智能服务平台"
+                },
+                "object_properties": [],
+                "type": [
+                    "人工智能服务/结果输出"
+                ]
+            },
+            {
+                "__gohashid": 6609,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "20",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"开始上课\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能排课模式/2021/3/30 上午10:03:273",
+                "id": "上课",
+                "key": "智能考勤模式/2021/3/30 上午10:36:571215",
+                "loc": "298 1053",
+                "name": "上课",
+                "object_properties": [],
+                "type": [
+                    "校园服务/上课"
+                ]
+            },
+            {
+                "__gohashid": 18632,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Fri Apr  2 02:20:54 20212880",
+                "id": "物联网服务/物联网设备提供商",
+                "isGroup": "true",
+                "key": "智能答题模式/2021/3/29 下午8:08:375",
+                "loc": "8 98",
+                "name": "物联网服务/物联网设备提供商",
+                "object_properties": [],
+                "participant": "物联网服务/物联网设备提供商",
+                "props": [],
+                "size": "2100 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 42208,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn round(random.randint(5,30))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"维护\")\ntoken.data['cost']=token.data['cost']+random.randint(20,100)",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能答题模式/2021/3/29 下午8:08:375",
+                "id": "终端故障维护",
+                "key": "智能答题模式/2021/3/29 下午8:14:23957",
+                "loc": "330 150",
+                "name": "终端故障维护",
+                "object_properties": [],
+                "type": [
+                    "物联网服务/终端维护"
+                ]
+            },
+            {
+                "__gohashid": 7389,
+                "bindTo": [],
+                "category": "start",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"start\")\n\ntoken.data['start_step'] = model.step_count\ntoken.data['cost'] = 0\ntoken.data['RP'] = 0.89  # 维修成功率",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能排课模式/2021/3/30 上午10:03:273",
+                "id": "BPMN概念/StartEvent-1",
+                "key": "智能排课模式/2021/3/30 上午10:03:32861",
+                "loc": "47.99999999999999 1053",
+                "name": "BPMN概念/StartEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/StartEvent"
+                ]
+            },
+            {
+                "__gohashid": 12187,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"下课\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能考勤模式/2021/3/30 上午10:36:031",
+                "id": "学生下课",
+                "key": "智能考勤模式/2021/3/30 上午10:38:061221",
+                "loc": "580 752",
+                "name": "学生下课",
+                "object_properties": [],
+                "type": [
+                    "校园服务/下课"
+                ]
+            },
+            {
+                "__gohashid": 5096,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Fri Apr  2 02:20:54 20212880",
+                "id": "校园服务/学生",
+                "isGroup": "true",
+                "key": "智能考勤模式/2021/3/30 上午10:36:031",
+                "loc": "7.999999999999993 700",
+                "name": "校园服务/学生",
+                "object_properties": [],
+                "participant": "校园服务/学生",
+                "props": [],
+                "size": "2100 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 19770,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "智能排课模式/2021/3/30 上午10:03:272",
+                "id": "教师/课程/学生数据",
+                "key": "智能排课模式/2021/3/30 上午10:05:06876",
+                "loc": "594 1370",
+                "name": "教师/课程/学生数据",
+                "object_properties": [],
+                "type": []
+            },
+            {
+                "__gohashid": 6632,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Fri Apr  2 02:20:54 20212880",
+                "id": "校园服务/学校",
+                "isGroup": "true",
+                "key": "智能排课模式/2021/3/30 上午10:03:273",
+                "loc": "7.999999999999993 1001",
+                "name": "校园服务/学校",
+                "object_properties": [],
+                "participant": "校园服务/学校",
+                "props": [],
+                "size": "2100 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 36132,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "1",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"发出警报\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能考勤模式/2021/3/30 上午10:36:033",
+                "id": "终端故障",
+                "key": "智能答题模式/2021/3/29 下午8:13:18954",
+                "loc": "830 451",
+                "name": "终端故障",
+                "object_properties": [],
+                "type": [
+                    "物联网服务/终端故障警报"
+                ]
+            },
+            {
+                "__gohashid": 8138,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn round(random.uniform(5,10))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"考勤数据分析\")\ntoken.data['cost'] = token.data['cost'] + 2",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能答题模式/2021/3/29 下午8:08:375",
+                "id": "考勤数据统计分析",
+                "key": "智能考勤模式/2021/3/30 上午10:37:451220",
+                "loc": "80 150",
+                "name": "考勤数据统计分析",
+                "objectProperty": {
+                    "CarrierIs": "物联网服务/物联网平台"
+                },
+                "object_properties": [],
+                "type": [
+                    "物联网服务/物联网平台统计数据"
+                ]
+            },
+            {
+                "__gohashid": 20999,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "智能排课模式/2021/3/30 上午10:03:273",
+                "id": "学生考勤数据",
+                "key": "智能考勤模式/2021/3/30 上午10:40:431227",
+                "loc": "798 1053",
+                "name": "学生考勤数据",
+                "object_properties": [],
+                "type": []
+            },
+            {
+                "__gohashid": 7954,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"connect\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能考勤模式/2021/3/30 上午10:36:031",
+                "id": "connectNode",
+                "key": "智能排课模式/2021/3/30 上午10:03:55863",
+                "loc": "80 752",
+                "name": "connectNode",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/task"
+                ]
+            },
+            {
+                "__gohashid": 5098,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Fri Apr  2 02:20:54 20212880",
+                "id": "物联网服务/物联网服务提供商",
+                "isGroup": "true",
+                "key": "智能考勤模式/2021/3/30 上午10:36:033",
+                "loc": "8 399",
+                "name": "物联网服务/物联网服务提供商",
+                "object_properties": [],
+                "participant": "物联网服务/物联网服务提供商",
+                "props": [],
+                "size": "2100 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 12080,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn round(random.randint(0,3))",
+                        "type": "computed"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"排课结果修改\")",
+                        "type": "computed"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能排课模式/2021/3/30 上午10:03:273",
+                "id": "手动修改排课结果",
+                "key": "智能排课模式/2021/3/30 上午10:04:30868",
+                "loc": "548 1053",
+                "name": "手动修改排课结果",
+                "object_properties": [],
+                "type": [
+                    "校园服务/排课"
+                ]
+            },
+            {
+                "__gohashid": 24130,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn round(random.randint(5,25))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"学生答题\")\n\ntoken.data['cost'] = token.data['cost'] + 2",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能考勤模式/2021/3/30 上午10:36:031",
+                "id": "学生答题",
+                "key": "智能答题模式/2021/3/29 下午8:10:42946",
+                "loc": "330 752",
+                "name": "学生答题",
+                "object_properties": [],
+                "type": [
+                    "物联网服务/终端采集数据"
+                ]
+            },
+            {
+                "__gohashid": 25888,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "智能排课模式/2021/3/30 上午10:03:272",
+                "id": "智能排课结果",
+                "key": "智能排课模式/2021/3/30 上午10:06:33879",
+                "loc": "1080 1354",
+                "name": "智能排课结果",
+                "object_properties": [],
+                "type": [
+                    "人工智能服务/结果数据"
+                ]
+            }
+        ],
+        "relations": [
+            {
+                "__gohashid": 7470,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能考勤模式/2021/3/30 上午10:36:571215",
+                "key": "智能考勤模式/2021/3/30 上午10:37:241218",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1915,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1013
+                        },
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1003
+                        },
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1003
+                        },
+                        {
+                            "s": true,
+                            "x": 260,
+                            "y": 1003
+                        },
+                        {
+                            "s": true,
+                            "x": 260,
+                            "y": 700
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 700
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 511
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 491
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:37:221217"
+            },
+            {
+                "__gohashid": "b3654a12ecd34fde846c18cbadd1dc98",
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能答题模式/2021/3/29 下午8:14:23957",
+                "key": "Fri Apr  2 02:12:22 20219571",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 2437,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 190
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 200
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 204
+                        },
+                        {
+                            "s": true,
+                            "x": 1122.2664337158203,
+                            "y": 204
+                        },
+                        {
+                            "s": true,
+                            "x": 1122.2664337158203,
+                            "y": 1033
+                        },
+                        {
+                            "s": true,
+                            "x": 1122.2664337158203,
+                            "y": 1053
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:38:421222"
+            },
+            {
+                "__gohashid": 19388,
+                "category": "",
+                "data_properties": {},
+                "from": "智能排课模式/2021/3/30 上午10:04:56873",
+                "key": -7,
+                "points": {
+                    "Aa": 0,
+                    "Fa": null,
+                    "__gohashid": 75112,
+                    "bh": null,
+                    "j": [],
+                    "s": true
+                },
+                "to": "智能排课模式/2021/3/30 上午10:03:59864"
+            },
+            {
+                "__gohashid": 35884,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能答题模式/2021/3/29 下午8:10:42946",
+                "key": "智能答题模式/2021/3/29 下午8:13:05953",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 2320,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 390,
+                            "y": 752
+                        },
+                        {
+                            "s": true,
+                            "x": 400,
+                            "y": 752
+                        },
+                        {
+                            "s": true,
+                            "x": 404,
+                            "y": 752
+                        },
+                        {
+                            "s": true,
+                            "x": 404,
+                            "y": 828
+                        },
+                        {
+                            "s": true,
+                            "x": 852,
+                            "y": 828
+                        },
+                        {
+                            "s": true,
+                            "x": 852,
+                            "y": 1053
+                        },
+                        {
+                            "s": true,
+                            "x": 1246.5,
+                            "y": 1053
+                        },
+                        {
+                            "s": true,
+                            "x": 1266.5,
+                            "y": 1053
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能答题模式/2021/3/29 下午8:13:02952"
+            },
+            {
+                "__gohashid": 20360,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能考勤模式/2021/3/30 上午10:37:451220",
+                "key": "智能考勤模式/2021/3/30 上午10:38:561226",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1983,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 190
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 200
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 204
+                        },
+                        {
+                            "s": true,
+                            "x": 148,
+                            "y": 204
+                        },
+                        {
+                            "s": true,
+                            "x": 148,
+                            "y": 524
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 524
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 692
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 712
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:38:061221"
+            },
+            {
+                "__gohashid": 19263,
+                "category": "",
+                "data_properties": {},
+                "from": "智能排课模式/2021/3/30 上午10:03:32861",
+                "key": -6,
+                "to": "智能排课模式/2021/3/30 上午10:04:56873"
+            },
+            {
+                "__gohashid": 13558,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能排课模式/2021/3/30 上午10:04:13866",
+                "key": "智能排课模式/2021/3/30 上午10:04:37870",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1752,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 390,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 400,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 404,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 404,
+                            "y": 1340
+                        },
+                        {
+                            "s": true,
+                            "x": 668,
+                            "y": 1340
+                        },
+                        {
+                            "s": true,
+                            "x": 668,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 750,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 770,
+                            "y": 1354
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能排课模式/2021/3/30 上午10:04:22867"
+            },
+            {
+                "__gohashid": "402791d338ea4673969581ce74a2efb1",
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "智能考勤模式/2021/3/30 上午10:38:061221",
+                "key": "Fri Apr  2 02:12:22 20215693",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1997,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 712
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 702
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 700
+                        },
+                        {
+                            "s": true,
+                            "x": 508,
+                            "y": 700
+                        },
+                        {
+                            "s": true,
+                            "x": 508,
+                            "y": 404
+                        },
+                        {
+                            "s": true,
+                            "x": 100,
+                            "y": 404
+                        },
+                        {
+                            "s": true,
+                            "x": 100,
+                            "y": 200
+                        },
+                        {
+                            "s": true,
+                            "x": 100,
+                            "y": 190
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:37:451220"
+            },
+            {
+                "__gohashid": 28135,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "智能排课模式/2021/3/30 上午10:06:33879",
+                "key": "智能排课模式/2021/3/30 上午10:06:37881",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1907,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1062.7,
+                            "y": 1346.8333333333333
+                        },
+                        {
+                            "s": true,
+                            "x": 1052.7,
+                            "y": 1346.8333333333333
+                        },
+                        {
+                            "s": true,
+                            "x": 1052,
+                            "y": 1346.8333333333333
+                        },
+                        {
+                            "s": true,
+                            "x": 1052,
+                            "y": 1308
+                        },
+                        {
+                            "s": true,
+                            "x": 740,
+                            "y": 1308
+                        },
+                        {
+                            "s": true,
+                            "x": 740,
+                            "y": 1053
+                        },
+                        {
+                            "s": true,
+                            "x": 618,
+                            "y": 1053
+                        },
+                        {
+                            "s": true,
+                            "x": 608,
+                            "y": 1053
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能排课模式/2021/3/30 上午10:04:30868"
+            },
+            {
+                "__gohashid": "0234efbeb6ef45b19950e17abf1f22b3",
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能排课模式/2021/3/30 上午10:03:55863",
+                "key": "Fri Apr  2 02:20:54 2021346",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1726,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 792
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 802
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 804
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 804
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 828
+                        },
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 828
+                        },
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 993
+                        },
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1013
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:36:571215"
+            },
+            {
+                "__gohashid": 50270,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "智能考勤模式/2021/3/30 上午10:41:291230",
+                "key": "智慧课堂_推荐_1/2021/4/2 上午10:18:13928",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1955,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 312.7,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 302.7,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 302.7,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 302.7,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 150,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 140,
+                            "y": 451
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:37:221217"
+            },
+            {
+                "__gohashid": 33220,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "智能考勤模式/2021/3/30 上午10:36:571215",
+                "key": "智能考勤模式/2021/3/30 上午10:41:301231",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1922,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1013
+                        },
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1003
+                        },
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1003
+                        },
+                        {
+                            "s": true,
+                            "x": 260,
+                            "y": 1003
+                        },
+                        {
+                            "s": true,
+                            "x": 260,
+                            "y": 700
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 700
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 482.5
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 472.5
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:41:291230"
+            },
+            {
+                "__gohashid": "506ea221829e481797e3c91f36c4871d",
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能考勤模式/2021/3/30 上午10:36:571215",
+                "key": "Fri Apr  2 02:12:22 20214830",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1931,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1013
+                        },
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1003
+                        },
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1003
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 1003
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 812
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 792
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能答题模式/2021/3/29 下午8:10:42946"
+            },
+            {
+                "__gohashid": 20122,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能考勤模式/2021/3/30 上午10:37:371219",
+                "key": "智能考勤模式/2021/3/30 上午10:38:521225",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1969,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 520,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 510,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 508,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 508,
+                            "y": 420
+                        },
+                        {
+                            "s": true,
+                            "x": 260,
+                            "y": 420
+                        },
+                        {
+                            "s": true,
+                            "x": 260,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 160,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 140,
+                            "y": 150
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:37:451220"
+            },
+            {
+                "__gohashid": 18682,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能考勤模式/2021/3/30 上午10:37:221217",
+                "key": "智能考勤模式/2021/3/30 上午10:38:491224",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1903,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 140,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 150,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 150,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 150,
+                            "y": 420
+                        },
+                        {
+                            "s": true,
+                            "x": 404,
+                            "y": 420
+                        },
+                        {
+                            "s": true,
+                            "x": 404,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 500,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 520,
+                            "y": 451
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:37:371219"
+            },
+            {
+                "__gohashid": 8452,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能排课模式/2021/3/30 上午10:03:32861",
+                "key": "智能排课模式/2021/3/30 上午10:04:07865",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1714,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 124.482666015625,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 124.482666015625,
+                            "y": 1106
+                        },
+                        {
+                            "s": true,
+                            "x": 124.482666015625,
+                            "y": 1108
+                        },
+                        {
+                            "s": true,
+                            "x": 124.482666015625,
+                            "y": 1108
+                        },
+                        {
+                            "s": true,
+                            "x": 124.482666015625,
+                            "y": 1148
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 1148
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 1294
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 1314
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能排课模式/2021/3/30 上午10:03:59864"
+            },
+            {
+                "__gohashid": 21628,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "智能考勤模式/2021/3/30 上午10:40:431227",
+                "key": "智能考勤模式/2021/3/30 上午10:40:581229",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 2006,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 798,
+                            "y": 1031.5
+                        },
+                        {
+                            "s": true,
+                            "x": 798,
+                            "y": 1021.5
+                        },
+                        {
+                            "s": true,
+                            "x": 798,
+                            "y": 1020
+                        },
+                        {
+                            "s": true,
+                            "x": 764,
+                            "y": 1020
+                        },
+                        {
+                            "s": true,
+                            "x": 764,
+                            "y": 404
+                        },
+                        {
+                            "s": true,
+                            "x": 60,
+                            "y": 404
+                        },
+                        {
+                            "s": true,
+                            "x": 60,
+                            "y": 208
+                        },
+                        {
+                            "s": true,
+                            "x": 60,
+                            "y": 190
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:37:451220"
+            },
+            {
+                "__gohashid": 12281,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能排课模式/2021/3/30 上午10:03:59864",
+                "key": "智能排课模式/2021/3/30 上午10:04:35869",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1710,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 140,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 150,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 200,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 200,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 250,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 270,
+                            "y": 1354
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能排课模式/2021/3/30 上午10:04:13866"
+            },
+            {
+                "__gohashid": 26056,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "智能排课模式/2021/3/30 上午10:04:22867",
+                "key": "智能排课模式/2021/3/30 上午10:06:34880",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1767,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 890,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 1361.1666666666667
+                        },
+                        {
+                            "s": true,
+                            "x": 1044.7,
+                            "y": 1361.1666666666667
+                        },
+                        {
+                            "s": true,
+                            "x": 1062.7,
+                            "y": 1361.1666666666667
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能排课模式/2021/3/30 上午10:06:33879"
+            },
+            {
+                "__gohashid": 20054,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "智能排课模式/2021/3/30 上午10:03:59864",
+                "key": "智能排课模式/2021/3/30 上午10:05:08877",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1733,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 140,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 150,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 150,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 150,
+                            "y": 1308
+                        },
+                        {
+                            "s": true,
+                            "x": 404,
+                            "y": 1308
+                        },
+                        {
+                            "s": true,
+                            "x": 404,
+                            "y": 1377.1666666666667
+                        },
+                        {
+                            "s": true,
+                            "x": 558.7,
+                            "y": 1377.1666666666667
+                        },
+                        {
+                            "s": true,
+                            "x": 576.7,
+                            "y": 1377.1666666666667
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能排课模式/2021/3/30 上午10:05:06876"
+            },
+            {
+                "__gohashid": 13694,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能排课模式/2021/3/30 上午10:04:22867",
+                "key": "智能排课模式/2021/3/30 上午10:04:38871",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1773,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 830,
+                            "y": 1314
+                        },
+                        {
+                            "s": true,
+                            "x": 830,
+                            "y": 1304
+                        },
+                        {
+                            "s": true,
+                            "x": 830,
+                            "y": 1304
+                        },
+                        {
+                            "s": true,
+                            "x": 548,
+                            "y": 1304
+                        },
+                        {
+                            "s": true,
+                            "x": 548,
+                            "y": 1113
+                        },
+                        {
+                            "s": true,
+                            "x": 548,
+                            "y": 1093
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能排课模式/2021/3/30 上午10:04:30868"
+            },
+            {
+                "__gohashid": 21413,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "智能考勤模式/2021/3/30 上午10:37:221217",
+                "key": "智能考勤模式/2021/3/30 上午10:40:541228",
+                "points": {
+                    "Aa": 11,
+                    "Fa": null,
+                    "__gohashid": 1961,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 491
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 501
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 501
+                        },
+                        {
+                            "s": true,
+                            "x": 148,
+                            "y": 501
+                        },
+                        {
+                            "s": true,
+                            "x": 148,
+                            "y": 828
+                        },
+                        {
+                            "s": true,
+                            "x": 620,
+                            "y": 828
+                        },
+                        {
+                            "s": true,
+                            "x": 620,
+                            "y": 1053
+                        },
+                        {
+                            "s": true,
+                            "x": 770.7,
+                            "y": 1053
+                        },
+                        {
+                            "s": true,
+                            "x": 780.7,
+                            "y": 1053
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:40:431227"
+            },
+            {
+                "__gohashid": "1cf6f80ced4b4eb69a590b2662b15406",
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能考勤模式/2021/3/30 上午10:37:371219",
+                "key": "Fri Apr  2 02:12:22 20211172",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1976,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 491
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 501
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 501
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 501
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 692
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 712
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:38:061221"
+            },
+            {
+                "__gohashid": "4347c0a2248741f390626c9e789d6d17",
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能考勤模式/2021/3/30 上午10:38:061221",
+                "key": "Fri Apr  2 02:12:22 20218869",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1990,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 640,
+                            "y": 752
+                        },
+                        {
+                            "s": true,
+                            "x": 650,
+                            "y": 752
+                        },
+                        {
+                            "s": true,
+                            "x": 652,
+                            "y": 752
+                        },
+                        {
+                            "s": true,
+                            "x": 652,
+                            "y": 752
+                        },
+                        {
+                            "s": true,
+                            "x": 852,
+                            "y": 752
+                        },
+                        {
+                            "s": true,
+                            "x": 852,
+                            "y": 1076
+                        },
+                        {
+                            "s": true,
+                            "x": 1079.2664337158203,
+                            "y": 1076
+                        },
+                        {
+                            "s": true,
+                            "x": 1099.2664337158203,
+                            "y": 1076
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:38:421222"
+            },
+            {
+                "__gohashid": 39912,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能答题模式/2021/3/29 下午8:13:02952",
+                "key": "智能答题模式/2021/3/29 下午8:13:52956",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 2345,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1298,
+                            "y": 1021.5
+                        },
+                        {
+                            "s": true,
+                            "x": 1298,
+                            "y": 1011.5
+                        },
+                        {
+                            "s": true,
+                            "x": 1298,
+                            "y": 1011.5
+                        },
+                        {
+                            "s": true,
+                            "x": 830,
+                            "y": 1011.5
+                        },
+                        {
+                            "s": true,
+                            "x": 830,
+                            "y": 511
+                        },
+                        {
+                            "s": true,
+                            "x": 830,
+                            "y": 491
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能答题模式/2021/3/29 下午8:13:18954"
+            },
+            {
+                "__gohashid": "97e2ede6b49e4a6e9a1a29dfc8c572da",
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能答题模式/2021/3/29 下午8:13:02952",
+                "key": "Fri Apr  2 02:12:22 2021365",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 2368,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1266.5,
+                            "y": 1053
+                        },
+                        {
+                            "s": true,
+                            "x": 1256.5,
+                            "y": 1053
+                        },
+                        {
+                            "s": true,
+                            "x": 1256.5,
+                            "y": 1053
+                        },
+                        {
+                            "s": true,
+                            "x": 1256.5,
+                            "y": 1004
+                        },
+                        {
+                            "s": true,
+                            "x": 260,
+                            "y": 1004
+                        },
+                        {
+                            "s": true,
+                            "x": 260,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 160,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 140,
+                            "y": 150
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:37:451220"
+            },
+            {
+                "__gohashid": 45754,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能答题模式/2021/3/29 下午8:13:18954",
+                "key": "智能答题模式/2021/3/29 下午8:14:37958",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 2420,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 770,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 760,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 760,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 760,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 410,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 390,
+                            "y": 150
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能答题模式/2021/3/29 下午8:14:23957"
+            },
+            {
+                "__gohashid": 15178,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能排课模式/2021/3/30 上午10:04:30868",
+                "key": "智能排课模式/2021/3/30 上午10:04:41872",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1790,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 488,
+                            "y": 1053
+                        },
+                        {
+                            "s": true,
+                            "x": 478,
+                            "y": 1053
+                        },
+                        {
+                            "s": true,
+                            "x": 476,
+                            "y": 1053
+                        },
+                        {
+                            "s": true,
+                            "x": 476,
+                            "y": 1004
+                        },
+                        {
+                            "s": true,
+                            "x": 260,
+                            "y": 1004
+                        },
+                        {
+                            "s": true,
+                            "x": 260,
+                            "y": 752
+                        },
+                        {
+                            "s": true,
+                            "x": 160,
+                            "y": 752
+                        },
+                        {
+                            "s": true,
+                            "x": 140,
+                            "y": 752
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能排课模式/2021/3/30 上午10:03:55863"
+            },
+            {
+                "__gohashid": 20189,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "智能排课模式/2021/3/30 上午10:05:06876",
+                "key": "智能排课模式/2021/3/30 上午10:05:09878",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1785,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 576.7,
+                            "y": 1362.8333333333333
+                        },
+                        {
+                            "s": true,
+                            "x": 566.7,
+                            "y": 1362.8333333333333
+                        },
+                        {
+                            "s": true,
+                            "x": 564,
+                            "y": 1362.8333333333333
+                        },
+                        {
+                            "s": true,
+                            "x": 564,
+                            "y": 1380
+                        },
+                        {
+                            "s": true,
+                            "x": 524,
+                            "y": 1380
+                        },
+                        {
+                            "s": true,
+                            "x": 524,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 400,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 390,
+                            "y": 1354
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能排课模式/2021/3/30 上午10:04:13866"
+            }
+        ]
+    },
+    "service pattern": {
+        "config": {
+            "id": "1617330054.1751406_3093592",
+            "name": "智慧校园_推荐_7"
+        },
+        "elements": {},
+        "evaluate_config": {},
+        "links": [
+            {
+                "__gohashid": 8452,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能排课模式/2021/3/30 上午10:03:32861",
+                "key": "智能排课模式/2021/3/30 上午10:04:07865",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1714,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 124.482666015625,
+                            "y": 1096
+                        },
+                        {
+                            "s": true,
+                            "x": 124.482666015625,
+                            "y": 1106
+                        },
+                        {
+                            "s": true,
+                            "x": 124.482666015625,
+                            "y": 1108
+                        },
+                        {
+                            "s": true,
+                            "x": 124.482666015625,
+                            "y": 1108
+                        },
+                        {
+                            "s": true,
+                            "x": 124.482666015625,
+                            "y": 1148
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 1148
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 1294
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 1314
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能排课模式/2021/3/30 上午10:03:59864"
+            },
+            {
+                "__gohashid": 19263,
+                "category": "",
+                "data_properties": {},
+                "from": "智能排课模式/2021/3/30 上午10:03:32861",
+                "key": -6,
+                "to": "智能排课模式/2021/3/30 上午10:04:56873"
+            },
+            {
+                "__gohashid": "0234efbeb6ef45b19950e17abf1f22b3",
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能排课模式/2021/3/30 上午10:03:55863",
+                "key": "Fri Apr  2 02:20:54 2021346",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1726,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 792
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 802
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 804
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 804
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 828
+                        },
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 828
+                        },
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 993
+                        },
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1013
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:36:571215"
+            },
+            {
+                "__gohashid": 12281,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能排课模式/2021/3/30 上午10:03:59864",
+                "key": "智能排课模式/2021/3/30 上午10:04:35869",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1710,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 140,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 150,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 200,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 200,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 250,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 270,
+                            "y": 1354
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能排课模式/2021/3/30 上午10:04:13866"
+            },
+            {
+                "__gohashid": 20054,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "智能排课模式/2021/3/30 上午10:03:59864",
+                "key": "智能排课模式/2021/3/30 上午10:05:08877",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1733,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 140,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 150,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 150,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 150,
+                            "y": 1308
+                        },
+                        {
+                            "s": true,
+                            "x": 404,
+                            "y": 1308
+                        },
+                        {
+                            "s": true,
+                            "x": 404,
+                            "y": 1377.1666666666667
+                        },
+                        {
+                            "s": true,
+                            "x": 558.7,
+                            "y": 1377.1666666666667
+                        },
+                        {
+                            "s": true,
+                            "x": 576.7,
+                            "y": 1377.1666666666667
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能排课模式/2021/3/30 上午10:05:06876"
+            },
+            {
+                "__gohashid": 13558,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能排课模式/2021/3/30 上午10:04:13866",
+                "key": "智能排课模式/2021/3/30 上午10:04:37870",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1752,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 390,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 400,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 404,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 404,
+                            "y": 1340
+                        },
+                        {
+                            "s": true,
+                            "x": 668,
+                            "y": 1340
+                        },
+                        {
+                            "s": true,
+                            "x": 668,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 750,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 770,
+                            "y": 1354
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能排课模式/2021/3/30 上午10:04:22867"
+            },
+            {
+                "__gohashid": 13694,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能排课模式/2021/3/30 上午10:04:22867",
+                "key": "智能排课模式/2021/3/30 上午10:04:38871",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1773,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 830,
+                            "y": 1314
+                        },
+                        {
+                            "s": true,
+                            "x": 830,
+                            "y": 1304
+                        },
+                        {
+                            "s": true,
+                            "x": 830,
+                            "y": 1304
+                        },
+                        {
+                            "s": true,
+                            "x": 548,
+                            "y": 1304
+                        },
+                        {
+                            "s": true,
+                            "x": 548,
+                            "y": 1113
+                        },
+                        {
+                            "s": true,
+                            "x": 548,
+                            "y": 1093
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能排课模式/2021/3/30 上午10:04:30868"
+            },
+            {
+                "__gohashid": 26056,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "智能排课模式/2021/3/30 上午10:04:22867",
+                "key": "智能排课模式/2021/3/30 上午10:06:34880",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1767,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 890,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 1361.1666666666667
+                        },
+                        {
+                            "s": true,
+                            "x": 1044.7,
+                            "y": 1361.1666666666667
+                        },
+                        {
+                            "s": true,
+                            "x": 1062.7,
+                            "y": 1361.1666666666667
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能排课模式/2021/3/30 上午10:06:33879"
+            },
+            {
+                "__gohashid": 15178,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能排课模式/2021/3/30 上午10:04:30868",
+                "key": "智能排课模式/2021/3/30 上午10:04:41872",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1790,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 488,
+                            "y": 1053
+                        },
+                        {
+                            "s": true,
+                            "x": 478,
+                            "y": 1053
+                        },
+                        {
+                            "s": true,
+                            "x": 476,
+                            "y": 1053
+                        },
+                        {
+                            "s": true,
+                            "x": 476,
+                            "y": 1004
+                        },
+                        {
+                            "s": true,
+                            "x": 260,
+                            "y": 1004
+                        },
+                        {
+                            "s": true,
+                            "x": 260,
+                            "y": 752
+                        },
+                        {
+                            "s": true,
+                            "x": 160,
+                            "y": 752
+                        },
+                        {
+                            "s": true,
+                            "x": 140,
+                            "y": 752
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能排课模式/2021/3/30 上午10:03:55863"
+            },
+            {
+                "__gohashid": 20189,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "智能排课模式/2021/3/30 上午10:05:06876",
+                "key": "智能排课模式/2021/3/30 上午10:05:09878",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1785,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 576.7,
+                            "y": 1362.8333333333333
+                        },
+                        {
+                            "s": true,
+                            "x": 566.7,
+                            "y": 1362.8333333333333
+                        },
+                        {
+                            "s": true,
+                            "x": 564,
+                            "y": 1362.8333333333333
+                        },
+                        {
+                            "s": true,
+                            "x": 564,
+                            "y": 1380
+                        },
+                        {
+                            "s": true,
+                            "x": 524,
+                            "y": 1380
+                        },
+                        {
+                            "s": true,
+                            "x": 524,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 400,
+                            "y": 1354
+                        },
+                        {
+                            "s": true,
+                            "x": 390,
+                            "y": 1354
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能排课模式/2021/3/30 上午10:04:13866"
+            },
+            {
+                "__gohashid": 28135,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "智能排课模式/2021/3/30 上午10:06:33879",
+                "key": "智能排课模式/2021/3/30 上午10:06:37881",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1907,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1062.7,
+                            "y": 1346.8333333333333
+                        },
+                        {
+                            "s": true,
+                            "x": 1052.7,
+                            "y": 1346.8333333333333
+                        },
+                        {
+                            "s": true,
+                            "x": 1052,
+                            "y": 1346.8333333333333
+                        },
+                        {
+                            "s": true,
+                            "x": 1052,
+                            "y": 1308
+                        },
+                        {
+                            "s": true,
+                            "x": 740,
+                            "y": 1308
+                        },
+                        {
+                            "s": true,
+                            "x": 740,
+                            "y": 1053
+                        },
+                        {
+                            "s": true,
+                            "x": 618,
+                            "y": 1053
+                        },
+                        {
+                            "s": true,
+                            "x": 608,
+                            "y": 1053
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能排课模式/2021/3/30 上午10:04:30868"
+            },
+            {
+                "__gohashid": 19388,
+                "category": "",
+                "data_properties": {},
+                "from": "智能排课模式/2021/3/30 上午10:04:56873",
+                "key": -7,
+                "points": {
+                    "Aa": 0,
+                    "Fa": null,
+                    "__gohashid": 75112,
+                    "bh": null,
+                    "j": [],
+                    "s": true
+                },
+                "to": "智能排课模式/2021/3/30 上午10:03:59864"
+            },
+            {
+                "__gohashid": 7470,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能考勤模式/2021/3/30 上午10:36:571215",
+                "key": "智能考勤模式/2021/3/30 上午10:37:241218",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1915,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1013
+                        },
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1003
+                        },
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1003
+                        },
+                        {
+                            "s": true,
+                            "x": 260,
+                            "y": 1003
+                        },
+                        {
+                            "s": true,
+                            "x": 260,
+                            "y": 700
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 700
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 511
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 491
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:37:221217"
+            },
+            {
+                "__gohashid": 33220,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "智能考勤模式/2021/3/30 上午10:36:571215",
+                "key": "智能考勤模式/2021/3/30 上午10:41:301231",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1922,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1013
+                        },
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1003
+                        },
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1003
+                        },
+                        {
+                            "s": true,
+                            "x": 260,
+                            "y": 1003
+                        },
+                        {
+                            "s": true,
+                            "x": 260,
+                            "y": 700
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 700
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 482.5
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 472.5
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:41:291230"
+            },
+            {
+                "__gohashid": "506ea221829e481797e3c91f36c4871d",
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能考勤模式/2021/3/30 上午10:36:571215",
+                "key": "Fri Apr  2 02:12:22 20214830",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1931,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1013
+                        },
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1003
+                        },
+                        {
+                            "s": true,
+                            "x": 298,
+                            "y": 1003
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 1003
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 812
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 792
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能答题模式/2021/3/29 下午8:10:42946"
+            },
+            {
+                "__gohashid": 18682,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能考勤模式/2021/3/30 上午10:37:221217",
+                "key": "智能考勤模式/2021/3/30 上午10:38:491224",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1903,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 140,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 150,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 150,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 150,
+                            "y": 420
+                        },
+                        {
+                            "s": true,
+                            "x": 404,
+                            "y": 420
+                        },
+                        {
+                            "s": true,
+                            "x": 404,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 500,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 520,
+                            "y": 451
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:37:371219"
+            },
+            {
+                "__gohashid": 21413,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "智能考勤模式/2021/3/30 上午10:37:221217",
+                "key": "智能考勤模式/2021/3/30 上午10:40:541228",
+                "points": {
+                    "Aa": 11,
+                    "Fa": null,
+                    "__gohashid": 1961,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 491
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 501
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 501
+                        },
+                        {
+                            "s": true,
+                            "x": 148,
+                            "y": 501
+                        },
+                        {
+                            "s": true,
+                            "x": 148,
+                            "y": 828
+                        },
+                        {
+                            "s": true,
+                            "x": 620,
+                            "y": 828
+                        },
+                        {
+                            "s": true,
+                            "x": 620,
+                            "y": 1053
+                        },
+                        {
+                            "s": true,
+                            "x": 770.7,
+                            "y": 1053
+                        },
+                        {
+                            "s": true,
+                            "x": 780.7,
+                            "y": 1053
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:40:431227"
+            },
+            {
+                "__gohashid": 20122,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能考勤模式/2021/3/30 上午10:37:371219",
+                "key": "智能考勤模式/2021/3/30 上午10:38:521225",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1969,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 520,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 510,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 508,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 508,
+                            "y": 420
+                        },
+                        {
+                            "s": true,
+                            "x": 260,
+                            "y": 420
+                        },
+                        {
+                            "s": true,
+                            "x": 260,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 160,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 140,
+                            "y": 150
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:37:451220"
+            },
+            {
+                "__gohashid": "1cf6f80ced4b4eb69a590b2662b15406",
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能考勤模式/2021/3/30 上午10:37:371219",
+                "key": "Fri Apr  2 02:12:22 20211172",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1976,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 491
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 501
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 501
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 501
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 692
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 712
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:38:061221"
+            },
+            {
+                "__gohashid": 20360,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能考勤模式/2021/3/30 上午10:37:451220",
+                "key": "智能考勤模式/2021/3/30 上午10:38:561226",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1983,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 190
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 200
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 204
+                        },
+                        {
+                            "s": true,
+                            "x": 148,
+                            "y": 204
+                        },
+                        {
+                            "s": true,
+                            "x": 148,
+                            "y": 524
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 524
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 692
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 712
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:38:061221"
+            },
+            {
+                "__gohashid": "4347c0a2248741f390626c9e789d6d17",
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能考勤模式/2021/3/30 上午10:38:061221",
+                "key": "Fri Apr  2 02:12:22 20218869",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1990,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 640,
+                            "y": 752
+                        },
+                        {
+                            "s": true,
+                            "x": 650,
+                            "y": 752
+                        },
+                        {
+                            "s": true,
+                            "x": 652,
+                            "y": 752
+                        },
+                        {
+                            "s": true,
+                            "x": 652,
+                            "y": 752
+                        },
+                        {
+                            "s": true,
+                            "x": 852,
+                            "y": 752
+                        },
+                        {
+                            "s": true,
+                            "x": 852,
+                            "y": 1076
+                        },
+                        {
+                            "s": true,
+                            "x": 1079.2664337158203,
+                            "y": 1076
+                        },
+                        {
+                            "s": true,
+                            "x": 1099.2664337158203,
+                            "y": 1076
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:38:421222"
+            },
+            {
+                "__gohashid": "402791d338ea4673969581ce74a2efb1",
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "智能考勤模式/2021/3/30 上午10:38:061221",
+                "key": "Fri Apr  2 02:12:22 20215693",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 1997,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 712
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 702
+                        },
+                        {
+                            "s": true,
+                            "x": 580,
+                            "y": 700
+                        },
+                        {
+                            "s": true,
+                            "x": 508,
+                            "y": 700
+                        },
+                        {
+                            "s": true,
+                            "x": 508,
+                            "y": 404
+                        },
+                        {
+                            "s": true,
+                            "x": 100,
+                            "y": 404
+                        },
+                        {
+                            "s": true,
+                            "x": 100,
+                            "y": 200
+                        },
+                        {
+                            "s": true,
+                            "x": 100,
+                            "y": 190
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:37:451220"
+            },
+            {
+                "__gohashid": 21628,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "智能考勤模式/2021/3/30 上午10:40:431227",
+                "key": "智能考勤模式/2021/3/30 上午10:40:581229",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 2006,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 798,
+                            "y": 1031.5
+                        },
+                        {
+                            "s": true,
+                            "x": 798,
+                            "y": 1021.5
+                        },
+                        {
+                            "s": true,
+                            "x": 798,
+                            "y": 1020
+                        },
+                        {
+                            "s": true,
+                            "x": 764,
+                            "y": 1020
+                        },
+                        {
+                            "s": true,
+                            "x": 764,
+                            "y": 404
+                        },
+                        {
+                            "s": true,
+                            "x": 60,
+                            "y": 404
+                        },
+                        {
+                            "s": true,
+                            "x": 60,
+                            "y": 208
+                        },
+                        {
+                            "s": true,
+                            "x": 60,
+                            "y": 190
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:37:451220"
+            },
+            {
+                "__gohashid": 50270,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "智能考勤模式/2021/3/30 上午10:41:291230",
+                "key": "智慧课堂_推荐_1/2021/4/2 上午10:18:13928",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 1955,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 312.7,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 302.7,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 302.7,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 302.7,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 150,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 140,
+                            "y": 451
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:37:221217"
+            },
+            {
+                "__gohashid": 35884,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能答题模式/2021/3/29 下午8:10:42946",
+                "key": "智能答题模式/2021/3/29 下午8:13:05953",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 2320,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 390,
+                            "y": 752
+                        },
+                        {
+                            "s": true,
+                            "x": 400,
+                            "y": 752
+                        },
+                        {
+                            "s": true,
+                            "x": 404,
+                            "y": 752
+                        },
+                        {
+                            "s": true,
+                            "x": 404,
+                            "y": 828
+                        },
+                        {
+                            "s": true,
+                            "x": 852,
+                            "y": 828
+                        },
+                        {
+                            "s": true,
+                            "x": 852,
+                            "y": 1053
+                        },
+                        {
+                            "s": true,
+                            "x": 1246.5,
+                            "y": 1053
+                        },
+                        {
+                            "s": true,
+                            "x": 1266.5,
+                            "y": 1053
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能答题模式/2021/3/29 下午8:13:02952"
+            },
+            {
+                "__gohashid": 39912,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能答题模式/2021/3/29 下午8:13:02952",
+                "key": "智能答题模式/2021/3/29 下午8:13:52956",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 2345,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1298,
+                            "y": 1021.5
+                        },
+                        {
+                            "s": true,
+                            "x": 1298,
+                            "y": 1011.5
+                        },
+                        {
+                            "s": true,
+                            "x": 1298,
+                            "y": 1011.5
+                        },
+                        {
+                            "s": true,
+                            "x": 830,
+                            "y": 1011.5
+                        },
+                        {
+                            "s": true,
+                            "x": 830,
+                            "y": 511
+                        },
+                        {
+                            "s": true,
+                            "x": 830,
+                            "y": 491
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能答题模式/2021/3/29 下午8:13:18954"
+            },
+            {
+                "__gohashid": "97e2ede6b49e4a6e9a1a29dfc8c572da",
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能答题模式/2021/3/29 下午8:13:02952",
+                "key": "Fri Apr  2 02:12:22 2021365",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 2368,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1266.5,
+                            "y": 1053
+                        },
+                        {
+                            "s": true,
+                            "x": 1256.5,
+                            "y": 1053
+                        },
+                        {
+                            "s": true,
+                            "x": 1256.5,
+                            "y": 1053
+                        },
+                        {
+                            "s": true,
+                            "x": 1256.5,
+                            "y": 1004
+                        },
+                        {
+                            "s": true,
+                            "x": 260,
+                            "y": 1004
+                        },
+                        {
+                            "s": true,
+                            "x": 260,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 160,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 140,
+                            "y": 150
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:37:451220"
+            },
+            {
+                "__gohashid": 45754,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能答题模式/2021/3/29 下午8:13:18954",
+                "key": "智能答题模式/2021/3/29 下午8:14:37958",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 2420,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 770,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 760,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 760,
+                            "y": 451
+                        },
+                        {
+                            "s": true,
+                            "x": 760,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 410,
+                            "y": 150
+                        },
+                        {
+                            "s": true,
+                            "x": 390,
+                            "y": 150
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能答题模式/2021/3/29 下午8:14:23957"
+            },
+            {
+                "__gohashid": "b3654a12ecd34fde846c18cbadd1dc98",
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "智能答题模式/2021/3/29 下午8:14:23957",
+                "key": "Fri Apr  2 02:12:22 20219571",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 2437,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 190
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 200
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 204
+                        },
+                        {
+                            "s": true,
+                            "x": 1122.2664337158203,
+                            "y": 204
+                        },
+                        {
+                            "s": true,
+                            "x": 1122.2664337158203,
+                            "y": 1033
+                        },
+                        {
+                            "s": true,
+                            "x": 1122.2664337158203,
+                            "y": 1053
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "智能考勤模式/2021/3/30 上午10:38:421222"
+            }
+        ],
+        "nodes": [
+            {
+                "__gohashid": 6631,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Fri Apr  2 02:20:54 20212880",
+                "id": "人工智能服务/AI服务提供商",
+                "isGroup": "true",
+                "key": "智能排课模式/2021/3/30 上午10:03:272",
+                "loc": "8 1302",
+                "name": "人工智能服务/AI服务提供商",
+                "object_properties": [],
+                "participant": "人工智能服务/AI服务提供商",
+                "props": [],
+                "size": "2100 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 6632,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Fri Apr  2 02:20:54 20212880",
+                "id": "校园服务/学校",
+                "isGroup": "true",
+                "key": "智能排课模式/2021/3/30 上午10:03:273",
+                "loc": "7.999999999999993 1001",
+                "name": "校园服务/学校",
+                "object_properties": [],
+                "participant": "校园服务/学校",
+                "props": [],
+                "size": "2100 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 7389,
+                "bindTo": [],
+                "category": "start",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"start\")\n\ntoken.data['start_step'] = model.step_count\ntoken.data['cost'] = 0\ntoken.data['RP'] = 0.89  # 维修成功率",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能排课模式/2021/3/30 上午10:03:273",
+                "id": "BPMN概念/StartEvent-1",
+                "key": "智能排课模式/2021/3/30 上午10:03:32861",
+                "loc": "47.99999999999999 1053",
+                "name": "BPMN概念/StartEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/StartEvent"
+                ]
+            },
+            {
+                "__gohashid": 7954,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"connect\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能考勤模式/2021/3/30 上午10:36:031",
+                "id": "connectNode",
+                "key": "智能排课模式/2021/3/30 上午10:03:55863",
+                "loc": "80 752",
+                "name": "connectNode",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/task"
+                ]
+            },
+            {
+                "__gohashid": 8207,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\n\nreturn random.randint(5,25)",
+                        "type": "computed"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"录入成功\")",
+                        "type": "computed"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能排课模式/2021/3/30 上午10:03:272",
+                "id": "输入排课数据",
+                "key": "智能排课模式/2021/3/30 上午10:03:59864",
+                "loc": "80 1354",
+                "name": "输入排课数据",
+                "objectProperty": {
+                    "CarrierIs": "人工智能服务/人工智能服务平台"
+                },
+                "object_properties": [],
+                "type": [
+                    "人工智能服务/接受输入"
+                ]
+            },
+            {
+                "__gohashid": 11457,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "2",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"排课成功\")\ntoken.data['cost'] = token.data['cost']+ random.int(100,1000)",
+                        "type": "computed"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能排课模式/2021/3/30 上午10:03:272",
+                "id": "智能排课",
+                "key": "智能排课模式/2021/3/30 上午10:04:13866",
+                "loc": "330 1354",
+                "name": "智能排课",
+                "objectProperty": {
+                    "CarrierIs": "人工智能服务/人工智能服务平台"
+                },
+                "object_properties": [],
+                "type": [
+                    "人工智能服务/AI活动"
+                ]
+            },
+            {
+                "__gohashid": 11798,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"排课结果输出\")",
+                        "type": "computed"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能排课模式/2021/3/30 上午10:03:272",
+                "id": "输出智能排课结果",
+                "key": "智能排课模式/2021/3/30 上午10:04:22867",
+                "loc": "830 1354",
+                "name": "输出智能排课结果",
+                "objectProperty": {
+                    "CarrierIs": "人工智能服务/人工智能服务平台"
+                },
+                "object_properties": [],
+                "type": [
+                    "人工智能服务/结果输出"
+                ]
+            },
+            {
+                "__gohashid": 12080,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn round(random.randint(0,3))",
+                        "type": "computed"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"排课结果修改\")",
+                        "type": "computed"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能排课模式/2021/3/30 上午10:03:273",
+                "id": "手动修改排课结果",
+                "key": "智能排课模式/2021/3/30 上午10:04:30868",
+                "loc": "548 1053",
+                "name": "手动修改排课结果",
+                "object_properties": [],
+                "type": [
+                    "校园服务/排课"
+                ]
+            },
+            {
+                "__gohashid": 19770,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "智能排课模式/2021/3/30 上午10:03:272",
+                "id": "教师/课程/学生数据",
+                "key": "智能排课模式/2021/3/30 上午10:05:06876",
+                "loc": "594 1370",
+                "name": "教师/课程/学生数据",
+                "object_properties": [],
+                "type": []
+            },
+            {
+                "__gohashid": 25888,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "智能排课模式/2021/3/30 上午10:03:272",
+                "id": "智能排课结果",
+                "key": "智能排课模式/2021/3/30 上午10:06:33879",
+                "loc": "1080 1354",
+                "name": "智能排课结果",
+                "object_properties": [],
+                "type": [
+                    "人工智能服务/结果数据"
+                ]
+            },
+            {
+                "__gohashid": 5096,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Fri Apr  2 02:20:54 20212880",
+                "id": "校园服务/学生",
+                "isGroup": "true",
+                "key": "智能考勤模式/2021/3/30 上午10:36:031",
+                "loc": "7.999999999999993 700",
+                "name": "校园服务/学生",
+                "object_properties": [],
+                "participant": "校园服务/学生",
+                "props": [],
+                "size": "2100 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 5098,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Fri Apr  2 02:20:54 20212880",
+                "id": "物联网服务/物联网服务提供商",
+                "isGroup": "true",
+                "key": "智能考勤模式/2021/3/30 上午10:36:033",
+                "loc": "8 399",
+                "name": "物联网服务/物联网服务提供商",
+                "object_properties": [],
+                "participant": "物联网服务/物联网服务提供商",
+                "props": [],
+                "size": "2100 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 6609,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "20",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"开始上课\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能排课模式/2021/3/30 上午10:03:273",
+                "id": "上课",
+                "key": "智能考勤模式/2021/3/30 上午10:36:571215",
+                "loc": "298 1053",
+                "name": "上课",
+                "object_properties": [],
+                "type": [
+                    "校园服务/上课"
+                ]
+            },
+            {
+                "__gohashid": 7266,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"检测学生数据\")\ntoken.data['cost'] = token.data['cost']+ 1\n",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能考勤模式/2021/3/30 上午10:36:033",
+                "id": "上课学生检测",
+                "key": "智能考勤模式/2021/3/30 上午10:37:221217",
+                "loc": "80 451",
+                "name": "上课学生检测",
+                "object_properties": [],
+                "type": [
+                    "物联网服务/终端采集数据"
+                ]
+            },
+            {
+                "__gohashid": 7805,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"考勤数据传送\")\ntoken.data['cost'] = token.data['cost'] + 0.2",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能考勤模式/2021/3/30 上午10:36:033",
+                "id": "考勤数据传输",
+                "key": "智能考勤模式/2021/3/30 上午10:37:371219",
+                "loc": "580 451",
+                "name": "考勤数据传输",
+                "objectProperty": {
+                    "CarrierIs": "物联网服务/物联网平台"
+                },
+                "object_properties": [],
+                "type": [
+                    "物联网服务/数据传输"
+                ]
+            },
+            {
+                "__gohashid": 8138,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn round(random.uniform(5,10))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"考勤数据分析\")\ntoken.data['cost'] = token.data['cost'] + 2",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能答题模式/2021/3/29 下午8:08:375",
+                "id": "考勤数据统计分析",
+                "key": "智能考勤模式/2021/3/30 上午10:37:451220",
+                "loc": "80 150",
+                "name": "考勤数据统计分析",
+                "objectProperty": {
+                    "CarrierIs": "物联网服务/物联网平台"
+                },
+                "object_properties": [],
+                "type": [
+                    "物联网服务/物联网平台统计数据"
+                ]
+            },
+            {
+                "__gohashid": 12187,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"下课\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能考勤模式/2021/3/30 上午10:36:031",
+                "id": "学生下课",
+                "key": "智能考勤模式/2021/3/30 上午10:38:061221",
+                "loc": "580 752",
+                "name": "学生下课",
+                "object_properties": [],
+                "type": [
+                    "校园服务/下课"
+                ]
+            },
+            {
+                "__gohashid": 17197,
+                "bindTo": [],
+                "category": "end",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "end_step=model.step_count\nstart_step=token.data['start_step']\ntime = end_step-start_step\nprint('time:', time)\n\navg_process = model.instance_base.findByName(\"平均运行时间\")\ntotal = avg_process.amount*avg_process.quota_dscp\n\n\navg_process.amount = avg_process.amount+1\navg_process.quota_dscp = (total+time)/avg_process.amount\n\n\navg_cost=model.instance_base.findByName(\"平均运行成本\")\nprocess_cost= token.data['cost']\ntotal_cost=avg_cost.amount*avg_cost.quota_dscp\navg_cost.amount=avg_cost.amount+1\navg_cost.quota_dscp = (total_cost+process_cost)/avg_cost.amount\n\navg_repairRate = model.instance_base.findByName(\"排障成功率\")\nprocess_rate = token.data['RP']\ntotal_rate = avg_repairRate.amount*avg_repairRate.quota_dscp\navg_repairRate.amount = avg_repairRate.amount+1\navg_repairRate.quota_dscp = (total_rate+process_rate)/avg_repairRate.amount",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能排课模式/2021/3/30 上午10:03:273",
+                "id": "BPMN概念/EndEvent-1",
+                "key": "智能考勤模式/2021/3/30 上午10:38:421222",
+                "loc": "1048 1053",
+                "name": "BPMN概念/EndEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/EndEvent"
+                ]
+            },
+            {
+                "__gohashid": 20999,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "智能排课模式/2021/3/30 上午10:03:273",
+                "id": "学生考勤数据",
+                "key": "智能考勤模式/2021/3/30 上午10:40:431227",
+                "loc": "798 1053",
+                "name": "学生考勤数据",
+                "object_properties": [],
+                "type": []
+            },
+            {
+                "__gohashid": 33073,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "智能考勤模式/2021/3/30 上午10:36:033",
+                "id": "学生课程数据",
+                "key": "智能考勤模式/2021/3/30 上午10:41:291230",
+                "loc": "330 451",
+                "name": "学生课程数据",
+                "object_properties": [],
+                "type": [
+                    "校园服务/课程表数据"
+                ]
+            },
+            {
+                "__gohashid": 18632,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Fri Apr  2 02:20:54 20212880",
+                "id": "物联网服务/物联网设备提供商",
+                "isGroup": "true",
+                "key": "智能答题模式/2021/3/29 下午8:08:375",
+                "loc": "8 98",
+                "name": "物联网服务/物联网设备提供商",
+                "object_properties": [],
+                "participant": "物联网服务/物联网设备提供商",
+                "props": [],
+                "size": "2100 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 24130,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn round(random.randint(5,25))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"学生答题\")\n\ntoken.data['cost'] = token.data['cost'] + 2",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能考勤模式/2021/3/30 上午10:36:031",
+                "id": "学生答题",
+                "key": "智能答题模式/2021/3/29 下午8:10:42946",
+                "loc": "330 752",
+                "name": "学生答题",
+                "object_properties": [],
+                "type": [
+                    "物联网服务/终端采集数据"
+                ]
+            },
+            {
+                "__gohashid": 35652,
+                "bindTo": [],
+                "category": "exclusive",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/condition": {
+                        "isPattern": true,
+                        "text": "return True",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能排课模式/2021/3/30 上午10:03:273",
+                "id": "BPMN概念/ExclusiveGateWay-1",
+                "key": "智能答题模式/2021/3/29 下午8:13:02952",
+                "loc": "1298 1053",
+                "name": "BPMN概念/ExclusiveGateWay-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/ExclusiveGateWay"
+                ]
+            },
+            {
+                "__gohashid": 36132,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "1",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"发出警报\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能考勤模式/2021/3/30 上午10:36:033",
+                "id": "终端故障",
+                "key": "智能答题模式/2021/3/29 下午8:13:18954",
+                "loc": "830 451",
+                "name": "终端故障",
+                "object_properties": [],
+                "type": [
+                    "物联网服务/终端故障警报"
+                ]
+            },
+            {
+                "__gohashid": 42208,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn round(random.randint(5,30))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"维护\")\ntoken.data['cost']=token.data['cost']+random.randint(20,100)",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "智能答题模式/2021/3/29 下午8:08:375",
+                "id": "终端故障维护",
+                "key": "智能答题模式/2021/3/29 下午8:14:23957",
+                "loc": "330 150",
+                "name": "终端故障维护",
+                "object_properties": [],
+                "type": [
+                    "物联网服务/终端维护"
+                ]
+            },
+            {
+                "__gohashid": "76634bc47ea743809db9ee0aef13c335",
+                "category": "Pool",
+                "isGroup": "true",
+                "key": "Fri Apr  2 02:20:54 20212880",
+                "loc": "-18.522847498307954 98",
+                "name": "智慧校园",
+                "type": "BPMN概念/LaneSet"
+            }
+        ],
+        "resource_config": {}
+    }
+}

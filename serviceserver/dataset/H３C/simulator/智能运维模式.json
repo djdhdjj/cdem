@@ -1,0 +1,4141 @@
+{
+    "config": {
+        "id": "2021/3/2 上午11:37:31874",
+        "maxStep": "1000",
+        "maxTime": null,
+        "name": "智能运维模式",
+        "仿真": ""
+    },
+    "instance_base": {
+        "config": {},
+        "groups": [
+            {
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "groups": [],
+                "id": "2021/3/2 下午12:24:07920",
+                "instances": [
+                    {
+                        "bindTo": [
+                            "门店客流分析/零售门店"
+                        ],
+                        "config": {},
+                        "data_properties": {},
+                        "graph_data": {},
+                        "id": "2021/3/2 下午12:24:23921",
+                        "name": "2021/3/2 下午12:24:23921",
+                        "object_properties": [],
+                        "type": [
+                            "BPMN概念/Lane"
+                        ]
+                    }
+                ],
+                "name": "零售门店",
+                "num": 10,
+                "type": []
+            }
+        ],
+        "instances": [
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "1",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "0.86",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2021/3/24 下午1:34:432270",
+                "name": "排障成功率",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2021/3/2 下午12:24:54922",
+                "name": "平均运行时间",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            },
+            {
+                "bindTo": [
+                    "无线管理/H3C"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2021/3/2 下午12:22:42917",
+                "name": "H3C",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "bindTo": [],
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/amount": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    },
+                    "基础领域术语库/quota_dscp": {
+                        "isPattern": false,
+                        "text": "0",
+                        "type": "value"
+                    }
+                },
+                "graph_data": {},
+                "id": "2021/3/2 下午12:25:55923",
+                "name": "平均运行成本",
+                "object_properties": [],
+                "type": [
+                    "基础领域术语库/Quota"
+                ]
+            },
+            {
+                "bindTo": [
+                    "门店客流分析/某国际品牌零售商"
+                ],
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "id": "2021/3/2 下午12:23:11918",
+                "name": "某国际品牌零售商",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            }
+        ],
+        "relations": []
+    },
+    "name": "智能运维模式",
+    "node2binding_relations": {
+        "2021/3/2 下午12:24:23921": [
+            "门店客流分析/零售门店"
+        ],
+        "H3C": [
+            "无线管理/H3C"
+        ],
+        "某国际品牌零售商": [
+            "门店客流分析/某国际品牌零售商"
+        ]
+    },
+    "pattern_instance_base": {
+        "config": {
+            "id": "1614656117.3510163_55797",
+            "name": "智能运维模式_推荐_2"
+        },
+        "groups": [],
+        "instances": [
+            {
+                "__gohashid": 15257,
+                "bindTo": [],
+                "category": "end",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"end\")\n\nend_step=model.step_count\nstart_step=token.data['start_step']\ntime = end_step-start_step\nprint('time:', time)\n\navg_process = model.instance_base.findByName(\"平均运行时间\")\ntotal = avg_process.amount*avg_process.quota_dscp\nprint('total:', total)\n\navg_process.amount = avg_process.amount+1\navg_process.quota_dscp = (total+time)/avg_process.amount\nprint('avg:', avg_process.quota_dscp)\n\navg_cost=model.instance_base.findByName(\"平均运行成本\")\nprocess_cost= token.data['cost']+token.data['layOut_cost']\ntotal_cost=avg_cost.amount*avg_cost.quota_dscp\navg_cost.amount=avg_cost.amount+1\navg_cost.quota_dscp = (total_cost+process_cost)/avg_cost.amount\n\navg_repairRate = model.instance_base.findByName(\"排障成功率\")\nprocess_rate = token.data['repairRate']\ntotal_rate = avg_repairRate.amount*avg_repairRate.quota_dscp\navg_repairRate.amount = avg_repairRate.amount+1\navg_repairRate.quota_dscp = (total_rate+process_rate)/avg_repairRate.amount",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:501",
+                "id": "BPMN概念/EndEvent-1",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:47:13729",
+                "loc": "1330 776",
+                "name": "BPMN概念/EndEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/EndEvent"
+                ]
+            },
+            {
+                "__gohashid": 142053,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "云运维模式/2021/3/1 下午10:26:289",
+                "id": "门店数据",
+                "key": "云运维模式/2021/3/1 下午10:32:071185",
+                "loc": "776.1683349609375 174",
+                "name": "门店数据",
+                "object_properties": [],
+                "type": [
+                    "无线管理/门店数据"
+                ]
+            },
+            {
+                "__gohashid": 86737,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "1",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"云验收\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:501",
+                "id": "云验收",
+                "key": "云运维模式/2021/3/1 下午10:27:401166",
+                "loc": "1580 776",
+                "name": "云验收",
+                "object_properties": [],
+                "type": [
+                    "无线管理/云验收"
+                ]
+            },
+            {
+                "__gohashid": 26858,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:501",
+                "id": "客流数据",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:48:13735",
+                "loc": "1080 776",
+                "name": "客流数据",
+                "object_properties": [],
+                "type": [
+                    "门店客流分析/客流数据"
+                ]
+            },
+            {
+                "__gohashid": 76806,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Tue Mar  2 03:35:17 20219499",
+                "id": "无线管理/H3C",
+                "isGroup": "true",
+                "key": "云运维模式/2021/3/1 下午10:26:289",
+                "loc": "-13.831665039062507 122",
+                "name": "无线管理/H3C",
+                "object_properties": [],
+                "participant": "无线管理/H3C",
+                "props": [],
+                "size": "3500 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 86238,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\n\nlow = round(random.uniform(2, 6))\nup = round(random.uniform(7, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"云部署\")\ntoken.data['manage_cost'] = round(random.uniform(12,29))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "云运维模式/2021/3/1 下午10:26:289",
+                "id": "云部署",
+                "key": "云运维模式/2021/3/1 下午10:27:261164",
+                "loc": "1026.1683349609375 174",
+                "name": "云部署",
+                "object_properties": [],
+                "type": [
+                    "无线管理/云部署"
+                ]
+            },
+            {
+                "__gohashid": 132094,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:502",
+                "id": "connectNode",
+                "key": "云运维模式/2021/3/1 下午10:30:511178",
+                "loc": "1308.1683349609375 475",
+                "name": "connectNode",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/task"
+                ]
+            },
+            {
+                "__gohashid": 8367,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "token.data['cost']=token.data['cost']+0.1 # 0.01个单位成本\nprint(\"数据传输\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:501",
+                "id": "数据传输",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:46:39723",
+                "loc": "330 776",
+                "name": "数据传输",
+                "object_properties": [],
+                "type": [
+                    "门店客流分析/数据传输"
+                ]
+            },
+            {
+                "__gohashid": 11992,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"数据统计分析\")\n# token.data['cost']=round(random.normalvariate(0.5, 1)) ",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:501",
+                "id": "数据统计",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:46:53725",
+                "loc": "580 776",
+                "name": "数据统计",
+                "object_properties": [],
+                "type": [
+                    "门店客流分析/数据统计"
+                ]
+            },
+            {
+                "__gohashid": 77597,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\n\nlow = round(random.uniform(4, 10))\nup = random.randint(7, 14)\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"云工勘\")\ntoken.data['cost']=token.data['cost']+random.randint(5,100)",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "云运维模式/2021/3/1 下午10:26:289",
+                "id": "云工勘",
+                "key": "云运维模式/2021/3/1 下午10:26:391160",
+                "loc": "276.1683349609375 174",
+                "name": "云工勘",
+                "object_properties": [],
+                "type": [
+                    "无线管理/云工勘"
+                ]
+            },
+            {
+                "__gohashid": 117460,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn round(random.randint(2,3))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"远程维护\")\ntoken.data['cost']=token.data['cost']+random.int(20,100)",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "云运维模式/2021/3/1 下午10:26:289",
+                "id": "远程维护",
+                "key": "云运维模式/2021/3/1 下午10:29:431172",
+                "loc": "1276.1683349609375 174",
+                "name": "远程维护",
+                "object_properties": [],
+                "type": [
+                    "无线管理/远程维护"
+                ]
+            },
+            {
+                "__gohashid": 12434,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"分析决策\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:501",
+                "id": "营销分析",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:46:59727",
+                "loc": "830 776",
+                "name": "营销分析",
+                "object_properties": [],
+                "type": [
+                    "门店客流分析/营销分析"
+                ]
+            },
+            {
+                "__gohashid": 143830,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:502",
+                "id": "部署设备数据",
+                "key": "云运维模式/2021/3/1 下午10:32:431188",
+                "loc": "808.1683349609375 475",
+                "name": "部署设备数据",
+                "object_properties": [],
+                "type": [
+                    "无线管理/无线设备数据"
+                ]
+            },
+            {
+                "__gohashid": 5517,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"消费者进店\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:502",
+                "id": "消费者进店",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:46:04719",
+                "loc": "58.168334960937486 475",
+                "name": "消费者进店",
+                "object_properties": [],
+                "type": [
+                    "门店客流分析/进店"
+                ]
+            },
+            {
+                "__gohashid": 77339,
+                "bindTo": [],
+                "category": "start",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"start\")\n\ntoken.data['start_step']=model.step_count\nprint('start event:', model.step_count)\ntoken.data['cost'] = 0\ntoken.data['repairRate'] = 0.88",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "云运维模式/2021/3/1 下午10:26:289",
+                "id": "BPMN概念/StartEvent-1",
+                "key": "云运维模式/2021/3/1 下午10:26:371159",
+                "loc": "26.168334960937493 174",
+                "name": "BPMN概念/StartEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/StartEvent"
+                ]
+            },
+            {
+                "__gohashid": 2487,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Tue Mar  2 03:35:17 20219499",
+                "id": "门店客流分析/某国际品牌零售商",
+                "isGroup": "true",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:45:501",
+                "loc": "-13.8316650390625 724",
+                "name": "门店客流分析/某国际品牌零售商",
+                "object_properties": [],
+                "participant": "门店客流分析/某国际品牌零售商",
+                "props": [],
+                "size": "3500 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 113493,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"云管理\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:501",
+                "id": "云管理",
+                "key": "云运维模式/2021/3/1 下午10:28:521168",
+                "loc": "1830 776",
+                "name": "云管理",
+                "object_properties": [],
+                "type": [
+                    "无线管理/云管理"
+                ]
+            },
+            {
+                "__gohashid": 120847,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\n\nprint(\"AI排障\")\n",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "云运维模式/2021/3/1 下午10:26:289",
+                "id": "AI排障",
+                "key": "云运维模式/2021/3/1 下午10:30:211176",
+                "loc": "2026.1683349609375 174",
+                "name": "AI排障",
+                "object_properties": [],
+                "type": [
+                    "无线管理/AI排障"
+                ]
+            },
+            {
+                "__gohashid": 116306,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"云管理\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:502",
+                "id": "云认证",
+                "key": "云运维模式/2021/3/1 下午10:29:231170",
+                "loc": "1058.1683349609375 475",
+                "name": "云认证",
+                "object_properties": [],
+                "type": [
+                    "无线管理/云认证"
+                ]
+            },
+            {
+                "__gohashid": 6070,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"消费者离店\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:502",
+                "id": "消费者离店",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:46:21721",
+                "loc": "308.1683349609375 475",
+                "name": "消费者离店",
+                "object_properties": [],
+                "type": [
+                    "门店客流分析/离店"
+                ]
+            },
+            {
+                "__gohashid": 80689,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "2",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"场所部署\")\n\ntoken.data['layOut_cost']=random.randint(13,100)",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:502",
+                "id": "场所部署",
+                "key": "云运维模式/2021/3/1 下午10:27:021162",
+                "loc": "558.1683349609375 475",
+                "name": "场所部署",
+                "object_properties": [],
+                "type": [
+                    "无线管理/场所部署"
+                ]
+            },
+            {
+                "__gohashid": 8903,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "云运维模式/2021/3/1 下午10:26:289",
+                "id": "故障数据",
+                "key": "云运维模式/2021/3/1 下午10:41:14739",
+                "loc": "2276.1683349609375 174",
+                "name": "故障数据",
+                "object_properties": [],
+                "type": [
+                    "无线管理/故障数据"
+                ]
+            },
+            {
+                "__gohashid": 2488,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Tue Mar  2 03:35:17 20219499",
+                "id": "门店客流分析/零售门店",
+                "isGroup": "true",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:45:502",
+                "loc": "-13.831665039062514 423",
+                "name": "门店客流分析/零售门店",
+                "object_properties": [],
+                "participant": "门店客流分析/零售门店",
+                "props": [],
+                "size": "3500 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 17576,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:501",
+                "id": "探针数据",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:47:35731",
+                "loc": "80 776",
+                "name": "探针数据",
+                "object_properties": [],
+                "type": [
+                    "门店客流分析/探针数据采集"
+                ]
+            },
+            {
+                "__gohashid": 118680,
+                "bindTo": [],
+                "category": "exclusive",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/condition": {
+                        "isPattern": true,
+                        "text": "return  True",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "云运维模式/2021/3/1 下午10:26:289",
+                "id": "BPMN概念/ExclusiveGateWay-1",
+                "key": "云运维模式/2021/3/1 下午10:30:071174",
+                "loc": "1776.1683349609375 174",
+                "name": "BPMN概念/ExclusiveGateWay-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/ExclusiveGateWay"
+                ]
+            }
+        ],
+        "relations": [
+            {
+                "__gohashid": 114990,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:27:401166",
+                "key": "云运维模式/2021/3/1 下午10:28:551169",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21453,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1640,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 1650,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 1700,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 1700,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 1750,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 1770,
+                            "y": 776
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:28:521168"
+            },
+            {
+                "__gohashid": 12138,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "WIFI探针客流分析/2021/3/1 下午10:46:39723",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:46:54726",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21388,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 390,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 400,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 450,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 450,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 500,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 520,
+                            "y": 776
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "WIFI探针客流分析/2021/3/1 下午10:46:53725"
+            },
+            {
+                "__gohashid": 9036,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:41:14739",
+                "key": "云运维模式/2021/3/1 下午10:41:15740",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 21653,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 2258.8683349609373,
+                            "y": 166.83333333333334
+                        },
+                        {
+                            "s": true,
+                            "x": 2240.8683349609373,
+                            "y": 166.83333333333334
+                        },
+                        {
+                            "s": true,
+                            "x": 2240.8683349609373,
+                            "y": 166.83333333333334
+                        },
+                        {
+                            "s": true,
+                            "x": 2240.8683349609373,
+                            "y": 180
+                        },
+                        {
+                            "s": true,
+                            "x": 2212,
+                            "y": 180
+                        },
+                        {
+                            "s": true,
+                            "x": 2212,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 2096.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 2086.1683349609375,
+                            "y": 174
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:30:211176"
+            },
+            {
+                "__gohashid": 120404,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:29:431172",
+                "key": "云运维模式/2021/3/1 下午10:30:111175",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21543,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1336.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1346.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1346.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1346.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1724.6683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1744.6683349609375,
+                            "y": 174
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:30:071174"
+            },
+            {
+                "__gohashid": 141557,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:31:391182",
+                "key": "云运维模式/2021/3/1 下午10:31:551184",
+                "points": {
+                    "Aa": 0,
+                    "Fa": null,
+                    "__gohashid": 11763,
+                    "bh": null,
+                    "j": [],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:26:391160"
+            },
+            {
+                "__gohashid": 27616,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "WIFI探针客流分析/2021/3/1 下午10:48:13735",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:48:45738",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21441,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1062.7,
+                            "y": 768.8333333333334
+                        },
+                        {
+                            "s": true,
+                            "x": 1044.7,
+                            "y": 768.8333333333334
+                        },
+                        {
+                            "s": true,
+                            "x": 1044,
+                            "y": 768.8333333333334
+                        },
+                        {
+                            "s": true,
+                            "x": 1044,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 890,
+                            "y": 776
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "WIFI探针客流分析/2021/3/1 下午10:46:59727"
+            },
+            {
+                "__gohashid": 116506,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:28:521168",
+                "key": "云运维模式/2021/3/1 下午10:29:241171",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 21530,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1770,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 1760,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 1760,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 1760,
+                            "y": 724
+                        },
+                        {
+                            "s": true,
+                            "x": 1236,
+                            "y": 724
+                        },
+                        {
+                            "s": true,
+                            "x": 1236,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 1138.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 1118.1683349609375,
+                            "y": 475
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:29:231170"
+            },
+            {
+                "__gohashid": 132284,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:30:211176",
+                "key": "云运维模式/2021/3/1 下午10:30:531179",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21548,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1966.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1956.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1956,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1956,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 1388.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 1368.1683349609375,
+                            "y": 475
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:30:511178"
+            },
+            {
+                "__gohashid": 20464,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "WIFI探针客流分析/2021/3/1 下午10:46:04719",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:47:50734",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 21393,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 58.168334960937486,
+                            "y": 515
+                        },
+                        {
+                            "s": true,
+                            "x": 58.168334960937486,
+                            "y": 525
+                        },
+                        {
+                            "s": true,
+                            "x": 58.168334960937486,
+                            "y": 524
+                        },
+                        {
+                            "s": true,
+                            "x": 58.168334960937486,
+                            "y": 524
+                        },
+                        {
+                            "s": true,
+                            "x": 58.168334960937486,
+                            "y": 548
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 548
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 744.5
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 754.5
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "WIFI探针客流分析/2021/3/1 下午10:47:35731"
+            },
+            {
+                "__gohashid": 79563,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:26:371159",
+                "key": "云运维模式/2021/3/1 下午10:26:451161",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 21456,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 124.1510009765625,
+                            "y": 195.5
+                        },
+                        {
+                            "s": true,
+                            "x": 134.1510009765625,
+                            "y": 195.5
+                        },
+                        {
+                            "s": true,
+                            "x": 132,
+                            "y": 195.5
+                        },
+                        {
+                            "s": true,
+                            "x": 132,
+                            "y": 195.5
+                        },
+                        {
+                            "s": true,
+                            "x": 188,
+                            "y": 195.5
+                        },
+                        {
+                            "s": true,
+                            "x": 188,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 196.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 216.1683349609375,
+                            "y": 174
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:26:391160"
+            },
+            {
+                "__gohashid": 177843,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:29:231170",
+                "key": "云运维模式/2021/3/1 下午10:35:151215",
+                "points": {
+                    "Aa": 0,
+                    "Fa": null,
+                    "__gohashid": 11747,
+                    "bh": null,
+                    "j": [],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:33:541195"
+            },
+            {
+                "__gohashid": 178025,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:32:071185",
+                "key": "云运维模式/2021/3/1 下午10:35:201216",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21660,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 776.1683349609375,
+                            "y": 195.5
+                        },
+                        {
+                            "s": true,
+                            "x": 776.1683349609375,
+                            "y": 205.5
+                        },
+                        {
+                            "s": true,
+                            "x": 776.1683349609375,
+                            "y": 205.5
+                        },
+                        {
+                            "s": true,
+                            "x": 558.1683349609375,
+                            "y": 205.5
+                        },
+                        {
+                            "s": true,
+                            "x": 558.1683349609375,
+                            "y": 425
+                        },
+                        {
+                            "s": true,
+                            "x": 558.1683349609375,
+                            "y": 435
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:27:021162"
+            },
+            {
+                "__gohashid": 142408,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:26:391160",
+                "key": "云运维模式/2021/3/1 下午10:32:091186",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21470,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 336.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 346.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 346.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 346.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 748.8683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 758.8683349609375,
+                            "y": 174
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:32:071185"
+            },
+            {
+                "__gohashid": 12661,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "WIFI探针客流分析/2021/3/1 下午10:46:53725",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:47:00728",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21406,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 640,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 650,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 700,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 700,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 750,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 770,
+                            "y": 776
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "WIFI探针客流分析/2021/3/1 下午10:46:59727"
+            },
+            {
+                "__gohashid": 14582,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:30:071174",
+                "key": "云运维模式/2021/3/1 下午10:41:20741",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 21545,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1807.6683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1817.6683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1820,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1820,
+                            "y": 124
+                        },
+                        {
+                            "s": true,
+                            "x": 2100,
+                            "y": 124
+                        },
+                        {
+                            "s": true,
+                            "x": 2100,
+                            "y": 181.16666666666666
+                        },
+                        {
+                            "s": true,
+                            "x": 2240.8683349609373,
+                            "y": 181.16666666666666
+                        },
+                        {
+                            "s": true,
+                            "x": 2258.8683349609373,
+                            "y": 181.16666666666666
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:41:14739"
+            },
+            {
+                "__gohashid": 17936,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "WIFI探针客流分析/2021/3/1 下午10:47:35731",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:47:43733",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21436,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 97.30000000000001,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 107.30000000000001,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 107.30000000000001,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 107.30000000000001,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 260,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 270,
+                            "y": 776
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "WIFI探针客流分析/2021/3/1 下午10:46:39723"
+            },
+            {
+                "__gohashid": 87008,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:27:261164",
+                "key": "云运维模式/2021/3/1 下午10:27:421167",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 21482,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1026.1683349609375,
+                            "y": 214
+                        },
+                        {
+                            "s": true,
+                            "x": 1026.1683349609375,
+                            "y": 224
+                        },
+                        {
+                            "s": true,
+                            "x": 1026.1683349609375,
+                            "y": 228
+                        },
+                        {
+                            "s": true,
+                            "x": 1026.1683349609375,
+                            "y": 228
+                        },
+                        {
+                            "s": true,
+                            "x": 1026.1683349609375,
+                            "y": 252
+                        },
+                        {
+                            "s": true,
+                            "x": 1580,
+                            "y": 252
+                        },
+                        {
+                            "s": true,
+                            "x": 1580,
+                            "y": 716
+                        },
+                        {
+                            "s": true,
+                            "x": 1580,
+                            "y": 736
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:27:401166"
+            },
+            {
+                "__gohashid": 131830,
+                "category": "controlFlow",
+                "controlFlowNo": false,
+                "controlFlowYes": true,
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:30:071174",
+                "key": "云运维模式/2021/3/1 下午10:30:471177",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21544,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1807.6683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1817.6683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1817.6683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1817.6683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1946.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1966.1683349609375,
+                            "y": 174
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:30:211176"
+            },
+            {
+                "__gohashid": 16572,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "WIFI探针客流分析/2021/3/1 下午10:46:59727",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:47:15730",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 21424,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 890,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 748
+                        },
+                        {
+                            "s": true,
+                            "x": 1156,
+                            "y": 748
+                        },
+                        {
+                            "s": true,
+                            "x": 1156,
+                            "y": 799
+                        },
+                        {
+                            "s": true,
+                            "x": 1361.2664337158203,
+                            "y": 799
+                        },
+                        {
+                            "s": true,
+                            "x": 1381.2664337158203,
+                            "y": 799
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "WIFI探针客流分析/2021/3/1 下午10:47:13729"
+            },
+            {
+                "__gohashid": 7436,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "WIFI探针客流分析/2021/3/1 下午10:46:04719",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:46:23722",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21392,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 118.16833496093749,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 128.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 178.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 178.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 228.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 248.1683349609375,
+                            "y": 475
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "WIFI探针客流分析/2021/3/1 下午10:46:21721"
+            },
+            {
+                "__gohashid": 27729,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "WIFI探针客流分析/2021/3/1 下午10:46:53725",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:48:47739",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 21410,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 640,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 650,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 652,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 652,
+                            "y": 724
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 724
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 783.1666666666666
+                        },
+                        {
+                            "s": true,
+                            "x": 1044.7,
+                            "y": 783.1666666666666
+                        },
+                        {
+                            "s": true,
+                            "x": 1062.7,
+                            "y": 783.1666666666666
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "WIFI探针客流分析/2021/3/1 下午10:48:13735"
+            },
+            {
+                "__gohashid": 146930,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:32:431188",
+                "key": "云运维模式/2021/3/1 下午10:32:521190",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 21668,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 808.1683349609375,
+                            "y": 453.5
+                        },
+                        {
+                            "s": true,
+                            "x": 808.1683349609375,
+                            "y": 443.5
+                        },
+                        {
+                            "s": true,
+                            "x": 808.1683349609375,
+                            "y": 444
+                        },
+                        {
+                            "s": true,
+                            "x": 808.1683349609375,
+                            "y": 444
+                        },
+                        {
+                            "s": true,
+                            "x": 808.1683349609375,
+                            "y": 428
+                        },
+                        {
+                            "s": true,
+                            "x": 1026.1683349609375,
+                            "y": 428
+                        },
+                        {
+                            "s": true,
+                            "x": 1026.1683349609375,
+                            "y": 224
+                        },
+                        {
+                            "s": true,
+                            "x": 1026.1683349609375,
+                            "y": 214
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:27:261164"
+            },
+            {
+                "__gohashid": 117663,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:29:231170",
+                "key": "云运维模式/2021/3/1 下午10:29:451173",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21536,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1058.1683349609375,
+                            "y": 435
+                        },
+                        {
+                            "s": true,
+                            "x": 1058.1683349609375,
+                            "y": 425
+                        },
+                        {
+                            "s": true,
+                            "x": 1058.1683349609375,
+                            "y": 425
+                        },
+                        {
+                            "s": true,
+                            "x": 1276.1683349609375,
+                            "y": 425
+                        },
+                        {
+                            "s": true,
+                            "x": 1276.1683349609375,
+                            "y": 234
+                        },
+                        {
+                            "s": true,
+                            "x": 1276.1683349609375,
+                            "y": 214
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:29:431172"
+            },
+            {
+                "__gohashid": 9689,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "WIFI探针客流分析/2021/3/1 下午10:46:21721",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:46:41724",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 21400,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 308.1683349609375,
+                            "y": 515
+                        },
+                        {
+                            "s": true,
+                            "x": 308.1683349609375,
+                            "y": 525
+                        },
+                        {
+                            "s": true,
+                            "x": 308.1683349609375,
+                            "y": 524
+                        },
+                        {
+                            "s": true,
+                            "x": 308.1683349609375,
+                            "y": 524
+                        },
+                        {
+                            "s": true,
+                            "x": 308.1683349609375,
+                            "y": 548
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 548
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 716
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 736
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "WIFI探针客流分析/2021/3/1 下午10:46:39723"
+            },
+            {
+                "__gohashid": 146803,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:27:021162",
+                "key": "云运维模式/2021/3/1 下午10:32:501189",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21479,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 618.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 628.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 628.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 628.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 780.8683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 790.8683349609375,
+                            "y": 475
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:32:431188"
+            },
+            {
+                "__gohashid": "d3c27fe73c644cb28ecdfbe50466af61",
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:30:511178",
+                "key": "Tue Mar  2 03:35:17 20215249",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 21526,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1248.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 1238.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 1236,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 1236,
+                            "y": 428
+                        },
+                        {
+                            "s": true,
+                            "x": 236,
+                            "y": 428
+                        },
+                        {
+                            "s": true,
+                            "x": 236,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 138.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 118.16833496093749,
+                            "y": 475
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "WIFI探针客流分析/2021/3/1 下午10:46:04719"
+            },
+            {
+                "__gohashid": 82859,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:26:391160",
+                "key": "云运维模式/2021/3/1 下午10:27:061163",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21464,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 276.1683349609375,
+                            "y": 214
+                        },
+                        {
+                            "s": true,
+                            "x": 276.1683349609375,
+                            "y": 224
+                        },
+                        {
+                            "s": true,
+                            "x": 276.1683349609375,
+                            "y": 228
+                        },
+                        {
+                            "s": true,
+                            "x": 558.1683349609375,
+                            "y": 228
+                        },
+                        {
+                            "s": true,
+                            "x": 558.1683349609375,
+                            "y": 415
+                        },
+                        {
+                            "s": true,
+                            "x": 558.1683349609375,
+                            "y": 435
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:27:021162"
+            },
+            {
+                "__gohashid": 158787,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:33:541195",
+                "key": "云运维模式/2021/3/1 下午10:34:191197",
+                "points": {
+                    "Aa": 0,
+                    "Fa": null,
+                    "__gohashid": 11764,
+                    "bh": null,
+                    "j": [],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:29:431172"
+            },
+            {
+                "__gohashid": 141440,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:26:371159",
+                "key": "云运维模式/2021/3/1 下午10:31:541183",
+                "points": {
+                    "Aa": 0,
+                    "Fa": null,
+                    "__gohashid": 11762,
+                    "bh": null,
+                    "j": [],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:31:391182"
+            },
+            {
+                "__gohashid": 86438,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:27:021162",
+                "key": "云运维模式/2021/3/1 下午10:27:301165",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 21473,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 618.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 628.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 628.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 628.1683349609375,
+                            "y": 444
+                        },
+                        {
+                            "s": true,
+                            "x": 844,
+                            "y": 444
+                        },
+                        {
+                            "s": true,
+                            "x": 844,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 946.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 966.1683349609375,
+                            "y": 174
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:27:261164"
+            }
+        ]
+    },
+    "service pattern": {
+        "config": {
+            "id": "1614656117.3510163_55797",
+            "name": "智能运维模式_推荐_2"
+        },
+        "elements": {},
+        "evaluate_config": {},
+        "links": [
+            {
+                "__gohashid": 7436,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "WIFI探针客流分析/2021/3/1 下午10:46:04719",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:46:23722",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21392,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 118.16833496093749,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 128.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 178.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 178.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 228.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 248.1683349609375,
+                            "y": 475
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "WIFI探针客流分析/2021/3/1 下午10:46:21721"
+            },
+            {
+                "__gohashid": 20464,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "WIFI探针客流分析/2021/3/1 下午10:46:04719",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:47:50734",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 21393,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 58.168334960937486,
+                            "y": 515
+                        },
+                        {
+                            "s": true,
+                            "x": 58.168334960937486,
+                            "y": 525
+                        },
+                        {
+                            "s": true,
+                            "x": 58.168334960937486,
+                            "y": 524
+                        },
+                        {
+                            "s": true,
+                            "x": 58.168334960937486,
+                            "y": 524
+                        },
+                        {
+                            "s": true,
+                            "x": 58.168334960937486,
+                            "y": 548
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 548
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 744.5
+                        },
+                        {
+                            "s": true,
+                            "x": 80,
+                            "y": 754.5
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "WIFI探针客流分析/2021/3/1 下午10:47:35731"
+            },
+            {
+                "__gohashid": 9689,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "WIFI探针客流分析/2021/3/1 下午10:46:21721",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:46:41724",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 21400,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 308.1683349609375,
+                            "y": 515
+                        },
+                        {
+                            "s": true,
+                            "x": 308.1683349609375,
+                            "y": 525
+                        },
+                        {
+                            "s": true,
+                            "x": 308.1683349609375,
+                            "y": 524
+                        },
+                        {
+                            "s": true,
+                            "x": 308.1683349609375,
+                            "y": 524
+                        },
+                        {
+                            "s": true,
+                            "x": 308.1683349609375,
+                            "y": 548
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 548
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 716
+                        },
+                        {
+                            "s": true,
+                            "x": 330,
+                            "y": 736
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "WIFI探针客流分析/2021/3/1 下午10:46:39723"
+            },
+            {
+                "__gohashid": 12138,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "WIFI探针客流分析/2021/3/1 下午10:46:39723",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:46:54726",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21388,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 390,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 400,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 450,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 450,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 500,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 520,
+                            "y": 776
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "WIFI探针客流分析/2021/3/1 下午10:46:53725"
+            },
+            {
+                "__gohashid": 12661,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "WIFI探针客流分析/2021/3/1 下午10:46:53725",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:47:00728",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21406,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 640,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 650,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 700,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 700,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 750,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 770,
+                            "y": 776
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "WIFI探针客流分析/2021/3/1 下午10:46:59727"
+            },
+            {
+                "__gohashid": 27729,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "WIFI探针客流分析/2021/3/1 下午10:46:53725",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:48:47739",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 21410,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 640,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 650,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 652,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 652,
+                            "y": 724
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 724
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 783.1666666666666
+                        },
+                        {
+                            "s": true,
+                            "x": 1044.7,
+                            "y": 783.1666666666666
+                        },
+                        {
+                            "s": true,
+                            "x": 1062.7,
+                            "y": 783.1666666666666
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "WIFI探针客流分析/2021/3/1 下午10:48:13735"
+            },
+            {
+                "__gohashid": 16572,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "WIFI探针客流分析/2021/3/1 下午10:46:59727",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:47:15730",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 21424,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 890,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 748
+                        },
+                        {
+                            "s": true,
+                            "x": 1156,
+                            "y": 748
+                        },
+                        {
+                            "s": true,
+                            "x": 1156,
+                            "y": 799
+                        },
+                        {
+                            "s": true,
+                            "x": 1361.2664337158203,
+                            "y": 799
+                        },
+                        {
+                            "s": true,
+                            "x": 1381.2664337158203,
+                            "y": 799
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "WIFI探针客流分析/2021/3/1 下午10:47:13729"
+            },
+            {
+                "__gohashid": 17936,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "WIFI探针客流分析/2021/3/1 下午10:47:35731",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:47:43733",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21436,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 97.30000000000001,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 107.30000000000001,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 107.30000000000001,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 107.30000000000001,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 260,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 270,
+                            "y": 776
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "WIFI探针客流分析/2021/3/1 下午10:46:39723"
+            },
+            {
+                "__gohashid": 27616,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "WIFI探针客流分析/2021/3/1 下午10:48:13735",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:48:45738",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21441,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1062.7,
+                            "y": 768.8333333333334
+                        },
+                        {
+                            "s": true,
+                            "x": 1044.7,
+                            "y": 768.8333333333334
+                        },
+                        {
+                            "s": true,
+                            "x": 1044,
+                            "y": 768.8333333333334
+                        },
+                        {
+                            "s": true,
+                            "x": 1044,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 900,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 890,
+                            "y": 776
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "WIFI探针客流分析/2021/3/1 下午10:46:59727"
+            },
+            {
+                "__gohashid": 79563,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:26:371159",
+                "key": "云运维模式/2021/3/1 下午10:26:451161",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 21456,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 124.1510009765625,
+                            "y": 195.5
+                        },
+                        {
+                            "s": true,
+                            "x": 134.1510009765625,
+                            "y": 195.5
+                        },
+                        {
+                            "s": true,
+                            "x": 132,
+                            "y": 195.5
+                        },
+                        {
+                            "s": true,
+                            "x": 132,
+                            "y": 195.5
+                        },
+                        {
+                            "s": true,
+                            "x": 188,
+                            "y": 195.5
+                        },
+                        {
+                            "s": true,
+                            "x": 188,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 196.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 216.1683349609375,
+                            "y": 174
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:26:391160"
+            },
+            {
+                "__gohashid": 141440,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:26:371159",
+                "key": "云运维模式/2021/3/1 下午10:31:541183",
+                "points": {
+                    "Aa": 0,
+                    "Fa": null,
+                    "__gohashid": 11762,
+                    "bh": null,
+                    "j": [],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:31:391182"
+            },
+            {
+                "__gohashid": 82859,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:26:391160",
+                "key": "云运维模式/2021/3/1 下午10:27:061163",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21464,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 276.1683349609375,
+                            "y": 214
+                        },
+                        {
+                            "s": true,
+                            "x": 276.1683349609375,
+                            "y": 224
+                        },
+                        {
+                            "s": true,
+                            "x": 276.1683349609375,
+                            "y": 228
+                        },
+                        {
+                            "s": true,
+                            "x": 558.1683349609375,
+                            "y": 228
+                        },
+                        {
+                            "s": true,
+                            "x": 558.1683349609375,
+                            "y": 415
+                        },
+                        {
+                            "s": true,
+                            "x": 558.1683349609375,
+                            "y": 435
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:27:021162"
+            },
+            {
+                "__gohashid": 142408,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:26:391160",
+                "key": "云运维模式/2021/3/1 下午10:32:091186",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21470,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 336.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 346.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 346.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 346.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 748.8683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 758.8683349609375,
+                            "y": 174
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:32:071185"
+            },
+            {
+                "__gohashid": 86438,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:27:021162",
+                "key": "云运维模式/2021/3/1 下午10:27:301165",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 21473,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 618.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 628.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 628.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 628.1683349609375,
+                            "y": 444
+                        },
+                        {
+                            "s": true,
+                            "x": 844,
+                            "y": 444
+                        },
+                        {
+                            "s": true,
+                            "x": 844,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 946.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 966.1683349609375,
+                            "y": 174
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:27:261164"
+            },
+            {
+                "__gohashid": 146803,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:27:021162",
+                "key": "云运维模式/2021/3/1 下午10:32:501189",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21479,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 618.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 628.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 628.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 628.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 780.8683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 790.8683349609375,
+                            "y": 475
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:32:431188"
+            },
+            {
+                "__gohashid": 87008,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:27:261164",
+                "key": "云运维模式/2021/3/1 下午10:27:421167",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 21482,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1026.1683349609375,
+                            "y": 214
+                        },
+                        {
+                            "s": true,
+                            "x": 1026.1683349609375,
+                            "y": 224
+                        },
+                        {
+                            "s": true,
+                            "x": 1026.1683349609375,
+                            "y": 228
+                        },
+                        {
+                            "s": true,
+                            "x": 1026.1683349609375,
+                            "y": 228
+                        },
+                        {
+                            "s": true,
+                            "x": 1026.1683349609375,
+                            "y": 252
+                        },
+                        {
+                            "s": true,
+                            "x": 1580,
+                            "y": 252
+                        },
+                        {
+                            "s": true,
+                            "x": 1580,
+                            "y": 716
+                        },
+                        {
+                            "s": true,
+                            "x": 1580,
+                            "y": 736
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:27:401166"
+            },
+            {
+                "__gohashid": 114990,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:27:401166",
+                "key": "云运维模式/2021/3/1 下午10:28:551169",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21453,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1640,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 1650,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 1700,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 1700,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 1750,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 1770,
+                            "y": 776
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:28:521168"
+            },
+            {
+                "__gohashid": 116506,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:28:521168",
+                "key": "云运维模式/2021/3/1 下午10:29:241171",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 21530,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1770,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 1760,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 1760,
+                            "y": 776
+                        },
+                        {
+                            "s": true,
+                            "x": 1760,
+                            "y": 724
+                        },
+                        {
+                            "s": true,
+                            "x": 1236,
+                            "y": 724
+                        },
+                        {
+                            "s": true,
+                            "x": 1236,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 1138.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 1118.1683349609375,
+                            "y": 475
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:29:231170"
+            },
+            {
+                "__gohashid": 117663,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:29:231170",
+                "key": "云运维模式/2021/3/1 下午10:29:451173",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21536,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1058.1683349609375,
+                            "y": 435
+                        },
+                        {
+                            "s": true,
+                            "x": 1058.1683349609375,
+                            "y": 425
+                        },
+                        {
+                            "s": true,
+                            "x": 1058.1683349609375,
+                            "y": 425
+                        },
+                        {
+                            "s": true,
+                            "x": 1276.1683349609375,
+                            "y": 425
+                        },
+                        {
+                            "s": true,
+                            "x": 1276.1683349609375,
+                            "y": 234
+                        },
+                        {
+                            "s": true,
+                            "x": 1276.1683349609375,
+                            "y": 214
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:29:431172"
+            },
+            {
+                "__gohashid": 177843,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:29:231170",
+                "key": "云运维模式/2021/3/1 下午10:35:151215",
+                "points": {
+                    "Aa": 0,
+                    "Fa": null,
+                    "__gohashid": 11747,
+                    "bh": null,
+                    "j": [],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:33:541195"
+            },
+            {
+                "__gohashid": 120404,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:29:431172",
+                "key": "云运维模式/2021/3/1 下午10:30:111175",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21543,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1336.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1346.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1346.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1346.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1724.6683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1744.6683349609375,
+                            "y": 174
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:30:071174"
+            },
+            {
+                "__gohashid": 131830,
+                "category": "controlFlow",
+                "controlFlowNo": false,
+                "controlFlowYes": true,
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:30:071174",
+                "key": "云运维模式/2021/3/1 下午10:30:471177",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21544,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1807.6683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1817.6683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1817.6683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1817.6683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1946.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1966.1683349609375,
+                            "y": 174
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:30:211176"
+            },
+            {
+                "__gohashid": 14582,
+                "category": "dataFlowOut",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:30:071174",
+                "key": "云运维模式/2021/3/1 下午10:41:20741",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 21545,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1807.6683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1817.6683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1820,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1820,
+                            "y": 124
+                        },
+                        {
+                            "s": true,
+                            "x": 2100,
+                            "y": 124
+                        },
+                        {
+                            "s": true,
+                            "x": 2100,
+                            "y": 181.16666666666666
+                        },
+                        {
+                            "s": true,
+                            "x": 2240.8683349609373,
+                            "y": 181.16666666666666
+                        },
+                        {
+                            "s": true,
+                            "x": 2258.8683349609373,
+                            "y": 181.16666666666666
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:41:14739"
+            },
+            {
+                "__gohashid": 132284,
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:30:211176",
+                "key": "云运维模式/2021/3/1 下午10:30:531179",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21548,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1966.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1956.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1956,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 1956,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 1388.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 1368.1683349609375,
+                            "y": 475
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:30:511178"
+            },
+            {
+                "__gohashid": "d3c27fe73c644cb28ecdfbe50466af61",
+                "category": "controlFlow",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:30:511178",
+                "key": "Tue Mar  2 03:35:17 20215249",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 21526,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 1248.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 1238.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 1236,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 1236,
+                            "y": 428
+                        },
+                        {
+                            "s": true,
+                            "x": 236,
+                            "y": 428
+                        },
+                        {
+                            "s": true,
+                            "x": 236,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 138.1683349609375,
+                            "y": 475
+                        },
+                        {
+                            "s": true,
+                            "x": 118.16833496093749,
+                            "y": 475
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "WIFI探针客流分析/2021/3/1 下午10:46:04719"
+            },
+            {
+                "__gohashid": 141557,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:31:391182",
+                "key": "云运维模式/2021/3/1 下午10:31:551184",
+                "points": {
+                    "Aa": 0,
+                    "Fa": null,
+                    "__gohashid": 11763,
+                    "bh": null,
+                    "j": [],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:26:391160"
+            },
+            {
+                "__gohashid": 178025,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:32:071185",
+                "key": "云运维模式/2021/3/1 下午10:35:201216",
+                "points": {
+                    "Aa": 8,
+                    "Fa": null,
+                    "__gohashid": 21660,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 776.1683349609375,
+                            "y": 195.5
+                        },
+                        {
+                            "s": true,
+                            "x": 776.1683349609375,
+                            "y": 205.5
+                        },
+                        {
+                            "s": true,
+                            "x": 776.1683349609375,
+                            "y": 205.5
+                        },
+                        {
+                            "s": true,
+                            "x": 558.1683349609375,
+                            "y": 205.5
+                        },
+                        {
+                            "s": true,
+                            "x": 558.1683349609375,
+                            "y": 425
+                        },
+                        {
+                            "s": true,
+                            "x": 558.1683349609375,
+                            "y": 435
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:27:021162"
+            },
+            {
+                "__gohashid": 146930,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:32:431188",
+                "key": "云运维模式/2021/3/1 下午10:32:521190",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 21668,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 808.1683349609375,
+                            "y": 453.5
+                        },
+                        {
+                            "s": true,
+                            "x": 808.1683349609375,
+                            "y": 443.5
+                        },
+                        {
+                            "s": true,
+                            "x": 808.1683349609375,
+                            "y": 444
+                        },
+                        {
+                            "s": true,
+                            "x": 808.1683349609375,
+                            "y": 444
+                        },
+                        {
+                            "s": true,
+                            "x": 808.1683349609375,
+                            "y": 428
+                        },
+                        {
+                            "s": true,
+                            "x": 1026.1683349609375,
+                            "y": 428
+                        },
+                        {
+                            "s": true,
+                            "x": 1026.1683349609375,
+                            "y": 224
+                        },
+                        {
+                            "s": true,
+                            "x": 1026.1683349609375,
+                            "y": 214
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:27:261164"
+            },
+            {
+                "__gohashid": 158787,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:33:541195",
+                "key": "云运维模式/2021/3/1 下午10:34:191197",
+                "points": {
+                    "Aa": 0,
+                    "Fa": null,
+                    "__gohashid": 11764,
+                    "bh": null,
+                    "j": [],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:29:431172"
+            },
+            {
+                "__gohashid": 9036,
+                "category": "dataFlowIn",
+                "data_properties": {},
+                "from": "云运维模式/2021/3/1 下午10:41:14739",
+                "key": "云运维模式/2021/3/1 下午10:41:15740",
+                "points": {
+                    "Aa": 10,
+                    "Fa": null,
+                    "__gohashid": 21653,
+                    "bh": null,
+                    "j": [
+                        {
+                            "s": true,
+                            "x": 2258.8683349609373,
+                            "y": 166.83333333333334
+                        },
+                        {
+                            "s": true,
+                            "x": 2240.8683349609373,
+                            "y": 166.83333333333334
+                        },
+                        {
+                            "s": true,
+                            "x": 2240.8683349609373,
+                            "y": 166.83333333333334
+                        },
+                        {
+                            "s": true,
+                            "x": 2240.8683349609373,
+                            "y": 180
+                        },
+                        {
+                            "s": true,
+                            "x": 2212,
+                            "y": 180
+                        },
+                        {
+                            "s": true,
+                            "x": 2212,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 2096.1683349609375,
+                            "y": 174
+                        },
+                        {
+                            "s": true,
+                            "x": 2086.1683349609375,
+                            "y": 174
+                        }
+                    ],
+                    "s": true
+                },
+                "to": "云运维模式/2021/3/1 下午10:30:211176"
+            }
+        ],
+        "nodes": [
+            {
+                "__gohashid": 2487,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Tue Mar  2 03:35:17 20219499",
+                "id": "门店客流分析/某国际品牌零售商",
+                "isGroup": "true",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:45:501",
+                "loc": "-13.8316650390625 724",
+                "name": "门店客流分析/某国际品牌零售商",
+                "object_properties": [],
+                "participant": "门店客流分析/某国际品牌零售商",
+                "props": [],
+                "size": "3500 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 2488,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Tue Mar  2 03:35:17 20219499",
+                "id": "门店客流分析/零售门店",
+                "isGroup": "true",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:45:502",
+                "loc": "-13.831665039062514 423",
+                "name": "门店客流分析/零售门店",
+                "object_properties": [],
+                "participant": "门店客流分析/零售门店",
+                "props": [],
+                "size": "3500 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 5517,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"消费者进店\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:502",
+                "id": "消费者进店",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:46:04719",
+                "loc": "58.168334960937486 475",
+                "name": "消费者进店",
+                "object_properties": [],
+                "type": [
+                    "门店客流分析/进店"
+                ]
+            },
+            {
+                "__gohashid": 6070,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"消费者离店\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:502",
+                "id": "消费者离店",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:46:21721",
+                "loc": "308.1683349609375 475",
+                "name": "消费者离店",
+                "object_properties": [],
+                "type": [
+                    "门店客流分析/离店"
+                ]
+            },
+            {
+                "__gohashid": 8367,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "token.data['cost']=token.data['cost']+0.1 # 0.01个单位成本\nprint(\"数据传输\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:501",
+                "id": "数据传输",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:46:39723",
+                "loc": "330 776",
+                "name": "数据传输",
+                "object_properties": [],
+                "type": [
+                    "门店客流分析/数据传输"
+                ]
+            },
+            {
+                "__gohashid": 11992,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"数据统计分析\")\n# token.data['cost']=round(random.normalvariate(0.5, 1)) ",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:501",
+                "id": "数据统计",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:46:53725",
+                "loc": "580 776",
+                "name": "数据统计",
+                "object_properties": [],
+                "type": [
+                    "门店客流分析/数据统计"
+                ]
+            },
+            {
+                "__gohashid": 12434,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"分析决策\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:501",
+                "id": "营销分析",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:46:59727",
+                "loc": "830 776",
+                "name": "营销分析",
+                "object_properties": [],
+                "type": [
+                    "门店客流分析/营销分析"
+                ]
+            },
+            {
+                "__gohashid": 15257,
+                "bindTo": [],
+                "category": "end",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"end\")\n\nend_step=model.step_count\nstart_step=token.data['start_step']\ntime = end_step-start_step\nprint('time:', time)\n\navg_process = model.instance_base.findByName(\"平均运行时间\")\ntotal = avg_process.amount*avg_process.quota_dscp\nprint('total:', total)\n\navg_process.amount = avg_process.amount+1\navg_process.quota_dscp = (total+time)/avg_process.amount\nprint('avg:', avg_process.quota_dscp)\n\navg_cost=model.instance_base.findByName(\"平均运行成本\")\nprocess_cost= token.data['cost']+token.data['layOut_cost']\ntotal_cost=avg_cost.amount*avg_cost.quota_dscp\navg_cost.amount=avg_cost.amount+1\navg_cost.quota_dscp = (total_cost+process_cost)/avg_cost.amount\n\navg_repairRate = model.instance_base.findByName(\"排障成功率\")\nprocess_rate = token.data['repairRate']\ntotal_rate = avg_repairRate.amount*avg_repairRate.quota_dscp\navg_repairRate.amount = avg_repairRate.amount+1\navg_repairRate.quota_dscp = (total_rate+process_rate)/avg_repairRate.amount",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:501",
+                "id": "BPMN概念/EndEvent-1",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:47:13729",
+                "loc": "1330 776",
+                "name": "BPMN概念/EndEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/EndEvent"
+                ]
+            },
+            {
+                "__gohashid": 17576,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:501",
+                "id": "探针数据",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:47:35731",
+                "loc": "80 776",
+                "name": "探针数据",
+                "object_properties": [],
+                "type": [
+                    "门店客流分析/探针数据采集"
+                ]
+            },
+            {
+                "__gohashid": 26858,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:501",
+                "id": "客流数据",
+                "key": "WIFI探针客流分析/2021/3/1 下午10:48:13735",
+                "loc": "1080 776",
+                "name": "客流数据",
+                "object_properties": [],
+                "type": [
+                    "门店客流分析/客流数据"
+                ]
+            },
+            {
+                "__gohashid": 76806,
+                "bindTo": [],
+                "category": "Lane",
+                "config": {},
+                "data_properties": {},
+                "goal": [],
+                "graph_data": {},
+                "group": "Tue Mar  2 03:35:17 20219499",
+                "id": "无线管理/H3C",
+                "isGroup": "true",
+                "key": "云运维模式/2021/3/1 下午10:26:289",
+                "loc": "-13.831665039062507 122",
+                "name": "无线管理/H3C",
+                "object_properties": [],
+                "participant": "无线管理/H3C",
+                "props": [],
+                "size": "3500 300",
+                "superProps": {},
+                "type": [
+                    "BPMN概念/Lane"
+                ]
+            },
+            {
+                "__gohashid": 77339,
+                "bindTo": [],
+                "category": "start",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"start\")\n\ntoken.data['start_step']=model.step_count\nprint('start event:', model.step_count)\ntoken.data['cost'] = 0\ntoken.data['repairRate'] = 0.88",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "云运维模式/2021/3/1 下午10:26:289",
+                "id": "BPMN概念/StartEvent-1",
+                "key": "云运维模式/2021/3/1 下午10:26:371159",
+                "loc": "26.168334960937493 174",
+                "name": "BPMN概念/StartEvent-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/StartEvent"
+                ]
+            },
+            {
+                "__gohashid": 77597,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\n\nlow = round(random.uniform(4, 10))\nup = random.randint(7, 14)\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"云工勘\")\ntoken.data['cost']=token.data['cost']+random.randint(5,100)",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "云运维模式/2021/3/1 下午10:26:289",
+                "id": "云工勘",
+                "key": "云运维模式/2021/3/1 下午10:26:391160",
+                "loc": "276.1683349609375 174",
+                "name": "云工勘",
+                "object_properties": [],
+                "type": [
+                    "无线管理/云工勘"
+                ]
+            },
+            {
+                "__gohashid": 80689,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "2",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"场所部署\")\n\ntoken.data['layOut_cost']=random.randint(13,100)",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:502",
+                "id": "场所部署",
+                "key": "云运维模式/2021/3/1 下午10:27:021162",
+                "loc": "558.1683349609375 475",
+                "name": "场所部署",
+                "object_properties": [],
+                "type": [
+                    "无线管理/场所部署"
+                ]
+            },
+            {
+                "__gohashid": 86238,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\n\nlow = round(random.uniform(2, 6))\nup = round(random.uniform(7, 9))\nreturn round(random.uniform(low, up))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"云部署\")\ntoken.data['manage_cost'] = round(random.uniform(12,29))",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "云运维模式/2021/3/1 下午10:26:289",
+                "id": "云部署",
+                "key": "云运维模式/2021/3/1 下午10:27:261164",
+                "loc": "1026.1683349609375 174",
+                "name": "云部署",
+                "object_properties": [],
+                "type": [
+                    "无线管理/云部署"
+                ]
+            },
+            {
+                "__gohashid": 86737,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "1",
+                        "type": "value"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"云验收\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:501",
+                "id": "云验收",
+                "key": "云运维模式/2021/3/1 下午10:27:401166",
+                "loc": "1580 776",
+                "name": "云验收",
+                "object_properties": [],
+                "type": [
+                    "无线管理/云验收"
+                ]
+            },
+            {
+                "__gohashid": 113493,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"云管理\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:501",
+                "id": "云管理",
+                "key": "云运维模式/2021/3/1 下午10:28:521168",
+                "loc": "1830 776",
+                "name": "云管理",
+                "object_properties": [],
+                "type": [
+                    "无线管理/云管理"
+                ]
+            },
+            {
+                "__gohashid": 116306,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"云管理\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:502",
+                "id": "云认证",
+                "key": "云运维模式/2021/3/1 下午10:29:231170",
+                "loc": "1058.1683349609375 475",
+                "name": "云认证",
+                "object_properties": [],
+                "type": [
+                    "无线管理/云认证"
+                ]
+            },
+            {
+                "__gohashid": 117460,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/duration": {
+                        "isPattern": true,
+                        "text": "import random\nreturn round(random.randint(2,3))",
+                        "type": "normal"
+                    },
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\nprint(\"远程维护\")\ntoken.data['cost']=token.data['cost']+random.int(20,100)",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "云运维模式/2021/3/1 下午10:26:289",
+                "id": "远程维护",
+                "key": "云运维模式/2021/3/1 下午10:29:431172",
+                "loc": "1276.1683349609375 174",
+                "name": "远程维护",
+                "object_properties": [],
+                "type": [
+                    "无线管理/远程维护"
+                ]
+            },
+            {
+                "__gohashid": 118680,
+                "bindTo": [],
+                "category": "exclusive",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/condition": {
+                        "isPattern": true,
+                        "text": "return  True",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "云运维模式/2021/3/1 下午10:26:289",
+                "id": "BPMN概念/ExclusiveGateWay-1",
+                "key": "云运维模式/2021/3/1 下午10:30:071174",
+                "loc": "1776.1683349609375 174",
+                "name": "BPMN概念/ExclusiveGateWay-1",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/ExclusiveGateWay"
+                ]
+            },
+            {
+                "__gohashid": 120847,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "import random\n\nprint(\"AI排障\")\n",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "云运维模式/2021/3/1 下午10:26:289",
+                "id": "AI排障",
+                "key": "云运维模式/2021/3/1 下午10:30:211176",
+                "loc": "2026.1683349609375 174",
+                "name": "AI排障",
+                "object_properties": [],
+                "type": [
+                    "无线管理/AI排障"
+                ]
+            },
+            {
+                "__gohashid": 132094,
+                "bindTo": [],
+                "category": "task",
+                "config": {},
+                "data_properties": {
+                    "基础领域术语库/execution": {
+                        "isPattern": true,
+                        "text": "print(\"\")",
+                        "type": "normal"
+                    }
+                },
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:502",
+                "id": "connectNode",
+                "key": "云运维模式/2021/3/1 下午10:30:511178",
+                "loc": "1308.1683349609375 475",
+                "name": "connectNode",
+                "object_properties": [],
+                "type": [
+                    "BPMN概念/task"
+                ]
+            },
+            {
+                "__gohashid": 142053,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "云运维模式/2021/3/1 下午10:26:289",
+                "id": "门店数据",
+                "key": "云运维模式/2021/3/1 下午10:32:071185",
+                "loc": "776.1683349609375 174",
+                "name": "门店数据",
+                "object_properties": [],
+                "type": [
+                    "无线管理/门店数据"
+                ]
+            },
+            {
+                "__gohashid": 143830,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "WIFI探针客流分析/2021/3/1 下午10:45:502",
+                "id": "部署设备数据",
+                "key": "云运维模式/2021/3/1 下午10:32:431188",
+                "loc": "808.1683349609375 475",
+                "name": "部署设备数据",
+                "object_properties": [],
+                "type": [
+                    "无线管理/无线设备数据"
+                ]
+            },
+            {
+                "__gohashid": 8903,
+                "bindTo": [],
+                "category": "dataObject",
+                "config": {},
+                "data_properties": {},
+                "graph_data": {},
+                "group": "云运维模式/2021/3/1 下午10:26:289",
+                "id": "故障数据",
+                "key": "云运维模式/2021/3/1 下午10:41:14739",
+                "loc": "2276.1683349609375 174",
+                "name": "故障数据",
+                "object_properties": [],
+                "type": [
+                    "无线管理/故障数据"
+                ]
+            },
+            {
+                "__gohashid": "25b6d98398c548d5b8b0af51052e4047",
+                "category": "Pool",
+                "isGroup": "true",
+                "key": "Tue Mar  2 03:35:17 20219499",
+                "loc": "-40.354512537370454 122",
+                "name": "智能运维模式",
+                "type": "BPMN概念/LaneSet"
+            }
+        ],
+        "resource_config": {}
+    }
+}
