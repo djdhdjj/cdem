@@ -4,7 +4,7 @@
 
 **存放位置**: serviceserver\dataset
 
-### 3. 词向量模型配置
+### 词向量模型配置
 **下载地址**: [https://pan.baidu.com/s/1YmnvFtRoMuW1M-1-PMOL0Q]
 
 **提取码**: 4kx8 
