@@ -1,5 +1,5 @@
 ## ServiceClient
-### 服务地址配置
+### 1. 服务地址配置
 配置文件路径:serviceclient/src/manager/netWork.js
 
 修改说明:在NetWork类的构造器中修改fetch_url字段：
@@ -13,7 +13,8 @@ class NetWork {
 }
 ```
 
-### 启动客户端
+### 2. 启动客户端
 ```bash
 yarn install
 screen -L -S client yarn start
+```
