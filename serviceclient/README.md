@@ -1,14 +1,5 @@
-## 代码安装
-```bash
-git clone git@github.com:djdhdjj/cdem.git
-```
-
 ## ServiceClient
-### 1. 服务地址配置
-修改说明: 将**183.129.253.170:6051**改为**192.168.9.26:8000**（实际ip地址与server端运行时使用的端口号）。
-
-
-### 2. 启动客户端
+### 启动客户端
 ```bash
 cd serviceclient
 yarn install
