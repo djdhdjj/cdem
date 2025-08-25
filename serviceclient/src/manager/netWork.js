@@ -5,7 +5,7 @@ import deepcopy from 'deepcopy'
 // 注意post一定要加'/'
 class NetWork {
     constructor() {
-        this.fetch_url = 'http://183.129.253.170:8000/'
+        this.fetch_url = 'http://183.129.253.170:6051/'
         // 'http://192.168.3.2:8000/'
 
         // this.get('testGet').then(res => console.log(res))
