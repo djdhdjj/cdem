@@ -5,7 +5,7 @@ git clone git@github.com:djdhdjj/cdem.git
 
 ## ServiceClient
 ### 1. 服务地址配置
-修改说明: 将183.129.253.170:6051改为192.168.9.26:8000（实际ip地址与server端运行时使用的端口号）。
+修改说明: 将**183.129.253.170:6051**改为**192.168.9.26:8000**（实际ip地址与server端运行时使用的端口号）。
 
 
 ### 2. 启动客户端
@@ -37,6 +37,6 @@ pip3 install -r requirements.txt
 ### 4. 运行后台
 ```bash
 screen -L -S server 
-# 绑定到指定IP（183.129.253.170）和端口（8000）
-python3 manage.py runserver 183.129.253.170:8000
+# 绑定到指定IP（192.168.9.26）和端口（8000）
+python3 manage.py runserver 192.168.9.26:8000
 ```

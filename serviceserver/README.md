@@ -20,6 +20,6 @@ pip3 install -r requirements.txt
 ### 4. 运行后台
 ```bash
 screen -L -S server 
-# 绑定到指定IP（183.129.253.170）和端口（8000）
-python3 manage.py runserver 183.129.253.170:8000
+# 绑定到指定IP（192.168.9.26）和端口（8000）
+python3 manage.py runserver 192.168.9.26:8000
 ```
